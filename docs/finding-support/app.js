@@ -21,7 +21,7 @@ function filter(fitMap=false){
 }
 function fit(){
  selected=null;$('detail').hidden=true;updateList();
- if(visible.length){map.fitBounds(L.latLngBounds(visible.map(r=>[r.lat,r.lon])),{paddingTopLeft:[55,155],paddingBottomRight:[55,155],maxZoom:14,animate:!reduce});}
+ if(visible.length){map.fitBounds(L.latLngBounds(visible.map(r=>[r.lat,r.lon])),{paddingTopLeft:[18,35],paddingBottomRight:[18,25],maxZoom:14,animate:!reduce});}
  drawPoints();
 }
 function individual(r){
@@ -74,7 +74,7 @@ function select(id){
  const mobile=innerWidth<=760;
  if(mode==='lines'){
   const st=r.nearest_station;
-  map.fitBounds([[r.lat,r.lon],[st.lat,st.lon]],{paddingTopLeft:mobile?[30,65]:[65,145],paddingBottomRight:mobile?[30,480]:[Math.min(385,map.getSize().x*.42),140],maxZoom:16,animate:!reduce});
+  map.fitBounds([[r.lat,r.lon],[st.lat,st.lon]],{paddingTopLeft:[25,35],paddingBottomRight:[25,25],maxZoom:16,animate:!reduce});
  }else{
   let center=L.latLng(r.lat,r.lon),zoom=mobile?14:15;
   if(mobile){let p=map.project(center,zoom);center=map.unproject([p.x,p.y+map.getSize().y/2-115],zoom);}
@@ -90,7 +90,7 @@ function openDirectory(){
 }
 async function init(){
  const [data,boroughs,context]=await Promise.all([fetch('data/locations.json').then(r=>r.json()),fetch('data/boroughs.geojson').then(r=>r.json()),fetch('data/context-states.geojson').then(r=>r.json())]);rows=data;
- map=L.map('map',{zoomControl:false,minZoom:10,maxZoom:18,scrollWheelZoom:true,zoomSnap:.25}).setView([40.715,-73.96],11);
+ map=L.map('map',{zoomControl:false,minZoom:8,maxZoom:18,scrollWheelZoom:true,zoomSnap:.25}).setView([40.715,-73.96],11);
  L.control.zoom({position:'topright'}).addTo(map);const MilesScale=L.Control.extend({options:{position:'bottomleft'},onAdd(m){const box=L.DomUtil.create('div','leaflet-control-scale'),line=L.DomUtil.create('div','leaflet-control-scale-line',box);const update=()=>{const y=m.getSize().y/2,max=m.distance(m.containerPointToLatLng([0,y]),m.containerPointToLatLng([80,y]))/1609.344;const ticks=[.001,.002,.005,.01,.02,.05,.1,.2,.5,1,2,3,5,10,20];const miles=ticks.filter(v=>v<=max).pop()||.001;line.style.width=(80*miles/max)+'px';line.textContent=miles+' mi';};m.on('moveend zoomend resize',update);m.whenReady(update);return box;}});new MilesScale().addTo(map);
  const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,opacity:.65,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Boroughs: <a href="https://data.cityofnewyork.us/d/gthc-hcne">NYC DCP</a>'});
  ['Manhattan','Bronx','Brooklyn'].forEach(borough=>{
@@ -109,8 +109,8 @@ async function init(){
  $('streets').onclick=()=>setStreetBasemap($('streets').getAttribute('aria-pressed')!=='true');setStreetBasemap(true);
  map.createPane('labels');map.getPane('labels').style.zIndex=450;map.getPane('labels').style.pointerEvents='none';
  const labels=[['BRONX',40.855,-73.867,''],['QUEENS',40.745,-73.807,''],['BROOKLYN',40.635,-73.948,''],['STATEN ISLAND',40.597,-74.119,''],['MANHATTAN',40.776,-73.98,'manhattan']];
- labels.forEach(([label,lat,lon,cls])=>L.marker([lat,lon],{pane:'labels',interactive:false,icon:L.divIcon({className:'borough-label',html:`<span class="${cls}">${label}</span>`,iconSize:[150,20],iconAnchor:[75,10]})}).addTo(map));
- [['Upper Bay',40.655,-74.048],['Jamaica Bay',40.60,-73.85],['Hudson River',40.775,-74.024]].forEach(([label,lat,lon])=>L.marker([lat,lon],{pane:'labels',interactive:false,icon:L.divIcon({className:'water-label',html:label,iconSize:[100,20],iconAnchor:[50,10]})}).addTo(map));
+ [].forEach(([label,lat,lon,cls])=>L.marker([lat,lon],{pane:'labels',interactive:false,icon:L.divIcon({className:'borough-label',html:`<span class="${cls}">${label}</span>`,iconSize:[150,20],iconAnchor:[75,10]})}).addTo(map));
+ [].forEach(([label,lat,lon])=>L.marker([lat,lon],{pane:'labels',interactive:false,icon:L.divIcon({className:'water-label',html:label,iconSize:[100,20],iconAnchor:[50,10]})}).addTo(map));
  points.addTo(map);map.on('zoomend',drawPoints);
  document.querySelectorAll('.type').forEach(b=>b.onclick=()=>{type=b.dataset.type;document.querySelectorAll('.type').forEach(t=>{let on=t===b;t.classList.toggle('active',on);t.setAttribute('aria-pressed',String(on));});filter(true);});
  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{mode=b.dataset.view;document.querySelector('.map-area').dataset.mode=mode;document.querySelectorAll('[data-view]').forEach(t=>{let on=t===b;t.classList.toggle('active',on);t.setAttribute('aria-pressed',String(on));});$('map').setAttribute('aria-label',mode==='lines'?'Straight-line connections to nearest rail stations':'Service locations');document.querySelector('.line-reading').innerHTML=mode==='lines'?'<b>● ───── ○</b> Service to nearest station':'Equal-size points; numbers group nearby locations';document.querySelector('.map-caption p').textContent=mode==='lines'?'Nearest rail connections':'Service locations';drawPoints();if(selected)select(selected);});
