@@ -89,3 +89,5 @@ Leaflet 1.9.4 (BSD-2-Clause; `dist/LEAFLET-LICENSE.txt`). DM Sans and Instrument
 Revision QA: line/point mode switching, distance sorting (Paul’s Place / 6 Av ~0.04 miles first), Queens filtering, nearest-rail detail fields, and longest connection on phone (Project Hospitality—Youth / Tompkinsville SIR ~2.99 miles); 390px viewport with no overflow. Source credits retain one factual AI-assistance note in methods; no claim of entirely unaided authorship.
 
 Final display units: miles throughout, using exactly 1 mile = 1609.344 metres. Original metre fields are retained for reproducible calculations. The interactive scale uses miles at every zoom.
+
+The interactive map opens with the OpenStreetMap street basemap enabled. The Street context button can turn it off for a simplified view. Service-to-station lines remain in the overlay pane above the tiles. The downloadable poster keeps the simplified cartography.
