@@ -1,0 +1,43 @@
+# 30 Days Mapping
+
+## Day 01 — Points: The Restless Earth
+
+A map of magnitude 4.5+ earthquakes in a USGS rolling seven-day snapshot downloaded November 2, 2026. The snapshot contains 135 events. This is the Day 1 theme, not a claim that all events happened on November 1.
+
+## Reproduce
+
+Python 3.9 was used. From this directory:
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+MPLCONFIGDIR=.mplconfig python scripts/day01.py
+```
+
+The script reads saved GeoJSON files, so reproducing the same map does not require a new data download.
+
+- `scripts/day01.py`: plotting code
+- `data/earthquakes.geojson`: saved USGS earthquake feed
+- `data/land.geojson`: Natural Earth land polygons
+- `outputs/01-points-earthquakes.png`: full map
+- `outputs/01-points-thumbnail.png`: 600 × 600 gallery thumbnail
+
+## Sources
+
+USGS Earthquake Hazards Program: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson
+Feed documentation: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
+Natural Earth 1:110m land (public domain): https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/
+Downloaded GeoJSON: https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson
+
+## Cartography and limitations
+
+Plate carrée projection; latitude extent −70 to 85 degrees; all 135 events are in view. Circle area doubles per magnitude unit (a design scale, not seismic energy). Warmer colors indicate higher magnitude. The USGS feed can be revised; this repository preserves the downloaded snapshot. AI assisted the code and initial design; assistance is disclosed in the map and submission.
+
+## Gallery submission
+
+Day 01 / Points — Thomas Hagos. Entry prepared for the [MUSA community gallery](https://github.com/weitzman-musa/30DayMapChallenge).
+
+The thumbnail is a separate 600 × 600 composition. The full-resolution map is shown below.
+
+![The Restless Earth: magnitude 4.5+ earthquake epicenters](outputs/01-points-earthquakes.png)

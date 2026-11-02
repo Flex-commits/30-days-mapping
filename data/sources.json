@@ -1,0 +1,12 @@
+{
+  "snapshot_download_date": "2026-11-02",
+  "earthquakes": {
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson",
+    "sha256": "ff523db3837eb4391a009494eed125f08aef464ca092d0a2b0d83274ba0b5add"
+  },
+  "land": {
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson",
+    "license": "Natural Earth public domain",
+    "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9"
+  }
+}
