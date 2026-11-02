@@ -50,11 +50,11 @@ ax.text(-74.055*C,40.65,'Upper Bay',fontproperties=italic,fontsize=10,color='#9c
 ax.text(-73.844*C,40.59,'Jamaica Bay',fontproperties=italic,fontsize=10,color='#9caeb7',ha='center',zorder=4)
 ax.text(-74.21*C,40.76,'NEW JERSEY',fontproperties=sans,fontsize=7,color='#afb6b5',ha='center')
 ax.annotate('N',xy=(-73.718*C,40.882),xytext=(-73.718*C,40.853),ha='center',fontsize=8,color=ink,fontproperties=sans,arrowprops={'arrowstyle':'->','color':ink,'lw':.7})
-# Five-kilometre scale based on the local equirectangular projection.
-x0,y0=-74.21*C,40.515;length=5/111.32
+# Three-mile scale based on the local equirectangular projection.
+x0,y0=-74.21*C,40.515;length=3*1.609344/111.32
 ax.plot([x0,x0+length],[y0,y0],color='#82949d',lw=1.1,zorder=9)
 ax.text(x0,y0-.008,'0',fontsize=6,fontproperties=sans,color=muted)
-ax.text(x0+length,y0-.008,'5 km',ha='right',fontsize=6,fontproperties=sans,color=muted)
+ax.text(x0+length,y0-.008,'3 mi',ha='right',fontsize=6,fontproperties=sans,color=muted)
 # Inset retains geographic positions; labels are displaced for legibility.
 inset=fig.add_axes([.068,.565,.226,.19],facecolor=water)
 draw(inset,[-74.014,-73.976,40.717,40.772])
@@ -64,7 +64,7 @@ for r in rows:
  if r['borough']=='Manhattan' and r['lat']<40.78:
   n=r['number'];offset={'09':(10,8),'12':(-18,-9),'15':(-20,0),'04':(-17,6),'03':(-18,2),'14':(9,-4),'01':(9,1)}.get(n,(8,0))
   inset.annotate(n,xy=(r['lon']*C,r['lat']),xytext=offset,textcoords='offset points',fontproperties=bold,fontsize=6,color=colors[r['type']],arrowprops={'arrowstyle':'-','lw':.5,'color':colors[r['type']]},zorder=10)
-ax.annotate('Project Hospitality — Youth\n≈4.8 km to Tompkinsville (SIR)',xy=(-74.104*C,40.638),xytext=(-74.218*C,40.678),fontsize=6.5,fontproperties=sans,color='#5c7475',linespacing=1.6,arrowprops={'arrowstyle':'-','color':'#8fa4a7','lw':.6},zorder=11)
+ax.annotate('Project Hospitality — Youth\n≈2.99 mi to Tompkinsville (SIR)',xy=(-74.104*C,40.638),xytext=(-74.218*C,40.678),fontsize=6.5,fontproperties=sans,color='#5c7475',linespacing=1.6,arrowprops={'arrowstyle':'-','color':'#8fa4a7','lw':.6},zorder=11)
 fig.add_artist(plt.Line2D([.055,.945],[.206,.206],transform=fig.transFigure,color='#d9dfdf',lw=.7))
 for x,kind,title,count,desc in [(.06,'adult','Adult drop-in','08','Basic services and housing referrals'),(.365,'intake','Shelter intake','05','Shelter applications by household type'),(.67,'youth','Youth drop-in','08','Support and referrals for ages 14–24')]:
  txt(x,.168,count,23,font=sans,color=colors[kind]);txt(x+.049,.177,title,11,font=bold)

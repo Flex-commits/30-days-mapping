@@ -5,7 +5,7 @@ const kind={adult:{label:'Adult drop-in',color:'#c65b3d',description:'Day-to-day
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 let map,rows=[],visible=[],type='all',selected=null,points=L.layerGroup(),markers=new Map(),grouping=false,mode='lines';
 const symbol=t=>`<i class="symbol ${t}" aria-hidden="true"></i>`;
-const distanceText=m=>m>=1000?`≈${(m/1000).toFixed(1)} km`:`≈${Math.max(10,Math.round(m/10)*10)} m`;
+const distanceText=m=>`≈${(m/1609.344).toFixed(2)} mi`;
 function rowHTML(r){const d=r.rail_distance_m,st=r.nearest_station;return `<button class="location-row${selected===r.id?' selected':''}" data-id="${r.id}" aria-pressed="${selected===r.id}"><span class="row-number">${r.number}</span><span class="row-text"><strong>${esc(r.name)}</strong><small>${esc(r.borough)} · ${esc(kind[r.type].label)}</small><span class="distance-row"><span class="distance-track"><i style="width:${Math.max(1,d/5000*100)}%;background:${kind[r.type].color}"></i></span><span>${distanceText(d)} to ${esc(st.name)}</span></span></span></button>`;}
 function updateList(){
  $('list').innerHTML=visible.length?visible.map(rowHTML).join(''):'<p class="empty">No services match these filters.<br>Try a different term or reset the filters.</p>';
@@ -85,7 +85,7 @@ function openDirectory(){
 async function init(){
  const [data,boroughs,context]=await Promise.all([fetch('data/locations.json').then(r=>r.json()),fetch('data/boroughs.geojson').then(r=>r.json()),fetch('data/context-states.geojson').then(r=>r.json())]);rows=data;
  map=L.map('map',{zoomControl:false,minZoom:10,maxZoom:18,scrollWheelZoom:true,zoomSnap:.25}).setView([40.715,-73.96],11);
- L.control.zoom({position:'topright'}).addTo(map);L.control.scale({position:'bottomleft',imperial:false,maxWidth:80}).addTo(map);
+ L.control.zoom({position:'topright'}).addTo(map);const MilesScale=L.Control.extend({options:{position:'bottomleft'},onAdd(m){const box=L.DomUtil.create('div','leaflet-control-scale'),line=L.DomUtil.create('div','leaflet-control-scale-line',box);const update=()=>{const y=m.getSize().y/2,max=m.distance(m.containerPointToLatLng([0,y]),m.containerPointToLatLng([80,y]))/1609.344;const ticks=[.001,.002,.005,.01,.02,.05,.1,.2,.5,1,2,3,5,10,20];const miles=ticks.filter(v=>v<=max).pop()||.001;line.style.width=(80*miles/max)+'px';line.textContent=miles+' mi';};m.on('moveend zoomend resize',update);m.whenReady(update);return box;}});new MilesScale().addTo(map);
  const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,opacity:.23,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Boroughs: <a href="https://data.cityofnewyork.us/d/gthc-hcne">NYC DCP</a>'});
  map.createPane('boroughs');map.getPane('boroughs').style.zIndex=300;
  const contextLayer=L.geoJSON(context,{pane:'boroughs',interactive:false,style:{fillColor:'#eeefea',fillOpacity:1,color:'#cdd6d9',weight:.65},attribution:'Regional land: <a href="https://www.naturalearthdata.com/">Natural Earth</a>'}).addTo(map);

@@ -30,7 +30,8 @@
       "lon": -73.985984
     },
     "rail_distance_m": 299.2,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.185914
   },
   {
     "id": "adult-drop-in-02",
@@ -63,7 +64,8 @@
       "lon": -73.890549
     },
     "rail_distance_m": 489.8,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.304348
   },
   {
     "id": "adult-drop-in-03",
@@ -96,7 +98,8 @@
       "lon": -73.993365
     },
     "rail_distance_m": 228.1,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.141735
   },
   {
     "id": "adult-drop-in-04",
@@ -129,7 +132,8 @@
       "lon": -73.996786
     },
     "rail_distance_m": 70.3,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.043682
   },
   {
     "id": "adult-drop-in-05",
@@ -162,7 +166,8 @@
       "lon": -74.073643
     },
     "rail_distance_m": 460.2,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.285955
   },
   {
     "id": "adult-drop-in-06",
@@ -195,7 +200,8 @@
       "lon": -73.84433
     },
     "rail_distance_m": 635.5,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.394881
   },
   {
     "id": "adult-drop-in-07",
@@ -228,7 +234,8 @@
       "lon": -73.903097
     },
     "rail_distance_m": 226.9,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.140989
   },
   {
     "id": "adult-drop-in-08",
@@ -261,7 +268,8 @@
       "lon": -73.801109
     },
     "rail_distance_m": 337.5,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.209713
   },
   {
     "id": "intake-01",
@@ -293,7 +301,8 @@
       "lon": -73.994659
     },
     "rail_distance_m": 270.8,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.168267
   },
   {
     "id": "intake-02",
@@ -325,7 +334,8 @@
       "lon": -73.896736
     },
     "rail_distance_m": 1014.0,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.63007
   },
   {
     "id": "intake-03",
@@ -357,7 +367,8 @@
       "lon": -73.903097
     },
     "rail_distance_m": 283.1,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.17591
   },
   {
     "id": "intake-04",
@@ -389,7 +400,8 @@
       "lon": -73.994659
     },
     "rail_distance_m": 234.4,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.145649
   },
   {
     "id": "intake-05",
@@ -421,7 +433,8 @@
       "lon": -73.927351
     },
     "rail_distance_m": 324.5,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.201635
   },
   {
     "id": "youth-drop-in-01",
@@ -453,7 +466,8 @@
       "lon": -73.993391
     },
     "rail_distance_m": 314.5,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.195421
   },
   {
     "id": "youth-drop-in-02",
@@ -485,7 +499,8 @@
       "lon": -74.006277
     },
     "rail_distance_m": 181.9,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.113027
   },
   {
     "id": "youth-drop-in-03",
@@ -517,7 +532,8 @@
       "lon": -73.945495
     },
     "rail_distance_m": 301.9,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.187592
   },
   {
     "id": "youth-drop-in-04",
@@ -549,7 +565,8 @@
       "lon": -73.917757
     },
     "rail_distance_m": 465.5,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.289248
   },
   {
     "id": "youth-drop-in-05",
@@ -581,7 +598,8 @@
       "lon": -73.908946
     },
     "rail_distance_m": 202.3,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.125703
   },
   {
     "id": "youth-drop-in-06",
@@ -613,7 +631,8 @@
       "lon": -73.793604
     },
     "rail_distance_m": 552.8,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.343494
   },
   {
     "id": "youth-drop-in-07",
@@ -645,7 +664,8 @@
       "lon": -73.755405
     },
     "rail_distance_m": 325.0,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 0.201946
   },
   {
     "id": "youth-drop-in-08",
@@ -677,6 +697,7 @@
       "lon": -74.074835
     },
     "rail_distance_m": 4806.4,
-    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+    "rail_method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled.",
+    "rail_distance_miles": 2.986558
   }
 ]

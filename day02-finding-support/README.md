@@ -4,7 +4,7 @@ NYC’s homelessness service access points. An independent map by Thomas Hagos f
 
 ## Lines revision
 
-The map now defaults to Lines. Each of the 21 service addresses is linked to the nearest MTA subway or Staten Island Railway station centroid using haversine distance across all 496 station records in the saved MTA snapshot. These are straight-line proximity links, not street paths or transit routes. Buses, ferries, entrances, crossings, step-free access, schedules and bed availability are not modeled. Points mode preserves the location-only view. The copy uses a short first-person question; decorative slogans and the oversized italic headline were removed. Design references: https://work.co/clients/mta/ and https://morphocode.com/announcing-urban-layers/ .
+The map now defaults to Lines. Each of the 21 service addresses is linked to the nearest MTA subway or Staten Island Railway station centroid using haversine distance across all 496 station records in the saved MTA snapshot. These are straight-line proximity links, not street paths or transit routes. Buses, ferries, entrances, crossings, step-free access, schedules and bed availability are not modeled. The final edition shows lines only. The copy uses a short first-person question; decorative slogans and the oversized italic headline were removed. Design references: https://work.co/clients/mta/ and https://morphocode.com/announcing-urban-layers/ .
 
 MTA source: https://data.ny.gov/Transportation/MTA-Subway-Stations/39hk-dx4f . Raw data and metadata are saved in source-data. Retrieved November 2, 2026. No claim of live service status.
 
@@ -86,4 +86,6 @@ This map covers publicly listed access points in the three source directories, n
 Leaflet 1.9.4 (BSD-2-Clause; `dist/LEAFLET-LICENSE.txt`). DM Sans and Instrument Serif (SIL Open Font License; font licenses in `dist/fonts/`). Third-party data and libraries retain their respective terms; attribution is not a claim of endorsement. This map is not an official City of New York product.
 
 
-Revision QA: line/point mode switching, distance sorting (Paul’s Place / 6 Av ~70m first), Queens filtering, nearest-rail detail fields, and longest connection on phone (Project Hospitality—Youth / Tompkinsville SIR ~4.8km); 390px viewport with no overflow. Source credits retain one factual AI-assistance note in methods; no claim of entirely unaided authorship.
+Revision QA: line/point mode switching, distance sorting (Paul’s Place / 6 Av ~0.04 miles first), Queens filtering, nearest-rail detail fields, and longest connection on phone (Project Hospitality—Youth / Tompkinsville SIR ~2.99 miles); 390px viewport with no overflow. Source credits retain one factual AI-assistance note in methods; no claim of entirely unaided authorship.
+
+Final display units: miles throughout, using exactly 1 mile = 1609.344 metres. Original metre fields are retained for reproducible calculations. The interactive scale uses miles at every zoom.
