@@ -91,3 +91,7 @@ Revision QA: line/point mode switching, distance sorting (Paul’s Place / 6 Av 
 Final display units: miles throughout, using exactly 1 mile = 1609.344 metres. Original metre fields are retained for reproducible calculations. The interactive scale uses miles at every zoom.
 
 The interactive map opens with the OpenStreetMap street basemap enabled. The Street context button can turn it off for a simplified view. Service-to-station lines remain in the overlay pane above the tiles. The downloadable poster keeps the simplified cartography.
+
+## Rail proximity and close-up views
+
+The interactive map opens with Manhattan, Bronx and Brooklyn close-ups, alongside a citywide overview. Each panel has its own miles scale; zoom levels differ. The Port Richmond annotation explains the longest connection (approximately 2.99 miles) without treating rail proximity as overall transit access. Bus and ferry options are outside the analysis. The downloadable poster uses the same layout with simplified geographic context.

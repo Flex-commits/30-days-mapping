@@ -3,7 +3,7 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const kind={adult:{label:'Adult drop-in',color:'#c65b3d',description:'Day-to-day support, basic services and connections to housing assistance. Drop-in service is not a guarantee of an overnight bed.'},intake:{label:'Shelter intake',color:'#5664be',description:'A place to apply for shelter. The correct intake location depends on your age and household. Check the official eligibility guidance before travel.'},youth:{label:'Youth drop-in',color:'#168579',description:'Support and referrals for young people ages 14–24. Services and hours vary by location; check with the provider before travel.'}};
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-let map,rows=[],visible=[],type='all',selected=null,points=L.layerGroup(),markers=new Map(),grouping=false,mode='lines';
+let map,rows=[],visible=[],type='all',selected=null,points=L.layerGroup(),markers=new Map(),grouping=false,mode='lines',closeups=[];
 const symbol=t=>`<i class="symbol ${t}" aria-hidden="true"></i>`;
 const distanceText=m=>`≈${(m/1609.344).toFixed(2)} mi`;
 function rowHTML(r){const d=r.rail_distance_m,st=r.nearest_station;return `<button class="location-row${selected===r.id?' selected':''}" data-id="${r.id}" aria-pressed="${selected===r.id}"><span class="row-number">${r.number}</span><span class="row-text"><strong>${esc(r.name)}</strong><small>${esc(r.borough)} · ${esc(kind[r.type].label)}</small><span class="distance-row"><span class="distance-track"><i style="width:${Math.max(1,d/5000*100)}%;background:${kind[r.type].color}"></i></span><span>${distanceText(d)} to ${esc(st.name)}</span></span></span></button>`;}
@@ -48,6 +48,7 @@ function drawPoints(){
 }
 function drawLines(){
  points.clearLayers();markers.clear();
+ closeups.forEach(({layer})=>layer.clearLayers());
  visible.forEach(r=>{
   const st=r.nearest_station,on=r.id===selected,opacity=selected && !on ? .2 : .9;
   const line=L.polyline([[st.lat,st.lon],[r.lat,r.lon]],{color:kind[r.type].color,weight:on?4:2.6,opacity,lineCap:'round'}).addTo(points);
@@ -56,6 +57,11 @@ function drawLines(){
   station.on('click',()=>select(r.id));
   const service=L.circleMarker([r.lat,r.lon],{radius:on?5:4,color:'#fffefa',weight:1.3,fillColor:kind[r.type].color,fillOpacity:opacity,opacity}).addTo(points).bindTooltip(esc(r.name),{direction:'top'});
   service.on('click',()=>select(r.id));markers.set(r.id,service);
+  closeups.forEach(({borough,layer})=>{if(r.borough!==borough)return;
+   L.polyline([[st.lat,st.lon],[r.lat,r.lon]],{color:kind[r.type].color,weight:3,opacity,lineCap:'round'}).addTo(layer).bindTooltip(`${esc(r.name)} → ${esc(st.name)}<br>${distanceText(r.rail_distance_m)} · straight line`,{sticky:true}).on('click',()=>select(r.id));
+   L.circleMarker([st.lat,st.lon],{radius:3,color:'#536468',weight:1,fillColor:'#fffefa',fillOpacity:1}).addTo(layer).bindTooltip(esc(st.name));
+   L.circleMarker([r.lat,r.lon],{radius:3.5,color:'#fffefa',weight:1,fillColor:kind[r.type].color,fillOpacity:opacity}).addTo(layer).bindTooltip(esc(r.name)).on('click',()=>select(r.id));
+  });
  });
 }
 function select(id){
@@ -86,11 +92,20 @@ async function init(){
  const [data,boroughs,context]=await Promise.all([fetch('data/locations.json').then(r=>r.json()),fetch('data/boroughs.geojson').then(r=>r.json()),fetch('data/context-states.geojson').then(r=>r.json())]);rows=data;
  map=L.map('map',{zoomControl:false,minZoom:10,maxZoom:18,scrollWheelZoom:true,zoomSnap:.25}).setView([40.715,-73.96],11);
  L.control.zoom({position:'topright'}).addTo(map);const MilesScale=L.Control.extend({options:{position:'bottomleft'},onAdd(m){const box=L.DomUtil.create('div','leaflet-control-scale'),line=L.DomUtil.create('div','leaflet-control-scale-line',box);const update=()=>{const y=m.getSize().y/2,max=m.distance(m.containerPointToLatLng([0,y]),m.containerPointToLatLng([80,y]))/1609.344;const ticks=[.001,.002,.005,.01,.02,.05,.1,.2,.5,1,2,3,5,10,20];const miles=ticks.filter(v=>v<=max).pop()||.001;line.style.width=(80*miles/max)+'px';line.textContent=miles+' mi';};m.on('moveend zoomend resize',update);m.whenReady(update);return box;}});new MilesScale().addTo(map);
- const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,opacity:.85,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Boroughs: <a href="https://data.cityofnewyork.us/d/gthc-hcne">NYC DCP</a>'});
+ const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,opacity:.65,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Boroughs: <a href="https://data.cityofnewyork.us/d/gthc-hcne">NYC DCP</a>'});
+ ['Manhattan','Bronx','Brooklyn'].forEach(borough=>{
+  const local=L.map('closeup-'+borough.toLowerCase(),{zoomControl:false,minZoom:11,maxZoom:18,scrollWheelZoom:false,zoomSnap:.1});
+  const base=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,opacity:.65,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(local);
+  const outline=L.geoJSON(boroughs,{interactive:false,style:{fillColor:'#fffefa',fillOpacity:.03,color:'#bac8ce',weight:.7}}).addTo(local);
+  const localRows=rows.filter(r=>r.borough===borough);
+  local.fitBounds(localRows.flatMap(r=>[[r.lat,r.lon],[r.nearest_station.lat,r.nearest_station.lon]]),{padding:[22,22],maxZoom:14.5});
+  new MilesScale().addTo(local);closeups.push({borough,map:local,layer:L.layerGroup().addTo(local),base,outline});
+ });
+ $('longest-link').onclick=()=>select(rows.reduce((a,b)=>a.rail_distance_m>b.rail_distance_m?a:b).id);
  map.createPane('boroughs');map.getPane('boroughs').style.zIndex=300;
  const contextLayer=L.geoJSON(context,{pane:'boroughs',interactive:false,style:{fillColor:'#eeefea',fillOpacity:1,color:'#cdd6d9',weight:.65},attribution:'Regional land: <a href="https://www.naturalearthdata.com/">Natural Earth</a>'}).addTo(map);
  const boroughLayer=L.geoJSON(boroughs,{pane:'boroughs',interactive:false,style:{fillColor:'#fffefa',fillOpacity:1,color:'#bac8ce',weight:1},attribution:'Boroughs: <a href="https://data.cityofnewyork.us/d/gthc-hcne">NYC DCP</a>'}).addTo(map);
- const setStreetBasemap=on=>{$('streets').setAttribute('aria-pressed',String(on));if(on)tiles.addTo(map);else map.removeLayer(tiles);contextLayer.setStyle({fillOpacity:on?0:1,opacity:on?0:1});boroughLayer.setStyle({fillOpacity:on?.04:1,opacity:on?.5:1});};
+ const setStreetBasemap=on=>{$('streets').setAttribute('aria-pressed',String(on));if(on)tiles.addTo(map);else map.removeLayer(tiles);closeups.forEach(c=>{if(on)c.base.addTo(c.map);else c.map.removeLayer(c.base);c.outline.setStyle({fillOpacity:on?.03:1});});contextLayer.setStyle({fillOpacity:on?0:1,opacity:on?0:1});boroughLayer.setStyle({fillOpacity:on?.04:1,opacity:on?.5:1});};
  $('streets').onclick=()=>setStreetBasemap($('streets').getAttribute('aria-pressed')!=='true');setStreetBasemap(true);
  map.createPane('labels');map.getPane('labels').style.zIndex=450;map.getPane('labels').style.pointerEvents='none';
  const labels=[['BRONX',40.855,-73.867,''],['QUEENS',40.745,-73.807,''],['BROOKLYN',40.635,-73.948,''],['STATEN ISLAND',40.597,-74.119,''],['MANHATTAN',40.776,-73.98,'manhattan']];
@@ -103,7 +118,7 @@ async function init(){
  $('explore-nav').onclick=()=>{if($('directory').open)$('directory').close();fit();};$('directory-nav').onclick=openDirectory;
  $('about-nav').onclick=()=>$('about').showModal();
  document.querySelectorAll('dialog').forEach(d=>{d.querySelector('.close-modal').onclick=()=>d.close();d.onclick=e=>{if(e.target===d){let r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}};});
- window.addEventListener('resize',()=>map.invalidateSize());
+ window.addEventListener('resize',()=>{map.invalidateSize();closeups.forEach(c=>c.map.invalidateSize());});
  let loaded=false,errors=0;tiles.on('tileload',()=>{loaded=true;document.querySelector('.offline-note')?.remove();});tiles.on('tileerror',()=>{if(++errors>8&&!loaded&&!document.querySelector('.offline-note'))$('map').insertAdjacentHTML('afterend','<div class="offline-note">Street context is unavailable. Local borough outlines and service points remain visible.</div>');});
  filter(true);
 }
