@@ -1,5 +1,14 @@
 # 30 Days Mapping
 
+## Maps
+
+| Day | Theme | Map | Source |
+| --- | --- | --- | --- |
+| 01 | Points | The Restless Earth — below | `scripts/day01.py` |
+| 02 | Lines | [Finding Support](https://flex-commits.github.io/30-days-mapping/finding-support/) | [Scripts, saved data and outputs](day02-finding-support/) |
+
+Day 2 is stored separately in `day02-finding-support/`. Its public web edition is built from the same files under `docs/finding-support/`. The shared MUSA repository receives only the thumbnail, metadata and description.
+
 ## Day 01 — Points: The Restless Earth
 
 A map of magnitude 4.5+ earthquakes in a USGS rolling seven-day snapshot downloaded November 2, 2026. The snapshot contains 135 events. This is the Day 1 theme, not a claim that all events happened on November 1.

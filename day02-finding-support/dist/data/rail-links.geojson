@@ -1,0 +1,551 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.985984,
+            40.762456
+          ],
+          [
+            -73.988289120933,
+            40.764503945939
+          ]
+        ]
+      },
+      "properties": {
+        "id": "adult-drop-in-01",
+        "service": "9th Avenue",
+        "type": "adult",
+        "station": "50 St",
+        "routes": "C E",
+        "system": "Subway",
+        "distance_m": 299.2,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.890549,
+            40.820948
+          ],
+          [
+            -73.889805562447,
+            40.816578861836
+          ]
+        ]
+      },
+      "properties": {
+        "id": "adult-drop-in-02",
+        "service": "The Living Room",
+        "type": "adult",
+        "station": "Hunts Point Av",
+        "routes": "6",
+        "system": "Subway",
+        "distance_m": 489.8,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.993365,
+            40.747215
+          ],
+          [
+            -73.994037215196,
+            40.749201860075
+          ]
+        ]
+      },
+      "properties": {
+        "id": "adult-drop-in-03",
+        "service": "Olivieri Center for Homeless",
+        "type": "adult",
+        "station": "28 St",
+        "routes": "1",
+        "system": "Subway",
+        "distance_m": 228.1,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.996786,
+            40.737335
+          ],
+          [
+            -73.997547893046,
+            40.737592068058
+          ]
+        ]
+      },
+      "properties": {
+        "id": "adult-drop-in-04",
+        "service": "Paul’s Place",
+        "type": "adult",
+        "station": "6 Av",
+        "routes": "L",
+        "system": "Subway",
+        "distance_m": 70.3,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.073643,
+            40.643748
+          ],
+          [
+            -74.0782156207,
+            40.646005119087
+          ]
+        ]
+      },
+      "properties": {
+        "id": "adult-drop-in-05",
+        "service": "Project Hospitality",
+        "type": "adult",
+        "station": "St George",
+        "routes": "SIR",
+        "system": "SIR",
+        "distance_m": 460.2,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.84433,
+            40.695178
+          ],
+          [
+            -73.843651067283,
+            40.689485983449
+          ]
+        ]
+      },
+      "properties": {
+        "id": "adult-drop-in-06",
+        "service": "QDIC (Queens Drop-In Center)",
+        "type": "adult",
+        "station": "104 St",
+        "routes": "J Z",
+        "system": "Subway",
+        "distance_m": 635.5,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.903097,
+            40.675345
+          ],
+          [
+            -73.905692068612,
+            40.675883650819
+          ]
+        ]
+      },
+      "properties": {
+        "id": "adult-drop-in-07",
+        "service": "The Gathering Place",
+        "type": "adult",
+        "station": "Atlantic Av",
+        "routes": "L",
+        "system": "Subway",
+        "distance_m": 226.9,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.801109,
+            40.702147
+          ],
+          [
+            -73.797742634182,
+            40.703790538044
+          ]
+        ]
+      },
+      "properties": {
+        "id": "adult-drop-in-08",
+        "service": "Union Hall",
+        "type": "adult",
+        "station": "Jamaica Center-Parsons/Archer",
+        "routes": "E J Z",
+        "system": "Subway",
+        "distance_m": 337.5,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.994659,
+            40.725915
+          ],
+          [
+            -73.991465940514,
+            40.726187534952
+          ]
+        ]
+      },
+      "properties": {
+        "id": "intake-01",
+        "service": "Single Adult Men’s Intake Center",
+        "type": "intake",
+        "station": "Bleecker St",
+        "routes": "6",
+        "system": "Subway",
+        "distance_m": 270.8,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.896736,
+            40.822181
+          ],
+          [
+            -73.905491922787,
+            40.828446284365
+          ]
+        ]
+      },
+      "properties": {
+        "id": "intake-02",
+        "service": "Franklin Women’s Shelter",
+        "type": "intake",
+        "station": "Intervale Av",
+        "routes": "2 5",
+        "system": "Subway",
+        "distance_m": 1014.0,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.903097,
+            40.675345
+          ],
+          [
+            -73.901989111473,
+            40.672941374114
+          ]
+        ]
+      },
+      "properties": {
+        "id": "intake-03",
+        "service": "HELP Women’s Center",
+        "type": "intake",
+        "station": "Atlantic Av",
+        "routes": "L",
+        "system": "Subway",
+        "distance_m": 283.1,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.994659,
+            40.725915
+          ],
+          [
+            -73.991877242605,
+            40.725937721942
+          ]
+        ]
+      },
+      "properties": {
+        "id": "intake-04",
+        "service": "Adult Family Intake Center (AFIC)",
+        "type": "intake",
+        "station": "Bleecker St",
+        "routes": "6",
+        "system": "Subway",
+        "distance_m": 234.4,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.927351,
+            40.818375
+          ],
+          [
+            -73.927525186124,
+            40.82129030247
+          ]
+        ]
+      },
+      "properties": {
+        "id": "intake-05",
+        "service": "Prevention Assistance and Temporary Housing (PATH)",
+        "type": "intake",
+        "station": "149 St-Hostos",
+        "routes": "4",
+        "system": "Subway",
+        "distance_m": 324.5,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.993391,
+            40.752287
+          ],
+          [
+            -73.991827527616,
+            40.754855142368
+          ]
+        ]
+      },
+      "properties": {
+        "id": "youth-drop-in-01",
+        "service": "Ali Forney Center",
+        "type": "youth",
+        "station": "34 St-Penn Station",
+        "routes": "A C E",
+        "system": "Subway",
+        "distance_m": 314.5,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.006277,
+            40.722854
+          ],
+          [
+            -74.005158460159,
+            40.724252996188
+          ]
+        ]
+      },
+      "properties": {
+        "id": "youth-drop-in-02",
+        "service": "The Door — Manhattan",
+        "type": "youth",
+        "station": "Canal St",
+        "routes": "1",
+        "system": "Subway",
+        "distance_m": 181.9,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.945495,
+            40.807754
+          ],
+          [
+            -73.948576982878,
+            40.809143458154
+          ]
+        ]
+      },
+      "properties": {
+        "id": "youth-drop-in-03",
+        "service": "Safe Horizon Streetwork Harlem",
+        "type": "youth",
+        "station": "125 St",
+        "routes": "2 3",
+        "system": "Subway",
+        "distance_m": 301.9,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.917757,
+            40.816109
+          ],
+          [
+            -73.91395381803,
+            40.819148528383
+          ]
+        ]
+      },
+      "properties": {
+        "id": "youth-drop-in-04",
+        "service": "The Door — Bronx",
+        "type": "youth",
+        "station": "3 Av-149 St",
+        "routes": "2 5",
+        "system": "Subway",
+        "distance_m": 465.5,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.908946,
+            40.662549
+          ],
+          [
+            -73.908535030834,
+            40.660757022507
+          ]
+        ]
+      },
+      "properties": {
+        "id": "youth-drop-in-05",
+        "service": "SCO Family of Services",
+        "type": "youth",
+        "station": "Rockaway Av",
+        "routes": "3",
+        "system": "Subway",
+        "distance_m": 202.3,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.793604,
+            40.71047
+          ],
+          [
+            -73.79476433673,
+            40.705576581704
+          ]
+        ]
+      },
+      "properties": {
+        "id": "youth-drop-in-06",
+        "service": "Rising Ground — Jamaica",
+        "type": "youth",
+        "station": "169 St",
+        "routes": "F",
+        "system": "Subway",
+        "distance_m": 552.8,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.755405,
+            40.603995
+          ],
+          [
+            -73.751942695917,
+            40.605273562529
+          ]
+        ]
+      },
+      "properties": {
+        "id": "youth-drop-in-07",
+        "service": "Rising Ground — Far Rockaway",
+        "type": "youth",
+        "station": "Far Rockaway-Mott Av",
+        "routes": "A",
+        "system": "Subway",
+        "distance_m": 325.0,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.074835,
+            40.636949
+          ],
+          [
+            -74.131642070531,
+            40.640135141093
+          ]
+        ]
+      },
+      "properties": {
+        "id": "youth-drop-in-08",
+        "service": "Project Hospitality — Youth",
+        "type": "youth",
+        "station": "Tompkinsville",
+        "routes": "SIR",
+        "system": "SIR",
+        "distance_m": 4806.4,
+        "method": "Nearest MTA subway or Staten Island Railway station centroid by haversine distance. Straight line; not a walking route. Bus stops, entrances, ferry connections and service changes are not modeled."
+      }
+    }
+  ]
+}

@@ -1,0 +1,968 @@
+{
+  "adult-drop-in-01": {
+    "query": "771 9th Avenue, New York, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=771+9th+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "771 9th Avenue, New York, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "59655247"
+            },
+            "coordinates": {
+              "x": -73.988289120933,
+              "y": 40.764503945939
+            },
+            "addressComponents": {
+              "zip": "10019",
+              "streetName": "9TH",
+              "preType": "",
+              "city": "NEW YORK",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "759",
+              "state": "NY",
+              "suffixType": "AVE",
+              "toAddress": "779",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "771 9TH AVE, NEW YORK, NY, 10019"
+          }
+        ]
+      }
+    }
+  },
+  "adult-drop-in-02": {
+    "query": "800 Barretto Street, Bronx, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=800+Barretto+Street%2C+Bronx%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "800 Barretto Street, Bronx, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "80302557"
+            },
+            "coordinates": {
+              "x": -73.889805562447,
+              "y": 40.816578861836
+            },
+            "addressComponents": {
+              "zip": "10474",
+              "streetName": "BARRETTO",
+              "preType": "",
+              "city": "BRONX",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "800",
+              "state": "NY",
+              "suffixType": "ST",
+              "toAddress": "898",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "800 BARRETTO ST, BRONX, NY, 10474"
+          }
+        ]
+      }
+    }
+  },
+  "adult-drop-in-03": {
+    "query": "257 West 30th Street, New York, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=257+West+30th+Street%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "257 West 30th Street, New York, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "59653374"
+            },
+            "coordinates": {
+              "x": -73.994037215196,
+              "y": 40.749201860075
+            },
+            "addressComponents": {
+              "zip": "10001",
+              "streetName": "30TH",
+              "preType": "",
+              "city": "NEW YORK",
+              "preDirection": "W",
+              "suffixDirection": "",
+              "fromAddress": "201",
+              "state": "NY",
+              "suffixType": "ST",
+              "toAddress": "299",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "257 W 30TH ST, NEW YORK, NY, 10001"
+          }
+        ]
+      }
+    }
+  },
+  "adult-drop-in-04": {
+    "query": "114 West 14th Street, New York, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=114+West+14th+Street%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "114 West 14th Street, New York, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "611131666"
+            },
+            "coordinates": {
+              "x": -73.997547893046,
+              "y": 40.737592068058
+            },
+            "addressComponents": {
+              "zip": "10011",
+              "streetName": "W 14TH",
+              "preType": "",
+              "city": "NEW YORK",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "100",
+              "state": "NY",
+              "suffixType": "ST",
+              "toAddress": "152",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "114 W 14TH ST, NEW YORK, NY, 10011"
+          }
+        ]
+      }
+    }
+  },
+  "adult-drop-in-05": {
+    "query": "150 Richmond Terrace, Staten Island, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=150+Richmond+Terrace%2C+Staten+Island%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "150 Richmond Terrace, Staten Island, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "59884626"
+            },
+            "coordinates": {
+              "x": -74.0782156207,
+              "y": 40.646005119087
+            },
+            "addressComponents": {
+              "zip": "10301",
+              "streetName": "RICHMOND",
+              "preType": "",
+              "city": "STATEN ISLAND",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "102",
+              "state": "NY",
+              "suffixType": "TER",
+              "toAddress": "196",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "150 RICHMOND TER, STATEN ISLAND, NY, 10301"
+          }
+        ]
+      }
+    }
+  },
+  "adult-drop-in-06": {
+    "query": "100-32 Atlantic Avenue, Ozone Park, NY 11416",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=100-32+Atlantic+Avenue%2C+Ozone+Park%2C+NY+11416&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "100-32 Atlantic Avenue, Ozone Park, NY 11416"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "59707639"
+            },
+            "coordinates": {
+              "x": -73.843651067283,
+              "y": 40.689485983449
+            },
+            "addressComponents": {
+              "zip": "11416",
+              "streetName": "ATLANTIC",
+              "preType": "",
+              "city": "OZONE PARK",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "100-00",
+              "state": "NY",
+              "suffixType": "AVE",
+              "toAddress": "100-98",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "100-32 ATLANTIC AVE, OZONE PARK, NY, 11416"
+          }
+        ]
+      }
+    }
+  },
+  "adult-drop-in-07": {
+    "query": "2402 Atlantic Avenue, Brooklyn, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2402+Atlantic+Avenue%2C+Brooklyn%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "2402 Atlantic Avenue, Brooklyn, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "641264134"
+            },
+            "coordinates": {
+              "x": -73.905692068612,
+              "y": 40.675883650819
+            },
+            "addressComponents": {
+              "zip": "11233",
+              "streetName": "ATLANTIC",
+              "preType": "",
+              "city": "BROOKLYN",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "2380",
+              "state": "NY",
+              "suffixType": "AVE",
+              "toAddress": "2498",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "2402 ATLANTIC AVE, BROOKLYN, NY, 11233"
+          }
+        ]
+      }
+    }
+  },
+  "adult-drop-in-08": {
+    "query": "92-32 Union Hall Street, Jamaica, NY 11433",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=92-32+Union+Hall+Street%2C+Jamaica%2C+NY+11433&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "92-32 Union Hall Street, Jamaica, NY 11433"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "59714154"
+            },
+            "coordinates": {
+              "x": -73.797742634182,
+              "y": 40.703790538044
+            },
+            "addressComponents": {
+              "zip": "11433",
+              "streetName": "UNION HALL",
+              "preType": "",
+              "city": "JAMAICA",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "92-00",
+              "state": "NY",
+              "suffixType": "ST",
+              "toAddress": "92-98",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "92-32 UNION HALL ST, JAMAICA, NY, 11433"
+          }
+        ]
+      }
+    }
+  },
+  "intake-01": {
+    "query": "8 East 3rd Street, New York, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8+East+3rd+Street%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "8 East 3rd Street, New York, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "59653930"
+            },
+            "coordinates": {
+              "x": -73.991465940514,
+              "y": 40.726187534952
+            },
+            "addressComponents": {
+              "zip": "10003",
+              "streetName": "3RD",
+              "preType": "",
+              "city": "NEW YORK",
+              "preDirection": "E",
+              "suffixDirection": "",
+              "fromAddress": "2",
+              "state": "NY",
+              "suffixType": "ST",
+              "toAddress": "38",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "8 E 3RD ST, NEW YORK, NY, 10003"
+          }
+        ]
+      }
+    }
+  },
+  "intake-02": {
+    "query": "1122 Franklin Avenue, Bronx, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1122+Franklin+Avenue%2C+Bronx%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "1122 Franklin Avenue, Bronx, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "80301937"
+            },
+            "coordinates": {
+              "x": -73.905491922787,
+              "y": 40.828446284365
+            },
+            "addressComponents": {
+              "zip": "10456",
+              "streetName": "FRANKLIN",
+              "preType": "",
+              "city": "BRONX",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "1102",
+              "state": "NY",
+              "suffixType": "AVE",
+              "toAddress": "1142",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "1122 FRANKLIN AVE, BRONX, NY, 10456"
+          }
+        ]
+      }
+    }
+  },
+  "intake-03": {
+    "query": "114 Snediker Avenue, Brooklyn, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=114+Snediker+Avenue%2C+Brooklyn%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "114 Snediker Avenue, Brooklyn, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "59084550"
+            },
+            "coordinates": {
+              "x": -73.901989111473,
+              "y": 40.672941374114
+            },
+            "addressComponents": {
+              "zip": "11207",
+              "streetName": "SNEDIKER",
+              "preType": "",
+              "city": "BROOKLYN",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "82",
+              "state": "NY",
+              "suffixType": "AVE",
+              "toAddress": "146",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "114 SNEDIKER AVE, BROOKLYN, NY, 11207"
+          }
+        ]
+      }
+    }
+  },
+  "intake-04": {
+    "query": "333 Bowery, New York, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=333+Bowery%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "333 Bowery, New York, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "59653929"
+            },
+            "coordinates": {
+              "x": -73.991877242605,
+              "y": 40.725937721942
+            },
+            "addressComponents": {
+              "zip": "10003",
+              "streetName": "BOWERY",
+              "preType": "",
+              "city": "NEW YORK",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "325",
+              "state": "NY",
+              "suffixType": "",
+              "toAddress": "345",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "333 BOWERY, NEW YORK, NY, 10003"
+          }
+        ]
+      }
+    }
+  },
+  "intake-05": {
+    "query": "151 East 151st Street, Bronx, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=151+East+151st+Street%2C+Bronx%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "151 East 151st Street, Bronx, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "80300081"
+            },
+            "coordinates": {
+              "x": -73.927525186124,
+              "y": 40.82129030247
+            },
+            "addressComponents": {
+              "zip": "10451",
+              "streetName": "151ST",
+              "preType": "",
+              "city": "BRONX",
+              "preDirection": "E",
+              "suffixDirection": "",
+              "fromAddress": "101",
+              "state": "NY",
+              "suffixType": "ST",
+              "toAddress": "159",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "151 E 151ST ST, BRONX, NY, 10451"
+          }
+        ]
+      }
+    }
+  },
+  "youth-drop-in-01": {
+    "query": "307 West 38th Street, New York, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=307+West+38th+Street%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "307 West 38th Street, New York, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "59655210"
+            },
+            "coordinates": {
+              "x": -73.991827527616,
+              "y": 40.754855142368
+            },
+            "addressComponents": {
+              "zip": "10018",
+              "streetName": "38TH",
+              "preType": "",
+              "city": "NEW YORK",
+              "preDirection": "W",
+              "suffixDirection": "",
+              "fromAddress": "301",
+              "state": "NY",
+              "suffixType": "ST",
+              "toAddress": "399",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "307 W 38TH ST, NEW YORK, NY, 10018"
+          }
+        ]
+      }
+    }
+  },
+  "youth-drop-in-02": {
+    "query": "555 Broome Street, New York, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=555+Broome+Street%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "555 Broome Street, New York, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "59664823"
+            },
+            "coordinates": {
+              "x": -74.005158460159,
+              "y": 40.724252996188
+            },
+            "addressComponents": {
+              "zip": "10013",
+              "streetName": "BROOME",
+              "preType": "",
+              "city": "NEW YORK",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "537",
+              "state": "NY",
+              "suffixType": "ST",
+              "toAddress": "599",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "555 BROOME ST, NEW YORK, NY, 10013"
+          }
+        ]
+      }
+    }
+  },
+  "youth-drop-in-03": {
+    "query": "209 West 125th Street, New York, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=209+West+125th+Street%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "209 West 125th Street, New York, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "59661831"
+            },
+            "coordinates": {
+              "x": -73.948576982878,
+              "y": 40.809143458154
+            },
+            "addressComponents": {
+              "zip": "10027",
+              "streetName": "125TH",
+              "preType": "",
+              "city": "NEW YORK",
+              "preDirection": "W",
+              "suffixDirection": "",
+              "fromAddress": "201",
+              "state": "NY",
+              "suffixType": "ST",
+              "toAddress": "299",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "209 W 125TH ST, NEW YORK, NY, 10027"
+          }
+        ]
+      }
+    }
+  },
+  "youth-drop-in-04": {
+    "query": "2999 Third Avenue, Bronx, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2999+Third+Avenue%2C+Bronx%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "2999 Third Avenue, Bronx, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "80300567"
+            },
+            "coordinates": {
+              "x": -73.91395381803,
+              "y": 40.819148528383
+            },
+            "addressComponents": {
+              "zip": "10455",
+              "streetName": "3RD",
+              "preType": "",
+              "city": "BRONX",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "2993",
+              "state": "NY",
+              "suffixType": "AVE",
+              "toAddress": "3019",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "2999 3RD AVE, BRONX, NY, 10455"
+          }
+        ]
+      }
+    }
+  },
+  "youth-drop-in-05": {
+    "query": "774 Rockaway Avenue, Brooklyn, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=774+Rockaway+Avenue%2C+Brooklyn%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "774 Rockaway Avenue, Brooklyn, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "59084095"
+            },
+            "coordinates": {
+              "x": -73.908535030834,
+              "y": 40.660757022507
+            },
+            "addressComponents": {
+              "zip": "11212",
+              "streetName": "ROCKAWAY",
+              "preType": "",
+              "city": "BROOKLYN",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "770",
+              "state": "NY",
+              "suffixType": "AVE",
+              "toAddress": "800",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "774 ROCKAWAY AVE, BROOKLYN, NY, 11212"
+          }
+        ]
+      }
+    }
+  },
+  "youth-drop-in-06": {
+    "query": "165-13 Jamaica Avenue, Jamaica, NY 11432",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=165-13+Jamaica+Avenue%2C+Jamaica%2C+NY+11432&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "165-13 Jamaica Avenue, Jamaica, NY 11432"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "59712164"
+            },
+            "coordinates": {
+              "x": -73.79476433673,
+              "y": 40.705576581704
+            },
+            "addressComponents": {
+              "zip": "11432",
+              "streetName": "JAMAICA",
+              "preType": "",
+              "city": "JAMAICA",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "165-01",
+              "state": "NY",
+              "suffixType": "AVE",
+              "toAddress": "165-99",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "165-13 JAMAICA AVE, JAMAICA, NY, 11432"
+          }
+        ]
+      }
+    }
+  },
+  "youth-drop-in-07": {
+    "query": "1600 Central Avenue, Far Rockaway, NY 11691",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1600+Central+Avenue%2C+Far+Rockaway%2C+NY+11691&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "1600 Central Avenue, Far Rockaway, NY 11691"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "59723262"
+            },
+            "coordinates": {
+              "x": -73.751942695917,
+              "y": 40.605273562529
+            },
+            "addressComponents": {
+              "zip": "11691",
+              "streetName": "CENTRAL",
+              "preType": "",
+              "city": "FAR ROCKAWAY",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "16-00",
+              "state": "NY",
+              "suffixType": "AVE",
+              "toAddress": "16-98",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "16-00 CENTRAL AVE, FAR ROCKAWAY, NY, 11691"
+          }
+        ]
+      }
+    }
+  },
+  "youth-drop-in-08": {
+    "query": "27 Port Richmond Avenue, Staten Island, NY",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=27+Port+Richmond+Avenue%2C+Staten+Island%2C+NY&benchmark=Public_AR_Current&format=json",
+    "response": {
+      "result": {
+        "input": {
+          "address": {
+            "address": "27 Port Richmond Avenue, Staten Island, NY"
+          },
+          "benchmark": {
+            "isDefault": true,
+            "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+            "id": "4",
+            "benchmarkName": "Public_AR_Current"
+          }
+        },
+        "addressMatches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "59877728"
+            },
+            "coordinates": {
+              "x": -74.131642070531,
+              "y": 40.640135141093
+            },
+            "addressComponents": {
+              "zip": "10302",
+              "streetName": "PORT RICHMOND",
+              "preType": "",
+              "city": "STATEN ISLAND",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "19",
+              "state": "NY",
+              "suffixType": "AVE",
+              "toAddress": "59",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "27 PORT RICHMOND AVE, STATEN ISLAND, NY, 10302"
+          }
+        ]
+      }
+    }
+  }
+}

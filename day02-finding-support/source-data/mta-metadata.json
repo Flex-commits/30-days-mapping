@@ -1,0 +1,1381 @@
+{
+  "id" : "39hk-dx4f",
+  "name" : "MTA Subway Stations",
+  "assetType" : "dataset",
+  "attribution" : "Metropolitan Transportation Authority",
+  "attributionLink" : "https://www.mta.info/open-data",
+  "averageRating" : 0,
+  "category" : "Transportation",
+  "createdAt" : 1695911266,
+  "description" : "A dataset listing all subway and Staten Island Railway stations, with information on their locations, Station Master Reference Number (MRN), Complex MRN, GTFS Stop ID, the services that stop there, the type of structure the station is on or in, whether the station is in Manhattan’s Central Business District (CBD), and their ADA-accessibility status.",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 940199,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 40623881,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1718656531,
+  "publicationGroup" : 19304341,
+  "publicationStage" : "published",
+  "rowClass" : "",
+  "rowsUpdatedAt" : 1793596884,
+  "rowsUpdatedBy" : "xzik-pf59",
+  "tableId" : 19551250,
+  "totalTimesRated" : 0,
+  "viewCount" : 70799,
+  "viewLastModified" : 1793596883,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1696261912,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 6353041,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1696261912,
+    "targetAudience" : "public",
+    "workflowId" : 2254,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1696261913,
+      "failureCount" : 0,
+      "startedAt" : 1696261912,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "28jg-4c4u",
+      "displayName" : "Open Data Administrator 1"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 593796536,
+    "name" : "GTFS Stop ID",
+    "dataTypeName" : "text",
+    "description" : "The ID used for the station in the General Transit Feed Specification (GTFS), an open standard used to display public transit schedule data.",
+    "fieldName" : "gtfs_stop_id",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 148700648,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "S31",
+      "null" : "0",
+      "top" : [ {
+        "item" : "103",
+        "count" : "1"
+      }, {
+        "item" : "104",
+        "count" : "1"
+      }, {
+        "item" : "106",
+        "count" : "1"
+      }, {
+        "item" : "107",
+        "count" : "1"
+      }, {
+        "item" : "108",
+        "count" : "1"
+      }, {
+        "item" : "109",
+        "count" : "1"
+      }, {
+        "item" : "110",
+        "count" : "1"
+      }, {
+        "item" : "111",
+        "count" : "1"
+      }, {
+        "item" : "112",
+        "count" : "1"
+      }, {
+        "item" : "113",
+        "count" : "1"
+      }, {
+        "item" : "114",
+        "count" : "1"
+      }, {
+        "item" : "115",
+        "count" : "1"
+      }, {
+        "item" : "116",
+        "count" : "1"
+      }, {
+        "item" : "117",
+        "count" : "1"
+      }, {
+        "item" : "118",
+        "count" : "1"
+      }, {
+        "item" : "119",
+        "count" : "1"
+      }, {
+        "item" : "120",
+        "count" : "1"
+      }, {
+        "item" : "121",
+        "count" : "1"
+      }, {
+        "item" : "122",
+        "count" : "1"
+      }, {
+        "item" : "101",
+        "count" : "1"
+      } ],
+      "smallest" : "101",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : {
+      "align" : "center"
+    }
+  }, {
+    "id" : 593796537,
+    "name" : "Station ID",
+    "dataTypeName" : "number",
+    "description" : "The Station Master Reference Number.",
+    "fieldName" : "station_id",
+    "position" : 2,
+    "renderTypeName" : "number",
+    "tableColumnId" : 148700650,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "523",
+      "null" : "0",
+      "top" : [ {
+        "item" : "461",
+        "count" : "2"
+      }, {
+        "item" : "167",
+        "count" : "2"
+      }, {
+        "item" : "151",
+        "count" : "2"
+      }, {
+        "item" : "3",
+        "count" : "1"
+      }, {
+        "item" : "6",
+        "count" : "1"
+      }, {
+        "item" : "7",
+        "count" : "1"
+      }, {
+        "item" : "5",
+        "count" : "1"
+      }, {
+        "item" : "9",
+        "count" : "1"
+      }, {
+        "item" : "10",
+        "count" : "1"
+      }, {
+        "item" : "11",
+        "count" : "1"
+      }, {
+        "item" : "12",
+        "count" : "1"
+      }, {
+        "item" : "13",
+        "count" : "1"
+      }, {
+        "item" : "14",
+        "count" : "1"
+      }, {
+        "item" : "15",
+        "count" : "1"
+      }, {
+        "item" : "17",
+        "count" : "1"
+      }, {
+        "item" : "16",
+        "count" : "1"
+      }, {
+        "item" : "18",
+        "count" : "1"
+      }, {
+        "item" : "19",
+        "count" : "1"
+      }, {
+        "item" : "20",
+        "count" : "1"
+      }, {
+        "item" : "8",
+        "count" : "1"
+      } ],
+      "smallest" : "1",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ",",
+      "align" : "center"
+    }
+  }, {
+    "id" : 593796538,
+    "name" : "Complex ID",
+    "dataTypeName" : "number",
+    "description" : "The Complex Master Reference Number.",
+    "fieldName" : "complex_id",
+    "position" : 3,
+    "renderTypeName" : "number",
+    "tableColumnId" : 148700649,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "636",
+      "null" : "0",
+      "top" : [ {
+        "item" : "611",
+        "count" : "5"
+      }, {
+        "item" : "623",
+        "count" : "4"
+      }, {
+        "item" : "628",
+        "count" : "4"
+      }, {
+        "item" : "624",
+        "count" : "4"
+      }, {
+        "item" : "610",
+        "count" : "3"
+      }, {
+        "item" : "602",
+        "count" : "3"
+      }, {
+        "item" : "601",
+        "count" : "3"
+      }, {
+        "item" : "620",
+        "count" : "3"
+      }, {
+        "item" : "606",
+        "count" : "3"
+      }, {
+        "item" : "617",
+        "count" : "3"
+      }, {
+        "item" : "621",
+        "count" : "3"
+      }, {
+        "item" : "613",
+        "count" : "2"
+      }, {
+        "item" : "615",
+        "count" : "2"
+      }, {
+        "item" : "614",
+        "count" : "2"
+      }, {
+        "item" : "612",
+        "count" : "2"
+      }, {
+        "item" : "616",
+        "count" : "2"
+      }, {
+        "item" : "607",
+        "count" : "2"
+      }, {
+        "item" : "605",
+        "count" : "2"
+      }, {
+        "item" : "608",
+        "count" : "2"
+      }, {
+        "item" : "603",
+        "count" : "2"
+      } ],
+      "smallest" : "1",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ",",
+      "align" : "center"
+    }
+  }, {
+    "id" : 593796539,
+    "name" : "Division",
+    "dataTypeName" : "text",
+    "description" : "The division of the subway system (IRT, BMT, or IND) that the station is a part of.",
+    "fieldName" : "division",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 148700647,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "SIR",
+      "null" : "0",
+      "top" : [ {
+        "item" : "IRT",
+        "count" : "178"
+      }, {
+        "item" : "IND",
+        "count" : "155"
+      }, {
+        "item" : "BMT",
+        "count" : "142"
+      }, {
+        "item" : "SIR",
+        "count" : "21"
+      } ],
+      "smallest" : "BMT",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796540,
+    "name" : "Line",
+    "dataTypeName" : "text",
+    "description" : "The operational line of the subway system the station is located on, such as Queens Blvd, Lexington Av, or Sea Beach.",
+    "fieldName" : "line",
+    "position" : 5,
+    "renderTypeName" : "text",
+    "tableColumnId" : 148700646,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "West End",
+      "null" : "0",
+      "top" : [ {
+        "item" : "8th Av - Fulton St",
+        "count" : "46"
+      }, {
+        "item" : "Broadway - 7Av",
+        "count" : "38"
+      }, {
+        "item" : "6th Av - Culver",
+        "count" : "31"
+      }, {
+        "item" : "Jamaica",
+        "count" : "28"
+      }, {
+        "item" : "Broadway - Brighton",
+        "count" : "28"
+      }, {
+        "item" : "Lenox - White Plains Rd",
+        "count" : "26"
+      }, {
+        "item" : "Canarsie",
+        "count" : "24"
+      }, {
+        "item" : "Queens Blvd",
+        "count" : "24"
+      }, {
+        "item" : "Lexington Av",
+        "count" : "23"
+      }, {
+        "item" : "Flushing",
+        "count" : "22"
+      }, {
+        "item" : "Staten Island",
+        "count" : "21"
+      }, {
+        "item" : "Pelham",
+        "count" : "18"
+      }, {
+        "item" : "Eastern Pky",
+        "count" : "18"
+      }, {
+        "item" : "Jerome Av",
+        "count" : "14"
+      }, {
+        "item" : "Rockaway",
+        "count" : "14"
+      }, {
+        "item" : "4th Av",
+        "count" : "13"
+      }, {
+        "item" : "Concourse",
+        "count" : "12"
+      }, {
+        "item" : "West End",
+        "count" : "12"
+      }, {
+        "item" : "Crosstown",
+        "count" : "12"
+      }, {
+        "item" : "Astoria",
+        "count" : "9"
+      } ],
+      "smallest" : "4th Av",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796541,
+    "name" : "Stop Name",
+    "dataTypeName" : "text",
+    "description" : "The name of the subway station.",
+    "fieldName" : "stop_name",
+    "position" : 6,
+    "renderTypeName" : "text",
+    "tableColumnId" : 148700645,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "Zerega Av",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Canal St",
+        "count" : "6"
+      }, {
+        "item" : "86 St",
+        "count" : "6"
+      }, {
+        "item" : "Fulton St",
+        "count" : "5"
+      }, {
+        "item" : "23 St",
+        "count" : "4"
+      }, {
+        "item" : "96 St",
+        "count" : "4"
+      }, {
+        "item" : "Times Sq-42 St",
+        "count" : "4"
+      }, {
+        "item" : "145 St",
+        "count" : "4"
+      }, {
+        "item" : "125 St",
+        "count" : "4"
+      }, {
+        "item" : "Bay Pkwy",
+        "count" : "3"
+      }, {
+        "item" : "111 St",
+        "count" : "3"
+      }, {
+        "item" : "28 St",
+        "count" : "3"
+      }, {
+        "item" : "Broadway Junction",
+        "count" : "3"
+      }, {
+        "item" : "18 Av",
+        "count" : "3"
+      }, {
+        "item" : "116 St",
+        "count" : "3"
+      }, {
+        "item" : "Atlantic Av-Barclays Ctr",
+        "count" : "3"
+      }, {
+        "item" : "72 St",
+        "count" : "3"
+      }, {
+        "item" : "50 St",
+        "count" : "3"
+      }, {
+        "item" : "7 Av",
+        "count" : "3"
+      }, {
+        "item" : "14 St-Union Sq",
+        "count" : "3"
+      }, {
+        "item" : "14 St",
+        "count" : "3"
+      } ],
+      "smallest" : "103 St",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796542,
+    "name" : "Borough",
+    "dataTypeName" : "text",
+    "description" : "The borough the station is in. Bx for Bronx, B for Brooklyn, M for Manhattan, Q for Queens, SI for Staten Island. ",
+    "fieldName" : "borough",
+    "position" : 7,
+    "renderTypeName" : "text",
+    "tableColumnId" : 148700644,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "SI",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Bk",
+        "count" : "169"
+      }, {
+        "item" : "M",
+        "count" : "153"
+      }, {
+        "item" : "Q",
+        "count" : "83"
+      }, {
+        "item" : "Bx",
+        "count" : "70"
+      }, {
+        "item" : "SI",
+        "count" : "21"
+      } ],
+      "smallest" : "Bk",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : {
+      "align" : "center"
+    }
+  }, {
+    "id" : 593796557,
+    "name" : "CBD",
+    "dataTypeName" : "text",
+    "description" : "This indicates whether or not a station is in Manhattan’s Central Business District (CBD). This value is either TRUE or FALSE.",
+    "fieldName" : "cbd",
+    "position" : 8,
+    "renderTypeName" : "text",
+    "tableColumnId" : 153065265,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "true",
+      "null" : "0",
+      "top" : [ {
+        "item" : "false",
+        "count" : "401"
+      }, {
+        "item" : "true",
+        "count" : "95"
+      } ],
+      "smallest" : "false",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796543,
+    "name" : "Daytime Routes",
+    "dataTypeName" : "text",
+    "description" : "The subway routes that serve the station during weekdays.",
+    "fieldName" : "daytime_routes",
+    "position" : 9,
+    "renderTypeName" : "text",
+    "tableColumnId" : 148700643,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "SIR",
+      "null" : "0",
+      "top" : [ {
+        "item" : "6",
+        "count" : "32"
+      }, {
+        "item" : "1",
+        "count" : "32"
+      }, {
+        "item" : "2 5",
+        "count" : "26"
+      }, {
+        "item" : "L",
+        "count" : "24"
+      }, {
+        "item" : "7",
+        "count" : "22"
+      }, {
+        "item" : "SIR",
+        "count" : "21"
+      }, {
+        "item" : "A",
+        "count" : "21"
+      }, {
+        "item" : "F",
+        "count" : "18"
+      }, {
+        "item" : "J Z",
+        "count" : "16"
+      }, {
+        "item" : "4",
+        "count" : "13"
+      }, {
+        "item" : "D",
+        "count" : "13"
+      }, {
+        "item" : "2 3",
+        "count" : "13"
+      }, {
+        "item" : "R",
+        "count" : "12"
+      }, {
+        "item" : "B D",
+        "count" : "12"
+      }, {
+        "item" : "G",
+        "count" : "12"
+      }, {
+        "item" : "Q",
+        "count" : "12"
+      }, {
+        "item" : "3",
+        "count" : "11"
+      }, {
+        "item" : "C",
+        "count" : "11"
+      }, {
+        "item" : "M",
+        "count" : "10"
+      }, {
+        "item" : "M R",
+        "count" : "10"
+      } ],
+      "smallest" : "1",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796544,
+    "name" : "Structure",
+    "dataTypeName" : "text",
+    "description" : " The type of structure the subway station is located on or in (At Grade, Elevated, Embankment, Open Cut, Subway, Viaduct, etc.). For stations part of a complex, this indicates the construction type for that part of the complex only. Some complexes have more than one construction type across their constituent stations.",
+    "fieldName" : "structure",
+    "position" : 10,
+    "renderTypeName" : "text",
+    "tableColumnId" : 148700642,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "Viaduct",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Subway",
+        "count" : "283"
+      }, {
+        "item" : "Elevated",
+        "count" : "145"
+      }, {
+        "item" : "Open Cut",
+        "count" : "39"
+      }, {
+        "item" : "Viaduct",
+        "count" : "12"
+      }, {
+        "item" : "At Grade",
+        "count" : "11"
+      }, {
+        "item" : "Embankment",
+        "count" : "6"
+      } ],
+      "smallest" : "At Grade",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796545,
+    "name" : "GTFS Latitude",
+    "dataTypeName" : "number",
+    "description" : "The latitude for the centroid of the station",
+    "fieldName" : "gtfs_latitude",
+    "position" : 11,
+    "renderTypeName" : "number",
+    "tableColumnId" : 148700641,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "40.903125",
+      "null" : "0",
+      "top" : [ {
+        "item" : "40.824783",
+        "count" : "2"
+      }, {
+        "item" : "40.750582",
+        "count" : "2"
+      }, {
+        "item" : "40.732338",
+        "count" : "2"
+      }, {
+        "item" : "40.519631",
+        "count" : "1"
+      }, {
+        "item" : "40.533674",
+        "count" : "1"
+      }, {
+        "item" : "40.54046",
+        "count" : "1"
+      }, {
+        "item" : "40.525507",
+        "count" : "1"
+      }, {
+        "item" : "40.551231",
+        "count" : "1"
+      }, {
+        "item" : "40.5564",
+        "count" : "1"
+      }, {
+        "item" : "40.56511",
+        "count" : "1"
+      }, {
+        "item" : "40.57348",
+        "count" : "1"
+      }, {
+        "item" : "40.576127",
+        "count" : "1"
+      }, {
+        "item" : "40.576312",
+        "count" : "1"
+      }, {
+        "item" : "40.577422",
+        "count" : "1"
+      }, {
+        "item" : "40.578965",
+        "count" : "1"
+      }, {
+        "item" : "40.577621",
+        "count" : "1"
+      }, {
+        "item" : "40.580903",
+        "count" : "1"
+      }, {
+        "item" : "40.581011",
+        "count" : "1"
+      }, {
+        "item" : "40.583209",
+        "count" : "1"
+      }, {
+        "item" : "40.544601",
+        "count" : "1"
+      } ],
+      "smallest" : "40.512764",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593796546,
+    "name" : "GTFS Longitude",
+    "dataTypeName" : "number",
+    "description" : "The longitude for the centroid of the station",
+    "fieldName" : "gtfs_longitude",
+    "position" : 12,
+    "renderTypeName" : "number",
+    "tableColumnId" : 148700640,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "-73.755405",
+      "null" : "0",
+      "top" : [ {
+        "item" : "-73.940202",
+        "count" : "2"
+      }, {
+        "item" : "-73.944216",
+        "count" : "2"
+      }, {
+        "item" : "-74.000495",
+        "count" : "2"
+      }, {
+        "item" : "-74.229141",
+        "count" : "1"
+      }, {
+        "item" : "-74.191794",
+        "count" : "1"
+      }, {
+        "item" : "-74.178217",
+        "count" : "1"
+      }, {
+        "item" : "-74.200064",
+        "count" : "1"
+      }, {
+        "item" : "-74.151399",
+        "count" : "1"
+      }, {
+        "item" : "-74.136907",
+        "count" : "1"
+      }, {
+        "item" : "-74.12632",
+        "count" : "1"
+      }, {
+        "item" : "-74.11721",
+        "count" : "1"
+      }, {
+        "item" : "-74.109704",
+        "count" : "1"
+      }, {
+        "item" : "-74.103338",
+        "count" : "1"
+      }, {
+        "item" : "-74.09609",
+        "count" : "1"
+      }, {
+        "item" : "-74.084087",
+        "count" : "1"
+      }, {
+        "item" : "-74.087368",
+        "count" : "1"
+      }, {
+        "item" : "-74.075162",
+        "count" : "1"
+      }, {
+        "item" : "-74.074835",
+        "count" : "1"
+      }, {
+        "item" : "-74.073643",
+        "count" : "1"
+      }, {
+        "item" : "-74.16457",
+        "count" : "1"
+      } ],
+      "smallest" : "-74.251961",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 593796547,
+    "name" : "North Direction Label",
+    "dataTypeName" : "text",
+    "description" : "The northbound direction for lines stopping at the station, such as Astoria - Ditmars Blvd, Uptown & The Bronx, and Manhattan. This is blank if the station is the northern terminal of a line.",
+    "fieldName" : "north_direction_label",
+    "position" : 13,
+    "renderTypeName" : "text",
+    "tableColumnId" : 148700639,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "Woodlawn",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Manhattan",
+        "count" : "143"
+      }, {
+        "item" : "Uptown",
+        "count" : "113"
+      }, {
+        "item" : "Northbound",
+        "count" : "61"
+      }, {
+        "item" : "Outbound",
+        "count" : "48"
+      }, {
+        "item" : "Ferry",
+        "count" : "20"
+      }, {
+        "item" : "Last Stop",
+        "count" : "19"
+      }, {
+        "item" : "Queens",
+        "count" : "19"
+      }, {
+        "item" : "Jamaica",
+        "count" : "14"
+      }, {
+        "item" : "Inbound",
+        "count" : "12"
+      }, {
+        "item" : "The Bronx",
+        "count" : "12"
+      }, {
+        "item" : "Astoria",
+        "count" : "6"
+      }, {
+        "item" : "Brooklyn",
+        "count" : "6"
+      }, {
+        "item" : "Pelham Bay",
+        "count" : "5"
+      }, {
+        "item" : "Eastchester",
+        "count" : "4"
+      }, {
+        "item" : "West Side",
+        "count" : "4"
+      }, {
+        "item" : "Van Cortlandt",
+        "count" : "2"
+      }, {
+        "item" : "Franklin Av",
+        "count" : "2"
+      }, {
+        "item" : "Harlem",
+        "count" : "1"
+      }, {
+        "item" : "Woodlawn",
+        "count" : "1"
+      }, {
+        "item" : "Times Square",
+        "count" : "1"
+      } ],
+      "smallest" : "Astoria",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796548,
+    "name" : "South Direction Label",
+    "dataTypeName" : "text",
+    "description" : "The southbound direction for lines stopping at the station, such as Downtown & Brooklyn, Canarsie - Rockaway Parkway, and Brighton Beach & Coney Island. This is blank if the station is the southern terminal of a line.",
+    "fieldName" : "south_direction_label",
+    "position" : 14,
+    "renderTypeName" : "text",
+    "tableColumnId" : 148700638,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "Tottenville",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Manhattan",
+        "count" : "142"
+      }, {
+        "item" : "Downtown",
+        "count" : "130"
+      }, {
+        "item" : "Southbound",
+        "count" : "64"
+      }, {
+        "item" : "Outbound",
+        "count" : "43"
+      }, {
+        "item" : "South Shore",
+        "count" : "18"
+      }, {
+        "item" : "Coney Island",
+        "count" : "16"
+      }, {
+        "item" : "Brooklyn",
+        "count" : "15"
+      }, {
+        "item" : "Last Stop",
+        "count" : "14"
+      }, {
+        "item" : "Middle Village",
+        "count" : "6"
+      }, {
+        "item" : "Flatbush",
+        "count" : "6"
+      }, {
+        "item" : "New Lots",
+        "count" : "6"
+      }, {
+        "item" : "Canarsie",
+        "count" : "5"
+      }, {
+        "item" : "Far Rockaway",
+        "count" : "5"
+      }, {
+        "item" : "Rockaways",
+        "count" : "4"
+      }, {
+        "item" : "Queens",
+        "count" : "4"
+      }, {
+        "item" : "Bay Ridge",
+        "count" : "3"
+      }, {
+        "item" : "Hudson Yards",
+        "count" : "3"
+      }, {
+        "item" : "Prospect Park",
+        "count" : "3"
+      }, {
+        "item" : "Rockaway Park",
+        "count" : "3"
+      }, {
+        "item" : "Ozone Park",
+        "count" : "2"
+      } ],
+      "smallest" : "Bay Ridge",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796549,
+    "name" : "ADA",
+    "dataTypeName" : "text",
+    "description" : "0 if the station is not ADA-accessible, 1 if the station is fully accessible, 2 if the station is partially accessible.",
+    "fieldName" : "ada",
+    "position" : 15,
+    "renderTypeName" : "text",
+    "tableColumnId" : 150241683,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "2",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "322"
+      }, {
+        "item" : "1",
+        "count" : "166"
+      }, {
+        "item" : "2",
+        "count" : "8"
+      } ],
+      "smallest" : "0",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ",",
+      "align" : "center"
+    }
+  }, {
+    "id" : 593796550,
+    "name" : "ADA Northbound",
+    "dataTypeName" : "text",
+    "description" : "0 if the station is not ADA-accessible in the northbound direction, 1 if the station is fully accessible in the northbound direction",
+    "fieldName" : "ada_northbound",
+    "position" : 16,
+    "renderTypeName" : "text",
+    "tableColumnId" : 150241682,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "1",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "327"
+      }, {
+        "item" : "1",
+        "count" : "169"
+      } ],
+      "smallest" : "0",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796551,
+    "name" : "ADA Southbound",
+    "dataTypeName" : "text",
+    "description" : "0 if the station is not ADA-accessible in the southbound direction, 1 if the station is fully accessible in the southbound direction",
+    "fieldName" : "ada_southbound",
+    "position" : 17,
+    "renderTypeName" : "text",
+    "tableColumnId" : 150241681,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "1",
+      "null" : "0",
+      "top" : [ {
+        "item" : "0",
+        "count" : "325"
+      }, {
+        "item" : "1",
+        "count" : "171"
+      } ],
+      "smallest" : "0",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796552,
+    "name" : "ADA Notes",
+    "dataTypeName" : "text",
+    "description" : "Notes on the direction a station is accessible in if it is only accessible in one direction, such as Manhattan-bound only, Downtown only, and Uptown & The Bronx local only.",
+    "fieldName" : "ada_notes",
+    "position" : 18,
+    "renderTypeName" : "text",
+    "tableColumnId" : 148700636,
+    "cachedContents" : {
+      "non_null" : "496",
+      "largest" : "Uptown only",
+      "null" : "0",
+      "top" : [ {
+        "item" : "NaN",
+        "count" : "488"
+      }, {
+        "item" : "Downtown only",
+        "count" : "3"
+      }, {
+        "item" : "Manhattan-bound only",
+        "count" : "2"
+      }, {
+        "item" : "Outbound only",
+        "count" : "1"
+      }, {
+        "item" : "Uptown local only",
+        "count" : "1"
+      }, {
+        "item" : "Uptown only",
+        "count" : "1"
+      } ],
+      "smallest" : "Downtown only",
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796553,
+    "name" : "Georeference",
+    "dataTypeName" : "point",
+    "description" : "Open Data platform-generated geocoding information from supplied address components. Point-type location is the centroid of the address components provided and does not reflect a specific address if the street address component is not provided. Point-type location is supplied in \"POINT (<geocoded longitude> <geocoded latitude>)\" format.",
+    "fieldName" : "georeference",
+    "position" : 19,
+    "renderTypeName" : "point",
+    "tableColumnId" : 148700635,
+    "cachedContents" : {
+      "non_null" : "496",
+      "null" : "0",
+      "top" : [ {
+        "item" : {
+          "coordinates" : [ -74.000495, 40.732338 ],
+          "type" : "Point"
+        },
+        "count" : "2"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.944216, 40.824783 ],
+          "type" : "Point"
+        },
+        "count" : "2"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.940202, 40.750582 ],
+          "type" : "Point"
+        },
+        "count" : "2"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.973946, 40.686113 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.893509, 40.866978 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -74.002578, 40.739777 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.933147, 40.706152 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.993391, 40.752287 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -74.000201, 40.737826 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.939892, 40.836013 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.979493, 40.660365 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.894895, 40.664635 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.879159, 40.828584 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.887138, 40.873244 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.832569, 40.84681 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.990531, 40.699337 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.976971, 40.629755 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.99073, 40.734789 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.981637, 40.762862 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.916559, 40.68637 ],
+          "type" : "Point"
+        },
+        "count" : "1"
+      } ],
+      "count" : "496",
+      "cardinality" : "496"
+    },
+    "format" : { }
+  }, {
+    "id" : 593796555,
+    "name" : "NYS Municipal Boundaries",
+    "dataTypeName" : "number",
+    "description" : "This column was automatically created in order to record in what polygon from the dataset 'NYS Municipal Boundaries' (yamh-8v7k) the point in column 'georeference' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+    "fieldName" : ":@computed_region_yamh_8v7k",
+    "position" : 20,
+    "renderTypeName" : "number",
+    "tableColumnId" : 148700651,
+    "computationStrategy" : {
+      "source_columns" : [ "georeference" ],
+      "type" : "georegion_match_on_point",
+      "parameters" : {
+        "region" : "_yamh-8v7k",
+        "primary_key" : "_feature_id"
+      }
+    },
+    "format" : { }
+  }, {
+    "id" : 593796556,
+    "name" : "New York Zip Codes",
+    "dataTypeName" : "number",
+    "description" : "This column was automatically created in order to record in what polygon from the dataset 'New York Zip Codes' (wbg7-3whc) the point in column 'georeference' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+    "fieldName" : ":@computed_region_wbg7_3whc",
+    "position" : 21,
+    "renderTypeName" : "number",
+    "tableColumnId" : 148700652,
+    "computationStrategy" : {
+      "source_columns" : [ "georeference" ],
+      "type" : "georegion_match_on_point",
+      "parameters" : {
+        "region" : "_wbg7-3whc",
+        "primary_key" : "_feature_id"
+      }
+    },
+    "format" : { }
+  }, {
+    "id" : 593796554,
+    "name" : "Counties",
+    "dataTypeName" : "number",
+    "description" : "This column was automatically created in order to record in what polygon from the dataset 'Counties' (kjdx-g34t) the point in column 'georeference' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+    "fieldName" : ":@computed_region_kjdx_g34t",
+    "position" : 22,
+    "renderTypeName" : "number",
+    "tableColumnId" : 148700653,
+    "computationStrategy" : {
+      "source_columns" : [ "georeference" ],
+      "type" : "georegion_match_on_point",
+      "parameters" : {
+        "region" : "_kjdx-g34t",
+        "primary_key" : "_feature_id"
+      }
+    },
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "rdfSubject" : "0",
+    "rdfClass" : "",
+    "jsonQuery" : {
+      "order" : [ {
+        "columnFieldName" : "station_id",
+        "ascending" : true
+      } ]
+    },
+    "attachments" : [ {
+      "filename" : "MTA_SubwayStations_Overview.pdf",
+      "assetId" : "3fe3ae2e-69c7-48ae-a744-61ef0eb56de6",
+      "name" : "MTA_SubwayStations_Overview.pdf"
+    }, {
+      "filename" : "MTA_SubwayStations_DataDictionary.pdf",
+      "assetId" : "e4eda342-c857-4052-9c86-85da012f6e6e",
+      "name" : "MTA_SubwayStations_DataDictionary.pdf"
+    } ],
+    "custom_fields" : {
+      "Dataset Summary" : {
+        "Posting Frequency" : "As needed",
+        "Organization" : "New York City Transit",
+        "Contact Information" : "OpenData@mtahq.org",
+        "Time Period" : "Current",
+        "Coverage" : "New York City",
+        "Granularity" : "Subway station",
+        "Dataset Owner" : "Metropolitan Transportation Authority"
+      },
+      "Additional Resources" : {
+        "See Also" : "https://metrics.mta.info/"
+      },
+      "Dataset Information" : {
+        "Agency" : "Metropolitan Transportation Authority"
+      }
+    },
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "xzik-pf59",
+    "displayName" : "NY Open Data",
+    "profileImageUrlLarge" : "/api/users/xzik-pf59/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/xzik-pf59/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/xzik-pf59/profile_images/TINY",
+    "screenName" : "NY Open Data",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : {
+    "orderBys" : [ {
+      "ascending" : true,
+      "expression" : {
+        "columnId" : 593796537,
+        "type" : "column"
+      }
+    } ]
+  },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "xzik-pf59",
+    "displayName" : "NY Open Data",
+    "profileImageUrlLarge" : "/api/users/xzik-pf59/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/xzik-pf59/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/xzik-pf59/profile_images/TINY",
+    "screenName" : "NY Open Data",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "new york city transit", "nyct", "subway", "staten island railway", "sir", "stations", "coordinates", "subway stations" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}
