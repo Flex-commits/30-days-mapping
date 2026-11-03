@@ -1,0 +1,67 @@
+{
+  "download_date": "2026-11-03",
+  "sources": [
+    {
+      "title": "HydroRIVERS v1.0 — Nile Basin subset",
+      "publisher": "WWF / McGill University; subset hosted by UNESCO IHP-WINS",
+      "catalog": "https://ihp-wins.unesco.org/dataset/riveratlas-the-nile-basin",
+      "original": "https://www.hydrosheds.org/products/hydrorivers",
+      "version": "HydroRIVERS 1.0; UNESCO catalog revision 2026-05-15",
+      "resolution": "15 arc-seconds (about 500 m at equator)",
+      "coverage": "Subset selected by HydroBASINS level 2 PFAF_ID 17; source thresholds catchment >=10 km² or estimated average discharge >=0.1 m³/s",
+      "license": "HydroSHEDS v1 license; raw geometry not redistributed",
+      "license_url": "https://data.hydrosheds.org/file/technical-documentation/HydroSHEDS_TechDoc_v1_4.pdf",
+      "attribution": "HydroSHEDS © World Wildlife Fund, Inc. (2006–2022). Lehner & Grill (2013), doi:10.1002/hyp.9740. No WWF review or warranty of this derived map.",
+      "limitations": "Modeled drainage, not perennial flow. One flow direction/outlet; does not describe all delta branches, canals or current conditions."
+    },
+    {
+      "title": "HydroBASINS Africa, level 2, customized with lakes",
+      "publisher": "WWF / McGill University; hosted by UNESCO IHP-WINS",
+      "catalog": "https://ihp-wins.unesco.org/dataset/hydrobasins-global-watershed-boundaries-and-sub-basin-delineations",
+      "original": "https://www.hydrosheds.org/products/hydrobasins",
+      "version": "1.c; catalog revision 2026-05-10",
+      "resolution": "15 arc-seconds",
+      "coverage": "Africa; select PFAF_ID 17, HYBAS_ID 1020034170",
+      "license": "HydroSHEDS v1 license; raw geometry not redistributed",
+      "license_url": "https://data.hydrosheds.org/file/technical-documentation/HydroSHEDS_TechDoc_v1_4.pdf",
+      "attribution": "HydroSHEDS © WWF; Lehner & Grill (2013).",
+      "limitations": "Broad basin includes endorheic areas and source-defined virtual associations; the map does not fabricate surface-water links."
+    },
+    {
+      "title": "Natural Earth 1:10m Admin 0 Countries",
+      "publisher": "Natural Earth / NACIS contributors",
+      "catalog": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
+      "version": "5.1.1",
+      "resolution": "1:10 million cartographic scale",
+      "coverage": "Global; regional context clipped for plotting",
+      "license": "Public domain",
+      "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "attribution": "Made with Natural Earth.",
+      "limitations": "Generalized contextual boundaries; not an assertion about disputed territories."
+    },
+    {
+      "title": "Natural Earth 1:10m Lakes + Reservoirs",
+      "publisher": "Natural Earth / NACIS contributors",
+      "catalog": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/",
+      "version": "5.0.0",
+      "resolution": "1:10 million cartographic scale",
+      "coverage": "Lakes intersecting the basin",
+      "license": "Public domain",
+      "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "attribution": "Made with Natural Earth.",
+      "limitations": "Generalized outlines from a separate source; alignment with HydroRIVERS routing centerlines is approximate."
+    },
+    {
+      "title": "Nile Basin Initiative — major subbasins and hydromet station directory",
+      "publisher": "Nile Basin Initiative",
+      "catalog": "https://nilebasin.org/en/media-center/maps/major-subbasins",
+      "supporting_url": "https://nilebasin.org/hydromet/map",
+      "version": "Web pages accessed 2026-11-03",
+      "resolution": "Reference only",
+      "coverage": "Nile Basin",
+      "license": "Reference links only; no NBI graphics reproduced",
+      "attribution": "Nile Basin Initiative",
+      "limitations": "Used to corroborate river-system names and geographic relationships, not as line geometry."
+    }
+  ]
+}

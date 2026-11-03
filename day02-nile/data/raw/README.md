@@ -1,0 +1,1 @@
+Raw downloads are cached here by `scripts/download.py` and excluded from Git. See `data/downloads.json` for URLs, byte counts and SHA-256 checksums of the files used. HydroSHEDS geometry remains subject to its source license; this repository publishes a rendered map, derived classification table and code rather than a stand-alone redistribution of raw hydrography.

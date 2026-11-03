@@ -1,0 +1,30 @@
+[
+  {
+    "file": "rivers.zip",
+    "url": "https://ihp-wins.unesco.org/dataset/26832148-4635-485a-ba78-73c05c8c423c/resource/0566b163-a1ad-426d-8ac0-431a1c41a532/download/hydrorivers-the-nile-basin.zip",
+    "downloaded_utc": "2026-11-03T06:15:04.914980+00:00",
+    "bytes": 9734837,
+    "sha256": "37ed453efe0515f6af59cd4fe8047c63009d0f73a7cdff8559350191f4083813"
+  },
+  {
+    "file": "basins02.zip",
+    "url": "https://ihp-wins.unesco.org/dataset/17efa45f-07d6-433d-9af8-312608a73c2e/resource/30413ce8-4b43-45de-b7ff-48b72880302e/download/hybas_lake_af_lev02_v1c.zip",
+    "downloaded_utc": "2026-11-03T06:15:02.394659+00:00",
+    "bytes": 1484695,
+    "sha256": "aa83e3b64a177318c7254fdfb276c763658afab4da17b0fa2b76a138d85c1d5c"
+  },
+  {
+    "file": "countries.zip",
+    "url": "https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_admin_0_countries.zip",
+    "downloaded_utc": "2026-11-03T06:15:01.127712+00:00",
+    "bytes": 4930492,
+    "sha256": "ce1ac7036499a0edd641fbc093cd209a98f96a49d2eca8480aaacad35138a7f6"
+  },
+  {
+    "file": "lakes.zip",
+    "url": "https://naturalearth.s3.amazonaws.com/10m_physical/ne_10m_lakes.zip",
+    "downloaded_utc": "2026-11-03T06:15:01.127889+00:00",
+    "bytes": 2349685,
+    "sha256": "0803a06f9c3cb4671d89b68c48b142aad9366ba40f665245e12a913fbc61722a"
+  }
+]

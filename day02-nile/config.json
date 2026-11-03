@@ -1,0 +1,35 @@
+{
+  "basin_level": 2,
+  "basin_pfaf_id": 17,
+  "main_riv": 10047863,
+  "branch_candidates": {
+    "White Nile": 10445476,
+    "Blue Nile": 10442890,
+    "Atbara": 10383506
+  },
+  "colors": {
+    "White Nile system": "#ffe7a3",
+    "Blue Nile system": "#ffb052",
+    "Atbara system": "#f65d40",
+    "Main Nile / other connected tributaries": "#c2d4df"
+  },
+  "width_points_by_strahler": {
+    "1": 0.1,
+    "2": 0.15,
+    "3": 0.23,
+    "4": 0.35,
+    "5": 0.55,
+    "6": 0.85,
+    "7": 1.2,
+    "8": 1.65
+  },
+  "projection": "+proj=laea +lat_0=14 +lon_0=32 +datum=WGS84 +units=m +no_defs",
+  "series_style": {
+    "background": "#101e2b",
+    "foreground": "#f2eee2",
+    "muted": "#a8b7c2",
+    "land": "#293e4b",
+    "accent": "#ffbf69",
+    "reference": "Day 01 \u2014 The Restless Earth"
+  }
+}

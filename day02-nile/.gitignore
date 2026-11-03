@@ -1,0 +1,7 @@
+data/raw/*
+!data/raw/README.md
+data/processed/*.gpkg
+.mplconfig/
+.venv/
+__pycache__/
+data/downloads-current.json

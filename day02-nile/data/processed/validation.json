@@ -1,0 +1,54 @@
+{
+  "basin_pfaffstetter_level2": 17,
+  "basin_hybas_id": 1020034170,
+  "basin_area_source_km2": 3095085.4,
+  "main_riv": 10047863,
+  "connected_reaches": 133797,
+  "subset_reaches": 141522,
+  "excluded_other_network_reaches": 7725,
+  "single_outlet_reaches": 1,
+  "all_downstream_ids_retained": true,
+  "all_paths_terminate_without_cycles": true,
+  "all_reaches_intersect_nile_boundary": true,
+  "system_counts": {
+    "White Nile system": 75711,
+    "Main Nile / other connected tributaries": 34072,
+    "Blue Nile system": 14947,
+    "Atbara system": 9067
+  },
+  "strahler_counts": {
+    "8": 1319,
+    "1": 67386,
+    "2": 30946,
+    "3": 16947,
+    "4": 8786,
+    "5": 4681,
+    "6": 2727,
+    "7": 1005
+  },
+  "seed_reaches_before_confluences": {
+    "White Nile system": 10441408,
+    "Blue Nile system": 10441642,
+    "Atbara system": 10382814
+  },
+  "projection": "+proj=laea +lat_0=14 +lon_0=32 +datum=WGS84 +units=m +no_defs",
+  "delta_limitation": "Single-flow-direction network retains one sea outlet; not a full delta distributary or irrigation-channel inventory. No channels have been added.",
+  "lake_limitation": "Natural Earth lake polygons are generalized independently of HydroRIVERS. River centerlines crossing lakes are modeled routing, not surveyed open-water channels.",
+  "max_downstream_endpoint_gap_m": 0.0,
+  "endpoint_gaps_over_1m": 0,
+  "excluded_endorheic_reaches": 6635,
+  "excluded_other_outlet_reaches": 1090,
+  "lakes_in_context": [
+    "Lake Albert",
+    "Lake Victoria",
+    "Lake Tana",
+    "Lake Edward",
+    null,
+    "Lake Kyoga",
+    "Lake Kwania",
+    "Lake Bunyonyi",
+    "Khashm el Girba Dam",
+    "Lake Nasser",
+    "Roseires Reservoir"
+  ]
+}

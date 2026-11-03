@@ -5,9 +5,9 @@
 | Day | Theme | Map | Source |
 | --- | --- | --- | --- |
 | 01 | Points | The Restless Earth — below | `scripts/day01.py` |
-| 02 | Lines | [Finding Support](https://flex-commits.github.io/30-days-mapping/finding-support/) | [Scripts, saved data and outputs](day02-finding-support/) |
+| 02 | Lines | [The Nile, Connected](https://flex-commits.github.io/30-days-mapping/nile/) | [Code, sources and outputs](day02-nile/) |
 
-Day 2 is stored separately in `day02-finding-support/`. Its public web edition is built from the same files under `docs/finding-support/`. The shared MUSA repository receives only the thumbnail, metadata and description.
+Day 2 is stored in `day02-nile/`, with its public page under `docs/nile/`. [Finding Support](https://flex-commits.github.io/30-days-mapping/finding-support/) remains a separate project under `day02-finding-support/`. The shared MUSA repository receives only the thumbnail, metadata and description.
 
 ## Day 01 — Points: The Restless Earth
 
