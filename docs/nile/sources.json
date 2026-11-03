@@ -61,7 +61,9 @@
       "coverage": "Nile Basin",
       "license": "Reference links only; no NBI graphics reproduced",
       "attribution": "Nile Basin Initiative",
-      "limitations": "Used to corroborate river-system names and geographic relationships, not as line geometry."
+      "limitations": "Used to corroborate river-system names and geographic relationships, not as line geometry.",
+      "headwater_reference": "https://nilebasin.org/nile-basin",
+      "headwater_and_outlet_reference": "https://nilebasin.org/sites/default/files/2023-09/WRM-WBS-2022-01-Nile%2520Baisn%2520Wetlands%2520Inventory_FULL.pdf"
     }
   ]
 }

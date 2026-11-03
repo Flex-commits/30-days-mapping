@@ -64,10 +64,33 @@ txt(.08,.516,'Line width: Strahler stream order',8,color=MUTED)
 txt(.08,.502,'Higher order → thicker line',8,color=MUTED)
 txt(.08,.477,'Modeled drainage lines; not all',8,color=MUTED)
 txt(.08,.463,'channels carry water year-round.',8,color=MUTED)
-# Delta qualification, placed clear of the geography.
-txt(.64,.785,'AT THE DELTA',7,font=bold,color=MUTED)
-txt(.64,.770,'The source routes the Nile to one outlet.',7.5,color=MUTED)
-txt(.64,.757,'It does not map every delta branch or canal.',7.5,color=MUTED)
+# Continental locator uses the complete Africa features from the same source archive.
+locator_crs='+proj=laea +lat_0=0 +lon_0=20 +datum=WGS84 +units=m +no_defs'
+africa=gpd.read_file(ROOT/'data/raw/countries.zip')
+africa=africa[africa.CONTINENT=='Africa'].to_crs(locator_crs)
+locator=fig.add_axes([.065,.205,.195,.205],facecolor=PAPER)
+africa.plot(ax=locator,facecolor='#293e4b',edgecolor='#405562',linewidth=.3,zorder=1)
+basin.to_crs(locator_crs).plot(ax=locator,facecolor='#ffbf69',edgecolor='#ffe7a3',linewidth=.35,zorder=2)
+locator.set_aspect('equal');locator.axis('off')
+txt(.08,.433,'AFRICA',9,font=bold,color=INK)
+txt(.08,.192,'Highlighted: Nile drainage basin',7.5,color=MUTED)
+# Geographic narrative is explicit about multiple headwater regions, not one invented source.
+txt(.735,.785,'TO THE MEDITERRANEAN',7,font=bold,color='#ffbf69')
+txt(.735,.770,'The Nile flows north through',7.5,color=MUTED)
+txt(.735,.757,'Egypt to its delta and the sea.',7.5,color=MUTED)
+txt(.735,.738,'Source data retains one outlet;',7,color=MUTED)
+txt(.735,.725,'not every delta branch is mapped.',7,color=MUTED)
+# Leader ties the outlet note to the source network’s actual downstream endpoint.
+outlet=r[r.NEXT_DOWN==0].geometry.iloc[0];outlet_xy=tuple(outlet.coords[-1][:2])
+ax.annotate('',xy=outlet_xy,xycoords='data',xytext=(.735,.79),textcoords=fig.transFigure,arrowprops={'arrowstyle':'-','color':'#708c9c','lw':.65,'shrinkB':3},zorder=12)
+# Headwater labels retain the existing lake leaders and add explanatory regions.
+txt(.745,.345,'ETHIOPIAN HIGHLANDS',7,font=bold,color=COLORS['Blue Nile system'])
+txt(.745,.331,'Blue Nile from Lake Tana',7.5,color=MUTED)
+ax.annotate('',xy=T.transform(37.3,12.0),xytext=(.745,.35),textcoords=fig.transFigure,arrowprops={'arrowstyle':'-','color':COLORS['Blue Nile system'],'lw':.65,'shrinkB':3},zorder=12)
+txt(.745,.235,'EQUATORIAL HEADWATERS',7,font=bold,color=COLORS['White Nile system'])
+txt(.745,.221,'Rivers feeding Lake Victoria,',7.5,color=MUTED)
+txt(.745,.208,'including Rwanda and Burundi',7.5,color=MUTED)
+ax.annotate('',xy=T.transform(29.9,-2.4),xytext=(.745,.24),textcoords=fig.transFigure,arrowprops={'arrowstyle':'-','color':COLORS['White Nile system'],'lw':.65,'shrinkB':3},zorder=12)
 fig.add_artist(plt.Line2D([.065,.935],[.138,.138],transform=fig.transFigure,color='#304451',lw=.7))
 report=json.loads((D/'validation.json').read_text());n=report['connected_reaches']
 txt(.068,.115,f'{n:,} connected river reaches',14,font=bold,color='#ffbf69')

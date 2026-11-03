@@ -69,3 +69,7 @@ Natural Earth country and lake geometry is public domain. Typography matches Day
 - `data/processed/validation.json`: reproducible checks and counts.
 
 Finding Support remains a separate portfolio project. This Nile map is the proposed Day 2 submission; only its thumbnail and Markdown description belong in the shared MUSA repository. No pull request should be opened until Thomas reviews the prepared submission.
+
+## Continental context and headwaters
+
+An Africa locator uses the full Africa country features from the same Natural Earth archive and highlights the HydroBASINS Nile boundary. The main map retains its regional scale for tributary detail. Callouts identify the equatorial headwaters feeding Lake Victoria (including Rwanda and Burundi), the Blue Nile from Lake Tana, and the Mediterranean outlet. These are source regions, not a claim of one universally agreed source point. References: [NBI basin overview](https://nilebasin.org/nile-basin) and [NBI wetlands inventory](https://nilebasin.org/sites/default/files/2023-09/WRM-WBS-2022-01-Nile%2520Baisn%2520Wetlands%2520Inventory_FULL.pdf). The outlet leader terminates at the actual final vertex of the retained HydroRIVERS outlet reach.

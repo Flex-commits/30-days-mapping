@@ -25,5 +25,8 @@ text(30,108,'THE NILE,',29,font='bold.ttf');text(30,150,'CONNECTED',29,font='bol
 text(30,226,'One basin,',16);text(30,250,'many tributaries.',16)
 for y,color,s in [(326,'#ffe7a3','White Nile system'),(360,'#ffb052','Blue Nile system'),(394,'#f65d40','Atbara system')]:
  d.line((30,y+7,53,y+7),fill=color,width=2);text(63,y,s,12)
-text(30,475,'133,797',25,color='#ffbf69',font='bold.ttf');text(30,510,'connected river reaches',12)
+# Tiny continental locator supports geographic recognition in the square gallery.
+africa=gpd.read_file(R/'data/raw/countries.zip');africa=africa[africa.CONTINENT=='Africa'].to_crs('+proj=laea +lat_0=0 +lon_0=20 +datum=WGS84 +units=m +no_defs')
+f,aa=plt.subplots(figsize=(1.1,1.15),dpi=150);f.patch.set_facecolor('#101e2b');aa.set_facecolor('#101e2b');africa.plot(ax=aa,color='#293e4b',edgecolor='#405562',linewidth=.15);b.to_crs(africa.crs).plot(ax=aa,color='#ffbf69',edgecolor='none');aa.axis('off');f.subplots_adjust(left=0,right=1,bottom=0,top=1);bb=io.BytesIO();f.savefig(bb,format='png',facecolor='#101e2b');plt.close(f);bb.seek(0);mini=Image.open(bb).convert('RGB').resize((110,115),Image.Resampling.LANCZOS);out.paste(mini,(24,431))
+text(145,463,'133,797',18,color='#ffbf69',font='bold.ttf');text(145,493,'river reaches',11)
 text(30,557,'THOMAS HAGOS',11,font='bold.ttf');out.save(R/'outputs/02-thomas-hagos.png')
