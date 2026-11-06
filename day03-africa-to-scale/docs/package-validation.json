@@ -1,0 +1,58 @@
+{
+  "main_export_pixels": [
+    6000,
+    7500
+  ],
+  "thumbnail_pixels": [
+    600,
+    600
+  ],
+  "local_page_links_verified": [
+    "../outputs/africa-to-scale.png",
+    "../outputs/03-thomas-hagos.png",
+    "../outputs/africa-to-scale.png",
+    "../outputs/africa-to-scale-preview.png",
+    "../outputs/asia-country-comparison.png",
+    "../outputs/asia-country-comparison.png",
+    "../README.md",
+    "../source-manifest.json",
+    "../outputs/continent-areas.csv",
+    "../outputs/asia-country-coverage.csv",
+    "../outputs/individual-validation.csv",
+    "../outputs/published-area-checks.csv"
+  ],
+  "template_fields": [
+    "day",
+    "creator",
+    "title",
+    "thumbnail",
+    "source"
+  ],
+  "submission_thumbnail_matches_export": true,
+  "current_presentation_status_labels_absent": true,
+  "template_year": 2026,
+  "category": "Polygons",
+  "payload_files": [
+    "_maps_2026/03-thomas-hagos.md",
+    "assets/thumbnails/2026/03-thomas-hagos.png"
+  ],
+  "local_http_checks": [
+    {
+      "path": "site/index.html",
+      "status": 200
+    },
+    {
+      "path": "outputs/africa-to-scale.png",
+      "status": 200
+    },
+    {
+      "path": "outputs/03-thomas-hagos.png",
+      "status": 200
+    },
+    {
+      "path": "submission-proposal/_maps_2026/03-thomas-hagos.md",
+      "status": 200
+    }
+  ],
+  "browser_visual_check": "Browser access host unavailable; source links and HTTP responses checked. Static map and thumbnail inspected visually."
+}

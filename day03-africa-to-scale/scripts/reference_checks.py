@@ -1,0 +1,9 @@
+"""Compare calculated geometry with independently published area magnitudes; never rescale to reference values."""
+from pathlib import Path
+import json,csv
+R=Path(__file__).resolve().parents[1];a=json.loads((R/'data/processed/continents/area-preparation.json').read_text());ref={'AFR':30258000,'ANT':14000000,'ASI':44009000,'AUS':7713000,'EUR':10445000,'NAM':24211000,'SAM':17832000};url='https://www.nationsreportcard.gov/nqt/api/QueryResults/GetItemResource?TableID=6a984416-132f-4cf6-9058-33fc4ee24a69';rows=[]
+for x in a:
+ k=x['id'];rows.append({'id':k,'calculated_km2':x['geodesic_km2'],'reference_km2':ref[k],'difference_percent':(x['geodesic_km2']/ref[k]-1)*100,'reference':'NAEP NQT Geography Atlas part 1, printed page 2, historical Nystrom table','url':url,'definition_limit':'Reference is labeled land area; our source-region surface polygons and island/division conventions differ. No resizing. Europe has the largest discrepancy; no exact definition equivalence is claimed.'})
+with (R/'outputs/published-area-checks.csv').open('w') as f:
+ w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+(R/'docs/published-area-checks.json').write_text(json.dumps({'retrieved_date_utc':'2026-11-06','checks':rows,'reference_terms':'Nystrom copyrighted atlas reproduced by NAEP with permission. Numeric facts attributed; atlas graphics/PDF not redistributed.','additional_australia_check':{'publisher':'Geoscience Australia','url':'https://www.ga.gov.au/scientific-topics/national-location-information/geography/areas-of-australia','updated':'2026-11-04','area_km2':7688287,'difference_percent':(next(x['geodesic_km2'] for x in a if x['id']=='AUS')/7688287-1)*100}},indent=2));print('Independent reference area differences:',{r['id']:round(r['difference_percent'],2) for r in rows})

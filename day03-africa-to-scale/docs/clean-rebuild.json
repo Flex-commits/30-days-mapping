@@ -1,5 +1,5 @@
 {
-  "clean_directory": "/private/tmp/africa-continent-clean-i1mzsm72",
+  "clean_directory": "/private/tmp/africa-continent-clean-mufu50t_",
   "frozen_input_checksums_verified": true,
   "search_repeated": false,
   "checks": [
@@ -24,13 +24,13 @@
       "identical": true
     },
     {
-      "file": "outputs/continents-feasibility-draft.png",
-      "sha256": "d19ae7c557cc8c881874e1d21da83bc536f536e361aeb1d0674685c8ae1f3efc",
+      "file": "outputs/continent-pairings.png",
+      "sha256": "c1657b340850b9d1b2fcca24cf56873d34d38c97abcb61aa30d226d9d947d6ad",
       "identical": true
     },
     {
-      "file": "outputs/continents-individual-draft.png",
-      "sha256": "4980f01d842928cade34d8153fa0bc58ec332af2963420bb57f12c84c78b4c43",
+      "file": "outputs/africa-to-scale.png",
+      "sha256": "f73d7ae6878fc8685e1f3c9de36e9c7ae63133f8884745ff8e529f55c15fb2c2",
       "identical": true
     },
     {
@@ -46,6 +46,26 @@
     {
       "file": "data/processed/continents/individual-layout.geojson",
       "sha256": "95c22183f208644d3da1b908dabe4780378510159aa32187475c443aebe25ce3",
+      "identical": true
+    },
+    {
+      "file": "outputs/03-thomas-hagos.png",
+      "sha256": "6ec80f0d063c1188dda739237de9d108700b5eccea02c4846a8a9d5387c69ef9",
+      "identical": true
+    },
+    {
+      "file": "outputs/asia-country-comparison.png",
+      "sha256": "f9feb39734add3692fbf8647df71917e116d3e80991134c05c89f435fe4b16b0",
+      "identical": true
+    },
+    {
+      "file": "site/index.html",
+      "sha256": "81f11619939f0d1dcc11ad5f26ff7515325a664e74bcf54bb6b4fedbce041614",
+      "identical": true
+    },
+    {
+      "file": "outputs/published-area-checks.csv",
+      "sha256": "3323d5a2f4234846b901345ec13f99eeb0976716f635c8951cd8e7ffe5a5ef27",
       "identical": true
     },
     {

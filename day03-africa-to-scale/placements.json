@@ -1,83 +1,65 @@
 {
-  "placements": [
-    {
-      "id": "USA48",
-      "rotation_degrees": 0,
-      "translation_x_m": -875000.0,
-      "translation_y_m": 1125000.0,
-      "attempts_at_hit": 16
-    },
-    {
-      "id": "IND",
-      "rotation_degrees": 105,
-      "translation_x_m": 625000.0,
-      "translation_y_m": -1875000.0,
-      "attempts_at_hit": 23913
-    },
-    {
-      "id": "DEU",
-      "rotation_degrees": 0,
-      "translation_x_m": -3250000.0,
-      "translation_y_m": 875000.0,
-      "attempts_at_hit": 300
-    },
-    {
-      "id": "JPN",
-      "rotation_degrees": -30,
-      "translation_x_m": 2250000.0,
-      "translation_y_m": -250000.0,
-      "attempts_at_hit": 7959
-    }
-  ],
-  "search_log": [
-    {
-      "candidate_set": [
-        "CHN",
-        "USA48",
-        "IND"
-      ],
-      "largest_search_attempts": 24755,
-      "largest_shape_feasible_start_count": 6,
-      "best_prefix_placed": [
-        "CHN"
-      ],
-      "complete": false,
-      "interpretation": "A failed bounded search is not a proof of geometric impossibility."
-    },
-    {
-      "candidate_set": [
-        "CHN",
-        "IND",
-        "DEU",
-        "JPN"
-      ],
-      "largest_search_attempts": 24755,
-      "largest_shape_feasible_start_count": 6,
-      "best_prefix_placed": [
-        "CHN"
-      ],
-      "complete": false,
-      "interpretation": "A failed bounded search is not a proof of geometric impossibility."
-    },
-    {
-      "candidate_set": [
-        "USA48",
-        "IND",
-        "DEU",
-        "JPN"
-      ],
-      "largest_search_attempts": 7476,
-      "largest_shape_feasible_start_count": 6,
-      "best_prefix_placed": [
-        "USA48",
-        "IND",
-        "DEU",
-        "JPN"
-      ],
-      "complete": true,
-      "interpretation": "A failed bounded search is not a proof of geometric impossibility."
-    }
-  ],
   "seed": 202603,
-  "search_is_deterministic": true
+  "panels": [
+    {
+      "panel": 1,
+      "host": "AFR",
+      "placements": [
+        {
+          "id": "SAM",
+          "rotation_degrees": 23.877654376877803,
+          "translation_x_m": -720893.7394941433,
+          "translation_y_m": 843327.9691405752
+        },
+        {
+          "id": "AUS",
+          "rotation_degrees": -97.48260520424667,
+          "translation_x_m": 1780156.009912708,
+          "translation_y_m": -1292009.4992151505
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "host": "AFR",
+      "placements": [
+        {
+          "id": "ANT",
+          "rotation_degrees": 2.3842750613135473,
+          "translation_x_m": -1116921.0500828899,
+          "translation_y_m": 1264071.814771872
+        },
+        {
+          "id": "EUR",
+          "rotation_degrees": -161.19149230707495,
+          "translation_x_m": 1135207.7058614134,
+          "translation_y_m": -1614520.2379643251
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "host": "AFR",
+      "placements": [
+        {
+          "id": "NAM",
+          "rotation_degrees": -138.5075664597526,
+          "translation_x_m": 57449.74329477246,
+          "translation_y_m": 246559.4382294543
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "host": "ASI",
+      "placements": [
+        {
+          "id": "AFR",
+          "rotation_degrees": -108.91310701691357,
+          "translation_x_m": -487471.6949722897,
+          "translation_y_m": 218005.14531950132
+        }
+      ]
+    }
+  ]
 }

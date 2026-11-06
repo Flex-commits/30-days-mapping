@@ -1,43 +1,70 @@
 # Africa, to Scale
-Thomas Hagos · 2026 MUSA Day 03 / Polygons
+**Thomas Hagos · Day 03 / Polygons · MUSA 30-Day Map Challenge 2026**
 
-**Current direction: continent comparisons.** See the [continent draft](continents-draft/README.md), [six-panel map](continents-draft/outputs/continents-individual-draft.png), and [validated findings](continents-draft/docs/draft-results.md). These are review drafts; only Australia currently has verified complete containment.
+![Africa, to Scale](outputs/africa-to-scale-preview.png)
 
-The country comparison below is preserved as an earlier exploratory edition.
+How does Africa compare with the other continents? Five area-preserving overlays place South America, Australia, Antarctica, Europe and North America over Africa. The sixth reverses the comparison: Africa’s cream outline crosses a country-colored Asia. Each comparison continent appears once in the main composition.
 
-**Geographic feasibility draft, awaiting review.** This is a truthful partial packing, not an exact fill or a final submission. No existing NYC projects or submission proposals were replaced.
+[High-resolution map](outputs/africa-to-scale.png) · [Asia country detail](outputs/asia-country-comparison.png) · [600 × 600 gallery image](outputs/03-thomas-hagos.png) · [Area table](outputs/continent-areas.csv) · [Asian country portions](outputs/asia-country-coverage.csv) · [Numerical validation](outputs/individual-validation.csv)
 
-The contiguous United States, India, Germany and Japan occupy 11.82 million km²: 39.5% of the selected Africa geometry (29.90 million km²). Remaining comparison area is 18.09 million km². These are polygon surface areas, not dry-land statistics. Residual space is not “empty” African land.
+## Reading the map
+Africa’s calculated surface area is **29.90 million km²**. South America is 59.2% of that area; Australia 25.7%; Antarctica 46.5%; Europe 33.5%; and North America 81.1%. Africa is 67.9% of Asia’s calculated area. Percentages compare area, not the amount of an outline that can be packed inside another.
+
+The shapes are translated and rotated without changing their prepared areas. Australia is fully contained. The saved overlays contain 98.6% of South America, 99.3% of Antarctica, 98.9% of Europe and 82.3% of North America within Africa. The inverse overlay places 93.8% of Africa within Asia. Diagonal hatching identifies every portion beyond the host outline. These are measured arrangements, not proofs that no other arrangement could improve containment. The work makes no claim that every continent literally fits inside Africa.
+
+The supplementary [paired comparison](outputs/continent-pairings.png) tests South America with Australia and Antarctica with Europe. It preserves visible protrusions and uses crosshatching for guest overlap. Its area totals must not be read as successful geometric packing.
 
 ## Geographic definitions
-Natural Earth 1:50m Admin 0 Countries, version 5.1.1, supplies every outline. Africa is the union of source REGION_UN=Africa units plus complete Mayotte and Réunion components from France. It includes Madagascar, island states, source-listed remote dependencies and whole Egypt, including Sinai. This source-country regional grouping needs review: it is not a strict continental or mainland-only mask. Exact membership is saved in data/processed/africa-membership.json.
+Every coastline begins with **Natural Earth 1:50m Admin 0 Countries v5.1.1**, using its generalized de facto country/territory units. These are neither legal boundaries nor a statement endorsing sovereignty. Original country geometry is retained separately.
 
-The contiguous United States retains all represented coastal components selected by the saved geographic component rule; Alaska and Hawaii are excluded. India, Germany and Japan retain every component of their source feature, including represented islands. The USA component audit is saved separately. Natural Earth uses generalized de facto boundaries, which do not certify sovereignty. Country polygons preserve their source holes; water enclosed by polygons is included, so this is not a uniform land-only mask.
+- **Africa:** source `REGION_UN=Africa` units plus France’s complete Mayotte and Réunion components. Includes Madagascar, source-listed regional island dependencies, remote islands and whole Egypt including Sinai. This is a specified source-country regional grouping, not a mainland or tectonic mask.
+- **South America:** source South American units plus French Guiana; represented detached components retain their relative positions.
+- **North America:** Greenland, Arctic islands, Central America and Caribbean source components are included. Hawaii is excluded.
+- **Australia:** mainland, Tasmania and represented nearshore Australian components within 110–155°E and 45–9°S. This is Australia, not all Oceania; New Zealand, New Guinea and remote Australian territories outside that definition are excluded explicitly.
+- **Europe/Asia:** Russia, Kazakhstan, Türkiye, Georgia and Azerbaijan are split by the saved mask tracing Natural Earth’s approximate Europe physical-region eastern boundary (Geographic Regions Polygons v5.0.0), extended through water and into the Arctic. Russian Far East components west of the antimeridian remain Asian. Other source-country island allocations are retained; Cyprus is Asian and Greek islands European. This is a disclosed continental convention, not a unique natural or legal boundary.
+- **Antarctica:** the source country feature plus Natural Earth perennial ice shelves, embedded archive **v4.1.0**, with 2003–04 Mosaic of Antarctica lineage. Seasonal sea ice is excluded. The source web page labels this download v4.0.0; the archive version is recorded rather than silently replaced. The outline is a historical source extent, not a present-day ice-front survey.
 
-## Area and placement method
-WGS84 ellipsoidal source-polygon areas are calculated with pyproj.Geod. Edges are geodesically densified to at most 10 km. Each comparison country is projected to its own locally centered Lambert azimuthal equal-area coordinate system in metres. Africa uses LAEA centered at 20°E, 5°N. Minute numerical area normalization (about 0.1 parts per million linearly) matches projected representations to source geodesic areas. Factors are saved in area-preparation.json; they are unrelated to fitting.
+Area means **WGS84 ellipsoidal surface area of the assembled continent polygons after consistently filling interior rings**. This includes enclosed inland water and is not dry-land area. Water open to the coastline or continental divider remains outside. Ring filling is applied uniformly before computing target areas; no component is selectively removed to obtain a fit. The audit measures the effect (effectively zero for Africa). Original source holes and filled comparison geometries are separate files. Full membership and exclusions are in `data/processed/continents/component-membership.json`.
 
-Thereafter only rigid rotation and translation are allowed. Local projections alter shape and direction: relocated outlines are planar area comparisons, not exact spherical relocations. Display simplification is zero. A simplified search proxy accelerates tests but never supplies the delivered geometry. The bounded deterministic search uses 125 km grid spacing, 15° rotation steps and 15 km clearance. Failed larger combinations are search outcomes, not impossibility proofs. Saved placements reproduce the successful arrangement without searching again.
+## Projection and geometry
+Edges are geodesically densified to at most 10 km. Each continent uses a locally centered WGS84 Lambert azimuthal equal-area projection in metres; centers are saved in `config.json` and exact frames in `projection-frames.json`. Tiny numerical normalization matches the prepared shape’s area to its calculated ellipsoidal target. Factors are roughly 1.0000001 linearly and are saved per continent. They do not depend on fitting.
 
-All delivered polygons are valid; no repairs were required. Actual display polygons have exactly zero measured outside area and pairwise overlap. Relative area drift through placement is below 7e-16. See draft-validation.json. More comprehensive independent area reasonableness checks, clean-directory reproduction, final visual refinement and submission preparation remain for the next stage.
+Preparation logs geometry repairs, their absolute/relative area effects and a 0.01 m numerical precision grid. A final minute normalization preserves the target area after preparation. Thereafter only rigid translation and rotation are allowed. No mainland is cut, clipped, stretched or arbitrarily scaled. Display simplification is **zero**; an 18 km simplified proxy accelerates bounded searches but never supplies displayed polygons or reported containment metrics. Proxy and ring-filling effects are measured separately.
+
+Locally centered equal-area representations distort shape and direction. Moving these planar outlines is an area comparison, not an exact relocation on the ellipsoid. The main map uses equal physical area scale across its six panels. Source resolution is generalized, so rounded million-km² values are appropriate.
+
+## Asian countries
+All Asian country pieces share Asia’s single projection and frame. The moved Africa outline is intersected with these pieces; Russia and other split units refer to their Asian portions only. The table records covered area, percentage, uncovered area and whether the Asian source piece is entirely covered. Enclosed water and small numerical geometry differences remain unattributed rather than being assigned to countries by invention. Country colors supply context; covered portions are not whole-country equivalents.
+
+## Validation and reference checks
+The source has 242 unique identifiers and valid raw geometry. The assembled geographic continents have zero measured pairwise area overlap. Placed full-resolution display geometries remain valid and preserve prepared area within a relative threshold of 1e-12. A complete-containment label requires **exactly zero** computed outside area and overlap; partial overlays retain their measured protrusions. Geometry repairs and approximately 0.41 km² of Asia country-to-continent preparation-edge differences are disclosed in the audit.
+
+[Independent area checks](outputs/published-area-checks.csv) compare all seven calculated areas with the historical NAEP/Nystrom atlas table, without using it to resize shapes. Most differences are below 1.2%; Europe differs by about 4.2%. That table is labeled land area and uses a different continental/island grouping, so exact equivalence is not claimed. Continental divisions, water conventions, source coastline detail and the historical reference limit direct comparison. A separate Geoscience Australia check differs by about 0.038% for Australia. These checks establish reasonable magnitudes, not certification of a universal continent area.
+
+`docs/clean-rebuild.json` records a fresh-directory reproduction from frozen archive checksums, saved configuration and placements. Original geographic, assembled, projected, display and layout geometries are separately retained. Projected GeoJSON uses metre coordinates in local frames and is not RFC 7946 longitude/latitude interchange data.
 
 ## Reproduce
-Python 3.11 was used. Install requirements in a virtual environment. Raw downloads are excluded from Git; their exact URLs, retrieval timestamp and SHA-256 are retained in data/downloads.json.
+Python runtime and exact dependencies are in `docs/environment.txt` and `requirements.txt`.
 
 ```sh
-python scripts/download.py
-python scripts/prepare.py
-python scripts/replay.py
-python scripts/render_draft.py
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/download_frozen.py
+python scripts/prepare_continents.py
+python scripts/replay_and_validate.py
+python scripts/country_coverage.py
+python scripts/audit_geography.py
+python scripts/proxy_audit.py
+python scripts/reference_checks.py
+python scripts/render_continents.py
+python scripts/build_page.py
+python scripts/clean_rebuild_check.py
 ```
 
-Compare the downloaded archive checksum with the saved snapshot before treating it as the frozen input. To repeat the bounded search instead of saved placement, run scripts/place.py. Original geographic, projected comparison, display-preplacement and final layout GeoJSON are separate files. Projected GeoJSON coordinates are metres in the documented per-feature frames, not longitude/latitude interchange files.
+Raw downloads are excluded from Git. The downloader verifies exact frozen SHA-256 values and stops if upstream bytes change. Source manifest entries record publisher, embedded version, resolution, exact URL, retrieval date, terms, coverage and limitations. Saved placements reproduce the composition without an optimization run. To repeat bounded searches, run `test_layouts.py` followed by `test_individuals.py`; seeds and finite trial limits are in the configuration. No claim of globally optimal packing is made.
 
-## Sources and review
-Made with Natural Earth. Natural Earth data are public domain: https://www.naturalearthdata.com/about/terms-of-use/ . Exact source download and source-page URLs are recorded in source-manifest.json and data/downloads.json. Generalized coastlines omit small features; the 2022 release is not a current legal boundary record. Independent published country areas use different border and water conventions and must not be used to resize the silhouettes.
+## Credits
+Made with Natural Earth: [source downloads](https://www.naturalearthdata.com/downloads/) and [public-domain terms](https://www.naturalearthdata.com/about/terms-of-use/). Independent numeric references are attributed in the check table; copyrighted reference atlas artwork is not reproduced. Typography uses DejaVu Sans with its included license. Thomas Hagos designed the concept and series; AI assisted code and editorial production. The map belongs to the broader area-comparison tradition and uses an original arrangement rather than copying an existing “True Size of Africa” composition.
 
-The current course repository identifies 2026 Day 3 as Polygons. Its current template has day, creator, title, thumbnail and source fields. Eventual shared files are assets/thumbnails/2026/03-thomas-hagos.png and _maps_2026/03-thomas-hagos.md. No proposal replacement, commit, push, deployment or pull request has been performed. Submission safeguards and current remote conflicts will be checked again before preparing those files.
-
-This original arrangement belongs to the broader tradition of country-area comparison maps; no existing composition or branding was copied.
-
-Review requested: the four-country selection, partial packing and the explicit island-inclusive Africa definition. Final styling and remaining deliverables follow review.
+For the MUSA gallery, only the dedicated thumbnail and Markdown entry belong in the shared repository. Code, geometry and full exports remain in Flex-commits/30-days-mapping.

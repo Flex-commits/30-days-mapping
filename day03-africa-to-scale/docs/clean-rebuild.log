@@ -283,10 +283,18 @@ audit_geography.py
 }
 
 
+proxy_audit.py
+Search proxy and uniform ring-filling effects measured for all seven continents.
+
+
+reference_checks.py
+Independent reference area differences: {'AFR': -1.17, 'SAM': -0.78, 'AUS': -0.28, 'EUR': -4.18, 'ANT': -0.58, 'NAM': 0.12, 'ASI': 0.01}
+
+
 render_continents.py
-Rendered actual displayed polygons, hatching outside portions.
+Rendered main map, pairing comparison, Asia detail and 600 × 600 thumbnail.
 Matplotlib is building the font cache; this may take a moment.
 
 
-render_continents.py --individual
-Rendered actual displayed polygons, hatching outside portions.
+build_page.py
+Built local project page, portfolio entry and LinkedIn caption.

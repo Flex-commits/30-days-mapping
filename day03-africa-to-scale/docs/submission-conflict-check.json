@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-11-06T04:09:03.584489+00:00",
+  "fork": "Flex-commits/30DayMapChallenge",
+  "upstream": "weitzman-musa/30DayMapChallenge",
+  "branches": [
+    "day01-thomas-hagos",
+    "day02-nile-thomas-hagos",
+    "day02-thomas-hagos",
+    "main"
+  ],
+  "competing_entries": [],
+  "pull_requests": [
+    {
+      "number": 102,
+      "title": "Thomas Hagos \u2014 Day 01: Points \u2014 The Restless Earth",
+      "state": "open",
+      "url": "https://github.com/weitzman-musa/30DayMapChallenge/pull/102"
+    }
+  ],
+  "upstream_main_sha": "648c1e7ad1cc512401032ffbede0ba0f03d43c4a",
+  "preserved_local_competitors": [
+    "day03-room-for-homes/submission/_maps_2026/03-thomas-hagos.md",
+    "day03-room-for-homes/testfit/submission-proposal/_maps_2026/03-thomas-hagos.md"
+  ],
+  "submission_files": [
+    "assets/thumbnails/2026/03-thomas-hagos.png",
+    "_maps_2026/03-thomas-hagos.md"
+  ]
+}

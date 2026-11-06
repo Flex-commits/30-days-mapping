@@ -1,6 +1,6 @@
 matplotlib==3.9.4
 numpy==2.0.2
-Pillow==11.0.0
+Pillow==11.3.0
 pyproj==3.6.1
 pyshp==2.3.1
 shapely==2.0.6

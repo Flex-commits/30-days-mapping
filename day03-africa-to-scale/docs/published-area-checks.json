@@ -1,0 +1,76 @@
+{
+  "retrieved_date_utc": "2026-11-06",
+  "checks": [
+    {
+      "id": "AFR",
+      "calculated_km2": 29903077.015651073,
+      "reference_km2": 30258000,
+      "difference_percent": -1.1729889098715307,
+      "reference": "NAEP NQT Geography Atlas part 1, printed page 2, historical Nystrom table",
+      "url": "https://www.nationsreportcard.gov/nqt/api/QueryResults/GetItemResource?TableID=6a984416-132f-4cf6-9058-33fc4ee24a69",
+      "definition_limit": "Reference is labeled land area; our source-region surface polygons and island/division conventions differ. No resizing. Europe has the largest discrepancy; no exact definition equivalence is claimed."
+    },
+    {
+      "id": "SAM",
+      "calculated_km2": 17692549.178769387,
+      "reference_km2": 17832000,
+      "difference_percent": -0.7820256910644474,
+      "reference": "NAEP NQT Geography Atlas part 1, printed page 2, historical Nystrom table",
+      "url": "https://www.nationsreportcard.gov/nqt/api/QueryResults/GetItemResource?TableID=6a984416-132f-4cf6-9058-33fc4ee24a69",
+      "definition_limit": "Reference is labeled land area; our source-region surface polygons and island/division conventions differ. No resizing. Europe has the largest discrepancy; no exact definition equivalence is claimed."
+    },
+    {
+      "id": "AUS",
+      "calculated_km2": 7691183.827086684,
+      "reference_km2": 7713000,
+      "difference_percent": -0.2828493830327461,
+      "reference": "NAEP NQT Geography Atlas part 1, printed page 2, historical Nystrom table",
+      "url": "https://www.nationsreportcard.gov/nqt/api/QueryResults/GetItemResource?TableID=6a984416-132f-4cf6-9058-33fc4ee24a69",
+      "definition_limit": "Reference is labeled land area; our source-region surface polygons and island/division conventions differ. No resizing. Europe has the largest discrepancy; no exact definition equivalence is claimed."
+    },
+    {
+      "id": "EUR",
+      "calculated_km2": 10008762.005117105,
+      "reference_km2": 10445000,
+      "difference_percent": -4.176524603953036,
+      "reference": "NAEP NQT Geography Atlas part 1, printed page 2, historical Nystrom table",
+      "url": "https://www.nationsreportcard.gov/nqt/api/QueryResults/GetItemResource?TableID=6a984416-132f-4cf6-9058-33fc4ee24a69",
+      "definition_limit": "Reference is labeled land area; our source-region surface polygons and island/division conventions differ. No resizing. Europe has the largest discrepancy; no exact definition equivalence is claimed."
+    },
+    {
+      "id": "ANT",
+      "calculated_km2": 13918837.296731398,
+      "reference_km2": 14000000,
+      "difference_percent": -0.5797335947757332,
+      "reference": "NAEP NQT Geography Atlas part 1, printed page 2, historical Nystrom table",
+      "url": "https://www.nationsreportcard.gov/nqt/api/QueryResults/GetItemResource?TableID=6a984416-132f-4cf6-9058-33fc4ee24a69",
+      "definition_limit": "Reference is labeled land area; our source-region surface polygons and island/division conventions differ. No resizing. Europe has the largest discrepancy; no exact definition equivalence is claimed."
+    },
+    {
+      "id": "NAM",
+      "calculated_km2": 24239438.163464587,
+      "reference_km2": 24211000,
+      "difference_percent": 0.11745968140344232,
+      "reference": "NAEP NQT Geography Atlas part 1, printed page 2, historical Nystrom table",
+      "url": "https://www.nationsreportcard.gov/nqt/api/QueryResults/GetItemResource?TableID=6a984416-132f-4cf6-9058-33fc4ee24a69",
+      "definition_limit": "Reference is labeled land area; our source-region surface polygons and island/division conventions differ. No resizing. Europe has the largest discrepancy; no exact definition equivalence is claimed."
+    },
+    {
+      "id": "ASI",
+      "calculated_km2": 44013686.15069475,
+      "reference_km2": 44009000,
+      "difference_percent": 0.010648164454440945,
+      "reference": "NAEP NQT Geography Atlas part 1, printed page 2, historical Nystrom table",
+      "url": "https://www.nationsreportcard.gov/nqt/api/QueryResults/GetItemResource?TableID=6a984416-132f-4cf6-9058-33fc4ee24a69",
+      "definition_limit": "Reference is labeled land area; our source-region surface polygons and island/division conventions differ. No resizing. Europe has the largest discrepancy; no exact definition equivalence is claimed."
+    }
+  ],
+  "reference_terms": "Nystrom copyrighted atlas reproduced by NAEP with permission. Numeric facts attributed; atlas graphics/PDF not redistributed.",
+  "additional_australia_check": {
+    "publisher": "Geoscience Australia",
+    "url": "https://www.ga.gov.au/scientific-topics/national-location-information/geography/areas-of-australia",
+    "updated": "2026-11-04",
+    "area_km2": 7688287,
+    "difference_percent": 0.03767844627398098
+  }
+}
