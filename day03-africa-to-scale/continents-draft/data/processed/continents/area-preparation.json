@@ -1,0 +1,72 @@
+[
+  {
+    "id": "AFR",
+    "geodesic_km2": 29903077.015651073,
+    "projected_km2": 29903077.01565109,
+    "linear_normalization": 1.000000115673489,
+    "source_components": 50,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "SAM",
+    "geodesic_km2": 17692549.178769387,
+    "projected_km2": 17692549.178769372,
+    "linear_normalization": 1.000000106046157,
+    "source_components": 68,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "AUS",
+    "geodesic_km2": 7691183.827086684,
+    "projected_km2": 7691183.827086686,
+    "linear_normalization": 1.0000001037594173,
+    "source_components": 41,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "EUR",
+    "geodesic_km2": 10008762.005117105,
+    "projected_km2": 10008762.005117165,
+    "linear_normalization": 1.0000000869629162,
+    "source_components": 220,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "ANT",
+    "geodesic_km2": 13918837.296731398,
+    "projected_km2": 13918837.296731457,
+    "linear_normalization": 1.0000001201621087,
+    "source_components": 36,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "NAM",
+    "geodesic_km2": 24239438.163464587,
+    "projected_km2": 24239438.1634645,
+    "linear_normalization": 1.000000094726849,
+    "source_components": 364,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "ASI",
+    "geodesic_km2": 44013686.15069475,
+    "projected_km2": 44013686.15069442,
+    "linear_normalization": 1.0000001024254368,
+    "source_components": 430,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  }
+]

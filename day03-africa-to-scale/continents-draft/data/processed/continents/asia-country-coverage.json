@@ -1,0 +1,317 @@
+[
+  {
+    "id": "CHN",
+    "country": "China",
+    "covered_km2": 7619975.861459086,
+    "asian_country_piece_km2": 9373043.073945988,
+    "covered_percent": 81.29671229869987,
+    "not_covered_km2": 1753067.2124868953,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "RUS",
+    "country": "Russia",
+    "covered_km2": 7014354.851988422,
+    "asian_country_piece_km2": 13046977.95994474,
+    "covered_percent": 53.76229555628168,
+    "not_covered_km2": 6032623.107956299,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "IND",
+    "country": "India",
+    "covered_km2": 2525123.969100172,
+    "asian_country_piece_km2": 3148249.711098782,
+    "covered_percent": 80.20723261557514,
+    "not_covered_km2": 623125.7419986097,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "KAZ",
+    "country": "Kazakhstan",
+    "covered_km2": 2392956.084650751,
+    "asian_country_piece_km2": 2578400.786563939,
+    "covered_percent": 92.80776274660087,
+    "not_covered_km2": 185444.70191319045,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "IRN",
+    "country": "Iran",
+    "covered_km2": 1610024.3567653075,
+    "asian_country_piece_km2": 1621856.127050248,
+    "covered_percent": 99.27047966292426,
+    "not_covered_km2": 11831.770284940945,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "MNG",
+    "country": "Mongolia",
+    "covered_km2": 1564511.1794889877,
+    "asian_country_piece_km2": 1564511.1794889844,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "PAK",
+    "country": "Pakistan",
+    "covered_km2": 799577.2589608731,
+    "asian_country_piece_km2": 872783.0361320477,
+    "covered_percent": 91.61237396459904,
+    "not_covered_km2": 73205.77717117446,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "TUR",
+    "country": "Turkey",
+    "covered_km2": 660080.8170301288,
+    "asian_country_piece_km2": 756754.2569366088,
+    "covered_percent": 87.2252532416771,
+    "not_covered_km2": 96673.43990647876,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "AFG",
+    "country": "Afghanistan",
+    "covered_km2": 641833.0867676566,
+    "asian_country_piece_km2": 641833.0867676565,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "TKM",
+    "country": "Turkmenistan",
+    "covered_km2": 471028.68052911485,
+    "asian_country_piece_km2": 471028.6805291146,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "UZB",
+    "country": "Uzbekistan",
+    "covered_km2": 448019.0233143604,
+    "asian_country_piece_km2": 448019.02331435983,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "IRQ",
+    "country": "Iraq",
+    "covered_km2": 432480.48892396386,
+    "asian_country_piece_km2": 437232.7255505034,
+    "covered_percent": 98.9131104904016,
+    "not_covered_km2": 4752.236626539763,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "SAU",
+    "country": "Saudi Arabia",
+    "covered_km2": 374031.092733211,
+    "asian_country_piece_km2": 1921563.441965609,
+    "covered_percent": 19.464935924811645,
+    "not_covered_km2": 1547532.3492323954,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "KGZ",
+    "country": "Kyrgyzstan",
+    "covered_km2": 198928.32911562128,
+    "asian_country_piece_km2": 198928.3291156211,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "SYR",
+    "country": "Syria",
+    "covered_km2": 185958.88600383437,
+    "asian_country_piece_km2": 185958.8860038343,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "NPL",
+    "country": "Nepal",
+    "covered_km2": 146977.06365774528,
+    "asian_country_piece_km2": 146977.063657745,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "TJK",
+    "country": "Tajikistan",
+    "covered_km2": 142395.48312813326,
+    "asian_country_piece_km2": 142395.4831281334,
+    "covered_percent": 99.9999999999999,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "MMR",
+    "country": "Myanmar",
+    "covered_km2": 134180.2965943467,
+    "asian_country_piece_km2": 660975.34145065,
+    "covered_percent": 20.30034831554528,
+    "not_covered_km2": 526795.0448563031,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "OMN",
+    "country": "Oman",
+    "covered_km2": 99185.76546229521,
+    "asian_country_piece_km2": 311194.6809017534,
+    "covered_percent": 31.872577376606554,
+    "not_covered_km2": 212008.91543945842,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "BGD",
+    "country": "Bangladesh",
+    "covered_km2": 97928.54940684352,
+    "asian_country_piece_km2": 135340.81848459682,
+    "covered_percent": 72.3569951056479,
+    "not_covered_km2": 37412.2690777533,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "YEM",
+    "country": "Yemen",
+    "covered_km2": 96889.03915602356,
+    "asian_country_piece_km2": 452563.77320687205,
+    "covered_percent": 21.408925082418047,
+    "not_covered_km2": 355674.7340508489,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "PRK",
+    "country": "North Korea",
+    "covered_km2": 85411.89116017854,
+    "asian_country_piece_km2": 122627.92897508392,
+    "covered_percent": 69.6512547133801,
+    "not_covered_km2": 37216.03781490531,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "AZE",
+    "country": "Azerbaijan",
+    "covered_km2": 78829.2275144453,
+    "asian_country_piece_km2": 78829.22751444524,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "GEO",
+    "country": "Georgia",
+    "covered_km2": 66480.47321828634,
+    "asian_country_piece_km2": 66480.47321828637,
+    "covered_percent": 99.99999999999996,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "BTN",
+    "country": "Bhutan",
+    "covered_km2": 39811.28793746428,
+    "asian_country_piece_km2": 39811.28793746427,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "JOR",
+    "country": "Jordan",
+    "covered_km2": 38618.95843858499,
+    "asian_country_piece_km2": 88782.39982826205,
+    "covered_percent": 43.49843945791994,
+    "not_covered_km2": 50163.441389677035,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "ARM",
+    "country": "Armenia",
+    "covered_km2": 29590.874458874998,
+    "asian_country_piece_km2": 29590.874458874998,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "KWT",
+    "country": "Kuwait",
+    "covered_km2": 13316.589619368646,
+    "asian_country_piece_km2": 17307.74071504122,
+    "covered_percent": 76.940080387245,
+    "not_covered_km2": 3991.151095672578,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "ARE",
+    "country": "United Arab Emirates",
+    "covered_km2": 11021.92986270332,
+    "asian_country_piece_km2": 71116.82344769502,
+    "covered_percent": 15.498343891596516,
+    "not_covered_km2": 60094.89358499173,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "LBN",
+    "country": "Lebanon",
+    "covered_km2": 10008.980269308851,
+    "asian_country_piece_km2": 10008.980269308851,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "ISR",
+    "country": "Israel",
+    "covered_km2": 5949.391250794627,
+    "asian_country_piece_km2": 22032.69724183232,
+    "covered_percent": 27.002555272710016,
+    "not_covered_km2": 16083.305991037685,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "CYP",
+    "country": "Cyprus",
+    "covered_km2": 5707.4154050276475,
+    "asian_country_piece_km2": 5707.415405027648,
+    "covered_percent": 99.99999999999999,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "CYN",
+    "country": "Northern Cyprus",
+    "covered_km2": 3470.4753412442947,
+    "asian_country_piece_km2": 3470.475341244294,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  },
+  {
+    "id": "PSX",
+    "country": "Palestine",
+    "covered_km2": 2667.400853844458,
+    "asian_country_piece_km2": 6328.738895597081,
+    "covered_percent": 42.14743091550475,
+    "not_covered_km2": 3661.3380417526196,
+    "coverage_class": "partial Asian source piece"
+  },
+  {
+    "id": "KAS",
+    "country": "Siachen Glacier",
+    "covered_km2": 2118.1340606344334,
+    "asian_country_piece_km2": 2118.1340606344334,
+    "covered_percent": 100.0,
+    "not_covered_km2": 0.0,
+    "coverage_class": "entire Asian source piece"
+  }
+]

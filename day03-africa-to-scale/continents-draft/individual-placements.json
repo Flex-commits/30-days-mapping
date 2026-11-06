@@ -1,0 +1,77 @@
+{
+  "seed": 202604,
+  "panels": [
+    {
+      "panel": 1,
+      "host": "AFR",
+      "placements": [
+        {
+          "id": "SAM",
+          "rotation_degrees": 28.05469685592176,
+          "translation_x_m": -566093.9234189556,
+          "translation_y_m": 730766.7565742945
+        }
+      ]
+    },
+    {
+      "panel": 2,
+      "host": "AFR",
+      "placements": [
+        {
+          "id": "AUS",
+          "rotation_degrees": -20.0,
+          "translation_x_m": -576453.5811473862,
+          "translation_y_m": 868661.3957408272
+        }
+      ]
+    },
+    {
+      "panel": 3,
+      "host": "AFR",
+      "placements": [
+        {
+          "id": "ANT",
+          "rotation_degrees": -32.79184943175979,
+          "translation_x_m": 247235.83970003572,
+          "translation_y_m": 518848.56428648037
+        }
+      ]
+    },
+    {
+      "panel": 4,
+      "host": "AFR",
+      "placements": [
+        {
+          "id": "EUR",
+          "rotation_degrees": 96.36385437274804,
+          "translation_x_m": 318371.8435511192,
+          "translation_y_m": 485550.8777221279
+        }
+      ]
+    },
+    {
+      "panel": 5,
+      "host": "AFR",
+      "placements": [
+        {
+          "id": "NAM",
+          "rotation_degrees": -138.79658178402903,
+          "translation_x_m": 57852.92104946843,
+          "translation_y_m": 242325.7750016393
+        }
+      ]
+    },
+    {
+      "panel": 6,
+      "host": "ASI",
+      "placements": [
+        {
+          "id": "AFR",
+          "rotation_degrees": -108.91310701691357,
+          "translation_x_m": -487471.6949722897,
+          "translation_y_m": 218005.14531950132
+        }
+      ]
+    }
+  ]
+}

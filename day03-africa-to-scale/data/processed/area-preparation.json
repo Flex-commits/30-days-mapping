@@ -1,0 +1,80 @@
+[
+  {
+    "id": "AFR",
+    "label": "Africa",
+    "geodesic_area_km2": 29903077.01565107,
+    "planar_area_km2": 29903077.01565102,
+    "normalization_linear_factor": 1.000000115678261,
+    "projection": "+proj=laea +lat_0=5 +lon_0=20 +datum=WGS84 +units=m +type=crs",
+    "source_component_count": 50,
+    "source_valid": true,
+    "repairs": "none",
+    "simplification_tolerance_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "CHN",
+    "label": "China",
+    "geodesic_area_km2": 9373042.711243019,
+    "planar_area_km2": 9373042.71124301,
+    "normalization_linear_factor": 1.0000000852912045,
+    "projection": "+proj=laea +lat_0=35 +lon_0=104 +datum=WGS84 +units=m +no_defs +type=crs",
+    "source_component_count": 13,
+    "source_valid": true,
+    "repairs": "none",
+    "simplification_tolerance_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "IND",
+    "label": "India",
+    "geodesic_area_km2": 3148249.7793955775,
+    "planar_area_km2": 3148249.779395574,
+    "normalization_linear_factor": 1.0000000972012832,
+    "projection": "+proj=laea +lat_0=22 +lon_0=80 +datum=WGS84 +units=m +no_defs +type=crs",
+    "source_component_count": 14,
+    "source_valid": true,
+    "repairs": "none",
+    "simplification_tolerance_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "DEU",
+    "label": "Germany",
+    "geodesic_area_km2": 357460.83556742815,
+    "planar_area_km2": 357460.83556742826,
+    "normalization_linear_factor": 1.0000000792193144,
+    "projection": "+proj=laea +lat_0=51 +lon_0=10.5 +datum=WGS84 +units=m +no_defs +type=crs",
+    "source_component_count": 6,
+    "source_valid": true,
+    "repairs": "none",
+    "simplification_tolerance_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "JPN",
+    "label": "Japan",
+    "geodesic_area_km2": 370274.6285550345,
+    "planar_area_km2": 370274.6285550346,
+    "normalization_linear_factor": 1.0000000926556305,
+    "projection": "+proj=laea +lat_0=37 +lon_0=137 +datum=WGS84 +units=m +no_defs +type=crs",
+    "source_component_count": 34,
+    "source_valid": true,
+    "repairs": "none",
+    "simplification_tolerance_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "USA48",
+    "label": "Contiguous United States",
+    "geodesic_area_km2": 7940194.180139071,
+    "planar_area_km2": 7940194.18013908,
+    "normalization_linear_factor": 1.000000095880164,
+    "projection": "+proj=laea +lat_0=39 +lon_0=-98 +datum=WGS84 +units=m +no_defs +type=crs",
+    "source_component_count": 52,
+    "source_valid": true,
+    "repairs": "none",
+    "simplification_tolerance_m": 0,
+    "display_area_effect": 0
+  }
+]

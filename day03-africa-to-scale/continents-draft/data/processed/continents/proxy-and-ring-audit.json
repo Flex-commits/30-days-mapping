@@ -1,0 +1,65 @@
+[
+  {
+    "id": "AFR",
+    "search_proxy_tolerance_m": 18000,
+    "search_proxy_area_effect_percent": 0.012970625219366205,
+    "display_simplification_m": 0,
+    "display_simplification_area_effect": 0,
+    "uniform_interior_ring_filling_area_change_km2": 3.725290298461914e-09,
+    "note": "Proxy only accelerates search; all displayed polygons, areas and containment tests use full geometry."
+  },
+  {
+    "id": "SAM",
+    "search_proxy_tolerance_m": 18000,
+    "search_proxy_area_effect_percent": -0.1800170882410579,
+    "display_simplification_m": 0,
+    "display_simplification_area_effect": 0,
+    "uniform_interior_ring_filling_area_change_km2": -3.725290298461914e-09,
+    "note": "Proxy only accelerates search; all displayed polygons, areas and containment tests use full geometry."
+  },
+  {
+    "id": "AUS",
+    "search_proxy_tolerance_m": 18000,
+    "search_proxy_area_effect_percent": -0.1249545464907853,
+    "display_simplification_m": 0,
+    "display_simplification_area_effect": 0,
+    "uniform_interior_ring_filling_area_change_km2": 0.0,
+    "note": "Proxy only accelerates search; all displayed polygons, areas and containment tests use full geometry."
+  },
+  {
+    "id": "EUR",
+    "search_proxy_tolerance_m": 18000,
+    "search_proxy_area_effect_percent": -0.758062461076503,
+    "display_simplification_m": 0,
+    "display_simplification_area_effect": 0,
+    "uniform_interior_ring_filling_area_change_km2": 9.313225746154785e-09,
+    "note": "Proxy only accelerates search; all displayed polygons, areas and containment tests use full geometry."
+  },
+  {
+    "id": "ANT",
+    "search_proxy_tolerance_m": 18000,
+    "search_proxy_area_effect_percent": -0.2888611477476988,
+    "display_simplification_m": 0,
+    "display_simplification_area_effect": 0,
+    "uniform_interior_ring_filling_area_change_km2": 22.831373751163483,
+    "note": "Proxy only accelerates search; all displayed polygons, areas and containment tests use full geometry."
+  },
+  {
+    "id": "NAM",
+    "search_proxy_tolerance_m": 18000,
+    "search_proxy_area_effect_percent": -0.87286287485977,
+    "display_simplification_m": 0,
+    "display_simplification_area_effect": 0,
+    "uniform_interior_ring_filling_area_change_km2": 3.725290298461914e-09,
+    "note": "Proxy only accelerates search; all displayed polygons, areas and containment tests use full geometry."
+  },
+  {
+    "id": "ASI",
+    "search_proxy_tolerance_m": 18000,
+    "search_proxy_area_effect_percent": -0.379664940086355,
+    "display_simplification_m": 0,
+    "display_simplification_area_effect": 0,
+    "uniform_interior_ring_filling_area_change_km2": 0.0089692622423172,
+    "note": "Proxy only accelerates search; all displayed polygons, areas and containment tests use full geometry."
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "publisher": "Natural Earth",
+  "dataset": "Admin 0 Countries",
+  "version": "5.1.1",
+  "resolution": "1:50 million",
+  "terms": "Public domain",
+  "terms_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "attribution": "Made with Natural Earth",
+  "coverage": "Global generalized de facto country polygons; source component and water conventions retained",
+  "limitations": "Not legal or survey boundaries; small features generalized or absent; source-country regional grouping needs review",
+  "downloads": {
+    "countries.zip": {
+      "url": "https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_0_countries.zip",
+      "final_url": "https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_0_countries.zip",
+      "retrieved_at_utc": "2026-11-05T20:47:07.886497+00:00",
+      "http_last_modified": "Fri, 13 May 2022 05:41:42 GMT",
+      "bytes": 799734,
+      "sha256": "5fed433373581fa648920435f937d95f2d3c0200e067409c6478dcdf1b853139"
+    },
+    "natural-earth-source.html": {
+      "url": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
+      "final_url": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",
+      "retrieved_at_utc": "2026-11-05T20:47:08.861226+00:00",
+      "http_last_modified": null,
+      "bytes": 55441,
+      "sha256": "a33f7f1e9a9b382346452e0d69630aab52b5110671b82e8a6db03a50e9f463cf"
+    },
+    "natural-earth-terms.html": {
+      "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "final_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "retrieved_at_utc": "2026-11-05T20:47:09.443713+00:00",
+      "http_last_modified": "Thu, 05 Nov 2026 20:22:01 GMT",
+      "bytes": 38013,
+      "sha256": "902c78265ecd5e8e266c258040e6fee20c4e12cdce67f3b604d8accbf5790d74"
+    }
+  }
+}

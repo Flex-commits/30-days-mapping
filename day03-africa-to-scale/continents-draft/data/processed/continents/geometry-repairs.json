@@ -1,0 +1,90 @@
+[
+  {
+    "id": "AFR",
+    "stage": "comparison preparation",
+    "operation": "0.01 m precision grid to remove numerical seam slivers",
+    "relative_area_effect": 9.53970236139412e-12,
+    "absolute_area_change_m2": 285.26953125
+  },
+  {
+    "id": "SAM",
+    "stage": "comparison preparation",
+    "operation": "0.01 m precision grid to remove numerical seam slivers",
+    "relative_area_effect": 2.1242563263967895e-11,
+    "absolute_area_change_m2": 375.8359375
+  },
+  {
+    "id": "AUS",
+    "stage": "comparison preparation",
+    "operation": "0.01 m precision grid to remove numerical seam slivers",
+    "relative_area_effect": 1.8594104034264092e-10,
+    "absolute_area_change_m2": 1430.1064453125
+  },
+  {
+    "id": "EUR",
+    "stage": "comparison preparation",
+    "operation": "0.01 m precision grid to remove numerical seam slivers",
+    "relative_area_effect": 7.14603931584179e-11,
+    "absolute_area_change_m2": 715.23046875
+  },
+  {
+    "id": "ANT",
+    "absolute_area_change_m2": 742564.447265625,
+    "stage": "projected before normalization",
+    "operation": "make_valid, polygon components only",
+    "reason": "Self-intersection[-1817353.00649311 -375478.85456656]",
+    "relative_area_effect": 5.3349613171604915e-08
+  },
+  {
+    "id": "ANT",
+    "stage": "after centering",
+    "operation": "make_valid and dissolve polygon components",
+    "reason": "Ring Self-intersection[-447314.486709451 -319899.550260172]",
+    "relative_area_effect": 1.1102230246251565e-15
+  },
+  {
+    "id": "ANT",
+    "stage": "comparison preparation",
+    "operation": "0.01 m precision grid to remove numerical seam slivers",
+    "relative_area_effect": 1.3968637357919533e-10,
+    "absolute_area_change_m2": 1944.271484375
+  },
+  {
+    "id": "NAM",
+    "stage": "comparison preparation",
+    "operation": "0.01 m precision grid to remove numerical seam slivers",
+    "relative_area_effect": 3.141981119725301e-10,
+    "absolute_area_change_m2": 7615.984375
+  },
+  {
+    "id": "ASI",
+    "absolute_area_change_m2": 17735.046875,
+    "stage": "projected before normalization",
+    "operation": "make_valid, polygon components only",
+    "reason": "Too few points in geometry component[-3300461.44317425 1631934.99806254]",
+    "relative_area_effect": 4.0294390046824446e-10
+  },
+  {
+    "id": "ASI",
+    "stage": "comparison preparation",
+    "operation": "0.01 m precision grid to remove numerical seam slivers",
+    "relative_area_effect": 4.080025206576465e-11,
+    "absolute_area_change_m2": 1795.765625
+  },
+  {
+    "id": "RUS",
+    "absolute_area_change_m2": 156754.365234375,
+    "stage": "Asia country projection",
+    "operation": "make_valid/dissolve polygon components",
+    "reason": "Self-intersection[-3756900.6871745 1696423.53205967]",
+    "relative_area_effect": 1.229964285975882e-08
+  },
+  {
+    "id": "KAZ",
+    "absolute_area_change_m2": 0.0087890625,
+    "stage": "Asia country projection",
+    "operation": "make_valid/dissolve polygon components",
+    "reason": "Too few points in geometry component[-2952373.05267784 1266943.24282607]",
+    "relative_area_effect": 3.3306690738754696e-15
+  }
+]

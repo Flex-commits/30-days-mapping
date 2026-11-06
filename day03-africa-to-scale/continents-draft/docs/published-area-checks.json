@@ -1,0 +1,16 @@
+{
+  "stage": "Initial independent reasonableness check; remaining continents require post-review checks",
+  "checks": [
+    {
+      "continent": "Australia",
+      "publisher": "Geoscience Australia",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/geography/areas-of-australia",
+      "page_updated": "2026-11-04",
+      "retrieved_date_utc": "2026-11-06",
+      "published_area_km2": 7688287,
+      "calculated_area_km2": 7691183.827086684,
+      "difference_percent": 0.03767844627398098,
+      "conventions": "Published mainland and fringing/larger islands from 1:100k Coast 2004; our 1:50m polygon grouping includes Tasmania and nearby represented components. Coastline generalization and inclusion conventions differ. No resizing to published number."
+    }
+  ]
+}

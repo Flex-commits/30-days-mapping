@@ -1,0 +1,83 @@
+{
+  "placements": [
+    {
+      "id": "USA48",
+      "rotation_degrees": 0,
+      "translation_x_m": -875000.0,
+      "translation_y_m": 1125000.0,
+      "attempts_at_hit": 16
+    },
+    {
+      "id": "IND",
+      "rotation_degrees": 105,
+      "translation_x_m": 625000.0,
+      "translation_y_m": -1875000.0,
+      "attempts_at_hit": 23913
+    },
+    {
+      "id": "DEU",
+      "rotation_degrees": 0,
+      "translation_x_m": -3250000.0,
+      "translation_y_m": 875000.0,
+      "attempts_at_hit": 300
+    },
+    {
+      "id": "JPN",
+      "rotation_degrees": -30,
+      "translation_x_m": 2250000.0,
+      "translation_y_m": -250000.0,
+      "attempts_at_hit": 7959
+    }
+  ],
+  "search_log": [
+    {
+      "candidate_set": [
+        "CHN",
+        "USA48",
+        "IND"
+      ],
+      "largest_search_attempts": 24755,
+      "largest_shape_feasible_start_count": 6,
+      "best_prefix_placed": [
+        "CHN"
+      ],
+      "complete": false,
+      "interpretation": "A failed bounded search is not a proof of geometric impossibility."
+    },
+    {
+      "candidate_set": [
+        "CHN",
+        "IND",
+        "DEU",
+        "JPN"
+      ],
+      "largest_search_attempts": 24755,
+      "largest_shape_feasible_start_count": 6,
+      "best_prefix_placed": [
+        "CHN"
+      ],
+      "complete": false,
+      "interpretation": "A failed bounded search is not a proof of geometric impossibility."
+    },
+    {
+      "candidate_set": [
+        "USA48",
+        "IND",
+        "DEU",
+        "JPN"
+      ],
+      "largest_search_attempts": 7476,
+      "largest_shape_feasible_start_count": 6,
+      "best_prefix_placed": [
+        "USA48",
+        "IND",
+        "DEU",
+        "JPN"
+      ],
+      "complete": true,
+      "interpretation": "A failed bounded search is not a proof of geometric impossibility."
+    }
+  ],
+  "seed": 202603,
+  "search_is_deterministic": true
+}

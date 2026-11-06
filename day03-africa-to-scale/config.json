@@ -1,0 +1,20 @@
+{
+ "title":"Africa, to Scale",
+ "stage":"Geographic feasibility draft — await review before final styling",
+ "source":"Natural Earth 1:50m Admin 0 Countries 5.1.1, standard countries file",
+ "africa_definition":"Union of Natural Earth REGION_UN=Africa units, plus complete French Mayotte and Reunion components. Includes Madagascar, island states and the source's remote island dependencies; includes whole Egypt including Sinai. Source-country regional aggregate, not a tectonic or mainland-only definition. All selected source components retained and membership saved.",
+ "area_definition":"WGS84 ellipsoidal surface area of selected country polygons, preserving source holes. Standard country geometry is not a separate dry-land mask; inland water is included wherever enclosed by the source polygons. Not mixed with published land-only statistics.",
+ "africa_projection":{"proj":"laea","lat_0":5,"lon_0":20,"datum":"WGS84","units":"m"},
+ "country_projection":"Each selected country locally centered WGS84 Lambert azimuthal equal-area; planar straight-edge representation geodesically densified to10km, then minute numerical normalization to its geodesic source-polygon area",
+ "display_simplification_m":0,
+ "search_proxy_simplification_m":10000,
+ "placement_clearance_m":15000,
+ "rotation_step_degrees":15,
+ "placement_grid_m":125000,
+ "max_attempts_per_country":150000,
+ "random_seed":202603,
+ "candidate_sets":[["CHN","IND","DEU","JPN"],["USA48","IND","DEU","JPN"]],
+ "comparison_components":{"USA48":"All USA source polygon components with representative point in lon[-125,-66],lat[24,50]; retains represented coastal islands, excludes Alaska/Hawaii. Label contiguous United States.","IND":"Entire India feature, including detached represented islands; source de facto boundaries.","CHN":"Entire China feature including Hainan and represented islands; Taiwan/Hong Kong/Macao separate source features not included.","DEU":"Entire Germany feature and represented islands.","JPN":"Entire Japan feature and represented islands."},
+ "placement_policy":"No cutting, clipping, stretching or post-preparation scaling. Search proxies only speed feasibility; containment/overlap verified on actual unsimplified delivered shapes. Countries not geographically adjacent after moving.",
+ "political_convention":"Natural Earth de facto country features; dissolve Africa to avoid double counting adjacent units including Morocco/Western Sahara and Somalia/Somaliland. No sovereignty endorsement. Country IDs and component exclusions logged."
+}

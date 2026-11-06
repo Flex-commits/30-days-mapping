@@ -1,0 +1,116 @@
+{
+  "unique_source_ids": 242,
+  "all_raw_country_geometries_valid": true,
+  "geographic_continent_intersections": [
+    {
+      "a": "AFR",
+      "b": "SAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AFR",
+      "b": "AUS",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AFR",
+      "b": "EUR",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AFR",
+      "b": "ANT",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AFR",
+      "b": "NAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AFR",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "SAM",
+      "b": "AUS",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "SAM",
+      "b": "EUR",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "SAM",
+      "b": "ANT",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "SAM",
+      "b": "NAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "SAM",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AUS",
+      "b": "EUR",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AUS",
+      "b": "ANT",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AUS",
+      "b": "NAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AUS",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "EUR",
+      "b": "ANT",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "EUR",
+      "b": "NAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "EUR",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "ANT",
+      "b": "NAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "ANT",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "NAM",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    }
+  ],
+  "max_geodesic_to_prepared_relative_area_error": 7.438494264988549e-15,
+  "asia_country_to_continent_symmetric_difference_km2": 0.4093306546323373,
+  "display_simplification_m": 0,
+  "repair_log": "geometry-repairs.json",
+  "claims": "See each layout validation: zero outside area is required for a verified fit; unresolved overlays are not certified."
+}

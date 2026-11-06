@@ -1,0 +1,128 @@
+[
+  {
+    "panel": 1,
+    "host": "AFR",
+    "guests": [
+      "SAM"
+    ],
+    "status": "partial overlay; full containment not found",
+    "guest_total_km2": 17692549.178769384,
+    "host_km2": 29903077.01565109,
+    "area_ratio_percent": 59.1663164613769,
+    "outside_km2": {
+      "SAM": 252130.7320078139
+    },
+    "pairwise_overlap_km2": 0,
+    "relative_area_drift": 6.661338147750939e-16,
+    "valid": true,
+    "interpretation": "A saved partial overlay is not a certified fit; bounded search failure is not an impossibility proof.",
+    "outside_guest_union_km2": 252130.7320078139,
+    "host_covered_unique_km2": 17440418.446761597,
+    "remaining_comparison_area_km2": 12462658.568889624
+  },
+  {
+    "panel": 2,
+    "host": "AFR",
+    "guests": [
+      "AUS"
+    ],
+    "status": "verified fit",
+    "guest_total_km2": 7691183.827086697,
+    "host_km2": 29903077.01565109,
+    "area_ratio_percent": 25.72037594345618,
+    "outside_km2": {
+      "AUS": 0.0
+    },
+    "pairwise_overlap_km2": 0,
+    "relative_area_drift": 1.3322676295501878e-15,
+    "valid": true,
+    "interpretation": "A saved partial overlay is not a certified fit; bounded search failure is not an impossibility proof.",
+    "outside_guest_union_km2": 0.0,
+    "host_covered_unique_km2": 7691183.827086694,
+    "remaining_comparison_area_km2": 22211893.18856441
+  },
+  {
+    "panel": 3,
+    "host": "AFR",
+    "guests": [
+      "ANT"
+    ],
+    "status": "partial overlay; full containment not found",
+    "guest_total_km2": 13918837.29673143,
+    "host_km2": 29903077.01565109,
+    "area_ratio_percent": 46.546505195590385,
+    "outside_km2": {
+      "ANT": 92415.55718694732
+    },
+    "pairwise_overlap_km2": 0,
+    "relative_area_drift": 1.9984014443252818e-15,
+    "valid": true,
+    "interpretation": "A saved partial overlay is not a certified fit; bounded search failure is not an impossibility proof.",
+    "outside_guest_union_km2": 92415.55718694732,
+    "host_covered_unique_km2": 13826421.739544485,
+    "remaining_comparison_area_km2": 16076655.276106652
+  },
+  {
+    "panel": 4,
+    "host": "AFR",
+    "guests": [
+      "EUR"
+    ],
+    "status": "partial overlay; full containment not found",
+    "guest_total_km2": 10008762.005117103,
+    "host_km2": 29903077.01565109,
+    "area_ratio_percent": 33.470675943745114,
+    "outside_km2": {
+      "EUR": 109926.65748300591
+    },
+    "pairwise_overlap_km2": 0,
+    "relative_area_drift": 5.995204332975845e-15,
+    "valid": true,
+    "interpretation": "A saved partial overlay is not a certified fit; bounded search failure is not an impossibility proof.",
+    "outside_guest_union_km2": 109926.65748300607,
+    "host_covered_unique_km2": 9898835.347634105,
+    "remaining_comparison_area_km2": 20004241.66801711
+  },
+  {
+    "panel": 5,
+    "host": "AFR",
+    "guests": [
+      "NAM"
+    ],
+    "status": "partial overlay; full containment not found",
+    "guest_total_km2": 24239438.163464528,
+    "host_km2": 29903077.01565109,
+    "area_ratio_percent": 81.06001315776886,
+    "outside_km2": {
+      "NAM": 4295864.232626352
+    },
+    "pairwise_overlap_km2": 0,
+    "relative_area_drift": 1.1102230246251565e-15,
+    "valid": true,
+    "interpretation": "A saved partial overlay is not a certified fit; bounded search failure is not an impossibility proof.",
+    "outside_guest_union_km2": 4295864.232626353,
+    "host_covered_unique_km2": 19943573.930838224,
+    "remaining_comparison_area_km2": 9959503.084812935
+  },
+  {
+    "panel": 6,
+    "host": "ASI",
+    "guests": [
+      "AFR"
+    ],
+    "status": "partial overlay; full containment not found",
+    "guest_total_km2": 29903077.015651103,
+    "host_km2": 44013686.15069442,
+    "area_ratio_percent": 67.9404058848166,
+    "outside_km2": {
+      "AFR": 1853633.812024137
+    },
+    "pairwise_overlap_km2": 0,
+    "relative_area_drift": 4.440892098500626e-16,
+    "valid": true,
+    "interpretation": "A saved partial overlay is not a certified fit; bounded search failure is not an impossibility proof.",
+    "outside_guest_union_km2": 1853633.8120241375,
+    "host_covered_unique_km2": 28049443.203626946,
+    "remaining_comparison_area_km2": 15964242.947067712
+  }
+]

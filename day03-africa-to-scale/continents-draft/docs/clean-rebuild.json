@@ -1,0 +1,63 @@
+{
+  "clean_directory": "/private/tmp/africa-continent-clean-i1mzsm72",
+  "frozen_input_checksums_verified": true,
+  "search_repeated": false,
+  "checks": [
+    {
+      "file": "outputs/continent-areas.csv",
+      "sha256": "89739826785107e3355ba322eb78dccbdde9857815f7fb928c355b83e0c77d1e",
+      "identical": true
+    },
+    {
+      "file": "outputs/asia-country-coverage.csv",
+      "sha256": "e69b7521c2793bd6cac62dcfae85e0abcfa6254502a3e024c0b92efe3172f86f",
+      "identical": true
+    },
+    {
+      "file": "outputs/validation.csv",
+      "sha256": "5d87628f50f2cd87be549d372e3174a6545111f488e8d5a52142b84677143060",
+      "identical": true
+    },
+    {
+      "file": "outputs/individual-validation.csv",
+      "sha256": "ef63a759aecd48a373049330440a225834c72372d3d3bf87b24b16fd9e1e260f",
+      "identical": true
+    },
+    {
+      "file": "outputs/continents-feasibility-draft.png",
+      "sha256": "d19ae7c557cc8c881874e1d21da83bc536f536e361aeb1d0674685c8ae1f3efc",
+      "identical": true
+    },
+    {
+      "file": "outputs/continents-individual-draft.png",
+      "sha256": "4980f01d842928cade34d8153fa0bc58ec332af2963420bb57f12c84c78b4c43",
+      "identical": true
+    },
+    {
+      "file": "data/processed/continents/comparison-projected.geojson",
+      "sha256": "acf996d9ed76d50e3963c709d4518a3e4108f8fa393ac9780cc8cc6dc29c86f7",
+      "identical": true
+    },
+    {
+      "file": "data/processed/continents/layout.geojson",
+      "sha256": "e5592d29e6b05eaf183bd4ee72ed6b180e56251e94d8d9a8e840dcfbf4f31c12",
+      "identical": true
+    },
+    {
+      "file": "data/processed/continents/individual-layout.geojson",
+      "sha256": "95c22183f208644d3da1b908dabe4780378510159aa32187475c443aebe25ce3",
+      "identical": true
+    },
+    {
+      "file": "data/processed/continents/validation.json",
+      "sha256": "f7691e211cf33820e3cbfa6455455ce9ad055eb6f3de135114dee8d5cb783eaa",
+      "identical": true
+    },
+    {
+      "file": "data/processed/continents/individual-validation.json",
+      "sha256": "749a52406f52e4365eb969c0e0c2e216a9e6653d81cbbd62cbecb0c134bd9929",
+      "identical": true
+    }
+  ],
+  "all_identical": true
+}

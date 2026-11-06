@@ -1,0 +1,90 @@
+[
+  {
+    "panel": 1,
+    "host": "AFR",
+    "guests": [
+      "SAM",
+      "AUS"
+    ],
+    "status": "partial overlay; full containment not found",
+    "guest_total_km2": 25383733.00585603,
+    "host_km2": 29903077.01565109,
+    "area_ratio_percent": 84.88669240483291,
+    "outside_km2": {
+      "SAM": 623154.535502645,
+      "AUS": 1465076.574023281
+    },
+    "pairwise_overlap_km2": 188333.69884434808,
+    "relative_area_drift": 1.5543122344752192e-15,
+    "valid": true,
+    "interpretation": "A saved partial overlay is not a certified fit; bounded search failure is not an impossibility proof.",
+    "outside_guest_union_km2": 2088231.10952593,
+    "host_covered_unique_km2": 23107168.197485738,
+    "remaining_comparison_area_km2": 6795908.818165362
+  },
+  {
+    "panel": 2,
+    "host": "AFR",
+    "guests": [
+      "ANT",
+      "EUR"
+    ],
+    "status": "partial overlay; full containment not found",
+    "guest_total_km2": 23927599.301848594,
+    "host_km2": 29903077.01565109,
+    "area_ratio_percent": 80.01718113933572,
+    "outside_km2": {
+      "ANT": 659378.0015805423,
+      "EUR": 1053139.9714919543
+    },
+    "pairwise_overlap_km2": 111971.13000868184,
+    "relative_area_drift": 2.55351295663786e-15,
+    "valid": true,
+    "interpretation": "A saved partial overlay is not a certified fit; bounded search failure is not an impossibility proof.",
+    "outside_guest_union_km2": 1712276.3235513568,
+    "host_covered_unique_km2": 22103351.848288544,
+    "remaining_comparison_area_km2": 7799725.167362579
+  },
+  {
+    "panel": 3,
+    "host": "AFR",
+    "guests": [
+      "NAM"
+    ],
+    "status": "partial overlay; full containment not found",
+    "guest_total_km2": 24239438.163464557,
+    "host_km2": 29903077.01565109,
+    "area_ratio_percent": 81.06001315776896,
+    "outside_km2": {
+      "NAM": 4296813.307579317
+    },
+    "pairwise_overlap_km2": 0,
+    "relative_area_drift": 2.4424906541753444e-15,
+    "valid": true,
+    "interpretation": "A saved partial overlay is not a certified fit; bounded search failure is not an impossibility proof.",
+    "outside_guest_union_km2": 4296813.307579317,
+    "host_covered_unique_km2": 19942624.85588522,
+    "remaining_comparison_area_km2": 9960452.15976587
+  },
+  {
+    "panel": 4,
+    "host": "ASI",
+    "guests": [
+      "AFR"
+    ],
+    "status": "partial overlay; full containment not found",
+    "guest_total_km2": 29903077.015651103,
+    "host_km2": 44013686.15069442,
+    "area_ratio_percent": 67.9404058848166,
+    "outside_km2": {
+      "AFR": 1853633.812024137
+    },
+    "pairwise_overlap_km2": 0,
+    "relative_area_drift": 4.440892098500626e-16,
+    "valid": true,
+    "interpretation": "A saved partial overlay is not a certified fit; bounded search failure is not an impossibility proof.",
+    "outside_guest_union_km2": 1853633.8120241375,
+    "host_covered_unique_km2": 28049443.203626946,
+    "remaining_comparison_area_km2": 15964242.947067712
+  }
+]

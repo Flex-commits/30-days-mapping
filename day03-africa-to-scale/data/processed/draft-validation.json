@@ -1,0 +1,55 @@
+{
+  "selected": [
+    "USA48",
+    "IND",
+    "DEU",
+    "JPN"
+  ],
+  "africa_km2": 29903077.01565102,
+  "comparison_km2": 11816179.423657114,
+  "share_percent": 39.51492823789546,
+  "remaining_comparison_area_km2": 18086897.591993906,
+  "outside_m2": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "pairwise_overlap": [
+    {
+      "a": "USA48",
+      "b": "IND",
+      "overlap_m2": 0.0
+    },
+    {
+      "a": "USA48",
+      "b": "DEU",
+      "overlap_m2": 0.0
+    },
+    {
+      "a": "USA48",
+      "b": "JPN",
+      "overlap_m2": 0.0
+    },
+    {
+      "a": "IND",
+      "b": "DEU",
+      "overlap_m2": 0.0
+    },
+    {
+      "a": "IND",
+      "b": "JPN",
+      "overlap_m2": 0.0
+    },
+    {
+      "a": "DEU",
+      "b": "JPN",
+      "overlap_m2": 0.0
+    }
+  ],
+  "max_relative_area_change_through_placement": 6.661338147750939e-16,
+  "display_geometries_valid": true,
+  "source_and_display_simplification_m": 0,
+  "clearance_target_m": 15000,
+  "interpretation": "Area-preserving partial packing, not an exact fill. Residual is unoccupied comparison area, not empty African land."
+}

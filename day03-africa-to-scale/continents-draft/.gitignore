@@ -1,0 +1,4 @@
+data/raw/
+.mplconfig/
+__pycache__/
+.venv/

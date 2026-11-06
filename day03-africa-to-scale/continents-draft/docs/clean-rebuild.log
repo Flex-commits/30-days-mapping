@@ -1,0 +1,292 @@
+download_frozen.py
+countries.zip verified
+regions.zip verified
+ice-shelves.zip verified
+
+
+prepare_continents.py
+[
+  {
+    "id": "AFR",
+    "geodesic_km2": 29903077.015651073,
+    "projected_km2": 29903077.01565109,
+    "linear_normalization": 1.000000115673489,
+    "source_components": 50,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "SAM",
+    "geodesic_km2": 17692549.178769387,
+    "projected_km2": 17692549.178769372,
+    "linear_normalization": 1.000000106046157,
+    "source_components": 68,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "AUS",
+    "geodesic_km2": 7691183.827086684,
+    "projected_km2": 7691183.827086686,
+    "linear_normalization": 1.0000001037594173,
+    "source_components": 41,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "EUR",
+    "geodesic_km2": 10008762.005117105,
+    "projected_km2": 10008762.005117165,
+    "linear_normalization": 1.0000000869629162,
+    "source_components": 220,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "ANT",
+    "geodesic_km2": 13918837.296731398,
+    "projected_km2": 13918837.296731457,
+    "linear_normalization": 1.0000001201621087,
+    "source_components": 36,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "NAM",
+    "geodesic_km2": 24239438.163464587,
+    "projected_km2": 24239438.1634645,
+    "linear_normalization": 1.000000094726849,
+    "source_components": 364,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  },
+  {
+    "id": "ASI",
+    "geodesic_km2": 44013686.15069475,
+    "projected_km2": 44013686.15069442,
+    "linear_normalization": 1.0000001024254368,
+    "source_components": 430,
+    "valid": true,
+    "display_simplification_m": 0,
+    "display_area_effect": 0
+  }
+]
+
+
+replay_and_validate.py
+{
+  "validation.json": [
+    {
+      "guests": [
+        "SAM",
+        "AUS"
+      ],
+      "status": "partial overlay; full containment not found",
+      "outside_km2": 2088231.109525926
+    },
+    {
+      "guests": [
+        "ANT",
+        "EUR"
+      ],
+      "status": "partial overlay; full containment not found",
+      "outside_km2": 1712517.9730724967
+    },
+    {
+      "guests": [
+        "NAM"
+      ],
+      "status": "partial overlay; full containment not found",
+      "outside_km2": 4296813.307579317
+    },
+    {
+      "guests": [
+        "AFR"
+      ],
+      "status": "partial overlay; full containment not found",
+      "outside_km2": 1853633.812024137
+    }
+  ],
+  "individual-validation.json": [
+    {
+      "guests": [
+        "SAM"
+      ],
+      "status": "partial overlay; full containment not found",
+      "outside_km2": 252130.7320078139
+    },
+    {
+      "guests": [
+        "AUS"
+      ],
+      "status": "verified fit",
+      "outside_km2": 0.0
+    },
+    {
+      "guests": [
+        "ANT"
+      ],
+      "status": "partial overlay; full containment not found",
+      "outside_km2": 92415.55718694732
+    },
+    {
+      "guests": [
+        "EUR"
+      ],
+      "status": "partial overlay; full containment not found",
+      "outside_km2": 109926.65748300591
+    },
+    {
+      "guests": [
+        "NAM"
+      ],
+      "status": "partial overlay; full containment not found",
+      "outside_km2": 4295864.232626352
+    },
+    {
+      "guests": [
+        "AFR"
+      ],
+      "status": "partial overlay; full containment not found",
+      "outside_km2": 1853633.812024137
+    }
+  ]
+}
+
+
+country_coverage.py
+Asian country portions calculated: 35
+
+
+audit_geography.py
+{
+  "unique_source_ids": 242,
+  "all_raw_country_geometries_valid": true,
+  "geographic_continent_intersections": [
+    {
+      "a": "AFR",
+      "b": "SAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AFR",
+      "b": "AUS",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AFR",
+      "b": "EUR",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AFR",
+      "b": "ANT",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AFR",
+      "b": "NAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AFR",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "SAM",
+      "b": "AUS",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "SAM",
+      "b": "EUR",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "SAM",
+      "b": "ANT",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "SAM",
+      "b": "NAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "SAM",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AUS",
+      "b": "EUR",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AUS",
+      "b": "ANT",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AUS",
+      "b": "NAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "AUS",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "EUR",
+      "b": "ANT",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "EUR",
+      "b": "NAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "EUR",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "ANT",
+      "b": "NAM",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "ANT",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    },
+    {
+      "a": "NAM",
+      "b": "ASI",
+      "overlap_km2": 0.0
+    }
+  ],
+  "max_geodesic_to_prepared_relative_area_error": 7.438494264988549e-15,
+  "asia_country_to_continent_symmetric_difference_km2": 0.4093306546323373,
+  "display_simplification_m": 0,
+  "repair_log": "geometry-repairs.json",
+  "claims": "See each layout validation: zero outside area is required for a verified fit; unresolved overlays are not certified."
+}
+
+
+render_continents.py
+Rendered actual displayed polygons, hatching outside portions.
+Matplotlib is building the font cache; this may take a moment.
+
+
+render_continents.py --individual
+Rendered actual displayed polygons, hatching outside portions.

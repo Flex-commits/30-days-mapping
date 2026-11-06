@@ -1,0 +1,82 @@
+{
+  "stage": "Continent geographic feasibility draft; await review before final styling",
+  "source": "Natural Earth 1:50m Admin 0 Countries 5.1.1",
+  "divider_source": "Natural Earth 1:50m Geographic Regions Polygons 5.0.0, Europe physical-region eastern boundary; extended through water",
+  "display_simplification_m": 0,
+  "search_simplification_m": 18000,
+  "seed": 202603,
+  "definition_notes": [
+    "Africa includes Madagascar and source African-region islands plus Mayotte/Reunion; whole Egypt including Sinai retained.",
+    "North America includes Greenland, Central America, Caribbean and Arctic islands; Hawaii excluded.",
+    "South America includes French Guiana, Falklands and source regional islands.",
+    "Australia means mainland, Tasmania and represented nearshore islands within 110\u2013155 E, 45\u20139 S; not all Oceania or New Guinea.",
+    "Europe/Asia divide transcontinental countries using the saved source-derived mask. Source-country island allocation is retained elsewhere; Cyprus is Asia. This is a disclosed geographic/cartographic convention, not a sovereignty position.",
+    "Antarctica combines the source country polygon with Natural Earth 1:50m perennial ice shelves v4.1.0 (2003\u201304 mosaic lineage). No seasonal sea ice; not a current ice-front survey.",
+    "Area is coastline-enclosed polygon surface after uniformly filling interior rings for all continents. It includes enclosed inland water, not a dry-land mask. Original source holes are retained separately."
+  ],
+  "projection_centers": {
+    "AFR": [
+      20,
+      5
+    ],
+    "SAM": [
+      -60,
+      -20
+    ],
+    "AUS": [
+      134,
+      -25
+    ],
+    "EUR": [
+      25,
+      55
+    ],
+    "ANT": [
+      0,
+      -90
+    ],
+    "NAM": [
+      -100,
+      50
+    ],
+    "ASI": [
+      95,
+      40
+    ]
+  },
+  "panels": [
+    {
+      "host": "AFR",
+      "guests": [
+        "SAM",
+        "AUS"
+      ]
+    },
+    {
+      "host": "AFR",
+      "guests": [
+        "ANT",
+        "EUR"
+      ]
+    },
+    {
+      "host": "AFR",
+      "guests": [
+        "NAM"
+      ]
+    },
+    {
+      "host": "ASI",
+      "guests": [
+        "AFR"
+      ]
+    }
+  ],
+  "pair_initial_trials_per_guest": 4000,
+  "pair_refinement_sweeps": 5,
+  "pair_refinement_trials_per_guest_per_sweep": 1100,
+  "individual_max_trials": 14000,
+  "individual_clearance_m": 5000,
+  "search_proxy_policy": "Simplify at 18 km without topology retention, then repair proxy only; delivered full geometry is not simplified or clipped.",
+  "area_definition": "WGS84 ellipsoidal surface area of assembled continent polygons after uniformly filling interior rings. Coastline-enclosed surface, including enclosed inland water; not dry-land area. Water touching the continent divider or coast remains outside. Original source holes retained separately."
+}

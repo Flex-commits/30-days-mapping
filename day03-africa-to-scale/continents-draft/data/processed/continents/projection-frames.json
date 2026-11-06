@@ -1,0 +1,44 @@
+{
+  "AFR": {
+    "projection": "+proj=laea +lat_0=5 +lon_0=20 +datum=WGS84 +units=m +no_defs",
+    "normalization": 1.000000115673489,
+    "center_x_m": -137986.61799075064,
+    "center_y_m": 156231.9928407774
+  },
+  "SAM": {
+    "projection": "+proj=laea +lat_0=-20 +lon_0=-60 +datum=WGS84 +units=m +no_defs",
+    "normalization": 1.000000106046157,
+    "center_x_m": -49808.34753425298,
+    "center_y_m": 644396.509721217
+  },
+  "AUS": {
+    "projection": "+proj=laea +lat_0=-25 +lon_0=134 +datum=WGS84 +units=m +no_defs",
+    "normalization": 1.0000001037594173,
+    "center_x_m": 30289.609304738417,
+    "center_y_m": -85279.95850489692
+  },
+  "EUR": {
+    "projection": "+proj=laea +lat_0=55 +lon_0=25 +datum=WGS84 +units=m +no_defs",
+    "normalization": 1.0000000869629162,
+    "center_x_m": 16527.392742096643,
+    "center_y_m": 4812.491899758192
+  },
+  "ANT": {
+    "projection": "+proj=laea +lat_0=-90 +lon_0=0 +datum=WGS84 +units=m +no_defs",
+    "normalization": 1.0000001201621087,
+    "center_x_m": 447314.486740694,
+    "center_y_m": 83259.57515331832
+  },
+  "NAM": {
+    "projection": "+proj=laea +lat_0=50 +lon_0=-100 +datum=WGS84 +units=m +no_defs",
+    "normalization": 1.000000094726849,
+    "center_x_m": 156946.65188259797,
+    "center_y_m": 214442.4589751485
+  },
+  "ASI": {
+    "projection": "+proj=laea +lat_0=40 +lon_0=95 +datum=WGS84 +units=m +no_defs",
+    "normalization": 1.0000001024254368,
+    "center_x_m": -348088.7285476135,
+    "center_y_m": 364991.9223881257
+  }
+}
