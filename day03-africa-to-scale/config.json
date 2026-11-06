@@ -77,5 +77,15 @@
   "individual_max_trials": 14000,
   "individual_clearance_m": 5000,
   "search_proxy_policy": "Simplify at 18 km without topology retention, then repair proxy only; delivered full geometry is not simplified or clipped.",
-  "area_definition": "WGS84 ellipsoidal surface area of assembled continent polygons after uniformly filling interior rings. Coastline-enclosed surface, including enclosed inland water; not dry-land area. Water touching the continent divider or coast remains outside. Original source holes retained separately."
+  "area_definition": "WGS84 ellipsoidal surface area of assembled continent polygons after uniformly filling interior rings. Coastline-enclosed surface, including enclosed inland water; not dry-land area. Water touching the continent divider or coast remains outside. Original source holes retained separately.",
+  "presentation": {
+    "near_mainland_distance_m": 650000,
+    "large_component_area_share": 0.015,
+    "inset": "Full original extent including remote islands; smaller scale; dashed rectangle marks main view",
+    "main_poster_scale": "Identical metres per inch in all main panels; context insets separately scaled",
+    "social_export_pixels": [
+      1080,
+      1350
+    ]
+  }
 }

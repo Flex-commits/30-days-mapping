@@ -8,7 +8,7 @@ source: https://github.com/Flex-commits/30-days-mapping/tree/main/day03-africa-t
 
 Six continent comparisons at one area scale. Five overlays place South America, Australia, Antarctica, Europe and North America over Africa; the sixth reverses the perspective, placing Africa over country-colored Asia.
 
-The complete shapes are repositioned and rotated with their calculated areas preserved. Hatching marks portions beyond the host outline: relative area does not guarantee literal containment. Africa includes Madagascar and the documented regional islands; Australia includes Tasmania rather than all Oceania.
+The complete shapes are repositioned and rotated with their calculated areas preserved. Enlarged main views are accompanied by labeled full-extent island context insets; all calculations retain every component. Hatching marks portions beyond the host outline: relative area does not guarantee literal containment. Africa includes Madagascar and the documented regional islands; Australia includes Tasmania rather than all Oceania.
 
 ![Africa, to Scale: continent outlines compared at preserved area scale](https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day03-africa-to-scale/outputs/africa-to-scale-preview.png)
 

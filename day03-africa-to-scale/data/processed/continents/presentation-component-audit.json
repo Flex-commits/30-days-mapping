@@ -1,0 +1,136 @@
+{
+  "policy": {
+    "near_mainland_distance_m": 650000,
+    "large_component_area_share": 0.015,
+    "inset": "Full original extent including remote islands; smaller scale; dashed rectangle marks main view",
+    "main_poster_scale": "Identical metres per inch in all main panels; context insets separately scaled",
+    "social_export_pixels": [
+      1080,
+      1350
+    ]
+  },
+  "components": [
+    {
+      "panel": 1,
+      "id": "AFR",
+      "main_component_count": 30,
+      "remote_component_count": 20,
+      "main_km2": 29888286.699169017,
+      "remote_km2": 14790.316482068996,
+      "full_km2": 29903077.01565109,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 1,
+      "id": "SAM",
+      "main_component_count": 60,
+      "remote_component_count": 8,
+      "main_km2": 17685120.476496402,
+      "remote_km2": 7428.702272962487,
+      "full_km2": 17692549.178769384,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 2,
+      "id": "AFR",
+      "main_component_count": 30,
+      "remote_component_count": 20,
+      "main_km2": 29888286.699169017,
+      "remote_km2": 14790.316482068996,
+      "full_km2": 29903077.01565109,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 2,
+      "id": "AUS",
+      "main_component_count": 41,
+      "remote_component_count": 0,
+      "main_km2": 7691183.827086687,
+      "remote_km2": 0.0,
+      "full_km2": 7691183.827086697,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 3,
+      "id": "AFR",
+      "main_component_count": 30,
+      "remote_component_count": 20,
+      "main_km2": 29888286.699169017,
+      "remote_km2": 14790.316482068996,
+      "full_km2": 29903077.01565109,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 3,
+      "id": "ANT",
+      "main_component_count": 35,
+      "remote_component_count": 1,
+      "main_km2": 13918449.220469149,
+      "remote_km2": 388.0762622770038,
+      "full_km2": 13918837.29673143,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 4,
+      "id": "AFR",
+      "main_component_count": 30,
+      "remote_component_count": 20,
+      "main_km2": 29888286.699169017,
+      "remote_km2": 14790.316482068996,
+      "full_km2": 29903077.01565109,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 4,
+      "id": "EUR",
+      "main_component_count": 160,
+      "remote_component_count": 60,
+      "main_km2": 9811719.120800475,
+      "remote_km2": 197042.88431664743,
+      "full_km2": 10008762.005117103,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 5,
+      "id": "AFR",
+      "main_component_count": 30,
+      "remote_component_count": 20,
+      "main_km2": 29888286.699169017,
+      "remote_km2": 14790.316482068996,
+      "full_km2": 29903077.01565109,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 5,
+      "id": "NAM",
+      "main_component_count": 279,
+      "remote_component_count": 85,
+      "main_km2": 24038857.87270178,
+      "remote_km2": 200580.2907627817,
+      "full_km2": 24239438.163464528,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 6,
+      "id": "ASI",
+      "main_component_count": 250,
+      "remote_component_count": 155,
+      "main_km2": 42942482.82573458,
+      "remote_km2": 1071203.3249601424,
+      "full_km2": 44013686.15069442,
+      "partition_difference_m2": 0.0
+    },
+    {
+      "panel": 6,
+      "id": "AFR",
+      "main_component_count": 30,
+      "remote_component_count": 20,
+      "main_km2": 29888286.69916906,
+      "remote_km2": 14790.316482068947,
+      "full_km2": 29903077.015651103,
+      "partition_difference_m2": 0.0
+    }
+  ],
+  "measurement_geometry_changed": false,
+  "insets_use_full_placement": true
+}

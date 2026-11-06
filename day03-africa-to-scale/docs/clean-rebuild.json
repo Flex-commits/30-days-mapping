@@ -1,5 +1,5 @@
 {
-  "clean_directory": "/private/tmp/africa-continent-clean-mufu50t_",
+  "clean_directory": "/private/tmp/africa-continent-clean-9x23hvt9",
   "frozen_input_checksums_verified": true,
   "search_repeated": false,
   "checks": [
@@ -25,12 +25,12 @@
     },
     {
       "file": "outputs/continent-pairings.png",
-      "sha256": "c1657b340850b9d1b2fcca24cf56873d34d38c97abcb61aa30d226d9d947d6ad",
+      "sha256": "dd3e8cd9cd454f362b01971295c93d9924734d9dba0d3ea7e5156fc18d2e2817",
       "identical": true
     },
     {
       "file": "outputs/africa-to-scale.png",
-      "sha256": "f73d7ae6878fc8685e1f3c9de36e9c7ae63133f8884745ff8e529f55c15fb2c2",
+      "sha256": "6e3716d1f6f6edd2c219b4974684a2b7c83299777939e0cf3b523e9f78064a55",
       "identical": true
     },
     {
@@ -50,17 +50,17 @@
     },
     {
       "file": "outputs/03-thomas-hagos.png",
-      "sha256": "6ec80f0d063c1188dda739237de9d108700b5eccea02c4846a8a9d5387c69ef9",
+      "sha256": "0cf765336ac730da4fea2ca0cbaaab46fd722c818419ce0065227d5123e6b3f1",
       "identical": true
     },
     {
       "file": "outputs/asia-country-comparison.png",
-      "sha256": "f9feb39734add3692fbf8647df71917e116d3e80991134c05c89f435fe4b16b0",
+      "sha256": "6e49326362cee93bbe74595b23aa5db7b302baf2b9c443d9c24a17f3fc18a2f4",
       "identical": true
     },
     {
       "file": "site/index.html",
-      "sha256": "81f11619939f0d1dcc11ad5f26ff7515325a664e74bcf54bb6b4fedbce041614",
+      "sha256": "8a25780f0f673a433a6f18af80bc7ccbacda4f2d4ef16124f6a637ac1a803eea",
       "identical": true
     },
     {
@@ -76,6 +76,41 @@
     {
       "file": "data/processed/continents/individual-validation.json",
       "sha256": "749a52406f52e4365eb969c0e0c2e216a9e6653d81cbbd62cbecb0c134bd9929",
+      "identical": true
+    },
+    {
+      "file": "outputs/linkedin/01-south-america.png",
+      "sha256": "c2084b724e19be155d9dea86d43e4751f921b4fc19555db686cd2da322a6de8b",
+      "identical": true
+    },
+    {
+      "file": "outputs/linkedin/02-australia.png",
+      "sha256": "9bf33386ba5fb42f63d8d30b1d5b977cd867696c56cd00bb60244f70f1390a1b",
+      "identical": true
+    },
+    {
+      "file": "outputs/linkedin/03-antarctica.png",
+      "sha256": "faa2f8b89e7780ec7c9db9b3151dc15580fae776fa783daf4d92c73fb71e6080",
+      "identical": true
+    },
+    {
+      "file": "outputs/linkedin/04-europe.png",
+      "sha256": "723e51c8d7a60728cadef549173b56df86ca6b33fa7e13b9c4573472e4f734c4",
+      "identical": true
+    },
+    {
+      "file": "outputs/linkedin/05-north-america.png",
+      "sha256": "72829921e4ff262544c47097d8ae3062c8605385538d6e7ea642902de9a73d3c",
+      "identical": true
+    },
+    {
+      "file": "outputs/linkedin/06-africa-over-asia.png",
+      "sha256": "1289ca02f049915dd7831ece6c17937fc5c9863d39036c4abe7d76e68a9324b1",
+      "identical": true
+    },
+    {
+      "file": "data/processed/continents/presentation-component-audit.json",
+      "sha256": "4c5d85baf12803b4cd439a6cebd08ccb3602bcb363c9ffaa56a33c58d037edd3",
       "identical": true
     }
   ],

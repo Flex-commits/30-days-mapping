@@ -292,7 +292,7 @@ Independent reference area differences: {'AFR': -1.17, 'SAM': -0.78, 'AUS': -0.2
 
 
 render_continents.py
-Rendered main map, pairing comparison, Asia detail and 600 × 600 thumbnail.
+Rendered enlarged main views, full-extent island insets and six LinkedIn panels.
 Matplotlib is building the font cache; this may take a moment.
 
 

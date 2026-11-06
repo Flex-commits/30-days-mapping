@@ -1,0 +1,49 @@
+{
+  "analysis_inputs_and_results_unchanged": [
+    {
+      "path": "outputs/continent-areas.csv",
+      "sha256": "89739826785107e3355ba322eb78dccbdde9857815f7fb928c355b83e0c77d1e",
+      "unchanged": true
+    },
+    {
+      "path": "outputs/asia-country-coverage.csv",
+      "sha256": "e69b7521c2793bd6cac62dcfae85e0abcfa6254502a3e024c0b92efe3172f86f",
+      "unchanged": true
+    },
+    {
+      "path": "outputs/individual-validation.csv",
+      "sha256": "ef63a759aecd48a373049330440a225834c72372d3d3bf87b24b16fd9e1e260f",
+      "unchanged": true
+    },
+    {
+      "path": "outputs/validation.csv",
+      "sha256": "5d87628f50f2cd87be549d372e3174a6545111f488e8d5a52142b84677143060",
+      "unchanged": true
+    },
+    {
+      "path": "data/processed/continents/layout.geojson",
+      "sha256": "e5592d29e6b05eaf183bd4ee72ed6b180e56251e94d8d9a8e840dcfbf4f31c12",
+      "unchanged": true
+    },
+    {
+      "path": "data/processed/continents/individual-layout.geojson",
+      "sha256": "95c22183f208644d3da1b908dabe4780378510159aa32187475c443aebe25ce3",
+      "unchanged": true
+    },
+    {
+      "path": "data/processed/continents/comparison-projected.geojson",
+      "sha256": "acf996d9ed76d50e3963c709d4518a3e4108f8fa393ac9780cc8cc6dc29c86f7",
+      "unchanged": true
+    },
+    {
+      "path": "data/processed/continents/continent-geographic.geojson",
+      "sha256": "c8811ac12c685181fdbe498ba2d7595ba651d33bceeb08fc138884b989543859",
+      "unchanged": true
+    }
+  ],
+  "components": "../data/processed/continents/presentation-component-audit.json",
+  "main_view_area_scale": "shared across main poster panels",
+  "social_view_scale": "varies between slides; constant within each overlay; stated on each slide",
+  "insets": "full placement including remote islands, separately scaled and labeled",
+  "containment": "Only Australia fully contained in the saved individual placements"
+}

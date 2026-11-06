@@ -10,7 +10,7 @@
 
 Day 2 is stored in `day02-nile/`, with its public page under `docs/nile/`. [Finding Support](https://flex-commits.github.io/30-days-mapping/finding-support/) remains a separate project under `day02-finding-support/`. The shared MUSA repository receives only the thumbnail, metadata and description.
 
-Day 3, **Africa, to Scale**, compares continent outlines at preserved area scale. [Full map](day03-africa-to-scale/outputs/africa-to-scale.png), [Asia country detail](day03-africa-to-scale/outputs/asia-country-comparison.png), [methods and data](day03-africa-to-scale/), and [gallery submission files](day03-africa-to-scale/submission-proposal/) are organized in the Day 3 project folder.
+Day 3, **Africa, to Scale**, compares continent outlines at preserved area scale. [Full map](day03-africa-to-scale/outputs/africa-to-scale.png), [Asia country detail](day03-africa-to-scale/outputs/asia-country-comparison.png), [methods and data](day03-africa-to-scale/), [LinkedIn panels](day03-africa-to-scale/outputs/linkedin/), and [gallery submission files](day03-africa-to-scale/submission-proposal/) are organized in the Day 3 project folder.
 
 ## Day 01 — Points: The Restless Earth
 

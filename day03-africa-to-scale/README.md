@@ -5,7 +5,7 @@
 
 How does Africa compare with the other continents? Five area-preserving overlays place South America, Australia, Antarctica, Europe and North America over Africa. The sixth reverses the comparison: Africa’s cream outline crosses a country-colored Asia. Each comparison continent appears once in the main composition.
 
-[High-resolution map](outputs/africa-to-scale.png) · [Asia country detail](outputs/asia-country-comparison.png) · [600 × 600 gallery image](outputs/03-thomas-hagos.png) · [Area table](outputs/continent-areas.csv) · [Asian country portions](outputs/asia-country-coverage.csv) · [Numerical validation](outputs/individual-validation.csv)
+[LinkedIn panels](outputs/linkedin/) · [High-resolution map](outputs/africa-to-scale.png) · [Asia country detail](outputs/asia-country-comparison.png) · [600 × 600 gallery image](outputs/03-thomas-hagos.png) · [Area table](outputs/continent-areas.csv) · [Asian country portions](outputs/asia-country-coverage.csv) · [Numerical validation](outputs/individual-validation.csv)
 
 ## Reading the map
 Africa’s calculated surface area is **29.90 million km²**. South America is 59.2% of that area; Australia 25.7%; Antarctica 46.5%; Europe 33.5%; and North America 81.1%. Africa is 67.9% of Asia’s calculated area. Percentages compare area, not the amount of an outline that can be packed inside another.
@@ -13,6 +13,13 @@ Africa’s calculated surface area is **29.90 million km²**. South America is 5
 The shapes are translated and rotated without changing their prepared areas. Australia is fully contained. The saved overlays contain 98.6% of South America, 99.3% of Antarctica, 98.9% of Europe and 82.3% of North America within Africa. The inverse overlay places 93.8% of Africa within Asia. Diagonal hatching identifies every portion beyond the host outline. These are measured arrangements, not proofs that no other arrangement could improve containment. The work makes no claim that every continent literally fits inside Africa.
 
 The supplementary [paired comparison](outputs/continent-pairings.png) tests South America with Australia and Antarctica with Europe. It preserves visible protrusions and uses crosshatching for guest overlap. Its area totals must not be read as successful geometric packing.
+
+## Presentation and island context
+The main views are enlarged without changing their underlying geometry. A complete polygon component stays in the main view if it lies within 650 km of the largest component, or represents at least 1.5% of that continent’s area. This retains major islands such as Madagascar and Greenland in the main comparison. More distant small components remain visible in the labeled **full-extent island context inset**, with a dashed rectangle marking the main viewport. No mainland is cut into pieces and no component is removed from the calculations.
+
+All six poster main views share one physical area scale. Context insets are explicitly **smaller scale**, so their visual sizes must not be compared with the main views. Each 1080 × 1350 LinkedIn panel uses one consistent area scale within its overlay, while its view scale varies across slides. Africa has a strong cream outline over the Asian countries. Area ratios lead the presentation; only Australia is labeled fully contained. Other saved placements remain area-preserving overlays with visible protrusions.
+
+`data/processed/continents/presentation-component-audit.json` records main and remote component counts, areas, the display partition check, and the saved presentation policy. All placement geometry, area totals and containment results are unchanged by the presentation pass.
 
 ## Geographic definitions
 Every coastline begins with **Natural Earth 1:50m Admin 0 Countries v5.1.1**, using its generalized de facto country/territory units. These are neither legal boundaries nor a statement endorsing sovereignty. Original country geometry is retained separately.
@@ -31,7 +38,7 @@ Edges are geodesically densified to at most 10 km. Each continent uses a locally
 
 Preparation logs geometry repairs, their absolute/relative area effects and a 0.01 m numerical precision grid. A final minute normalization preserves the target area after preparation. Thereafter only rigid translation and rotation are allowed. No mainland is cut, clipped, stretched or arbitrarily scaled. Display simplification is **zero**; an 18 km simplified proxy accelerates bounded searches but never supplies displayed polygons or reported containment metrics. Proxy and ring-filling effects are measured separately.
 
-Locally centered equal-area representations distort shape and direction. Moving these planar outlines is an area comparison, not an exact relocation on the ellipsoid. The main map uses equal physical area scale across its six panels. Source resolution is generalized, so rounded million-km² values are appropriate.
+Locally centered equal-area representations distort shape and direction. Moving these planar outlines is an area comparison, not an exact relocation on the ellipsoid. The main map uses equal physical area scale across its six main views, with separately scaled context insets. Source resolution is generalized, so rounded million-km² values are appropriate.
 
 ## Asian countries
 All Asian country pieces share Asia’s single projection and frame. The moved Africa outline is intersected with these pieces; Russia and other split units refer to their Asian portions only. The table records covered area, percentage, uncovered area and whether the Asian source piece is entirely covered. Enclosed water and small numerical geometry differences remain unattributed rather than being assigned to countries by invention. Country colors supply context; covered portions are not whole-country equivalents.
