@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | 01 | Points | The Restless Earth — below | `scripts/day01.py` |
 | 02 | Lines | [The Nile, Connected](https://flex-commits.github.io/30-days-mapping/nile/) | [Code, sources and outputs](day02-nile/) |
-| 03 | Polygons | [Africa, to Scale](day03-africa-to-scale/outputs/africa-to-scale.png) | [Code, sources and methods](day03-africa-to-scale/) |
+| 03 | Polygons | [Africa, to Scale](https://flex-commits.github.io/30-days-mapping/africa-to-scale/) | [Code, sources and methods](day03-africa-to-scale/) |
 | 05 | Senses: Sight | [Seeing the Hudson](https://flex-commits.github.io/30-days-mapping/seeing-the-hudson/) | [Code, sources and methods](day05-seeing-hudson/) |
 
 Day 2 is stored in `day02-nile/`, with its public page under `docs/nile/`. [Finding Support](https://flex-commits.github.io/30-days-mapping/finding-support/) remains a separate project under `day02-finding-support/`. The shared MUSA repository receives only the thumbnail, metadata and description.
