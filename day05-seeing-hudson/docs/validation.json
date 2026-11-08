@@ -23,6 +23,6 @@
     600,
     600
   ],
-  "browser_visual_QA": "Pending; static poster inspected separately.",
+  "browser_visual_QA": "Live page inspected in the built-in browser at narrow mobile width: hero, photo cards, credit links and disclosure interaction checked. Applied width:100% fix for disclosure-map overflow; post-deployment check follows.",
   "limitations": "No modeled visibility, current-condition claim or certified access/coordinate accuracy."
 }

@@ -76,7 +76,7 @@ Directories follow the professors' workflow: `scripts/`, `data/raw/`, `data/proc
 
 ## Submission
 
-The shared Weitzman-MUSA repository receives only `_maps_2026/05-thomas-hagos.md` and `assets/thumbnails/2026/05-thomas-hagos.png`. All scripts, data, photographs, full exports and the public page stay in **Flex-commits/30-days-mapping**. The entry follows the current upstream template and links to this project.
+The shared Weitzman-MUSA repository receives only `_maps_2026/05-thomas-hagos.md` and `assets/thumbnails/2026/05-thomas-hagos.png`. All scripts, data, photographs, full exports and the public page stay in **Flex-commits/30-days-mapping**. The entry follows the current upstream template and links to this project. Submitted as [MUSA pull request #122](https://github.com/weitzman-musa/30DayMapChallenge/pull/122); gallery publication awaits maintainer review/merge.
 
 The aerial-only gallery thumbnail is separately licensed CC BY 4.0 for the shared gallery; it contains no source photograph.
 
