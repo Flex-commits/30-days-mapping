@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": {
+    "frozen_input_hashes": true,
+    "six_unique_sites_three_pairs": true,
+    "geodesic_miles_independently_checked": true,
+    "photo_dates_rights_and_coordinate_bases_checked": true,
+    "sites_within_corresponding_aerial_frames": true,
+    "imagery_bounds_pixels_hashes_and_CRS": true,
+    "export_sizes": true,
+    "static_page_local_links_and_image_alt_text": true,
+    "repeat_render_byte_identical": true
+  },
+  "frozen_inputs": 21,
+  "poster_sha256": "82889ee1674a628407341589757167ac1b0ed68b945611839be6c794a7d5cc56",
+  "viewpoint_count": 6,
+  "pair_count": 3,
+  "poster_pixels": [
+    4500,
+    5400
+  ],
+  "thumbnail_pixels": [
+    600,
+    600
+  ],
+  "browser_visual_QA": "Pending; static poster inspected separately.",
+  "limitations": "No modeled visibility, current-condition claim or certified access/coordinate accuracy."
+}

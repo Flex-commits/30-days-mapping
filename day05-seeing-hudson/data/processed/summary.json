@@ -1,0 +1,20 @@
+{
+  "site_count": 6,
+  "pair_count": 3,
+  "site_selection": "Purposive visual contrasts across three Lower Hudson sections; not a representative sample or comprehensive access inventory.",
+  "source_snapshot_date": "2026-11-08",
+  "imagery_years": {
+    "service_CONUS_NAIP_range": "2017\u20132021",
+    "local_pixel_dates": "Not resolved; service refresh June 2024 is not capture date."
+  },
+  "distance_method": "WGS84 geodesic / 1609.344 meters per mile",
+  "pair_lines": "Editorial connection between selected public sites; not a walking route, viewing direction, visibility ray or verified mutual sightline.",
+  "photo_policy": "Historical dated photographs; different seasons, weather, fields of view and camera elevations. Not controlled comparisons of current views.",
+  "limits": [
+    "No terrain/building/vegetation visibility model.",
+    "Pair connections do not certify that observers can see each other or the opposite mapped point.",
+    "Coordinates from photo metadata are approximate, not surveyed; Fort Lee uses an official park entrance anchor, not a camera position.",
+    "Photographs and aerial imagery are not contemporary with one another.",
+    "Public-site documentation does not certify current access, closures or universal accessibility."
+  ]
+}

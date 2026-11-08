@@ -1,0 +1,114 @@
+[
+  {
+    "id": "01",
+    "bounds": [
+      579765.0305067184,
+      4505832.687862674,
+      584965.0305067184,
+      4508932.687862674
+    ],
+    "size": [
+      1560,
+      930
+    ],
+    "actual_bounds": [
+      579765.0305067184,
+      4505832.687862673,
+      584965.0305067184,
+      4508932.687862673
+    ],
+    "actual_size": [
+      1560,
+      930
+    ],
+    "request_url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=579765.0305067184%2C4505832.687862674%2C584965.0305067184%2C4508932.687862674&bboxSR=26918&imageSR=26918&size=1560%2C930&format=jpg&dpi=150&transparent=false&f=json",
+    "source_file": "usgs-01.jpg",
+    "sha256": "0d67febdd668baea2b07cf9568b932068195a947467928db41c761205f66b9d2",
+    "source": "USGS Imagery Only / The National Map",
+    "acquisition_date_note": "Service metadata reports CONUS NAIP sources 2017\u20132021; exact local pixel dates unavailable. Service refresh June 2024 is not capture date."
+  },
+  {
+    "id": "02",
+    "bounds": [
+      581073.7396839375,
+      4511864.046479613,
+      586273.7396839375,
+      4514964.046479613
+    ],
+    "size": [
+      1560,
+      930
+    ],
+    "actual_bounds": [
+      581073.7396839373,
+      4511864.046479612,
+      586273.7396839373,
+      4514964.046479612
+    ],
+    "actual_size": [
+      1560,
+      930
+    ],
+    "request_url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=581073.7396839375%2C4511864.046479613%2C586273.7396839375%2C4514964.046479613&bboxSR=26918&imageSR=26918&size=1560%2C930&format=jpg&dpi=150&transparent=false&f=json",
+    "source_file": "usgs-02.jpg",
+    "sha256": "0740c8e465bebd477335a15674595664f2874e076db672bf57fefad48e9c004a",
+    "source": "USGS Imagery Only / The National Map",
+    "acquisition_date_note": "Service metadata reports CONUS NAIP sources 2017\u20132021; exact local pixel dates unavailable. Service refresh June 2024 is not capture date."
+  },
+  {
+    "id": "03",
+    "bounds": [
+      585948.0236332358,
+      4521794.609141326,
+      591148.0236332358,
+      4524894.609141326
+    ],
+    "size": [
+      1560,
+      930
+    ],
+    "actual_bounds": [
+      585948.0236332358,
+      4521794.609141326,
+      591148.0236332358,
+      4524894.609141326
+    ],
+    "actual_size": [
+      1560,
+      930
+    ],
+    "request_url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=585948.0236332358%2C4521794.609141326%2C591148.0236332358%2C4524894.609141326&bboxSR=26918&imageSR=26918&size=1560%2C930&format=jpg&dpi=150&transparent=false&f=json",
+    "source_file": "usgs-03.jpg",
+    "sha256": "d1d0d22d37f2911a9fc411dba302c8cb816bbe56c0b2383fa63fb6c72abff27a",
+    "source": "USGS Imagery Only / The National Map",
+    "acquisition_date_note": "Service metadata reports CONUS NAIP sources 2017\u20132021; exact local pixel dates unavailable. Service refresh June 2024 is not capture date."
+  },
+  {
+    "id": "overview",
+    "bounds": [
+      580759.0382416092,
+      4505154.7811938785,
+      590559.0382416092,
+      4525454.7811938785
+    ],
+    "size": [
+      1200,
+      2486
+    ],
+    "actual_bounds": [
+      580759.0382416092,
+      4505153.6145272115,
+      590559.0382416092,
+      4525455.947860545
+    ],
+    "actual_size": [
+      1200,
+      2486
+    ],
+    "request_url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=580759.0382416092%2C4505154.7811938785%2C590559.0382416092%2C4525454.7811938785&bboxSR=26918&imageSR=26918&size=1200%2C2486&format=jpg&dpi=150&transparent=false&f=json",
+    "source_file": "usgs-overview.jpg",
+    "sha256": "30f294ea91b85c96299ef7da880b9b7c6f10ac5053eb319fc5cca92c41fe784c",
+    "source": "USGS Imagery Only / The National Map",
+    "acquisition_date_note": "Service metadata reports CONUS NAIP sources 2017\u20132021; exact local pixel dates unavailable. Service refresh June 2024 is not capture date."
+  }
+]

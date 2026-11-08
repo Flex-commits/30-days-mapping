@@ -1,0 +1,291 @@
+{
+  "snapshot_date": "2026-11-08",
+  "imagery": {
+    "publisher": "USGS / USDA / The National Map",
+    "title": "USGS Imagery Only cached orthophotography",
+    "source": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer",
+    "version": "Rolling service; frozen export hashes identify the exact inputs",
+    "credit": "USDA, USGS The National Map: Orthoimagery. Data refreshed June, 2024.v1.2",
+    "capture_date_limit": "Service describes CONUS NAIP 2017\u20132021, but exact local pixel dates are not exposed. Refresh date is not acquisition date.",
+    "resolution": "Service metadata: generally 1m CONUS NAIP, some partner imagery; map exports resampled to saved dimensions. No claim of native pixel resolution from export pixel size.",
+    "terms": "https://www.usgs.gov/faqs/what-are-terms-uselicensing-map-services-and-data-national-map",
+    "coverage": "Selected Lower Hudson NY/NJ corridor only; no Alaska licensed SPOT material"
+  },
+  "photographs": [
+    {
+      "title": "File:Manhattan skyline, as viewed from Liberty State Park.jpg",
+      "publisher": "Wikimedia Commons; source author retained",
+      "author": "Dtabb73",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Manhattan_skyline,_as_viewed_from_Liberty_State_Park.jpg",
+      "captured": "2015-10-19 15:36:47",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Resized and cropped to fit frame; no object removal or generative edits."
+    },
+    {
+      "title": "File:Jersey City Skyline December 2022 073.jpg",
+      "publisher": "Wikimedia Commons; source author retained",
+      "author": "Kidfly182",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jersey_City_Skyline_December_2022_073.jpg",
+      "captured": "2022-12-10 13:41:21",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Resized and cropped to fit frame; no object removal or generative edits."
+    },
+    {
+      "title": "File:2021-05-14 09 36 16 View east across the Hudson River towards Manhattan from Hamilton Park in Weehawken, Hudson County, New Jersey.jpg",
+      "publisher": "Wikimedia Commons; source author retained",
+      "author": "Famartin",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2021-05-14_09_36_16_View_east_across_the_Hudson_River_towards_Manhattan_from_Hamilton_Park_in_Weehawken,_Hudson_County,_New_Jersey.jpg",
+      "captured": "2021-05-14 09:36:16",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Resized and cropped to fit frame; no object removal or generative edits."
+    },
+    {
+      "title": "File:Pier 84 Sunset.jpg",
+      "publisher": "Wikimedia Commons; source author retained",
+      "author": "G. Scott Segler",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pier_84_Sunset.jpg",
+      "captured": "2017-06-08 20:28:18",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Resized and cropped to fit frame; no object removal or generative edits."
+    },
+    {
+      "title": "File:Fort Lee Historic Park 03 - Cannon and George Washington Bridge.jpg",
+      "publisher": "Wikimedia Commons; source author retained",
+      "author": "Jllm06",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg",
+      "captured": "2008-06-28 15:49:43",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Resized and cropped to fit frame; no object removal or generative edits."
+    },
+    {
+      "title": "File:The Little Red Lighthouse (Jeffrey's Hook Lighthouse) 01.JPG",
+      "publisher": "Wikimedia Commons; source author retained",
+      "author": "Jmccabe371",
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Little_Red_Lighthouse_(Jeffrey%27s_Hook_Lighthouse)_01.JPG",
+      "captured": "2010-05-29",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "modifications": "Resized and cropped to fit frame; no object removal or generative edits."
+    }
+  ],
+  "official_site_sources": [
+    {
+      "site": "Liberty State Park",
+      "publisher_url": "https://dep.nj.gov/parksandforests/liberty-state-park",
+      "verified_date": "2026-11-08",
+      "scope": "Public park/site identity and description; not a current closure/accessibility audit",
+      "coordinate_basis": "Photographer-supplied camera metadata (Dtabb73); approximate location near CRRNJ waterfront"
+    },
+    {
+      "site": "Rockefeller Park riverfront",
+      "publisher_url": "https://bpca.ny.gov/place/rockefeller-park/",
+      "verified_date": "2026-11-08",
+      "scope": "Public park/site identity and description; not a current closure/accessibility audit",
+      "coordinate_basis": "Photographer-supplied camera metadata (Kidfly182); approximate riverfront location"
+    },
+    {
+      "site": "Hamilton Park",
+      "publisher_url": "https://www.weehawken-nj.us/Home/Components/FacilityDirectory/FacilityDirectory/29/211",
+      "verified_date": "2026-11-08",
+      "scope": "Public park/site identity and description; not a current closure/accessibility audit",
+      "coordinate_basis": "Photographer-supplied camera metadata (Famartin); approximate park overlook position"
+    },
+    {
+      "site": "Pier 84",
+      "publisher_url": "https://hudsonriverpark.org/locations/pier-84/",
+      "verified_date": "2026-11-08",
+      "scope": "Public park/site identity and description; not a current closure/accessibility audit",
+      "coordinate_basis": "Photographer-supplied camera metadata (G. Scott Segler); approximate pier position"
+    },
+    {
+      "site": "Fort Lee Historic Park",
+      "publisher_url": "https://njpalisades.org/fortlee/",
+      "verified_date": "2026-11-08",
+      "scope": "Public park/site identity and description; not a current closure/accessibility audit",
+      "coordinate_basis": "Park operator published GPS: entrance/site anchor, not the unlocated photograph camera position"
+    },
+    {
+      "site": "Little Red Lighthouse, Fort Washington Park",
+      "publisher_url": "https://nycgovparks.org/parks/fort-washington-park/highlights/11044",
+      "verified_date": "2026-11-08",
+      "scope": "Public park/site identity and description; not a current closure/accessibility audit",
+      "coordinate_basis": "Photographer-supplied camera metadata (Jmccabe371); approximate lighthouse waterfront position"
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "file": "data/raw/usgs-imagery-metadata.json",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer?f=json",
+      "source": "USGS service metadata",
+      "bytes": 9263,
+      "sha256": "70d0c61f386e53c724e328aee5af968e36487ad1d8d6cf3b762ff0981e317e6b",
+      "retrieved_utc": "2026-11-08T23:15:42.046582+00:00"
+    },
+    {
+      "file": "data/raw/usgs-01.jpg",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=579765.0305067184%2C4505832.687862674%2C584965.0305067184%2C4508932.687862674&bboxSR=26918&imageSR=26918&size=1560%2C930&format=jpg&dpi=150&transparent=false&f=image",
+      "source": "USGS fixed-extent orthoimage export",
+      "bytes": 510198,
+      "sha256": "0d67febdd668baea2b07cf9568b932068195a947467928db41c761205f66b9d2",
+      "retrieved_utc": "2026-11-08T23:15:44.645061+00:00"
+    },
+    {
+      "file": "data/raw/usgs-01-metadata.json",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=579765.0305067184%2C4505832.687862674%2C584965.0305067184%2C4508932.687862674&bboxSR=26918&imageSR=26918&size=1560%2C930&format=jpg&dpi=150&transparent=false&f=json",
+      "source": "USGS export georeferencing metadata",
+      "bytes": 373,
+      "sha256": "cb41b82f0fa9b71894c4f8c57da87dced6f0e6bacc1eaed7baec04831fbf3b2f",
+      "retrieved_utc": "2026-11-08T23:15:43.650549+00:00"
+    },
+    {
+      "file": "data/raw/usgs-02.jpg",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=581073.7396839375%2C4511864.046479613%2C586273.7396839375%2C4514964.046479613&bboxSR=26918&imageSR=26918&size=1560%2C930&format=jpg&dpi=150&transparent=false&f=image",
+      "source": "USGS fixed-extent orthoimage export",
+      "bytes": 573544,
+      "sha256": "0740c8e465bebd477335a15674595664f2874e076db672bf57fefad48e9c004a",
+      "retrieved_utc": "2026-11-08T23:15:44.484589+00:00"
+    },
+    {
+      "file": "data/raw/usgs-02-metadata.json",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=581073.7396839375%2C4511864.046479613%2C586273.7396839375%2C4514964.046479613&bboxSR=26918&imageSR=26918&size=1560%2C930&format=jpg&dpi=150&transparent=false&f=json",
+      "source": "USGS export georeferencing metadata",
+      "bytes": 373,
+      "sha256": "5e437fe8667557769dc8fe2c64a0e4975e99a3861bdf9e7184eaeeb86f5f93fa",
+      "retrieved_utc": "2026-11-08T23:15:43.564795+00:00"
+    },
+    {
+      "file": "data/raw/usgs-03.jpg",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=585948.0236332358%2C4521794.609141326%2C591148.0236332358%2C4524894.609141326&bboxSR=26918&imageSR=26918&size=1560%2C930&format=jpg&dpi=150&transparent=false&f=image",
+      "source": "USGS fixed-extent orthoimage export",
+      "bytes": 573642,
+      "sha256": "d1d0d22d37f2911a9fc411dba302c8cb816bbe56c0b2383fa63fb6c72abff27a",
+      "retrieved_utc": "2026-11-08T23:15:44.658256+00:00"
+    },
+    {
+      "file": "data/raw/usgs-03-metadata.json",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=585948.0236332358%2C4521794.609141326%2C591148.0236332358%2C4524894.609141326&bboxSR=26918&imageSR=26918&size=1560%2C930&format=jpg&dpi=150&transparent=false&f=json",
+      "source": "USGS export georeferencing metadata",
+      "bytes": 373,
+      "sha256": "e15fec38c340c1f2e9280f3f9db517dcd518c12e70e646f1ccec34950c5323b9",
+      "retrieved_utc": "2026-11-08T23:15:44.107948+00:00"
+    },
+    {
+      "file": "data/raw/usgs-overview.jpg",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=580759.0382416092%2C4505154.7811938785%2C590559.0382416092%2C4525454.7811938785&bboxSR=26918&imageSR=26918&size=1200%2C2486&format=jpg&dpi=150&transparent=false&f=image",
+      "source": "USGS fixed-extent orthoimage export",
+      "bytes": 1367502,
+      "sha256": "30f294ea91b85c96299ef7da880b9b7c6f10ac5053eb319fc5cca92c41fe784c",
+      "retrieved_utc": "2026-11-08T23:15:46.374324+00:00"
+    },
+    {
+      "file": "data/raw/usgs-overview-metadata.json",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/export?bbox=580759.0382416092%2C4505154.7811938785%2C590559.0382416092%2C4525454.7811938785&bboxSR=26918&imageSR=26918&size=1200%2C2486&format=jpg&dpi=150&transparent=false&f=json",
+      "source": "USGS export georeferencing metadata",
+      "bytes": 374,
+      "sha256": "62b8288d7d5a24d40ea0ab9623e1497b2c6c7143704bdd76acce9f4bae09df8a",
+      "retrieved_utc": "2026-11-08T23:15:45.738899+00:00"
+    },
+    {
+      "file": "data/raw/photos/01-nj.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Manhattan_skyline%2C_as_viewed_from_Liberty_State_Park.jpg/1280px-Manhattan_skyline%2C_as_viewed_from_Liberty_State_Park.jpg",
+      "source": "Wikimedia Commons licensed source photograph",
+      "bytes": 78119,
+      "sha256": "cf40b7168835c58f8fe332a92f782b6dfb7af9d29b362a9ac1ed127e85111d91",
+      "retrieved_utc": "2026-11-08T23:04:30.430472+00:00"
+    },
+    {
+      "file": "data/raw/photos/01-nj-metadata.json",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=44658031&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1200",
+      "source": "Saved page object from Commons API; API query wrapper differs from frozen page-object serialization",
+      "bytes": 5289,
+      "sha256": "d4291d77cf766d9845981791334faaa1184ea21017477c9de23d67ad321c0343",
+      "retrieved_utc": "2026-11-08T23:04:29.425411+00:00"
+    },
+    {
+      "file": "data/raw/photos/01-ny.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Jersey_City_Skyline_December_2022_073.jpg/1280px-Jersey_City_Skyline_December_2022_073.jpg",
+      "source": "Wikimedia Commons licensed source photograph",
+      "bytes": 275589,
+      "sha256": "09c761c6f02f55e43ba86c8367582ff5c5eb72bbaee3d2a3408b0015450a8d0e",
+      "retrieved_utc": "2026-11-08T23:04:30.099783+00:00"
+    },
+    {
+      "file": "data/raw/photos/01-ny-metadata.json",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=126645072&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1200",
+      "source": "Saved page object from Commons API; API query wrapper differs from frozen page-object serialization",
+      "bytes": 4616,
+      "sha256": "23a57f84cd5a02c5e0f5fe3f6b2d3a7519c73ca6fc534bbc5fd8c2f5bb72daf8",
+      "retrieved_utc": "2026-11-08T23:04:29.425894+00:00"
+    },
+    {
+      "file": "data/raw/photos/02-nj.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/2021-05-14_09_36_16_View_east_across_the_Hudson_River_towards_Manhattan_from_Hamilton_Park_in_Weehawken%2C_Hudson_County%2C_New_Jersey.jpg/1280px-2021-05-14_09_36_16_View_east_across_the_Hudson_River_towards_Manhattan_from_Hamilton_Park_in_Weehawken%2C_Hudson_County%2C_New_Jersey.jpg",
+      "source": "Wikimedia Commons licensed source photograph",
+      "bytes": 246498,
+      "sha256": "a807ca8f01e72845dac83ab82b96ecffcc43cb7a5f06db22dd9789cdcc2e00f1",
+      "retrieved_utc": "2026-11-08T23:04:30.105819+00:00"
+    },
+    {
+      "file": "data/raw/photos/02-nj-metadata.json",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=105311396&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1200",
+      "source": "Saved page object from Commons API; API query wrapper differs from frozen page-object serialization",
+      "bytes": 5886,
+      "sha256": "293f17177c0027432e03594cbc92fa5fc675c450e06db22f8e5c802dd057d6d6",
+      "retrieved_utc": "2026-11-08T23:04:29.426315+00:00"
+    },
+    {
+      "file": "data/raw/photos/02-ny.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Pier_84_Sunset.jpg/1280px-Pier_84_Sunset.jpg",
+      "source": "Wikimedia Commons licensed source photograph",
+      "bytes": 267966,
+      "sha256": "d15e2afd74bc88ec6bc7fc57d33298a2ea34e479f34910daee928c8e8bd2e78b",
+      "retrieved_utc": "2026-11-08T23:04:30.071619+00:00"
+    },
+    {
+      "file": "data/raw/photos/02-ny-metadata.json",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=60330358&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1200",
+      "source": "Saved page object from Commons API; API query wrapper differs from frozen page-object serialization",
+      "bytes": 4699,
+      "sha256": "7bdfe7d45911693bdfa15d165f9da7211c7bbf05412e112751d254c4f289619b",
+      "retrieved_utc": "2026-11-08T23:04:29.426734+00:00"
+    },
+    {
+      "file": "data/raw/photos/03-nj.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg/1280px-Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg",
+      "source": "Wikimedia Commons licensed source photograph",
+      "bytes": 287296,
+      "sha256": "65d66a9e8a1b3218062f9b5df123ddf2adf5887528a30835b898fa706f7c6997",
+      "retrieved_utc": "2026-11-08T23:04:30.109700+00:00"
+    },
+    {
+      "file": "data/raw/photos/03-nj-metadata.json",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=64982753&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1200",
+      "source": "Saved page object from Commons API; API query wrapper differs from frozen page-object serialization",
+      "bytes": 4307,
+      "sha256": "f125f10b668593375a475fe945a9c7a961c08a37b3c270b3f2a901c5528b9b22",
+      "retrieved_utc": "2026-11-08T23:04:29.427015+00:00"
+    },
+    {
+      "file": "data/raw/photos/03-ny.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/The_Little_Red_Lighthouse_%28Jeffrey%27s_Hook_Lighthouse%29_01.JPG/1280px-The_Little_Red_Lighthouse_%28Jeffrey%27s_Hook_Lighthouse%29_01.JPG",
+      "source": "Wikimedia Commons licensed source photograph",
+      "bytes": 229863,
+      "sha256": "7f47617e385f41ada6ca7b9de7cb6c6367a6f8fa475e4fc1dd9f5df366346321",
+      "retrieved_utc": "2026-11-08T23:05:22.990166+00:00"
+    },
+    {
+      "file": "data/raw/photos/03-ny-metadata.json",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&pageids=28346106&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1200",
+      "source": "Saved page object from Commons API; API query wrapper differs from frozen page-object serialization",
+      "bytes": 5255,
+      "sha256": "0c56ee7236758a6ec684a076439ce63f47ae70ef12601aaaf46f90c6ef92f580",
+      "retrieved_utc": "2026-11-08T23:05:22.647402+00:00"
+    }
+  ],
+  "note": "A source hash mismatch must be reviewed as a new edition; do not silently change dates or geometry. Original photo metadata may be uploaded later than capture."
+}

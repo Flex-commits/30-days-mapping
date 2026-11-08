@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "site-pairs",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "01", "title": "Skyline to skyline", "distance_miles": 1.228943816736886, "distance_definition": "WGS84 geodesic distance between approximate site anchors. Not river width, a route or verified sightline." }, "geometry": { "type": "LineString", "coordinates": [ [ -74.0346, 40.7083 ], [ -74.015136, 40.718192 ] ] } },
+{ "type": "Feature", "properties": { "id": "02", "title": "A skyline. A sunset.", "distance_miles": 0.95052328497694871, "distance_definition": "WGS84 geodesic distance between approximate site anchors. Not river width, a route or verified sightline." }, "geometry": { "type": "LineString", "coordinates": [ [ -74.016022, 40.771358 ], [ -74.00112, 40.763523 ] ] } },
+{ "type": "Feature", "properties": { "id": "03", "title": "One bridge. Two frames.", "distance_miles": 0.91225021614579072, "distance_definition": "WGS84 geodesic distance between approximate site anchors. Not river width, a route or verified sightline." }, "geometry": { "type": "LineString", "coordinates": [ [ -73.963961, 40.852539 ], [ -73.946833, 40.850167 ] ] } }
+]
+}

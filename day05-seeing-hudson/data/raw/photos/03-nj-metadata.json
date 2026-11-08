@@ -1,0 +1,106 @@
+{
+  "pageid": 64982753,
+  "ns": 6,
+  "title": "File:Fort Lee Historic Park 03 - Cannon and George Washington Bridge.jpg",
+  "index": 1,
+  "imagerepository": "local",
+  "imageinfo": [
+    {
+      "size": 1962163,
+      "width": 3264,
+      "height": 2448,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg/1280px-Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 1200,
+      "thumbheight": 900,
+      "responsiveUrls": {
+        "2": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      },
+      "thumbattribs": {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg/1280px-Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "decoding": "async",
+        "loading": "lazy",
+        "width": 1200,
+        "height": 900,
+        "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fort_Lee_Historic_Park_03_-_Cannon_and_George_Washington_Bridge.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=64982753",
+      "extmetadata": {
+        "DateTime": {
+          "value": "2017-12-22 21:17:22",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "Fort Lee Historic Park 03 - Cannon and George Washington Bridge",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "Fort Lee Historic Park|Self-published work",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "Fort Lee Historic Park - cannon and view of Manhattan and the George Washington Bridge",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "2008-06-28 15:49:43",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jllm06\" title=\"User:Jllm06\">Jllm06</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+          "value": "CC BY-SA 4.0",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Creative Commons Attribution-Share Alike 4.0",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "true",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "LicenseUrl": {
+          "value": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+          "value": "True",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "cc-by-sa-4.0",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      }
+    }
+  ]
+}

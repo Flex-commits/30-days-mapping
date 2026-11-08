@@ -1,0 +1,16 @@
+.mplconfig/
+.venv/
+__pycache__/
+site/
+data/candidate-photo-credits.json
+data/raw/*
+!data/raw/usgs-*.json
+!data/raw/usgs-*.jpg
+!data/raw/photos/
+data/raw/photos/*
+!data/raw/photos/01-*.jpg
+!data/raw/photos/02-*.jpg
+!data/raw/photos/03-*.jpg
+!data/raw/photos/01-*-metadata.json
+!data/raw/photos/02-*-metadata.json
+!data/raw/photos/03-*-metadata.json

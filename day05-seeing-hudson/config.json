@@ -1,0 +1,113 @@
+{
+  "title": "Seeing the Hudson",
+  "subtitle": "Two shores. One river. Different views.",
+  "author": "Thomas Hagos",
+  "day": 5,
+  "theme": "Senses: Sight",
+  "source_snapshot_date": "2026-11-08",
+  "projection": "EPSG:26918",
+  "area_of_interest": [
+    -74.08,
+    40.68,
+    -73.91,
+    40.89
+  ],
+  "imagery_source": "USGS Imagery Only / The National Map cached orthoimagery",
+  "imagery_years": {
+    "service_CONUS_NAIP_range": "2017\u20132021",
+    "local_pixel_dates": "Not resolved; service refresh June 2024 is not capture date."
+  },
+  "layout_note": "Geographic frames are north-up. Photos are dated views from independently selected sites, not synchronized reciprocal photographs.",
+  "pairs": [
+    {
+      "id": "01",
+      "title": "Skyline to skyline",
+      "region": "LOWER HUDSON",
+      "color": "#edb969",
+      "nj": {
+        "name": "Liberty State Park",
+        "short": "Liberty State Park",
+        "lon": -74.0346,
+        "lat": 40.7083,
+        "coordinate_basis": "Photographer-supplied camera metadata (Dtabb73); approximate location near CRRNJ waterfront",
+        "source": "https://dep.nj.gov/parksandforests/liberty-state-park",
+        "photo": "01-nj",
+        "view": "Looking toward Lower Manhattan",
+        "observation": "Towers gather above a long, open water foreground."
+      },
+      "ny": {
+        "name": "Rockefeller Park riverfront",
+        "short": "Rockefeller Park",
+        "lon": -74.015136,
+        "lat": 40.718192,
+        "coordinate_basis": "Photographer-supplied camera metadata (Kidfly182); approximate riverfront location",
+        "source": "https://bpca.ny.gov/place/rockefeller-park/",
+        "photo": "01-ny",
+        "view": "Looking toward Jersey City",
+        "observation": "The opposite skyline forms a second urban edge."
+      },
+      "story": "From either shore, the river gives the opposite skyline room to be seen."
+    },
+    {
+      "id": "02",
+      "title": "A skyline. A sunset.",
+      "region": "MIDTOWN / WEEHAWKEN",
+      "color": "#de8c68",
+      "nj": {
+        "name": "Hamilton Park",
+        "short": "Hamilton Park",
+        "lon": -74.016022,
+        "lat": 40.771358,
+        "coordinate_basis": "Photographer-supplied camera metadata (Famartin); approximate park overlook position",
+        "source": "https://www.weehawken-nj.us/Home/Components/FacilityDirectory/FacilityDirectory/29/211",
+        "photo": "02-nj",
+        "view": "Looking east toward Manhattan",
+        "observation": "An elevated view gathers towers and working piers."
+      },
+      "ny": {
+        "name": "Pier 84",
+        "short": "Pier 84",
+        "lon": -74.00112,
+        "lat": 40.763523,
+        "coordinate_basis": "Photographer-supplied camera metadata (G. Scott Segler); approximate pier position",
+        "source": "https://hudsonriverpark.org/locations/pier-84/",
+        "photo": "02-ny",
+        "view": "Looking west along the waterfront",
+        "observation": "An orange sky changes how the river edge reads."
+      },
+      "story": "Facing east or west changes the frame. These photographs also differ in date, weather and light."
+    },
+    {
+      "id": "03",
+      "title": "One bridge. Two frames.",
+      "region": "GEORGE WASHINGTON BRIDGE",
+      "color": "#86afb2",
+      "nj": {
+        "name": "Fort Lee Historic Park",
+        "short": "Fort Lee Historic Park",
+        "lon": -73.963961,
+        "lat": 40.852539,
+        "coordinate_basis": "Park operator published GPS: entrance/site anchor, not the unlocated photograph camera position",
+        "source": "https://njpalisades.org/fortlee/",
+        "photo": "03-nj",
+        "view": "Bridge view from the cliff-top park",
+        "observation": "A cannon, trees and bridge frame a layered view."
+      },
+      "ny": {
+        "name": "Little Red Lighthouse, Fort Washington Park",
+        "short": "Little Red Lighthouse",
+        "lon": -73.946833,
+        "lat": 40.850167,
+        "coordinate_basis": "Photographer-supplied camera metadata (Jmccabe371); approximate lighthouse waterfront position",
+        "source": "https://nycgovparks.org/parks/fort-washington-park/highlights/11044",
+        "photo": "03-ny",
+        "view": "Looking beneath the bridge from New York",
+        "observation": "The lighthouse and bridge structure fill the foreground."
+      },
+      "story": "The bridge is a common anchor: a cliff-top park in New Jersey, a lighthouse at the New York river edge."
+    }
+  ],
+  "frame_width_m": 5200,
+  "frame_height_m": 3100,
+  "pair_line_meaning": "Editorial connection between selected public sites; not a walking route, viewing direction, visibility ray or verified mutual sightline."
+}

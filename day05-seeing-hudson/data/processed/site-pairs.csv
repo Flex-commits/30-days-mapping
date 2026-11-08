@@ -1,0 +1,4 @@
+id,title,distance_miles,distance_definition
+01,Skyline to skyline,1.228943816736886,"WGS84 geodesic distance between approximate site anchors. Not river width, a route or verified sightline."
+02,A skyline. A sunset.,0.9505232849769487,"WGS84 geodesic distance between approximate site anchors. Not river width, a route or verified sightline."
+03,One bridge. Two frames.,0.9122502161457907,"WGS84 geodesic distance between approximate site anchors. Not river width, a route or verified sightline."

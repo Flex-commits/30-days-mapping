@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "clean_working_directory": true,
+  "frozen_inputs_used": true,
+  "network_not_needed": true,
+  "same_installed_pinned_runtime": true,
+  "poster_byte_identical": true,
+  "sha256": "82889ee1674a628407341589757167ac1b0ed68b945611839be6c794a7d5cc56"
+}
