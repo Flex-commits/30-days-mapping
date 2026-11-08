@@ -33,7 +33,7 @@
         "source": "https://dep.nj.gov/parksandforests/liberty-state-park",
         "photo": "01-nj",
         "view": "Looking toward Lower Manhattan",
-        "observation": "Towers gather above a long, open water foreground."
+        "observation": "The river opens up a wide view of Lower Manhattan."
       },
       "ny": {
         "name": "Rockefeller Park riverfront",
@@ -44,7 +44,7 @@
         "source": "https://bpca.ny.gov/place/rockefeller-park/",
         "photo": "01-ny",
         "view": "Looking toward Jersey City",
-        "observation": "The opposite skyline forms a second urban edge."
+        "observation": "Across the water, Jersey City has a skyline of its own."
       },
       "story": "From either shore, the river gives the opposite skyline room to be seen."
     },
@@ -62,7 +62,7 @@
         "source": "https://www.weehawken-nj.us/Home/Components/FacilityDirectory/FacilityDirectory/29/211",
         "photo": "02-nj",
         "view": "Looking east toward Manhattan",
-        "observation": "An elevated view gathers towers and working piers."
+        "observation": "Manhattan\u2019s towers rise behind the river and piers."
       },
       "ny": {
         "name": "Pier 84",
@@ -73,7 +73,7 @@
         "source": "https://hudsonriverpark.org/locations/pier-84/",
         "photo": "02-ny",
         "view": "Looking west along the waterfront",
-        "observation": "An orange sky changes how the river edge reads."
+        "observation": "The sunset turns the water orange beside the pier."
       },
       "story": "Facing east or west changes the frame. These photographs also differ in date, weather and light."
     },
@@ -91,7 +91,7 @@
         "source": "https://njpalisades.org/fortlee/",
         "photo": "03-nj",
         "view": "Bridge view from the cliff-top park",
-        "observation": "A cannon, trees and bridge frame a layered view."
+        "observation": "A cannon in front. The bridge beyond it."
       },
       "ny": {
         "name": "Little Red Lighthouse, Fort Washington Park",
@@ -102,7 +102,7 @@
         "source": "https://nycgovparks.org/parks/fort-washington-park/highlights/11044",
         "photo": "03-ny",
         "view": "Looking beneath the bridge from New York",
-        "observation": "The lighthouse and bridge structure fill the foreground."
+        "observation": "The lighthouse sits beneath the bridge."
       },
       "story": "The bridge is a common anchor: a cliff-top park in New Jersey, a lighthouse at the New York river edge."
     }

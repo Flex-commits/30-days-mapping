@@ -3,7 +3,7 @@
 **Two shores. One river. Different views.**  
 Thomas Hagos · Day 05: Senses: Sight · MUSA 30-Day Map Challenge 2026
 
-A visual essay about how the Lower Hudson is framed from six public places in New York and New Jersey. Three editorial pairings connect a waterfront skyline, a skyline/sunset contrast, and two views of the George Washington Bridge. The river is the shared subject; the photographs show different foregrounds, orientations and moments.
+Same river. Different picture. I paired six public places on the New York and New Jersey shores to look at the Hudson from both sides: two skylines, a sunset, and two views of the George Washington Bridge. The photographs were taken on different days, so the light, weather and surroundings change too.
 
 [Public project](https://flex-commits.github.io/30-days-mapping/seeing-the-hudson/) · [Full map](outputs/seeing-the-hudson.png) · [Viewpoint records](data/processed/viewpoints.csv) · [Photo credits](data/photo-credits.json)
 
@@ -79,5 +79,3 @@ Directories follow the professors' workflow: `scripts/`, `data/raw/`, `data/proc
 The shared Weitzman-MUSA repository receives only `_maps_2026/05-thomas-hagos.md` and `assets/thumbnails/2026/05-thomas-hagos.png`. All scripts, data, photographs, full exports and the public page stay in **Flex-commits/30-days-mapping**. The entry follows the current upstream template and links to this project. Submitted as [MUSA pull request #122](https://github.com/weitzman-musa/30DayMapChallenge/pull/122); gallery publication awaits maintainer review/merge.
 
 The aerial-only gallery thumbnail is separately licensed CC BY 4.0 for the shared gallery; it contains no source photograph.
-
-Research, implementation and editing were assisted by AI. The photographs and imagery are cited source material; no generative imagery was used. Production credits remain in this documentation rather than on the map face.
