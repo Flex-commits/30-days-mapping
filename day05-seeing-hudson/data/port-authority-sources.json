@@ -16,6 +16,13 @@
       "creator": "Igino Marini"
     },
     {
+      "file": "docs/fonts/serif-italic.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/imfellenglish/IMFeENit28P.ttf",
+      "sha256": "47cd75dce54b1f2e0831359d22d5e688f519d68ae45706b664fd310fd0e3ccf7",
+      "license": "SIL OFL 1.1",
+      "creator": "Igino Marini"
+    },
+    {
       "file": "docs/fonts/OFL-IMFell.txt",
       "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/imfellenglish/OFL.txt",
       "sha256": "2a3ca501fc4d5efcad9798531e3e06962b1e20c60e464f6cbd6c17630112c773",

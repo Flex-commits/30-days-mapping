@@ -344,11 +344,17 @@
     "projection": "EPSG:26918",
     "shoreline_source": "U.S. Census 2024 cartographic boundary counties 1:500k; NY–NJ line from TIGER/Line 2024 states",
     "district_circle": false,
-    "scope": "Selected Hudson crossings, three major airports, Newark/Elizabeth docks and WTC. Not a full agency inventory.",
+    "scope": "One idea: the NY–NJ state line runs down the Hudson, and five agency crossings stitch across it. Airports, docks and WTC stay in the data and page text, not on the map.",
     "port_label_lon": -74.218,
     "port_label_lat": 40.641,
     "selected_landmarks": [
       "wtc"
+    ],
+    "focus_wgs84": [
+      -74.085,
+      40.69,
+      -73.905,
+      40.875
     ]
   },
   "facts": [

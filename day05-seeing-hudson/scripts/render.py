@@ -114,59 +114,63 @@ def eye(ax,x,y,size=260):
  """Small drawn eye, centered on an existing approximate viewing-place anchor."""
  verts=[(x-size,y),(x,y+size*.8),(x+size,y),(x,y-size*.8),(x-size,y)];path=MPath(verts,[MPath.MOVETO,MPath.CURVE3,MPath.CURVE3,MPath.CURVE3,MPath.CURVE3]);ax.add_patch(PathPatch(path,fc=BG,ec=FG,lw=.7,zorder=12));ax.add_patch(Circle((x,y),size*.21,fc=FG,ec='none',zorder=13))
 
-WATER='#0a1520';LAND='#182a39';SHORE='#2c4351'
-SHEETS={'landscape':{'year':13,'name':8.2,'eye':210,'lw':2.4},'phone':{'year':17,'name':10.5,'eye':260,'lw':2.8}}
-# Label anchors (lon, lat) chosen by eye on the rendered sheet; leaders point to the mapped feature.
-LABELS=[('gwb','George Washington Bridge','1931',(-73.905,40.872),'left'),('lincoln','Lincoln Tunnel','1937',(-73.935,40.752),'left'),
- ('holland','Holland Tunnel · agency 1930','1927',(-73.925,40.722),'left'),('path','PATH tubes · agency 1962','1908–09',(-74.090,40.744),'right'),
- ('wtc','World Trade Center','1973',(-73.935,40.690),'left'),('KLGA','LaGuardia · leased','1947',(-73.862,40.822),'left'),
- ('KJFK','Idlewild / JFK · leased','1947',(-73.885,40.578),'left'),('KEWR','Newark Airport · leased','1948',(-74.243,40.712),'left'),
- ('docks','Port Newark–Elizabeth · terminal','1962',(-74.243,40.628),'left')]
-PHONE={'path':((-74.075,40.770),'right'),'KEWR':((-74.243,40.724),'left')}
+# Ink on paper: one warm sheet, sepia linework, vermilion stitches, IM FELL lettering.
+PAPER='#f4eddd';WATER='#e6dfcd';INK='#2b2520';SEPIA='#7d6d5a';VERM='#b23a24'
+script=FontProperties(fname=str(R/'docs/fonts/serif-italic.ttf'))
+FOCUS=PA['design']['focus_wgs84']
+SHEETS={'landscape':{'year':27,'name':11.5,'lw':2.6,'off':380,'river':19,'side':11.5,'d':215},
+        'phone':{'year':23,'name':12.5,'lw':3.0,'off':470,'river':19,'side':12,'d':280}}
+# id, year in the hand, small name, the bank the label sits on
+STITCHES=[('gwb','1931','George Washington Bridge','nj'),('lincoln','1937','Lincoln Tunnel','ny'),('holland','1927','Holland Tunnel · agency 1930','ny'),
+ ('path-uptown','1908','PATH tubes · agency 1962','nj'),('path-downtown','1909','PATH tubes · agency 1962','nj')]
 def mapped_crossings():return gpd.read_file(R/'data/processed/port-authority-crossings-mapped.geojson').to_crs(26918).set_index('id')
+def along_line(line,lat0,lat1,shift=0,n=40):
+ """Points on the state line between two latitudes, south to north, shifted sideways (+ west/NJ, - east/NY) in metres."""
+ from shapely.geometry import box as _box
+ ya,yb=T.transform(-74,lat0)[1],T.transform(-74,lat1)[1];part=line.intersection(_box(line.bounds[0]-1e4,ya,line.bounds[2]+1e4,yb))
+ if part.geom_type!='LineString':from shapely.ops import linemerge;part=linemerge(part)
+ c=np.asarray(part.coords)
+ if c[0,1]>c[-1,1]:part=type(part)(c[::-1])
+ p=np.array([part.interpolate(t,normalized=True).coords[0] for t in np.linspace(0,1,n)]);g=np.gradient(p,axis=0);g/=np.linalg.norm(g,axis=1)[:,None]
+ return p+shift*np.c_[-g[:,1],g[:,0]]
 def draw_pa_map(ax,sheet='landscape'):
- """The Hudson as a seam: one shared land colour for both states, a thin state line, gold agency works stitched across it."""
- k=SHEETS[sheet];bounds=PA['design']['bounds_wgs84'];x0,y0=T.transform(bounds[0],bounds[1]);x1,y1=T.transform(bounds[2],bounds[3])
+ """The Hudson as a seam: the state line down mid-river in a fine pen line, five vermilion stitches across it."""
+ k=SHEETS[sheet];x0,y0=T.transform(FOCUS[0],FOCUS[1]);x1,y1=T.transform(FOCUS[2],FOCUS[3])
+ if sheet=='phone':c=(x0+x1)/2;x0,x1=c-11000,c+11000  # phone frame is near-square: widen, never crop the river
  ax.set_facecolor(WATER);ax.set_xlim(x0,x1);ax.set_ylim(y0,y1);ax.set_aspect('equal');ax.set_xticks([]);ax.set_yticks([])
- for sp in ax.spines.values():sp.set_visible(False)
- land=gpd.read_file(R/'data/processed/port-authority-land.geojson').to_crs(26918);land.plot(ax=ax,color=LAND,edgecolor=SHORE,linewidth=.3,zorder=1)
- gpd.read_file(R/'data/processed/port-authority-state-line.geojson').to_crs(26918).plot(ax=ax,color=FG,linewidth=.75,linestyle=(0,(5,3)),alpha=.75,zorder=4)
- cx=mapped_crossings();mode={'bridge':'-','tunnel':(0,(3.2,1.6)),'rail':(0,(1,1.4))}
- for ident,row in cx.iterrows():
-  xs,ys=row.geometry.xy;ax.plot(xs,ys,color=WATER,lw=k['lw']+2.6,solid_capstyle='round',zorder=7);ax.plot(xs,ys,color=GOLD,lw=k['lw'],ls=mode[row['mode']],solid_capstyle='round',zorder=8);ax.scatter(xs,ys,s=k['lw']*5,color=GOLD,zorder=9)
- pts={}
- for v in PA['airports']:
-  x,y=T.transform(v['lon'],v['lat']);pts[v['id']]=[(x,y)];ax.scatter([x],[y],marker='^',s=k['lw']*22,fc=GOLD,ec=WATER,lw=.8,zorder=10)
- docks=[T.transform(v['lon'],v['lat']) for v in PA['ports']];pts['docks']=docks
- for x,y in docks:ax.scatter([x],[y],marker='s',s=k['lw']*12,fc=GOLD,ec=WATER,lw=.8,zorder=10)
- w=next(v for v in PA['landmarks'] if v['id']=='wtc');pts['wtc']=[T.transform(w['lon'],w['lat'])];ax.scatter(*zip(*pts['wtc']),marker='*',s=k['lw']*30,color=GOLD,ec=WATER,lw=.6,zorder=10)
- mid=lambda g:g.interpolate(.5,normalized=True).coords[0]
- for ident in ['gwb','lincoln','holland']:pts[ident]=[cx.loc[ident].geometry.coords[-1]]
- pts['path']=[cx.loc['path-uptown'].geometry.coords[0],cx.loc['path-downtown'].geometry.coords[0]]
- for p in C['pairs']:
-  for sd in ['nj','ny']:eye(ax,*T.transform(p[sd]['lon'],p[sd]['lat']),size=k['eye'])
- labels=[]
- for ident,name,year,ll,ha in LABELS:
-  if sheet=='phone' and ident in PHONE:ll,ha=PHONE[ident]
-  lx,ly=T.transform(*ll)
-  for ax_,ay_ in pts[ident]:ax.plot([ax_,lx],[ay_,ly],color=GOLD,alpha=.45,lw=.45,zorder=6)
-  halo=[pe.withStroke(linewidth=3,foreground=WATER)]
-  labels.append(ax.annotate(year,(lx,ly),xytext=(0,1.5),textcoords='offset points',ha=ha,va='bottom',fontproperties=serif,fontsize=k['year'],color=GOLD,zorder=11,path_effects=halo))
-  labels.append(ax.annotate(name,(lx,ly),xytext=(0,-1.5),textcoords='offset points',ha=ha,va='top',fontproperties=sans,fontsize=k['name'],color=FG,zorder=11,path_effects=halo))
- for txt,lon,lat in [('N E W   J E R S E Y',-74.185,40.862),('N E W   Y O R K',-73.800,40.872)]:
-  labels.append(ax.text(*T.transform(lon,lat),txt,ha='center',fontproperties=bold,fontsize=k['name']+.8,color=MUT,alpha=.85,zorder=5))
+ for sp in ax.spines.values():sp.set_color(INK);sp.set_linewidth(.8)
+ from shapely.geometry import box as _box
+ land=gpd.read_file(R/'data/processed/port-authority-land.geojson').to_crs(26918);frame=_box(x0-3000,y0-3000,x1+3000,y1+3000)
+ L=land.geometry.union_all().intersection(frame)
+ # Engraver's waterlines: the shore repeated outward, fading, as on old harbour charts.
+ for d,a in [(110,.30),(240,.18),(400,.09)]:
+  ring=gpd.GeoSeries([L.buffer(d,resolution=8).boundary]);ring.plot(ax=ax,color=INK,linewidth=.35,alpha=a,zorder=1)
+ gpd.GeoSeries([L]).plot(ax=ax,color=PAPER,edgecolor=INK,linewidth=.55,zorder=2)
+ sl=gpd.read_file(R/'data/processed/port-authority-state-line.geojson').to_crs(26918);line=sl.geometry.iloc[0]
+ if line.geom_type=='MultiLineString':from shapely.ops import linemerge;line=linemerge(line)
+ sl.plot(ax=ax,color=INK,linewidth=.8,linestyle=(0,(.5,2.4)),capstyle='round',alpha=.85,zorder=4)
+ cx=mapped_crossings();mode={'bridge':'-','tunnel':(0,(2.4,1.3)),'rail':(0,(.6,1.3))};labels=[]
+ halo=[pe.withStroke(linewidth=3.2,foreground=PAPER)]
+ for ident,year,name,side in STITCHES:
+  row=cx.loc[ident];xs,ys=row.geometry.xy
+  ax.plot(xs,ys,color=WATER,lw=k['lw']+2.4,solid_capstyle='round',zorder=7);ax.plot(xs,ys,color=VERM,lw=k['lw'],ls=mode[row['mode']],solid_capstyle='butt',dash_capstyle='round',zorder=8);ax.scatter(xs,ys,s=k['lw']*6,color=VERM,ec=PAPER,lw=.5,zorder=9)
+  i=-1 if side=='ny' else 0;px,py=row.geometry.coords[i];d=k['off'] if side=='ny' else -k['off'];ha='left' if side=='ny' else 'right'
+  labels.append(ax.text(px+d,py+40,year,ha=ha,va='bottom',fontproperties=script,fontsize=k['year'],color=VERM,zorder=11,path_effects=halo))
+  labels.append(ax.text(px+d,py-80,name,ha=ha,va='top',fontproperties=serif,fontsize=k['name'],color=INK,zorder=11,path_effects=halo))
  ax.figure.canvas.draw()
- river=[T.transform(lon,lat) for lon,lat in [(-74.012,40.773),(-73.997,40.797),(-73.983,40.820),(-73.969,40.842)]]
- water=text_on_curve(ax,'HUDSON RIVER' if sheet=='landscape' else 'HUDSON',river,fontsize=k['name']+1.6,tracking=1.2)
- for q in water:q.set_path_effects([pe.withStroke(linewidth=2.6,foreground=WATER)]);q.set_zorder(6)
- kill=[T.transform(lon,lat) for lon,lat in [(-74.150,40.6505),(-74.120,40.6515),(-74.090,40.6525)]]
- line_lab=text_on_curve(ax,'STATE LINE',kill,fontsize=k['name']-1.6,color=FG,font=sans,tracking=1.6)
- for q in line_lab:q.set_path_effects([pe.withStroke(linewidth=2.2,foreground=WATER)]);q.set_alpha(.8);q.set_zorder(6)
- labels.append(ax.text(*T.transform(-74.040,40.600),'New York Harbor',fontproperties=italic,fontsize=k['name']+1,color=TEAL,ha='center',zorder=6))
- sx,sy=T.transform(-73.985,40.552);length=5*1609.344;ax.plot([sx,sx+length],[sy,sy],color=MUT,lw=.9,zorder=6)
- for xx,t,ha in [(sx,'0','left'),(sx+length,'5 miles','right')]:ax.text(xx,sy+500,t,ha=ha,fontproperties=sans,fontsize=k['name']-1.5,color=MUT,zorder=6)
- ax.text(.975,.975,'N ↑',transform=ax.transAxes,ha='right',va='top',fontsize=k['name'],fontproperties=bold,color=MUT)
+ # The river carries its own lettering; the two states are written on either side of the line.
+ water=text_on_curve(ax,'Hudson River',along_line(line,40.800,40.846),fontsize=k['river'],color=INK,font=script,tracking=.9)
+ for q in water:q.set_path_effects([pe.withStroke(linewidth=4,foreground=WATER)]);q.set_alpha(.85)
+ for txt,s in [('New Jersey',k['d']),('New York',-k['d'])]:
+  water+=text_on_curve(ax,txt,along_line(line,40.766,40.796,s),fontsize=k['side'],color=INK,font=script,tracking=.5)
+ sx,sy=T.transform(FOCUS[0]+.012,40.697) if sheet=='landscape' else (x0+900,T.transform(-74,40.697)[1]);length=1609.344
+ ax.plot([sx,sx+length],[sy,sy],color=INK,lw=.8,zorder=6);[ax.plot([xx,xx],[sy-90,sy+90],color=INK,lw=.8,zorder=6) for xx in (sx,sx+length)]
+ ax.text(sx+length/2,sy+220,'one mile',ha='center',fontproperties=script,fontsize=k['side'],color=INK,zorder=6,path_effects=halo)
+ ax.annotate('',xy=(.955,.975),xytext=(.955,.925),xycoords='axes fraction',arrowprops=dict(arrowstyle='-|>,head_width=.25,head_length=.6',color=INK,lw=.7))
+ ax.text(.955,.915,'N',transform=ax.transAxes,ha='center',va='top',fontproperties=serif,fontsize=k['name'],color=INK)
+ ax.add_patch(Rectangle((-.012,-.009),1.024,1.018,transform=ax.transAxes,fill=False,ec=INK,lw=.4,clip_on=False))
  return labels,water
+
 
 def record_layout(fig,labels,edition):
  """Record named-label and figure-text bounds for reproducible collision checks."""
@@ -182,39 +186,27 @@ def record_layout(fig,labels,edition):
    if min(x1,u1)>max(x0,u0)+.0001 and min(y1,v1)>max(y0,v0)+.0001:overlaps.append([a['text'],b['text']])
  return {'edition':edition,'labels':records,'overlapping_text':overlaps,'all_text_inside_canvas':all(0<=v['bounds'][0]<v['bounds'][2]<=1 and 0<=v['bounds'][1]<v['bounds'][3]<=1 for v in records)}
 
-# Landscape sheet: the argument on the left, the seam in the middle, a single thread of years below.
-THREAD=[(1908,'H&M tubes open\n(later PATH)',GOLD),(1921,'Port Compact\nsigned',GOLD),(1927,'Holland\nTunnel',GOLD),(1931,'George Washington\nBridge',GOLD),(1937,'Lincoln\nTunnel',GOLD),
- (1947.5,'Airports\nleased',GOLD),(1956,'Ideal X sails\n(private ship)',FG),(1962,'PATH · Elizabeth\nterminal',GOLD),(1973,'World Trade\nCenter',GOLD)]
-YEARTXT={1947.5:'1947–48'}
-fig=plt.figure(figsize=(14,12),facecolor=BG)
-for x,d in [(.04,1),(.96,-1)]:fig.add_artist(plt.Line2D([x,x,x+.018*d],[.945,.976,.976],transform=fig.transFigure,color=GOLD,lw=.8))
-ft(fig,.055,.953,'THOMAS HAGOS  /  30-DAY MAP CHALLENGE 2026',8.5,GOLD,bold);ft(fig,.945,.953,'DAY 05 · SENSES: SIGHT',8.5,FG,ha='right')
-ft(fig,.055,.902,'SEEING THE HUDSON',27,FG,bold);ft(fig,.055,.872,'04  /  EMPIRE ON THE HUDSON',9,MUT,bold)
-ft(fig,.052,.745,'1921',76,GOLD,serif)
-ft(fig,.055,.655,'Two states.\nOne agency.',30,FG,serif,linespacing=1.12)
-ft(fig,.055,.488,'A river is a border. In 1921\nNew York and New Jersey agreed\nto manage their shared port\nas one. The bridges, tunnels,\ntrains, airports and docks that\nfollowed helped make two\nshores one metropolis.',10.2,FG,sans,linespacing=1.62)
-y=.368
-for lab,ls,col in [('Built or run by the agency','-',GOLD),('Road tunnel',(0,(3.2,1.6)),GOLD),('PATH rail tubes',(0,(1,1.4)),GOLD),('NY–NJ state line',(0,(5,3)),FG)]:
- fig.add_artist(plt.Line2D([.055,.09],[y,y],transform=fig.transFigure,color=col,lw=2 if col==GOLD else .9,ls=ls));ft(fig,.102,y-.004,lab,8.6,MUT);y-=.024
-ft(fig,.055,y-.006,'▲ airport   ■ docks   ★ WTC',8.6,GOLD);y-=.03
-ft(fig,.055,y-.004,'Eyes: the six viewing places',8.6,MUT);ft(fig,.055,y-.022,'from pairs 01–03.',8.6,MUT)
-a=fig.add_axes([.30,.215,.655,.65]);labels,water=draw_pa_map(a,'landscape')
-# The thread: one century of years, stitched.
-t0,t1,xa,xb,ty=1904,1977,.07,.93,.135;X=lambda yr:xa+(yr-t0)/(t1-t0)*(xb-xa)
-fig.add_artist(plt.Line2D([xa,xb],[ty,ty],transform=fig.transFigure,color=MUT,lw=.6,alpha=.7))
-for n,(yr,txt,col) in enumerate(THREAD):
- x=X(yr);big=yr==1921;fig.add_artist(plt.Line2D([x,x],[ty-.007,ty+.007],transform=fig.transFigure,color=col,lw=2.6 if big else 1.6))
- ft(fig,x,ty+.013,YEARTXT.get(yr,str(int(yr))),20 if big else 14,col,serif,ha='center')
- ft(fig,x,ty-.024-(n%2)*.034,txt,7.4,MUT,sans,ha='center',va='top',linespacing=1.35)
-rule(fig,.048)
-ft(fig,.055,.031,'Selected works, not a full inventory. Crossings are schematic bank-to-bank links; facility and viewing-place anchors are approximate. Sources and research notes in the project.',7,MUT)
-ft(fig,.055,.016,'Land: U.S. Census 2024 counties (1:500k) minus TIGER/Line water · State line: TIGER/Line 2024 · EPSG:26918 · North up',7,MUT);ft(fig,.945,.016,'#30DayMapChallenge / #teamMUSA',7.5,GOLD,ha='right')
-layout=[record_layout(fig,labels,'landscape')];fig.savefig(OUT/'port-authority.png',dpi=250,facecolor=BG);plt.close(fig)
-# Phone edition: the map dominates; the page text carries the chronology.
-f=plt.figure(figsize=(8,10),facecolor=BG);ft(f,.06,.962,'SEEING THE HUDSON',20,FG,bold);ft(f,.06,.936,'04  /  EMPIRE ON THE HUDSON',8,MUT,bold)
-ft(f,.06,.842,'1921',54,GOLD,serif);ft(f,.40,.877,'Two states.',24,FG,serif);ft(f,.40,.842,'One agency.',24,FG,serif)
-m=f.add_axes([.02,.115,.96,.70]);mobile_labels,_=draw_pa_map(m,'phone')
-ft(f,.06,.085,'Gold: works built or run by the Port Authority. Dashed cream: NY–NJ state line.',8,MUT);ft(f,.06,.064,'Eyes: six viewing places. Crossings schematic; anchors approximate.',8,MUT)
-ft(f,.06,.030,'Census 2024 land and water · EPSG:26918 · Thomas Hagos',7,MUT)
-layout.append(record_layout(f,mobile_labels,'phone'));f.savefig(OUT/'port-authority-web.png',dpi=200,facecolor=BG);plt.close(f);(R/'docs/port-authority-layout.json').write_text(json.dumps(layout,indent=2))
+# Landscape sheet: ink on paper. The argument on the left, the seam on the right. Nothing else.
+fig=plt.figure(figsize=(14,12),facecolor=PAPER)
+ft(fig,.055,.955,'THOMAS HAGOS  ·  30-DAY MAP CHALLENGE 2026',7.5,SEPIA,sans);ft(fig,.945,.955,'DAY 05  ·  SENSES: SIGHT',7.5,SEPIA,sans,ha='right')
+ft(fig,.053,.885,'Seeing the Hudson',38,INK,serif);ft(fig,.056,.853,'iv.  Empire on the Hudson',15,SEPIA,script)
+fig.add_artist(plt.Line2D([.056,.11],[.828,.828],transform=fig.transFigure,color=INK,lw=.6))
+ft(fig,.050,.680,'1921',96,VERM,script)
+ft(fig,.056,.565,'Two states.\nOne agency.',34,INK,script,linespacing=1.1)
+ft(fig,.056,.400,'The line between New York and\nNew Jersey runs down the middle\nof the Hudson. In 1921 the two states\nmade one agency to share the port.\nIt built or took over every\ncrossing stitched here.',13.5,INK,serif,linespacing=1.5)
+y=.300
+for lab,ls in [('a bridge, over the river','-'),('a road tunnel, under it',(0,(2.4,1.3))),('the PATH train tubes',(0,(.6,1.3)))]:
+ fig.add_artist(plt.Line2D([.056,.09],[y,y],transform=fig.transFigure,color=VERM,lw=2.2,ls=ls,dash_capstyle='round'));ft(fig,.102,y-.005,lab,12,INK,script);y-=.028
+fig.add_artist(plt.Line2D([.056,.09],[y,y],transform=fig.transFigure,color=INK,lw=.9,ls=(0,(.5,2.4)),dash_capstyle='round'));ft(fig,.102,y-.005,'the state line',12,INK,script)
+a=fig.add_axes([.375,.075,.55,.775]);labels,water=draw_pa_map(a,'landscape')
+ft(fig,.055,.030,'Five agency crossings of the Hudson, drawn schematically bank to bank; anchors approximate; years are opening dates.  Land: U.S. Census 2024 counties (1:500k) minus TIGER/Line water · State line: TIGER/Line 2024 · EPSG:26918.',6.8,SEPIA,sans)
+ft(fig,.055,.016,'Lettering: IM FELL English, Igino Marini (SIL OFL).',6.8,SEPIA,sans);ft(fig,.945,.016,'#30DayMapChallenge  ·  #teamMUSA',7,SEPIA,sans,ha='right')
+layout=[record_layout(fig,labels,'landscape')];fig.savefig(OUT/'port-authority.png',dpi=250,facecolor=PAPER);plt.close(fig)
+# Phone edition: the same seam, larger.
+f=plt.figure(figsize=(8,10),facecolor=PAPER);ft(f,.06,.955,'Seeing the Hudson',28,INK,serif);ft(f,.062,.928,'iv.  Empire on the Hudson',12,SEPIA,script)
+ft(f,.055,.835,'1921',58,VERM,script);ft(f,.42,.872,'Two states.',25,INK,script);ft(f,.42,.836,'One agency.',25,INK,script)
+m=f.add_axes([.035,.095,.93,.715]);mobile_labels,_=draw_pa_map(m,'phone')
+ft(f,.06,.058,'Vermilion: Hudson crossings built or run by the Port Authority. Dotted: the state line.',11,INK,script)
+ft(f,.06,.030,'Census 2024 land and water · EPSG:26918 · IM FELL English (OFL) · Thomas Hagos',6.8,SEPIA,sans)
+layout.append(record_layout(f,mobile_labels,'phone'));f.savefig(OUT/'port-authority-web.png',dpi=200,facecolor=PAPER);plt.close(f);(R/'docs/port-authority-layout.json').write_text(json.dumps(layout,indent=2))
 print('Rendered Port Authority chapter.')
