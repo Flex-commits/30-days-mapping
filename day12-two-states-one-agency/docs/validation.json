@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": {
+    "input_hashes_match_sources": true,
+    "every_fact_and_feature_sourced": true,
+    "crossing_anchors_in_frame_and_airport_coordinates_match": true,
+    "census_land_state_line_and_bank_to_bank_crossings": true,
+    "one_mile_scale_ground_check": true,
+    "export_sizes": true,
+    "label_boxes_without_overlap_or_clipping": true,
+    "static_page_local_links_and_image_alt_text": true,
+    "repeat_render_byte_identical": true
+  },
+  "outputs": {
+    "two-states-one-agency.png": "47230d4c3be240afb24f23e629c912369e090034abb3bd5122d2495e8d923d3a",
+    "two-states-one-agency-phone.png": "a1e439711ed075416ea782371e2c95079c3c094d3b11237d8cc14125b7e0ef1f",
+    "12-thomas-hagos.png": "ad03ae39dfe9f2ee4650691dce79b5b24053f7db1971616e482f2df5e12ccd76"
+  },
+  "limitations": "Crossings are schematic bank-to-bank links between approximate anchors; no surveyed alignment or legal jurisdiction boundary is drawn."
+}
