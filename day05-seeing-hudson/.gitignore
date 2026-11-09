@@ -14,3 +14,8 @@ data/raw/photos/*
 !data/raw/photos/01-*-metadata.json
 !data/raw/photos/02-*-metadata.json
 !data/raw/photos/03-*-metadata.json
+
+!data/raw/port-authority/
+data/raw/port-authority/*
+
+!data/raw/port-authority/airport-codes.csv

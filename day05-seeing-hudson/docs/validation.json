@@ -8,11 +8,18 @@
     "sites_within_corresponding_aerial_frames": true,
     "imagery_bounds_pixels_hashes_and_CRS": true,
     "port_authority_crossings_in_overview_and_sourced": true,
+    "port_authority_five_mile_scale_ground_check": true,
+    "port_authority_census_land_state_line_and_bank_to_bank_crossings": true,
+    "port_authority_every_mapped_feature_and_fact_sourced": true,
+    "port_authority_airport_coordinate_order_and_all_anchors_in_extent": true,
+    "port_authority_label_boxes_without_overlap_or_clipping": true,
+    "port_authority_uncertain_ridership_omitted_and_no_false_legal_circle": true,
+    "all_six_protected_exports_match_6191e71": true,
     "export_sizes": true,
     "static_page_local_links_and_image_alt_text": true,
     "repeat_render_byte_identical": true
   },
-  "frozen_inputs": 21,
+  "frozen_inputs": 25,
   "poster_sha256": "82889ee1674a628407341589757167ac1b0ed68b945611839be6c794a7d5cc56",
   "viewpoint_count": 6,
   "pair_count": 3,
@@ -24,6 +31,6 @@
     600,
     600
   ],
-  "browser_visual_QA": "Pending; static poster inspected separately.",
+  "browser_visual_QA": "Pending publication approval; static landscape and portrait editions visually inspected in three composition passes. Page is staged locally, not pushed.",
   "limitations": "No modeled visibility, current-condition claim or certified access/coordinate accuracy."
 }

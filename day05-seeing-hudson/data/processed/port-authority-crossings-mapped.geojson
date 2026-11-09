@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "port-authority-crossings-mapped",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "path-uptown", "mode": "rail", "snap_m_nj": 104.8, "snap_m_ny": 330.3, "meaning": "Schematic bank-to-bank link; anchors snapped to the nearest Census 1:500k shoreline of each state." }, "geometry": { "type": "LineString", "coordinates": [ [ -74.027275, 40.734295 ], [ -74.010903, 40.733297 ] ] } },
+{ "type": "Feature", "properties": { "id": "path-downtown", "mode": "rail", "snap_m_nj": 22.9, "snap_m_ny": 460.0, "meaning": "Schematic bank-to-bank link; anchors snapped to the nearest Census 1:500k shoreline of each state." }, "geometry": { "type": "LineString", "coordinates": [ [ -74.032675, 40.716185 ], [ -74.01663, 40.712117 ] ] } },
+{ "type": "Feature", "properties": { "id": "holland", "mode": "tunnel", "snap_m_nj": 257.9, "snap_m_ny": 393.7, "meaning": "Schematic bank-to-bank link; anchors snapped to the nearest Census 1:500k shoreline of each state." }, "geometry": { "type": "LineString", "coordinates": [ [ -74.034438, 40.726227 ], [ -74.011808034405931, 40.725137291047119 ] ] } },
+{ "type": "Feature", "properties": { "id": "gwb", "mode": "bridge", "snap_m_nj": 252.3, "snap_m_ny": 504.7, "meaning": "Schematic bank-to-bank link; anchors snapped to the nearest Census 1:500k shoreline of each state." }, "geometry": { "type": "LineString", "coordinates": [ [ -73.958917767906598, 40.854810591247109 ], [ -73.947005, 40.850459 ] ] } },
+{ "type": "Feature", "properties": { "id": "lincoln", "mode": "tunnel", "snap_m_nj": 83.9, "snap_m_ny": 481.1, "meaning": "Schematic bank-to-bank link; anchors snapped to the nearest Census 1:500k shoreline of each state." }, "geometry": { "type": "LineString", "coordinates": [ [ -74.020711, 40.763772 ], [ -74.002306730837489, 40.761529195811875 ] ] } }
+]
+}

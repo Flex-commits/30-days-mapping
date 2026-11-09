@@ -1,5 +1,5 @@
 {
-  "title": "One authority. Two shores.",
+  "title": "Two states. One agency.",
   "founded": "1921-04-30",
   "coordinate_note": "Approximate portal, plaza or terminal areas read from public maps. Lines are straight schematic links between the two shores, not surveyed tunnel or track alignments.",
   "crossings": [
@@ -21,7 +21,10 @@
         "lon": -74.007,
         "lat": 40.7331
       },
-      "source": "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      "source": "https://www.panynj.gov/path/en/about/history.html",
+      "legacy_source": "https://en.wikipedia.org/wiki/PATH_(rail_system)",
+      "status": "confirmed",
+      "coordinate_source": "USGS overview source snapshot: data/imagery-frames.json, overview; approximate regional portal/terminal anchors, not a surveyed alignment."
     },
     {
       "id": "path-downtown",
@@ -41,7 +44,10 @@
         "lon": -74.0112,
         "lat": 40.7118
       },
-      "source": "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      "source": "https://www.panynj.gov/path/en/about/history.html",
+      "legacy_source": "https://en.wikipedia.org/wiki/PATH_(rail_system)",
+      "status": "confirmed",
+      "coordinate_source": "USGS overview source snapshot: data/imagery-frames.json, overview; approximate regional portal/terminal anchors, not a surveyed alignment."
     },
     {
       "id": "holland",
@@ -61,7 +67,10 @@
         "lon": -74.0072,
         "lat": 40.7246
       },
-      "source": "https://en.wikipedia.org/wiki/Port_Authority_of_New_York_and_New_Jersey"
+      "source": "https://www.portauthoritybuilds.com/content/bridges-tunnels/en/holland-tunnel/history.html",
+      "legacy_source": "https://en.wikipedia.org/wiki/Port_Authority_of_New_York_and_New_Jersey",
+      "status": "confirmed",
+      "coordinate_source": "USGS overview source snapshot: data/imagery-frames.json, overview; approximate regional portal/terminal anchors, not a surveyed alignment."
     },
     {
       "id": "gwb",
@@ -73,15 +82,18 @@
       "pa_role": "Built by the Port Authority; completed October 1931.",
       "nj": {
         "place": "Fort Lee",
-        "lon": -73.9622,
-        "lat": 40.8535
+        "lon": -73.9619,
+        "lat": 40.855
       },
       "ny": {
         "place": "Washington Heights",
-        "lon": -73.9447,
-        "lat": 40.8497
+        "lon": -73.9528,
+        "lat": 40.8516
       },
-      "source": "https://en.wikipedia.org/wiki/Port_Authority_of_New_York_and_New_Jersey"
+      "source": "https://www.panynj.gov/bridges-tunnels/en/george-washington-bridge/history.html",
+      "legacy_source": "https://en.wikipedia.org/wiki/Port_Authority_of_New_York_and_New_Jersey",
+      "status": "confirmed",
+      "coordinate_source": "USGS overview source snapshot: data/imagery-frames.json, overview; approximate regional portal/terminal anchors, not a surveyed alignment."
     },
     {
       "id": "lincoln",
@@ -101,7 +113,10 @@
         "lon": -73.9975,
         "lat": 40.7592
       },
-      "source": "https://en.wikipedia.org/wiki/Port_Authority_of_New_York_and_New_Jersey"
+      "source": "https://www.panynj.gov/bridges-tunnels/en/lincoln-tunnel/history.html",
+      "legacy_source": "https://en.wikipedia.org/wiki/Port_Authority_of_New_York_and_New_Jersey",
+      "status": "confirmed",
+      "coordinate_source": "USGS overview source snapshot: data/imagery-frames.json, overview; approximate regional portal/terminal anchors, not a surveyed alignment."
     }
   ],
   "landmarks": [
@@ -111,7 +126,10 @@
       "state": "NY",
       "lon": -74.0134,
       "lat": 40.7127,
-      "note": "Port Authority campus; original towers dedicated April 4, 1973."
+      "note": "Port Authority campus; original towers dedicated April 4, 1973.",
+      "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "status": "confirmed",
+      "coordinate_source": "Approximate mapped terminal/campus area; reference USGS overview snapshot."
     },
     {
       "id": "pabt",
@@ -119,7 +137,10 @@
       "state": "NY",
       "lon": -73.9904,
       "lat": 40.757,
-      "note": "Port Authority bus terminal in Midtown, fed by the Lincoln Tunnel."
+      "note": "Port Authority bus terminal in Midtown, fed by the Lincoln Tunnel.",
+      "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "status": "confirmed",
+      "coordinate_source": "Approximate mapped terminal/campus area; reference USGS overview snapshot."
     },
     {
       "id": "gwb-bus",
@@ -127,24 +148,33 @@
       "state": "NY",
       "lon": -73.9396,
       "lat": 40.8494,
-      "note": "Port Authority bus station at the bridge's Manhattan end."
+      "note": "Port Authority bus station at the bridge's Manhattan end.",
+      "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "status": "confirmed",
+      "coordinate_source": "Approximate mapped terminal/campus area; reference USGS overview snapshot."
     }
   ],
   "beyond_frame": [
     {
       "name": "Goethals Bridge",
       "opened": 1928,
-      "between": "Elizabeth, NJ – Staten Island"
+      "between": "Elizabeth, NJ – Staten Island",
+      "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "status": "confirmed"
     },
     {
       "name": "Outerbridge Crossing",
       "opened": 1928,
-      "between": "Perth Amboy, NJ – Staten Island"
+      "between": "Perth Amboy, NJ – Staten Island",
+      "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "status": "confirmed"
     },
     {
       "name": "Bayonne Bridge",
       "opened": 1931,
-      "between": "Bayonne, NJ – Staten Island"
+      "between": "Bayonne, NJ – Staten Island",
+      "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "status": "confirmed"
     }
   ],
   "portfolio": {
@@ -153,42 +183,244 @@
     "items": [
       {
         "count": 4,
-        "label": "bridges"
+        "label": "bridges",
+        "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+        "source_page": 4,
+        "year": 2026,
+        "status": "confirmed"
       },
       {
         "count": 2,
-        "label": "tunnels"
+        "label": "tunnels",
+        "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+        "source_page": 4,
+        "year": 2026,
+        "status": "confirmed"
       },
       {
         "count": 1,
-        "label": "PATH rail system"
+        "label": "PATH rail system",
+        "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+        "source_page": 4,
+        "year": 2026,
+        "status": "confirmed"
       },
       {
         "count": 2,
-        "label": "bus terminals"
+        "label": "bus terminals",
+        "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+        "source_page": 4,
+        "year": 2026,
+        "status": "confirmed"
       },
       {
         "count": 5,
-        "label": "airports"
+        "label": "airports",
+        "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+        "source_page": 4,
+        "year": 2026,
+        "status": "confirmed"
       },
       {
         "count": 4,
-        "label": "marine terminals"
+        "label": "marine terminals",
+        "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+        "source_page": 4,
+        "year": 2026,
+        "status": "confirmed"
       },
       {
         "count": 1,
-        "label": "World Trade Center campus"
+        "label": "World Trade Center campus",
+        "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+        "source_page": 4,
+        "year": 2026,
+        "status": "confirmed"
       }
-    ]
+    ],
+    "note": "Summary categories from p.4; selected facilities only are mapped. Detailed port chapter lists five named facilities, so do not equate every site name with the summary terminal count."
   },
   "path_ridership": {
     "year": 2025,
     "rides": 64318300,
-    "source": "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+    "source": "https://en.wikipedia.org/wiki/PATH_(rail_system)",
+    "status": "uncertain",
+    "display": false,
+    "note": "Legacy value retained; not independently verified against primary metric definitions in this revision. Excluded from public narrative."
   },
   "pair_links": {
     "01": "Port Authority link: Lower Manhattan’s skyline is anchored by the World Trade Center, a Port Authority site. PATH trains run under the river between these two shores.",
     "02": "Port Authority link: the Lincoln Tunnel runs under this stretch of river, from Weehawken to Midtown and the Port Authority Bus Terminal.",
     "03": "Port Authority link: the George Washington Bridge was built by the Port Authority and opened in 1931. The lighthouse sits at the foot of its New York tower."
+  },
+  "airports": [
+    {
+      "id": "KEWR",
+      "name": "Newark Liberty International Airport",
+      "short": "EWR",
+      "kind": "airport",
+      "lon": -74.170545,
+      "lat": 40.6894,
+      "pa_since": 1948,
+      "event": "Port Authority lease year, not airport opening",
+      "label": "Newark",
+      "label_lon": -74.213,
+      "label_lat": 40.705,
+      "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "source_page": 65,
+      "status": "confirmed",
+      "coordinate_source": "https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv",
+      "coordinate_basis": "OurAirports airport reference location; approximate facility anchor, not terminal entrance. Source coordinates column is latitude, longitude; explicitly reordered for GIS."
+    },
+    {
+      "id": "KLGA",
+      "name": "LaGuardia Airport",
+      "short": "LGA",
+      "kind": "airport",
+      "lon": -73.872597,
+      "lat": 40.777199,
+      "pa_since": 1947,
+      "event": "Port Authority lease year, not airport opening",
+      "label": "LaGuardia",
+      "label_lon": -73.875,
+      "label_lat": 40.825,
+      "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "source_page": 65,
+      "status": "confirmed",
+      "coordinate_source": "https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv",
+      "coordinate_basis": "OurAirports airport reference location; approximate facility anchor, not terminal entrance. Source coordinates column is latitude, longitude; explicitly reordered for GIS."
+    },
+    {
+      "id": "KJFK",
+      "name": "John F. Kennedy International Airport",
+      "short": "JFK",
+      "kind": "airport",
+      "lon": -73.779317,
+      "lat": 40.639447,
+      "pa_since": 1947,
+      "event": "Port Authority lease year, not airport opening",
+      "label": "JFK / Idlewild",
+      "label_lon": -73.758,
+      "label_lat": 40.685,
+      "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "source_page": 65,
+      "status": "confirmed",
+      "coordinate_source": "https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv",
+      "coordinate_basis": "OurAirports airport reference location; approximate facility anchor, not terminal entrance. Source coordinates column is latitude, longitude; explicitly reordered for GIS."
+    }
+  ],
+  "ports": [
+    {
+      "id": "newark",
+      "name": "Port Newark",
+      "lon": -74.133,
+      "lat": 40.687,
+      "kind": "port",
+      "source": "https://www.panynj.gov/port/en/our-port/history.html",
+      "status": "confirmed",
+      "coordinate_source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "coordinate_basis": "Approximate terminal-area anchor interpreted from official facilities map; not a berth or boundary."
+    },
+    {
+      "id": "elizabeth",
+      "name": "Elizabeth-Port Authority Marine Terminal",
+      "lon": -74.151,
+      "lat": 40.667,
+      "kind": "port",
+      "source": "https://www.panynj.gov/port/en/our-port/history.html",
+      "status": "confirmed",
+      "coordinate_source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+      "coordinate_basis": "Approximate terminal-area anchor interpreted from official facilities map; not a berth or boundary."
+    }
+  ],
+  "design": {
+    "concept": "The Stitch",
+    "bounds_wgs84": [
+      -74.25,
+      40.54,
+      -73.73,
+      40.91
+    ],
+    "projection": "EPSG:26918",
+    "shoreline_source": "U.S. Census 2024 cartographic boundary counties 1:500k; NY–NJ line from TIGER/Line 2024 states",
+    "district_circle": false,
+    "scope": "Selected Hudson crossings, three major airports, Newark/Elizabeth docks and WTC. Not a full agency inventory.",
+    "port_label_lon": -74.218,
+    "port_label_lat": 40.641,
+    "selected_landmarks": [
+      "wtc"
+    ]
+  },
+  "facts": [
+    {
+      "id": "compact",
+      "year": "1921",
+      "text": "New York and New Jersey create one port authority.",
+      "source": "https://www.govinfo.gov/content/pkg/STATUTE-42/pdf/STATUTE-42-Pg174.pdf",
+      "page": "42 Stat. 174–176; budget p.4",
+      "status": "confirmed"
+    },
+    {
+      "id": "gwb",
+      "year": "1931",
+      "text": "George Washington Bridge opens.",
+      "source": "https://www.panynj.gov/bridges-tunnels/en/george-washington-bridge/history.html",
+      "status": "confirmed"
+    },
+    {
+      "id": "airports",
+      "year": "1947–48",
+      "text": "Airport leases cross the state line.",
+      "source": "https://corpinfo.panynj.gov/content/dam/corporate/consolidated-bonds-%26-notes-pdfs/port-authority-OS-series-227.pdf",
+      "secondary_source": "https://downloads.regulations.gov/FAA-2015-0026-0001/attachment_6.pdf",
+      "status": "confirmed"
+    },
+    {
+      "id": "container",
+      "year": "1956",
+      "text": "McLean’s Ideal X sails from Port Newark.",
+      "source": "https://portfolio.panynj.gov/2015/06/23/the-world-in-a-box-a-quick-story-about-shipping/",
+      "status": "confirmed",
+      "private_innovation": true
+    },
+    {
+      "id": "path",
+      "year": "1962",
+      "text": "H&M becomes PATH; Elizabeth terminal opens.",
+      "source": "https://www.panynj.gov/path/en/about/history.html",
+      "secondary_source": "https://www.panynj.gov/port/en/our-port/history.html",
+      "status": "confirmed"
+    },
+    {
+      "id": "wtc",
+      "year": "1973",
+      "text": "Original World Trade Center dedicated.",
+      "source": "https://collection.911memorial.org/Detail/objects/121913",
+      "status": "confirmed"
+    }
+  ],
+  "history_context": {
+    "doig": {
+      "author": "Jameson W. Doig",
+      "title": "Empire on the Hudson",
+      "year": 2001,
+      "source": "https://cup.columbia.edu/book/empire-on-the-hudson/9780231076760/",
+      "status": "confirmed",
+      "access": "Publisher synopsis and contents; full book not read."
+    },
+    "region": {
+      "author": "Regional Plan Association",
+      "title": "The Constant Future",
+      "year": 2022,
+      "source": "https://rpa.org/work/reports/the-constant-future",
+      "status": "confirmed"
+    },
+    "gottmann": {
+      "author": "Jean Gottmann",
+      "title": "Megalopolis",
+      "year": 1961,
+      "source": "https://www.press.jhu.edu/books/title/2357/megalopolis",
+      "status": "confirmed"
+    }
   }
 }

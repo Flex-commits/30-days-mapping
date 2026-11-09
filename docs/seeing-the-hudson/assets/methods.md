@@ -79,3 +79,42 @@ Directories follow the professors' workflow: `scripts/`, `data/raw/`, `data/proc
 The shared Weitzman-MUSA repository receives only `_maps_2026/05-thomas-hagos.md` and `assets/thumbnails/2026/05-thomas-hagos.png`. All scripts, data, photographs, full exports and the public page stay in **Flex-commits/30-days-mapping**. The entry follows the current upstream template and links to this project. Submitted as [MUSA pull request #122](https://github.com/weitzman-musa/30DayMapChallenge/pull/122); gallery publication awaits maintainer review/merge.
 
 The aerial-only gallery thumbnail is separately licensed CC BY 4.0 for the shared gallery; it contains no source photograph.
+
+## Section 04 — Empire on the Hudson
+
+**Two states. One agency.** The revised chapter builds on the existing Port Authority data and processing pipeline. It uses a simpler, original regional map to show selected Hudson crossings, the three major airports, Newark/Elizabeth docks and WTC. Gold marks agency-associated infrastructure. Six tiny eyes identify the existing viewing places; they are location symbols, not calculated fields of view.
+
+[Research and fact checks](docs/research-notes.md) · [Landscape sheet](outputs/port-authority.png) · [Phone edition](outputs/port-authority-web.png) · [Facts and coordinates](data/port-authority.json) · [New source hashes](data/port-authority-sources.json)
+
+The legal Compact defines the Port District with boundary points and connecting lines. The often-used 25-mile radius is approximate. Accordingly this composition uses **The Stitch**, not a circle presented as a legal boundary. It draws no jurisdiction polygon or schematic state border. New York and New Jersey are labeled geographically on opposite sides of the Hudson.
+
+### Read the new map
+
+- Solid gold line: George Washington Bridge. Dashed gold: Holland/Lincoln road tunnels. Dotted gold: selected PATH river connections. Lines connect approximate anchors; they are not engineering alignments, current transit routes or measured travel distances.
+- Gold triangles: EWR/Newark Liberty, LGA/LaGuardia and JFK/John F. Kennedy, formerly Idlewild. Squares: selected Newark/Elizabeth dock areas. Star: WTC campus. Not every agency facility is shown.
+- Dates describe named events, not a consistent “construction year” variable: 1921 Compact; 1931 GWB opening; 1947–48 airport leases; 1956 McLean’s privately operated Ideal X sailing; 1962 PATH takeover and Elizabeth terminal opening; 1973 original WTC dedication.
+- The FY2026 counts below the image follow the budget’s summary categories on p. 4. They are not counts of plotted marks; the detailed Port chapter uses a different list of facility names. The prior Wikipedia-derived PATH ridership value is retained in data but flagged unverified and omitted from display.
+
+### Sources, projection and lettering
+
+Land is U.S. Census **2024 cartographic boundary counties (1:500k)** with **TIGER/Line 2024 area-water** polygons of 5 ha or more removed, dissolved by state and simplified by 10 m for display. Both states share one land colour on purpose: the only thing dividing them is the **NY–NJ state line**, taken from the shared boundary of the TIGER/Line 2024 state polygons. This is display geography, not a harbor survey. Each crossing is drawn bank to bank: its recorded NJ and NY anchors are snapped to the nearest shoreline of their own state (`data/processed/port-authority-crossings-mapped.geojson` records each snap distance). The Census archives are not committed; `prepare.py` downloads them from the recorded URLs and refuses to run if a hash differs (`data/port-authority-sources.json`). NAD83 / UTM zone 18N (EPSG:26918); equal-axis map units; five-mile scale; arrow indicates grid north.
+
+Airport anchors come from the frozen OurAirports-derived DataHub CSV. Its `coordinates` field is latitude, longitude in this snapshot and is explicitly reordered for GIS. Other anchors represent approximate portal/terminal/campus areas read from existing USGS reference imagery or official facility maps; they are not surveyed entrances, berth locations or legal facility boundaries. Every mapped infrastructure record carries a factual source and coordinate provenance. Frozen source URLs, licenses and hashes are saved; `download.py` verifies/restores them as it does the original inputs.
+
+`text_on_curve()` in `render.py` places italic DejaVu glyphs along saved projected paths using display-space arc length and local tangents, with tracking in points. State names use widely spaced capitals. IM FELL English by **Igino Marini**, **SIL Open Font License 1.1**, supplies the expressive years and headline; font and license are bundled in `docs/fonts/serif.ttf` and `docs/fonts/OFL-IMFell.txt`. DejaVu Sans/Oblique retain their existing bundled license. The original poster’s font settings are untouched.
+
+### Rebuild and review
+
+Use the same environment and full pipeline documented above:
+
+```sh
+python scripts/download.py
+python scripts/prepare.py
+python scripts/render.py
+python scripts/build_page.py
+python scripts/validate.py
+```
+
+For layout work only, `python scripts/render.py --port-authority-only` skips the original image exports. Full validation still re-renders the original poster and verifies all six protected exports against `docs/protected-exports.json`, recorded from baseline commit `6191e71`. Source coverage, airport coordinate order, geographic extents, schematic endpoints, labels, output dimensions and frozen source bytes are checked. `docs/port-authority-layout.json` records text bounds for both editions. Visual inspection remains necessary for shoreline generalization and leader-line clarity; numeric tests cannot certify historical truth.
+
+`build_page.py` serves the landscape sheet on larger screens and the portrait edition at widths up to 700px. The timeline and definitions remain accessible as HTML. Copy generated `site/` contents into `docs/seeing-the-hudson/` only after rebuilding. This revision is prepared locally for review; publishing requires Thomas’s approval.
