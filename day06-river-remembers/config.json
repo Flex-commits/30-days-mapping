@@ -41,38 +41,42 @@
     "lake": "#b46b49",
     "muted": "#766d5d",
     "line": "#c7bba1",
-    "gold": "#aa8340"
+    "gold": "#aa8340",
+    "lake_muted": "#e2d2b8"
   },
   "labels": [
     {
       "name": "Moon Lake",
       "lon": -90.50145839617097,
       "lat": 34.43079251777462,
-      "text_lon": -90.466,
-      "text_lat": 34.463,
+      "text_lon": -90.478,
+      "text_lat": 34.437,
       "align": "left",
-      "note": "Mississippi River oxbow",
-      "anchor_basis": "Interior representative point of matching NHD GNIS_NAME polygon"
+      "note": "",
+      "anchor_basis": "Interior representative point of matching NHD GNIS_NAME polygon",
+      "key": "A"
     },
     {
       "name": "Old Town Lake",
       "lon": -90.81868020989214,
       "lat": 34.39865754675017,
-      "text_lon": -90.839,
-      "text_lat": 34.451,
+      "text_lon": -90.845,
+      "text_lat": 34.433,
       "align": "left",
       "note": "",
-      "anchor_basis": "Interior representative point of matching NHD GNIS_NAME polygon"
+      "anchor_basis": "Interior representative point of matching NHD GNIS_NAME polygon",
+      "key": ""
     },
     {
       "name": "Horseshoe Lake",
       "lon": -90.69364407462216,
       "lat": 34.32365724542026,
-      "text_lon": -90.631,
-      "text_lat": 34.307,
-      "align": "left",
+      "text_lon": -90.677,
+      "text_lat": 34.289,
+      "align": "center",
       "note": "",
-      "anchor_basis": "Interior representative point of matching NHD GNIS_NAME polygon"
+      "anchor_basis": "Interior representative point of matching NHD GNIS_NAME polygon",
+      "key": "B"
     }
   ]
 }

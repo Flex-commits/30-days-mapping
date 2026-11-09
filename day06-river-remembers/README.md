@@ -9,7 +9,7 @@ Old bends along the Lower Mississippi, near Helena, Arkansas. A new water-refere
 
 ## What this map does
 
-The reference map uses USGS NHD river/stream areas and lake/pond polygons. Teal means river/stream areas; rust means lake/pond areas. Rust does **not** classify every lake as an oxbow. Three named lakes are labeled using their NHD GNIS names. Leader anchors are interior representative points of their corresponding polygons.
+The reference map uses USGS NHD river/stream areas and lake/pond polygons. Teal means river/stream areas. Rust marks the three named lakes that sit in old river bends; every other lake/pond is a pale tan. Dashed gold boxes **A** (Moon Lake) and **B** (Horseshoe Lake) match the two archive details on the right. The three named lakes are labeled using their NHD GNIS names. Leader anchors are interior representative points of their corresponding polygons.
 
 The archival details show Montezuma Bend / Moon Lake and Horse-Shoe Cut-Off on Sheet 5. Their colors and geometry are retained. The original legend records 1765, 1820–1830, 1881–1893 and 1930–1932 surveys, including an indeterminate 1820–1830 bankline shown with dashed pink. Those are survey periods, not four complete reconstructed time slices.
 
