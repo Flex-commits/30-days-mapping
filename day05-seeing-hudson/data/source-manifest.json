@@ -6,7 +6,7 @@
     "source": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer",
     "version": "Rolling service; frozen export hashes identify the exact inputs",
     "credit": "USDA, USGS The National Map: Orthoimagery. Data refreshed June, 2024.v1.2",
-    "capture_date_limit": "Service describes CONUS NAIP 2017–2021, but exact local pixel dates are not exposed. Refresh date is not acquisition date.",
+    "capture_date_limit": "Service describes CONUS NAIP 2017\u20132021, but exact local pixel dates are not exposed. Refresh date is not acquisition date.",
     "resolution": "Service metadata: generally 1m CONUS NAIP, some partner imagery; map exports resampled to saved dimensions. No claim of native pixel resolution from export pixel size.",
     "terms": "https://www.usgs.gov/faqs/what-are-terms-uselicensing-map-services-and-data-national-map",
     "coverage": "Selected Lower Hudson NY/NJ corridor only; no Alaska licensed SPOT material"
@@ -285,35 +285,6 @@
       "bytes": 5255,
       "sha256": "0c56ee7236758a6ec684a076439ce63f47ae70ef12601aaaf46f90c6ef92f580",
       "retrieved_utc": "2026-11-08T23:05:22.647402+00:00"
-    },
-    {
-      "file": "data/raw/port-authority/airport-codes.csv",
-      "url": "https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv",
-      "sha256": "b13058a39d558e7787795436c8b0a3d3eb56c1d93dd48082dec960d31cc14cf4",
-      "download_date": "2026-11-08",
-      "license": "Public domain / PDDL, OurAirports-derived DataHub dataset",
-      "version": "Saved source snapshot; byte hash is authoritative"
-    },
-    {
-      "file": "docs/fonts/serif.ttf",
-      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/imfellenglish/IMFeENrm28P.ttf",
-      "sha256": "fe9705bbde51af802719246d4608d08d37bde956ab99d9a590da996a5221a24c",
-      "license": "SIL OFL 1.1",
-      "creator": "Igino Marini"
-    },
-    {
-      "file": "docs/fonts/OFL-IMFell.txt",
-      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/imfellenglish/OFL.txt",
-      "sha256": "2a3ca501fc4d5efcad9798531e3e06962b1e20c60e464f6cbd6c17630112c773",
-      "license": "SIL OFL 1.1",
-      "creator": "Igino Marini"
-    },
-    {
-      "file": "docs/fonts/italic.ttf",
-      "url": "https://raw.githubusercontent.com/matplotlib/matplotlib/v3.9.4/lib/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf",
-      "sha256": "ccdf74b350f11fd3dd5774de50e5e6346a1a5da1f5b7d5fb83590665e97a5213",
-      "license": "DejaVu Fonts license, bundled",
-      "source": "Matplotlib font bundle v3.9.4"
     }
   ],
   "note": "A source hash mismatch must be reviewed as a new edition; do not silently change dates or geometry. Original photo metadata may be uploaded later than capture."
