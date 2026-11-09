@@ -1,0 +1,12 @@
+{
+  "river-areas": {
+    "source_features": 54,
+    "display_features": 54,
+    "source_invalid_repaired_for_display": 0
+  },
+  "lakes": {
+    "source_features": 87,
+    "display_features": 87,
+    "source_invalid_repaired_for_display": 0
+  }
+}

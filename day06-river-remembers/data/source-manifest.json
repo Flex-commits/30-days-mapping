@@ -1,0 +1,137 @@
+{
+  "sources": [
+    {
+      "id": "nhd",
+      "publisher": "U.S. Geological Survey / The National Map",
+      "title": "National Hydrography Dataset, high-resolution area and waterbody layers",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer",
+      "version": "Service snapshot downloaded 2026-11-08; metadata states data refreshed October 2026",
+      "download_date": "2026-11-08",
+      "license": "U.S. public domain; open, non-proprietary; USGS acknowledgment requested",
+      "license_url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "coverage": "Nationwide; selected study envelope [-90.86,34.24,-90.40,34.60]",
+      "resolution": "High resolution NHD, typically 1:24,000 or larger; record RESOLUTION values retained in raw source.",
+      "selection": "Layer 9: FTYPE=460 river/stream areas. Layer 12: FTYPE=390 lake/pond and AREASQKM>=0.03. Service envelope intersection, then exact geographic display clipping.",
+      "limitations": "Mixed feature dates; the download/refresh date is not a single observation date. Not a survey of current water levels. Lakes below 0.03 km\u00b2 (~7.4 acres), reservoirs, swamps and line-only water features are outside the displayed lake/area selection. Lake/pond class does not imply oxbow origin."
+    },
+    {
+      "id": "mrc",
+      "publisher": "U.S. Army, Mississippi River Commission; scan hosted by Michigan State University Libraries",
+      "title": "Lower Mississippi River: Early Stream Channels at Approximate Half-Century Intervals, Sheet 5, Mile 258 to Mile 331",
+      "url": "https://sanweb.lib.msu.edu/maps/public/images/MIssissippi_channels_1927_sheet5.pdf",
+      "version": "Prepared August 1938; engineering reproduction imprint 1939. URL filename includes 1927, but the cartographic title block identifies 1938.",
+      "download_date": "2026-11-08",
+      "license": "Original U.S. federal government map is public domain in the United States. A faithful scan is reproduced with archive credit; no exclusive rights claimed over source map.",
+      "license_url": "https://www.copyright.gov/title17/92chap1.html#105",
+      "resolution": "Scanned raster map; PDF page 1398.96 \u00d7 1609.68 points. Original scale of miles retained in complete PDF; no original projection inferred.",
+      "coverage": "Lower Mississippi near Helena, Arkansas, and adjacent Mississippi, one sheet of a twelve-sheet set.",
+      "legend": "1765 Ross; 1820\u20131830 U.S. Land Office; 1820\u20131830 indeterminate bankline (dashed pink); 1881\u20131893 and 1930\u20131932 Mississippi River Commission surveys.",
+      "limitations": "Historical compilation from multiple surveys. Crops retain original colors, geometry and orientation. Not georeferenced to NHD; crops at separate scales. No rates of migration, exact cutoff dates, present-day conditions or complete reconstructed time slices inferred.",
+      "verification_url": "https://blogs.loc.gov/maps/2016/06/the-meandering-mississippi/"
+    },
+    {
+      "id": "natural-earth",
+      "publisher": "Natural Earth contributors",
+      "title": "Admin 1 \u2013 States, Provinces, 1:50m",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_1_states_provinces.geojson",
+      "version": "Downloaded master snapshot, fixed by saved SHA-256; not asserted as an immutable release",
+      "download_date": "2026-11-08",
+      "license": "Public domain",
+      "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "resolution": "1:50 million",
+      "coverage": "Global; U.S. features selected for locator only.",
+      "limitations": "Generalized boundaries; locator is contextual and is not used for hydrography or political-boundary analysis."
+    },
+    {
+      "id": "moon-lake",
+      "publisher": "Mississippi Department of Wildlife, Fisheries, and Parks",
+      "title": "Moon Lake",
+      "url": "https://www.mdwfp.com/fishing-boating/lakes/moon-lake",
+      "access_date": "2026-11-08",
+      "use": "Verifies Moon Lake is an oxbow of the Mississippi; no map geometry or quoted prose copied.",
+      "limitations": "No cutoff year inferred from this page."
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "file": "data/raw/river-areas.geojson",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9/query?f=geojson&where=FTYPE+%3D+460&geometry=-90.86%2C34.24%2C-90.40%2C34.60&geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&resultRecordCount=2000",
+      "features": 54,
+      "normalization": "json-dumps",
+      "source": "nhd",
+      "sha256": "7669bf6f122e681190f6b5a0a6654abb8bcb64746698413b06cf82aa1f28c4a9"
+    },
+    {
+      "file": "data/raw/lakes.geojson",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12/query?f=geojson&where=FTYPE+%3D+390+AND+AREASQKM+%3E%3D+0.03&geometry=-90.86%2C34.24%2C-90.40%2C34.60&geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&resultRecordCount=2000",
+      "features": 87,
+      "normalization": "json-dumps",
+      "source": "nhd",
+      "sha256": "4d7587e30f4550ec8e8d115d9ff6f28a0af5bdd0d93a2c3b66a6c98aa6cd2874"
+    },
+    {
+      "file": "data/raw/nhd.json",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer?f=pjson",
+      "source": "nhd",
+      "sha256": "1e9ec55c6d5ea69be954a7318d1fa3430d35419c9bbb233f738619ee8495a412"
+    },
+    {
+      "file": "data/raw/layer9.json",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9?f=pjson",
+      "source": "nhd",
+      "sha256": "abdc5a1ef26dd32f5bcae95cb9c70638459a108e4480cf8a2b6453f96c91de08"
+    },
+    {
+      "file": "data/raw/layer12.json",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12?f=pjson",
+      "source": "nhd",
+      "sha256": "8b48e5f7e1fb80eca7ce73cefcb596d8136ae9fcfeab7b690f3fa0dd97875ea3"
+    },
+    {
+      "file": "data/raw/mrc-1938-sheet05.pdf",
+      "url": "https://sanweb.lib.msu.edu/maps/public/images/MIssissippi_channels_1927_sheet5.pdf",
+      "source": "mrc",
+      "sha256": "2f3b99b0944aec6c8a574b9b09ba308bdad5ec35bdfd8ea5104767785fbbb789"
+    },
+    {
+      "file": "data/raw/ne-50m-states.geojson",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_1_states_provinces.geojson",
+      "source": "natural-earth",
+      "sha256": "69a0e06e640b2d505858ae1cb63034e4677f3000b35a98e16312932b98c426b9"
+    },
+    {
+      "file": "fonts/calligraphy.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/greatvibes/GreatVibes-Regular.ttf",
+      "source": "font",
+      "license": "SIL Open Font License 1.1",
+      "sha256": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15"
+    },
+    {
+      "file": "fonts/OFL-GreatVibes.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/greatvibes/OFL.txt",
+      "source": "font",
+      "license": "SIL Open Font License 1.1",
+      "sha256": "61093a21f5e63dedf54222b3c09997e54c0fe43e3851d21386e02ddcbc246d49"
+    },
+    {
+      "file": "fonts/serif.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/imfellenglish/IMFeENrm28P.ttf",
+      "source": "font",
+      "license": "SIL Open Font License 1.1",
+      "sha256": "fe9705bbde51af802719246d4608d08d37bde956ab99d9a590da996a5221a24c"
+    },
+    {
+      "file": "fonts/OFL-IMFell.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/imfellenglish/OFL.txt",
+      "source": "font",
+      "license": "SIL Open Font License 1.1",
+      "sha256": "2a3ca501fc4d5efcad9798531e3e06962b1e20c60e464f6cbd6c17630112c773"
+    }
+  ],
+  "fonts": {
+    "Great Vibes": "Robert E. Leuschke, SIL OFL 1.1; calligraphic titles",
+    "IM FELL English": "Igino Marini, SIL OFL 1.1; serif labels",
+    "DejaVu Sans": "DejaVu Fonts license bundled; technical labels"
+  },
+  "retrieval_note": "USACE matching Sheet 5 download returned HTTP403. MSU-hosted scan used; title block and independent Library of Congress account checked."
+}

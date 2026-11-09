@@ -1,0 +1,12 @@
+[
+  {
+    "file": "data/raw/river-areas.geojson",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9/query?f=geojson&where=FTYPE+%3D+460&geometry=-90.86%2C34.24%2C-90.40%2C34.60&geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&resultRecordCount=2000",
+    "features": 54
+  },
+  {
+    "file": "data/raw/lakes.geojson",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12/query?f=geojson&where=FTYPE+%3D+390+AND+AREASQKM+%3E%3D+0.03&geometry=-90.86%2C34.24%2C-90.40%2C34.60&geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&resultRecordCount=2000",
+    "features": 87
+  }
+]

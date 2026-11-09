@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": {
+    "frozen_input_hashes": true,
+    "complete_queries_no_duplicate_ids": true,
+    "exact_clipping_without_simplification_or_synthetic_geometry": true,
+    "each_lake_label_anchor_inside_its_named_NHD_polygon": true,
+    "five_mile_scale_within_0_1_percent_ground_distance": true,
+    "poster_and_thumbnail_dimensions": true,
+    "static_page_asset_links_and_alt_text": true,
+    "only_two_MUSA_files_and_identical_thumbnail": true,
+    "clean_folder_rebuild_byte_identical_images": true
+  },
+  "source_feature_counts": {
+    "river-areas": 54,
+    "lakes": 87
+  },
+  "scale_bar_ground_miles": 4.998796262383098,
+  "image_sha256": {
+    "the-river-remembers.png": "737e5961c66984f2dd408dee15cf665c04175322f1fe8b046210e34f06af95c8",
+    "06-thomas-hagos.png": "77426be72f4d2d8766e7ee25443c245d8cdccf721ecee662acb4e43ef5724837"
+  },
+  "visual_review": "Full poster and 600px thumbnail inspected; archival colors, periods and crop labels checked against original sheet.",
+  "scope": "Reference hydrography plus attributed archival details; no georeferenced historical overlay or current-condition survey."
+}

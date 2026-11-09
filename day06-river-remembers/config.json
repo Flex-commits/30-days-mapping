@@ -1,0 +1,78 @@
+{
+  "title": "The River Remembers",
+  "subtitle": "Old bends along the Lower Mississippi",
+  "author": "Thomas Hagos",
+  "challenge": {
+    "year": 2026,
+    "day": 6,
+    "theme": "Vintage"
+  },
+  "bounds_wgs84": [
+    -90.86,
+    34.24,
+    -90.4,
+    34.6
+  ],
+  "projection": "EPSG:26915",
+  "projection_name": "NAD83 / UTM zone 15N",
+  "dpi": 300,
+  "figure_inches": [
+    15,
+    18
+  ],
+  "archive_crops_pdf_points": {
+    "montezuma": [
+      810,
+      330,
+      1345,
+      700
+    ],
+    "horseshoe": [
+      480,
+      1010,
+      1070,
+      1390
+    ]
+  },
+  "colors": {
+    "paper": "#f5eedf",
+    "ink": "#263d3c",
+    "river": "#2f666b",
+    "lake": "#b46b49",
+    "muted": "#766d5d",
+    "line": "#c7bba1",
+    "gold": "#aa8340"
+  },
+  "labels": [
+    {
+      "name": "Moon Lake",
+      "lon": -90.50145839617097,
+      "lat": 34.43079251777462,
+      "text_lon": -90.466,
+      "text_lat": 34.463,
+      "align": "left",
+      "note": "Mississippi River oxbow",
+      "anchor_basis": "Interior representative point of matching NHD GNIS_NAME polygon"
+    },
+    {
+      "name": "Old Town Lake",
+      "lon": -90.81868020989214,
+      "lat": 34.39865754675017,
+      "text_lon": -90.839,
+      "text_lat": 34.451,
+      "align": "left",
+      "note": "",
+      "anchor_basis": "Interior representative point of matching NHD GNIS_NAME polygon"
+    },
+    {
+      "name": "Horseshoe Lake",
+      "lon": -90.69364407462216,
+      "lat": 34.32365724542026,
+      "text_lon": -90.631,
+      "text_lat": 34.307,
+      "align": "left",
+      "note": "",
+      "anchor_basis": "Interior representative point of matching NHD GNIS_NAME polygon"
+    }
+  ]
+}
