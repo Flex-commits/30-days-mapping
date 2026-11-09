@@ -82,4 +82,52 @@ for p in C['pairs']:
 # Dedicated gallery square, not a center-crop of the tall poster.
 fig=plt.figure(figsize=(6,6),facecolor=BG);ft(fig,.065,.93,'05 / SIGHT',10,GOLD,bold);ft(fig,.065,.79,'SEEING\nTHE HUDSON',26,FG,bold,linespacing=1.05);ft(fig,.065,.72,'Two shores. One river. Different views.',9,MUT)
 a=fig.add_axes([.065,.22,.87,.42]);b=aerial(a,'02',.8);pairline(a,C['pairs'][1]);ft(fig,.065,.155,'NEW JERSEY ↔ NEW YORK',11,GOLD,bold);ft(fig,.065,.10,'Six public places · Three photographic pairings',8,FG);ft(fig,.065,.055,'Thomas Hagos · USDA / USGS imagery · Full credits in project',6.5,MUT);fig.savefig(OUT/'05-thomas-hagos.png',dpi=100,facecolor=BG);plt.close(fig)
-print('Rendered poster, three paired-site sheets and square thumbnail.')
+# Port Authority sheet: the crossings that bind the two shores, drawn as schematic links over the same overview imagery.
+PA=json.loads((R/'data/port-authority.json').read_text());MODE={'bridge':(GOLD,'-',2.4,'Bridge'),'tunnel':('#86afb2',(0,(4,2.5)),2.0,'Vehicle tunnel'),'rail':('#de8c68',(0,(1,1.6)),2.2,'PATH rail tubes')}
+LAB={'path-uptown':('ny',230,260),'path-downtown':('ny',170,-720),'holland':('ny',260,120),'lincoln':('ny',260,160),'gwb':('ny',330,120)}
+fig=plt.figure(figsize=(12,15),facecolor=BG)
+for x,d in [(.04,1),(.96,-1)]:fig.add_artist(plt.Line2D([x,x,x+.018*d],[.945,.976,.976],transform=fig.transFigure,color=GOLD,lw=.8))
+ft(fig,.057,.953,'THOMAS HAGOS  /  30-DAY MAP CHALLENGE 2026',8.5,GOLD,bold);ft(fig,.944,.953,'DAY 05 · SENSES: SIGHT',8.5,FG,ha='right')
+ft(fig,.055,.900,'SEEING THE HUDSON',34,FG,bold);ft(fig,.058,.866,'04 / '+PA['title'],18,GOLD,bold)
+ft(fig,.058,.838,'Since 1921, one bi-state agency has built and run the links that let people cross the river every day.',10.5,FG);rule(fig,.82)
+a=fig.add_axes([.055,.105,.40,.70]);b=aerial(a,'overview',.6)
+for p in C['pairs']:
+ for side in ['nj','ny']:
+  x,y=T.transform(p[side]['lon'],p[side]['lat']);a.scatter([x],[y],s=14,color=FG,alpha=.55,edgecolor=BG,linewidth=.6,zorder=6)
+for c in PA['crossings']:
+ col,ls,lw,_=MODE[c['mode']];(x0,y0),(x1,y1)=[T.transform(c[s]['lon'],c[s]['lat']) for s in ['nj','ny']]
+ a.plot([x0,x1],[y0,y1],color=BG,lw=lw+2.4,solid_capstyle='round',zorder=7);a.plot([x0,x1],[y0,y1],color=col,ls=ls,lw=lw,solid_capstyle='round',zorder=8)
+ for x,y in [(x0,y0),(x1,y1)]:a.scatter([x],[y],s=16,color=col,edgecolor=BG,linewidth=.8,zorder=9)
+ end,dx,dy=LAB[c['id']];ax_,ay_=((x1,y1) if end=='ny' else (x0,y0));ax_+=dx;ay_+=dy
+ a.text(ax_,ay_,c['short'].upper()+'\n'+str(c['opened']),ha='left',fontproperties=bold,fontsize=6.6,color=col,linespacing=1.15,zorder=10,path_effects=[pe.withStroke(linewidth=2.4,foreground=BG)])
+for l in PA['landmarks']:
+ x,y=T.transform(l['lon'],l['lat']);a.scatter([x],[y],s=22,marker='s',color=FG,edgecolor=BG,linewidth=.8,zorder=9)
+ off={'wtc':(170,-260),'pabt':(170,-60),'gwb-bus':(150,-330)}[l['id']];a.text(x+off[0],y+off[1],l['name'],fontproperties=sans,fontsize=6,color=FG,zorder=10,path_effects=[pe.withStroke(linewidth=2.2,foreground=BG)])
+for name,lon,lat,rotation in [('NEW JERSEY',-74.030,40.800,0),('MANHATTAN',-73.966,40.800,63),('HUDSON RIVER',-73.984,40.806,65)]:
+ x,y=T.transform(lon,lat);a.text(x,y,name,fontproperties=bold,fontsize=7.5,color=FG,ha='center',rotation=rotation,zorder=10,path_effects=[pe.withStroke(linewidth=2.6,foreground=BG)])
+a.text(.94,.97,'N ↑',transform=a.transAxes,ha='right',fontproperties=bold,color=FG,fontsize=9,zorder=12);scalebar(a,b,1,.60,.03)
+# Right column: chronology, legend and today's portfolio.
+X=.52;ft(fig,X,.792,'HOW THE RIVER WAS STITCHED',9,GOLD,bold)
+rows=[(1908,'Hudson & Manhattan tubes open (Hoboken).','rail'),(1909,'Downtown tubes reach Exchange Place.','rail'),(1921,'New York and New Jersey sign the Port Compact. The Port Authority is created April 30.',None),(1927,'Holland Tunnel opens; Port Authority control from 1930.','tunnel'),(1931,'George Washington Bridge opens: built by the Port Authority.','bridge'),(1937,'Lincoln Tunnel opens: tubes added in 1945 and 1957.','tunnel'),(1962,'The Port Authority takes over the H&M tubes; they become PATH.','rail'),(1973,'World Trade Center dedicated: a Port Authority campus.',None)]
+y=.762
+for yr,txt,m in rows:
+ col=MODE[m][0] if m else FG;ft(fig,X,y,str(yr),11,col,bold)
+ for n,line in enumerate(textwrap.wrap(txt,48)):ft(fig,X+.075,y+.001-n*.0135,line,8.6,FG)
+ y-=.0135*max(1,len(textwrap.wrap(txt,48)))+.011
+rule(fig,y+.006,X,.943);y-=.022;ft(fig,X,y,'ON THE MAP',9,GOLD,bold);y-=.026
+for m in ['bridge','tunnel','rail']:
+ col,ls,lw,lab=MODE[m];fig.add_artist(plt.Line2D([X,X+.05],[y+.004,y+.004],transform=fig.transFigure,color=col,ls=ls,lw=lw));ft(fig,X+.065,y,lab,8.5,FG);y-=.02
+fig.add_artist(plt.Line2D([X+.025],[y+.004],transform=fig.transFigure,marker='s',color=FG,ms=4.5,lw=0));ft(fig,X+.065,y,'Port Authority terminal or campus',8.5,FG);y-=.02
+fig.add_artist(plt.Line2D([X+.025],[y+.004],transform=fig.transFigure,marker='o',color=FG,alpha=.55,ms=3.5,lw=0));ft(fig,X+.065,y,'The six viewing places from pairs 01–03',8.5,FG);y-=.03
+rule(fig,y+.008,X,.943);y-=.02;ft(fig,X,y,'TODAY · '+PA['portfolio']['as_of'].upper(),9,GOLD,bold);y-=.036
+for i,it in enumerate(PA['portfolio']['items']):
+ cx=X+(i%4)*.106;cy=y-(i//4)*.058;ft(fig,cx,cy,str(it['count']),19,FG,bold)
+ for n,line in enumerate(textwrap.wrap(it['label'],13)):ft(fig,cx,cy-.015-n*.011,line,7.2,MUT)
+y-=.128;ft(fig,X,y,'Out of frame: Goethals and Outerbridge (1928) and Bayonne (1931)',7.6,MUT);ft(fig,X,y-.013,'bridges link New Jersey to Staten Island.',7.6,MUT)
+rule(fig,.085)
+ft(fig,.058,.066,'Lines are schematic shore-to-shore links between approximate portal or terminal areas, not surveyed tunnel or track alignments.',7.2,MUT)
+ft(fig,.058,.050,'Dates: Port Authority of NY & NJ; Wikipedia summaries of PA and PATH history. Portfolio counts: Port Authority FY2026 budget.',7.2,MUT)
+ft(fig,.058,.034,'USGS orthoimagery (CONUS source range 2017–2021; local pixel dates unresolved). EPSG:26918 · Scale in miles · North up.',7.2,MUT)
+ft(fig,.058,.016,'flex-commits.github.io/30-days-mapping/seeing-the-hudson/',7,MUT);ft(fig,.944,.016,'#30DayMapChallenge / #teamMUSA',8,GOLD,ha='right')
+fig.savefig(OUT/'port-authority.png',dpi=160,facecolor=BG);plt.close(fig)
+print('Rendered poster, three paired-site sheets, the Port Authority sheet and square thumbnail.')

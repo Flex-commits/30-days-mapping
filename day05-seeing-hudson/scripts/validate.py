@@ -22,6 +22,12 @@ checks.update({'geodesic_miles_independently_checked':True,'photo_dates_rights_a
 for f in frames:
  image=R/'data/raw'/f['source_file'];assert list(Image.open(image).size)==f['actual_size'];assert hashlib.sha256(image.read_bytes()).hexdigest()==f['sha256'];assert all(__import__('math').isfinite(x) for x in f['actual_bounds']);assert 'bboxSR=26918' in f['request_url'] and 'imageSR=26918' in f['request_url']
 checks['imagery_bounds_pixels_hashes_and_CRS']=True
+PA=json.loads((R/'data/port-authority.json').read_text());ov=next(f for f in frames if f['id']=='overview');x0,y0,x1,y1=ov['actual_bounds'];pa=gpd.read_file(R/'data/processed/port-authority-crossings.geojson');assert len(pa)==len(PA['crossings']) and pa.id.is_unique
+for c in PA['crossings']:
+ assert c['opened']<=c['pa_since'] and c['source'].startswith('https://')
+ for s in ['nj','ny']:x,y=T.transform(c[s]['lon'],c[s]['lat']);assert x0<=x<=x1 and y0<=y<=y1,c['id']
+ assert c['nj']['lon']<c['ny']['lon'],c['id']
+assert set(PA['pair_links'])=={p['id'] for p in C['pairs']} and PA['portfolio']['source'].startswith('https://');assert Image.open(R/'outputs/port-authority.png').size==(1920,2400);checks['port_authority_crossings_in_overview_and_sourced']=True
 assert Image.open(R/'outputs/seeing-the-hudson.png').size==(4500,5400);assert Image.open(R/'outputs/05-thomas-hagos.png').size==(600,600);checks['export_sizes']=True
 class Parser(HTMLParser):
  def __init__(self):super().__init__();self.links=[];self.images=[]

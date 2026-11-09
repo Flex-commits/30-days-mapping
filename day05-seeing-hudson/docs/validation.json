@@ -7,6 +7,7 @@
     "photo_dates_rights_and_coordinate_bases_checked": true,
     "sites_within_corresponding_aerial_frames": true,
     "imagery_bounds_pixels_hashes_and_CRS": true,
+    "port_authority_crossings_in_overview_and_sourced": true,
     "export_sizes": true,
     "static_page_local_links_and_image_alt_text": true,
     "repeat_render_byte_identical": true
@@ -23,6 +24,6 @@
     600,
     600
   ],
-  "browser_visual_QA": "Live page inspected in the built-in browser at narrow mobile width: hero, photo cards, credit links and disclosure interaction checked. Applied width:100% fix for disclosure-map overflow; post-deployment check follows.",
+  "browser_visual_QA": "Pending; static poster inspected separately.",
   "limitations": "No modeled visibility, current-condition claim or certified access/coordinate accuracy."
 }

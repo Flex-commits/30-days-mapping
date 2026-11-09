@@ -1,0 +1,194 @@
+{
+  "title": "One authority. Two shores.",
+  "founded": "1921-04-30",
+  "coordinate_note": "Approximate portal, plaza or terminal areas read from public maps. Lines are straight schematic links between the two shores, not surveyed tunnel or track alignments.",
+  "crossings": [
+    {
+      "id": "path-uptown",
+      "name": "PATH uptown tubes",
+      "short": "PATH · Hoboken",
+      "mode": "rail",
+      "opened": 1908,
+      "pa_since": 1962,
+      "pa_role": "Opened by the Hudson & Manhattan Railroad; taken over by the Port Authority in 1962 and renamed PATH.",
+      "nj": {
+        "place": "Hoboken Terminal",
+        "lon": -74.0281,
+        "lat": 40.735
+      },
+      "ny": {
+        "place": "Christopher Street",
+        "lon": -74.007,
+        "lat": 40.7331
+      },
+      "source": "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+    },
+    {
+      "id": "path-downtown",
+      "name": "PATH downtown tubes",
+      "short": "PATH · Exchange Place",
+      "mode": "rail",
+      "opened": 1909,
+      "pa_since": 1962,
+      "pa_role": "Opened by the Hudson & Manhattan Railroad; taken over by the Port Authority in 1962.",
+      "nj": {
+        "place": "Exchange Place",
+        "lon": -74.0329,
+        "lat": 40.7163
+      },
+      "ny": {
+        "place": "World Trade Center",
+        "lon": -74.0112,
+        "lat": 40.7118
+      },
+      "source": "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+    },
+    {
+      "id": "holland",
+      "name": "Holland Tunnel",
+      "short": "Holland Tunnel",
+      "mode": "tunnel",
+      "opened": 1927,
+      "pa_since": 1930,
+      "pa_role": "Built by the bi-state tunnel commissions; placed under Port Authority control in 1930.",
+      "nj": {
+        "place": "Jersey City portal",
+        "lon": -74.0368,
+        "lat": 40.7277
+      },
+      "ny": {
+        "place": "Hudson Square portal",
+        "lon": -74.0072,
+        "lat": 40.7246
+      },
+      "source": "https://en.wikipedia.org/wiki/Port_Authority_of_New_York_and_New_Jersey"
+    },
+    {
+      "id": "gwb",
+      "name": "George Washington Bridge",
+      "short": "George Washington Bridge",
+      "mode": "bridge",
+      "opened": 1931,
+      "pa_since": 1931,
+      "pa_role": "Built by the Port Authority; completed October 1931.",
+      "nj": {
+        "place": "Fort Lee",
+        "lon": -73.9622,
+        "lat": 40.8535
+      },
+      "ny": {
+        "place": "Washington Heights",
+        "lon": -73.9447,
+        "lat": 40.8497
+      },
+      "source": "https://en.wikipedia.org/wiki/Port_Authority_of_New_York_and_New_Jersey"
+    },
+    {
+      "id": "lincoln",
+      "name": "Lincoln Tunnel",
+      "short": "Lincoln Tunnel",
+      "mode": "tunnel",
+      "opened": 1937,
+      "pa_since": 1937,
+      "pa_role": "Built by the Port Authority: first tube 1937, second 1945, third 1957.",
+      "nj": {
+        "place": "Weehawken portal",
+        "lon": -74.0217,
+        "lat": 40.7637
+      },
+      "ny": {
+        "place": "Midtown portal",
+        "lon": -73.9975,
+        "lat": 40.7592
+      },
+      "source": "https://en.wikipedia.org/wiki/Port_Authority_of_New_York_and_New_Jersey"
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "wtc",
+      "name": "World Trade Center",
+      "state": "NY",
+      "lon": -74.0134,
+      "lat": 40.7127,
+      "note": "Port Authority campus; original towers dedicated April 4, 1973."
+    },
+    {
+      "id": "pabt",
+      "name": "Port Authority Bus Terminal",
+      "state": "NY",
+      "lon": -73.9904,
+      "lat": 40.757,
+      "note": "Port Authority bus terminal in Midtown, fed by the Lincoln Tunnel."
+    },
+    {
+      "id": "gwb-bus",
+      "name": "GWB Bus Station",
+      "state": "NY",
+      "lon": -73.9396,
+      "lat": 40.8494,
+      "note": "Port Authority bus station at the bridge's Manhattan end."
+    }
+  ],
+  "beyond_frame": [
+    {
+      "name": "Goethals Bridge",
+      "opened": 1928,
+      "between": "Elizabeth, NJ – Staten Island"
+    },
+    {
+      "name": "Outerbridge Crossing",
+      "opened": 1928,
+      "between": "Perth Amboy, NJ – Staten Island"
+    },
+    {
+      "name": "Bayonne Bridge",
+      "opened": 1931,
+      "between": "Bayonne, NJ – Staten Island"
+    }
+  ],
+  "portfolio": {
+    "as_of": "FY2026 budget",
+    "source": "https://www.panynj.gov/content/dam/corporate/budgets-pdfs/2026-budget.pdf",
+    "items": [
+      {
+        "count": 4,
+        "label": "bridges"
+      },
+      {
+        "count": 2,
+        "label": "tunnels"
+      },
+      {
+        "count": 1,
+        "label": "PATH rail system"
+      },
+      {
+        "count": 2,
+        "label": "bus terminals"
+      },
+      {
+        "count": 5,
+        "label": "airports"
+      },
+      {
+        "count": 4,
+        "label": "marine terminals"
+      },
+      {
+        "count": 1,
+        "label": "World Trade Center campus"
+      }
+    ]
+  },
+  "path_ridership": {
+    "year": 2025,
+    "rides": 64318300,
+    "source": "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+  },
+  "pair_links": {
+    "01": "Port Authority link: Lower Manhattan’s skyline is anchored by the World Trade Center, a Port Authority site. PATH trains run under the river between these two shores.",
+    "02": "Port Authority link: the Lincoln Tunnel runs under this stretch of river, from Weehawken to Midtown and the Port Authority Bus Terminal.",
+    "03": "Port Authority link: the George Washington Bridge was built by the Port Authority and opened in 1931. The lighthouse sits at the foot of its New York tower."
+  }
+}
