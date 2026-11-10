@@ -1,0 +1,4 @@
+Produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.
+Landmark anchors: © OpenStreetMap contributors, ODbL. Original scenario: Thomas Hagos, CC BY 4.0. Buildings, clothing and movement are interpretations.
+Photographs: A.Savin, Wikipedia, Free Art License (https://artlibre.org/licence/lal/en/); © UNESCO / Michel Ravassard, CC BY-SA 3.0 IGO (https://creativecommons.org/licenses/by-sa/3.0/igo/). Resized; otherwise unchanged. Source records: https://github.com/Flex-commits/30-days-mapping/tree/main/day08-aksum-built/data/photos .
+Sources and methods: https://flex-commits.github.io/30-days-mapping/aksum-built/
