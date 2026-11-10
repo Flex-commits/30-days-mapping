@@ -40,3 +40,7 @@ Walking speed 1.3 m/s; horse walking speed 2.2 m/s. Arms, feet and quadruped leg
 The Zamani scans button loads the official Sketchfab iframe only on demand, with attribution. It does not copy research meshes into this scene. Three public model records were rechecked November 10, 2026: isDownloadable=false, no redistribution license listed.
 
 Save image exports the current WebGL camera at 3840×2160. Record tour captures a clean 1920×1080, 20-second WebM through whole-city, church, stelae and market views; labels remain outside the captured canvas. Published downloadable MP4s can be transcoded from that capture. Source credits accompany exports separately.
+
+
+## Delivered media
+The actual WebGL scene was exported to a 3840×2160 PNG and recorded as a canvas-only tour, then encoded to H.264 MP4 at 1920×1080, 30fps (approximately 20 seconds). The media contain no text overlays. Credits and distinctions accompany the files in source-credits.txt. The official Zamani scans are not present in these original-scene exports. The MP4 uses an actual transfer-function/range conversion from the browser recording to Rec.709; it is not a relabeled render.

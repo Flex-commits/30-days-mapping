@@ -1,0 +1,20 @@
+Aksum, Reimagined — architectural utopia study, Thomas Hagos, 2026.
+Original scene and composition: CC BY 4.0. Three.js: MIT.
+
+Produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.
+The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.
+Landmark anchors, modern streets and church footprints: © OpenStreetMap contributors, ODbL.
+
+Buildings, marketplace, planting, clothing and movement are interpretations, not archaeological reconstruction. Church footprint polygons are sourced; elevations and details are photo-informed approximations. Stelae are original schematic models using published dimensions. No Zamani meshes appear in the city, image or video. The page includes Zamani's official Sketchfab viewers, loaded on demand, with attribution. Those scans were not downloaded or redistributed.
+
+Research sources:
+https://zamaniproject.org/site-ethiopia-aksum-stelae-field.html
+https://www.zamaniproject.org/digital-heritage-archive.html
+https://whc.unesco.org/en/list/15/
+https://whc.unesco.org/en/news/458/
+https://whc.unesco.org/document/123411
+https://www.metmuseum.org/essays/monumental-architecture-and-stelae-of-the-aksumite-empire
+https://publications.dainst.org/books/dai/catalog/view/2050/2501/4644
+
+Model source and full assumptions:
+https://github.com/Flex-commits/30-days-mapping/tree/main/day08-aksum-built/three-d
