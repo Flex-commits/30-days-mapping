@@ -1,0 +1,6 @@
+.mplconfig/
+.venv/
+__pycache__/
+site/
+data/raw/*
+!data/raw/airport-codes.csv
