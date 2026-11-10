@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "three": "0.180.0",
+    "esbuild": "0.25.11"
+  },
+  "scripts": {
+    "build": "esbuild main.js --bundle --format=iife --minify --outfile=scene.js"
+  }
+}
