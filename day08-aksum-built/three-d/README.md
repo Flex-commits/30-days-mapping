@@ -9,7 +9,7 @@ A navigable, projected-metre 3D prototype. This is an imaginative contemporary c
 - UNESCO approximate returned-obelisk height (24m) and fallen Great Stele length (33m), represented schematically. Widths, carving and fallen orientation are not surveyed replicas.
 
 ## What is imagined
-164 generated houses, courtyard blocks, a marketplace, colonnades, a speculative Dungur palace, streets, residents and clothing. The city grid does not claim historical or present-day parcel geometry. There is no structural feasibility claim. Foundations are illustrative; the terrain is not ancient ground. The Dungur tower is a massing study, not a reconstruction. Yeha is shown separately in a regional schematic; no real or proposed transport route is asserted. This scene has no vertical exaggeration.
+150 generated houses, courtyard blocks, a marketplace, colonnades, a speculative Dungur palace, streets, residents and clothing. The city grid does not claim historical or present-day parcel geometry. There is no structural feasibility claim. Foundations are illustrative; the terrain is not ancient ground. The Dungur tower is a massing study, not a reconstruction. Yeha is shown separately in a regional schematic; no real or proposed transport route is asserted. This scene has no vertical exaggeration.
 
 ## Controls
 Drag to orbit; scroll/pinch to approach; right-drag to pan. Camera presets: whole city, market square, street level and Dungur. Street level is a camera preset, not a collision-aware walking game. Pause life respects reduced-motion preferences initially. The layer selector separates the proposal, schematic monuments and today's street references. Red landmark spheres open historical notes and licensed photographs.
@@ -22,3 +22,13 @@ With Python dependencies from the parent project installed, run `python prepare.
 
 Produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.
 The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.
+
+
+## Recognizable landmarks update
+The old Mary of Zion church and the new domed cathedral are distinct models. OSM ways 188465648 and 262791601 define their footprint meshes. Roofline, arch, window and dome geometry is drawn from visual references, with explicit assumed elevations in landmark-models.json. The old church is associated with seventeenth-century rebuilding; the new cathedral was inaugurated in 1965 (UNESCO 2013 reactive monitoring mission). OSM's unverified start_date=1950 tag is not used for chronology. Simplified crosses are symbolic, not exact reproductions. No interior is modeled. The buildings are not laser scans or photogrammetric meshes.
+
+The returned Stele 2 is approximately 24m (UNESCO). Stele 3 is 20.57m above earth in the DAI Stelae of Aksum chapter, printed p99. The Great Stele is approximately 33m fallen length (UNESCO); its fragmentation and orientation remain schematic. Carved facade patterns are representative, not exact tracing.
+
+Zamani Project / University of Cape Town laser scans were found for Stele 1, Stele 3 and the stelae field. Public Sketchfab API records on November 10, 2026 all list isDownloadable=false and no redistribution license. No meshes were extracted. The official viewers are linked from the stelae evidence panel: https://zamaniproject.org/site-ethiopia-aksum-stelae-field.html . Integration of those scan files would require a lawful download or permission.
+
+Reference photographs: old church by A.Savin, Wikipedia (Free Art License); new church by Sailko (CC BY 3.0), both 2018. Resized but not cropped or otherwise edited. See parent data/photos/manifest.json. These images are shown as references, not projected as textures.

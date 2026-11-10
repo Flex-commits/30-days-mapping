@@ -1,0 +1,160 @@
+{
+  "churches": [
+    {
+      "osm_way": "188465648",
+      "name": "Old Mary of Zion",
+      "footprint": [
+        [
+          16.616,
+          40.222
+        ],
+        [
+          12.819,
+          56.862
+        ],
+        [
+          17.89,
+          58.008
+        ],
+        [
+          16.914,
+          62.32
+        ],
+        [
+          24.348,
+          63.999
+        ],
+        [
+          25.281,
+          59.897
+        ],
+        [
+          49.786,
+          65.423
+        ],
+        [
+          53.638,
+          48.572
+        ],
+        [
+          16.616,
+          40.222
+        ]
+      ],
+      "height_basis": "photo-informed assumed elevations, not surveyed"
+    },
+    {
+      "osm_way": "262791601",
+      "name": "New Mary of Zion",
+      "footprint": [
+        [
+          90.423,
+          -43.7
+        ],
+        [
+          93.465,
+          -42.557
+        ],
+        [
+          95.837,
+          -40.342
+        ],
+        [
+          97.183,
+          -37.387
+        ],
+        [
+          97.276,
+          -34.147
+        ],
+        [
+          96.128,
+          -31.129
+        ],
+        [
+          93.891,
+          -28.765
+        ],
+        [
+          90.922,
+          -27.441
+        ],
+        [
+          87.662,
+          -27.346
+        ],
+        [
+          85.836,
+          -16.509
+        ],
+        [
+          49.006,
+          -22.647
+        ],
+        [
+          50.832,
+          -33.472
+        ],
+        [
+          41.941,
+          -34.954
+        ],
+        [
+          44.702,
+          -51.319
+        ],
+        [
+          53.593,
+          -49.838
+        ],
+        [
+          55.43,
+          -60.762
+        ],
+        [
+          92.271,
+          -54.635
+        ],
+        [
+          90.423,
+          -43.7
+        ]
+      ],
+      "height_basis": "photo-informed assumed elevations, not surveyed"
+    }
+  ],
+  "source": "OpenStreetMap API saved November 10, 2026",
+  "chronology_source": "UNESCO reactive monitoring mission, January 2013: https://whc.unesco.org/document/123411",
+  "scan_status": "Zamani Sketchfab API: three model records isDownloadable=false; no redistribution license listed. Official viewers linked; meshes not extracted.",
+  "sources": [
+    "https://zamaniproject.org/site-ethiopia-aksum-stelae-field.html",
+    "https://whc.unesco.org/en/news/458/",
+    "https://publications.dainst.org/books/dai/catalog/view/2050/2501/4644"
+  ],
+  "stelae": [
+    {
+      "name": "Returned obelisk / Stele 2",
+      "height": 24,
+      "definition": "UNESCO approximate monument height; schematic display"
+    },
+    {
+      "name": "Stele 3",
+      "height": 20.57,
+      "definition": "published height above earth; DAI chapter p99"
+    },
+    {
+      "name": "Great Stele / Stele 1",
+      "length": 33,
+      "definition": "UNESCO approximate fallen length; fragmentation and orientation schematic"
+    }
+  ],
+  "assumed_elevations": {
+    "old_church_wall_m": 10.5,
+    "old_church_roof_and_belfry": "up to about 19 m with simplified cross",
+    "new_church_wall_m": 9.8,
+    "new_dome_spring_m": 19.7,
+    "new_dome_rise_m": 9.38,
+    "new_cross_top_m": "about 32.5",
+    "status": "These values are drawing choices informed by photographs, not measured elevations."
+  }
+}

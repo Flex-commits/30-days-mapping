@@ -18,5 +18,23 @@
     "changes": "Wikimedia-generated 1280px thumbnail, no further edits",
     "sha256": "fb63795bca269341e84192f29a11a9e3269faae74f36172ad4027bdacf98394d",
     "placement": "Pinned to landmark anchor, not camera position"
+  },
+  {
+    "file": "old-church-2018.jpg",
+    "author": "A.Savin, Wikipedia",
+    "license": "Free Art License",
+    "source": "https://commons.wikimedia.org/wiki/File:ET_Axum_asv2018-01_img31_StMary_of_Zion_Church.jpg",
+    "download_date": "2026-11-10",
+    "changes": "Resized to max 1280 pixels; no crop or other edit",
+    "sha256": "4640833f6caa4ff82f8a29718bdc53075b0f2068542f27a79cd8072e7bae84db"
+  },
+  {
+    "file": "new-church-2018.jpg",
+    "author": "Sailko",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aksum,_chiesa_nuova_di_santa_maria_di_zion,_costruita_da_haile_selassie_negli_anni_%2760,_esterno_00,0.jpg",
+    "download_date": "2026-11-10",
+    "changes": "Resized to max 1280 pixels; no crop or other edit",
+    "sha256": "d16ecb9f81bb285fa6d4487559c7fd36d5a7c680f7de253487f5418544a37c01"
   }
 ]
