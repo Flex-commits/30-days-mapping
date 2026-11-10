@@ -1,0 +1,5 @@
+matplotlib==3.9.4
+numpy==2.0.2
+Pillow==11.0.0
+pyproj==3.6.1
+rasterio==1.4.3

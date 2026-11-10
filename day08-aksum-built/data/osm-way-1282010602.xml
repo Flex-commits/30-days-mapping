@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.1 (286862 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="11897318717" visible="true" version="1" changeset="151199363" timestamp="2024-05-11T19:00:26Z" user="servilius_ahala" uid="944876" lat="14.2894788" lon="39.0176755"/>
+ <node id="11897318718" visible="true" version="1" changeset="151199363" timestamp="2024-05-11T19:00:26Z" user="servilius_ahala" uid="944876" lat="14.2887854" lon="39.0175864"/>
+ <node id="11897318719" visible="true" version="1" changeset="151199363" timestamp="2024-05-11T19:00:26Z" user="servilius_ahala" uid="944876" lat="14.2887797" lon="39.0177179"/>
+ <node id="11897318720" visible="true" version="1" changeset="151199363" timestamp="2024-05-11T19:00:26Z" user="servilius_ahala" uid="944876" lat="14.2886680" lon="39.0177042"/>
+ <node id="11897318721" visible="true" version="1" changeset="151199363" timestamp="2024-05-11T19:00:26Z" user="servilius_ahala" uid="944876" lat="14.2886589" lon="39.0178422"/>
+ <node id="11897318722" visible="true" version="1" changeset="151199363" timestamp="2024-05-11T19:00:26Z" user="servilius_ahala" uid="944876" lat="14.2894338" lon="39.0179173"/>
+ <way id="1282010602" visible="true" version="1" changeset="151199363" timestamp="2024-05-11T19:00:26Z" user="servilius_ahala" uid="944876">
+  <nd ref="11897318717"/>
+  <nd ref="11897318718"/>
+  <nd ref="11897318719"/>
+  <nd ref="11897318720"/>
+  <nd ref="11897318721"/>
+  <nd ref="11897318722"/>
+  <nd ref="11897318717"/>
+  <tag k="historic" v="archaeological_site"/>
+  <tag k="name" v="Grat Beal Gibri (Ancient DMT Palace)"/>
+ </way>
+</osm>

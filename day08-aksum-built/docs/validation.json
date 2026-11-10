@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": {
+    "all_frozen_inputs_match": true,
+    "terrain_matches_original_source_grid_and_values": true,
+    "all_site_anchors_match_OSM_source_records": true,
+    "every_scenario_building_in_extent_and_height_arithmetic_checked": true,
+    "east_west_500_m_scale_ground_check": true,
+    "poster_and_thumbnail_dimensions": true,
+    "static_page_links_and_image_alt_text": true,
+    "repeat_render_images_byte_identical": true
+  },
+  "building_count": 101,
+  "landmark_towers": 23,
+  "imagined_houses": 78,
+  "image_sha256": {
+    "aksum-built.png": "caf50df7ac01d70a927bd71181d5a308c2e9796ff85b40b107bd083edca79f1d",
+    "08-thomas-hagos.png": "47c51639e72afaae0d100e06fd76f821ca27e1e542fdbfdfa20485e7571baff5",
+    "aksum-skyline-detail.png": "c52767bd957b409310aed5bdd8458ae4e33e960012e41bae77aa93376eb97cc3"
+  },
+  "visual_QA": "Poster and thumbnail inspected; skyline detail provided for larger view.",
+  "scope": "Speculative illustration, not archaeological reconstruction or site-capacity assessment."
+}

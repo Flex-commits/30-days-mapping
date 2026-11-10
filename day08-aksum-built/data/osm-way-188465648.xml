@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.1 (215380 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="1990934244" visible="true" version="2" changeset="20705407" timestamp="2014-02-22T00:31:13Z" user="ulrichm" uid="192829" lat="14.1294090" lon="38.7194620"/>
+ <node id="1990934247" visible="true" version="2" changeset="20705407" timestamp="2014-02-22T00:31:13Z" user="ulrichm" uid="192829" lat="14.1294860" lon="38.7191194"/>
+ <node id="1990934248" visible="true" version="2" changeset="20705407" timestamp="2014-02-22T00:31:13Z" user="ulrichm" uid="192829" lat="14.1295614" lon="38.7194975"/>
+ <node id="1990934254" visible="true" version="2" changeset="20705407" timestamp="2014-02-22T00:31:13Z" user="ulrichm" uid="192829" lat="14.1296365" lon="38.7191544"/>
+ <node id="2684429759" visible="true" version="1" changeset="20705407" timestamp="2014-02-22T00:29:35Z" user="ulrichm" uid="192829" lat="14.1294216" lon="38.7192263"/>
+ <node id="2684429763" visible="true" version="1" changeset="20705407" timestamp="2014-02-22T00:29:35Z" user="ulrichm" uid="192829" lat="14.1294367" lon="38.7191574"/>
+ <node id="2684429767" visible="true" version="1" changeset="20705407" timestamp="2014-02-22T00:29:36Z" user="ulrichm" uid="192829" lat="14.1294587" lon="38.7192349"/>
+ <node id="2684429769" visible="true" version="1" changeset="20705407" timestamp="2014-02-22T00:29:36Z" user="ulrichm" uid="192829" lat="14.1294757" lon="38.7191664"/>
+ <way id="188465648" visible="true" version="4" changeset="191626892" timestamp="2026-11-08T00:21:23Z" user="Tommizanot" uid="23396370">
+  <nd ref="1990934254"/>
+  <nd ref="1990934247"/>
+  <nd ref="2684429769"/>
+  <nd ref="2684429763"/>
+  <nd ref="2684429759"/>
+  <nd ref="2684429767"/>
+  <nd ref="1990934244"/>
+  <nd ref="1990934248"/>
+  <nd ref="1990934254"/>
+  <tag k="amenity" v="place_of_worship"/>
+  <tag k="building" v="cathedral"/>
+  <tag k="denomination" v="ethiopian_orthodox"/>
+  <tag k="name" v="Church of Our Lady Mary of Zion"/>
+  <tag k="name:am" v="ርዕሰ አድባራት ቅድስተ ቅዱሳን ድንግል ማርያም ፅዮን"/>
+  <tag k="name:de" v="St. Maria von Zion"/>
+  <tag k="name:en" v="Church of Our Lady Mary of Zion"/>
+  <tag k="name:it" v="Cattedrale di Nostra Signora Maria di Sion"/>
+  <tag k="religion" v="christian"/>
+ </way>
+</osm>

@@ -1,0 +1,159 @@
+{
+ "source": "\u00a9 OpenStreetMap contributors (ODbL), Overpass API, 2026-11-09",
+ "sites": [
+  {
+   "name": "Baths of Queen Sheba",
+   "lat": 14.134206,
+   "lon": 38.721506,
+   "osm": "node/580387951"
+  },
+  {
+   "name": "Northern Stelae Field",
+   "lat": 14.132007,
+   "lon": 38.719297,
+   "osm": "node/580387968"
+  },
+  {
+   "name": "Tombs of Kings Kaleb and Gebremeskel",
+   "lat": 14.142291,
+   "lon": 38.729249,
+   "osm": "node/580388078"
+  },
+  {
+   "name": "Gudit Stelae Field",
+   "lat": 14.125725,
+   "lon": 38.70649,
+   "osm": "node/1289171471"
+  },
+  {
+   "name": "Dungur / Palace of Queen of Sheba",
+   "lat": 14.126831,
+   "lon": 38.706498,
+   "osm": "node/1289171512"
+  },
+  {
+   "name": "Stele 2",
+   "lat": 14.131946,
+   "lon": 38.71919,
+   "osm": "node/1990934342"
+  },
+  {
+   "name": "Main obelisk",
+   "lat": 14.132128,
+   "lon": 38.719278,
+   "osm": "node/1990934356"
+  },
+  {
+   "name": "Ezana Inscription",
+   "lat": 14.137847,
+   "lon": 38.722876,
+   "osm": "node/2684459368"
+  },
+  {
+   "name": "Enda Nebura'ed Palace Ruins",
+   "lat": 14.125261,
+   "lon": 38.723948,
+   "osm": "node/3163057992"
+  },
+  {
+   "name": "tomb of king bazen",
+   "lat": 14.125147,
+   "lon": 38.726037,
+   "osm": "node/3163057995"
+  },
+  {
+   "name": "Stele 1",
+   "lat": 14.131805,
+   "lon": 38.718934,
+   "osm": "node/7769782885"
+  },
+  {
+   "name": "Stele 4",
+   "lat": 14.132755,
+   "lon": 38.720176,
+   "osm": "node/7769782886"
+  },
+  {
+   "name": "Stele 7",
+   "lat": 14.133695,
+   "lon": 38.720337,
+   "osm": "node/7769782887"
+  },
+  {
+   "name": "Stele 6",
+   "lat": 14.133845,
+   "lon": 38.720449,
+   "osm": "node/7769782888"
+  },
+  {
+   "name": "Church of Our Lady Mary of Zion",
+   "lat": 14.129502,
+   "lon": 38.719241,
+   "osm": "way/188465648"
+  },
+  {
+   "name": "Yeha Temple",
+   "lat": 14.285711,
+   "lon": 39.019106,
+   "osm": "node/580388373"
+  },
+  {
+   "name": "Grat Beal Gibri (Ancient DMT Palace)",
+   "lat": 14.28904,
+   "lon": 39.017731,
+   "osm": "way/1282010602"
+  }
+ ],
+ "other_stelae": [
+  {
+   "lat": 14.1318995,
+   "lon": 38.7185611,
+   "osm": "node/1990934339"
+  },
+  {
+   "lat": 14.1319215,
+   "lon": 38.7189997,
+   "osm": "node/1990934340"
+  },
+  {
+   "lat": 14.1320659,
+   "lon": 38.7194031,
+   "osm": "node/1990934348"
+  },
+  {
+   "lat": 14.1321137,
+   "lon": 38.7188923,
+   "osm": "node/1990934350"
+  },
+  {
+   "lat": 14.1321342,
+   "lon": 38.7195457,
+   "osm": "node/1990934361"
+  },
+  {
+   "lat": 14.132209,
+   "lon": 38.7191842,
+   "osm": "node/1990934372"
+  },
+  {
+   "lat": 14.1322427,
+   "lon": 38.7196228,
+   "osm": "node/1990934375"
+  },
+  {
+   "lat": 14.1322457,
+   "lon": 38.7194398,
+   "osm": "node/1990934378"
+  },
+  {
+   "lat": 14.1323087,
+   "lon": 38.7193672,
+   "osm": "node/1990934381"
+  },
+  {
+   "lat": 14.1324055,
+   "lon": 38.7195245,
+   "osm": "node/1990934409"
+  }
+ ]
+}

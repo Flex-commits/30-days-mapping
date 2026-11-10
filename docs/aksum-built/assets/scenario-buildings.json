@@ -1,0 +1,1015 @@
+{
+  "note": "All towers, housing locations and footprints are illustrative design choices. Yeha wall research does not establish Aksum site capacity or historical building heights.",
+  "buildings": [
+    {
+      "lat": 14.12952694788821,
+      "lon": 38.72559050809124,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 23.302248407344155,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125987696200667,
+      "lon": 38.720547845271646,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 16.74601479185688,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.130470146382995,
+      "lon": 38.71732135535077,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 16.44564069189131,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.130164544746656,
+      "lon": 38.70957544073981,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 24.549917162549605,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.127803010876207,
+      "lon": 38.72609734221178,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 18.72985971561071,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.126768667761263,
+      "lon": 38.705704164214296,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 20.89076390541958,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.124499855109052,
+      "lon": 38.723102444974636,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 17.991896496387945,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.124734371222134,
+      "lon": 38.721554820652436,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 18.968886686057004,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.128684702364026,
+      "lon": 38.71748063984782,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 25.68649073362205,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.131455653091008,
+      "lon": 38.720779213198554,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 20.625052735193762,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12438731468949,
+      "lon": 38.70980396482831,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.139967507504338,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.130504615968908,
+      "lon": 38.72022904354808,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 19.000156264814077,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12480875588831,
+      "lon": 38.70760113836117,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 16.085025397694878,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.126061731284652,
+      "lon": 38.71147475286746,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 23.149932296256907,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12361499348471,
+      "lon": 38.711511725508515,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 25.8488427210928,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.128592897951247,
+      "lon": 38.718915664979015,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 17.94203515016683,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.124371463317773,
+      "lon": 38.72560446970184,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 22.38294078923287,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.124684856768672,
+      "lon": 38.72101656480093,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.61138494469629,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.123777517013087,
+      "lon": 38.72247468746431,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 22.43816888541226,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.124024053793708,
+      "lon": 38.72456141770229,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.573527725333296,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.127877896923769,
+      "lon": 38.71834325935801,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 22.86167516197312,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12700854253408,
+      "lon": 38.71066780439793,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.532508689882533,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.127037381758157,
+      "lon": 38.7210139530643,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 22.368089606580103,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.126222349143003,
+      "lon": 38.72324742739535,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 19.053037970796407,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.127976297786544,
+      "lon": 38.72695900650415,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 24.4788329990161,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125884074597877,
+      "lon": 38.71052135136705,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 25.509191804401404,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.124870183561756,
+      "lon": 38.71018481497445,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.486657504700496,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.128175885291581,
+      "lon": 38.724996468669936,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 18.59372248267261,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12806171870983,
+      "lon": 38.708968685082695,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 17.02301818545002,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12750245481912,
+      "lon": 38.72021256732075,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 23.493552643967973,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.124815750359534,
+      "lon": 38.72248636025449,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 24.784389119450807,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.127113539612912,
+      "lon": 38.70810601053989,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 16.412142313432096,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.130587758475711,
+      "lon": 38.71798169028013,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 20.2861224930232,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125612573958271,
+      "lon": 38.72216633383521,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 18.395475874918453,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.129586624765718,
+      "lon": 38.71758200387327,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 20.416044800607075,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.124309492572657,
+      "lon": 38.711442262358005,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 18.201757202213635,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.129038845224992,
+      "lon": 38.72593742335617,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 17.178532805192198,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.126766796592495,
+      "lon": 38.720009913828804,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 22.828382169427734,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.131593486088944,
+      "lon": 38.71795798730794,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 16.89774432012626,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.128631545019646,
+      "lon": 38.71644341772637,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 17.35911525067494,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.126217914244476,
+      "lon": 38.71238390770771,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.087654949330805,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125040423037252,
+      "lon": 38.707079366678215,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 22.858765203291433,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12432279325467,
+      "lon": 38.70879223945105,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 24.233690606399094,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.124679548246275,
+      "lon": 38.72474303386605,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 22.3923071521818,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.132137356063701,
+      "lon": 38.71609425332725,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.591731664551432,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.131012412931534,
+      "lon": 38.719890955346095,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 24.925778748737102,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125202995148026,
+      "lon": 38.709576486762025,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 25.97139851298646,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125772453569512,
+      "lon": 38.70733235257168,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 24.871116945882253,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.127724878352415,
+      "lon": 38.7213761550706,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 24.718515444921017,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.130640155165471,
+      "lon": 38.71576402381718,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 19.87920051981228,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.130062904833652,
+      "lon": 38.71648553909873,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 20.173550175938335,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12895665662862,
+      "lon": 38.71683348093686,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 19.34440692658356,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.129400438693317,
+      "lon": 38.72466816907698,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 18.73185278282824,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.124415177141623,
+      "lon": 38.72627771759893,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 18.85697993235459,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.128546445342833,
+      "lon": 38.708179793216246,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 16.443752097700745,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.129913843350698,
+      "lon": 38.72358139691643,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.225180610977993,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125661017583193,
+      "lon": 38.72336275357894,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.912878919748525,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.128524911250903,
+      "lon": 38.72590837094643,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 23.849923645584155,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125890276947283,
+      "lon": 38.70896765501494,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.69061033221802,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.129062655361194,
+      "lon": 38.726791285238036,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 17.83243516942179,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12831000999326,
+      "lon": 38.71083595796348,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 20.783692186281012,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.132039282489584,
+      "lon": 38.72246683333861,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.085790183900144,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.126475604374948,
+      "lon": 38.709370511749164,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 18.070618992251188,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12409408214948,
+      "lon": 38.706353792237344,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 24.158146585947915,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12435037256729,
+      "lon": 38.71088616831835,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 17.899540731373076,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.13003271862325,
+      "lon": 38.7245885582576,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 19.218969604547006,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125228248499397,
+      "lon": 38.707919325210014,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 25.353413708608294,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.130034708978748,
+      "lon": 38.71583304146931,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 23.484990909111794,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.128326941905652,
+      "lon": 38.720501330992086,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 24.468928279111513,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.12521760063343,
+      "lon": 38.708837578220226,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 19.745478784176257,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.129934709510389,
+      "lon": 38.72622563524528,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 23.42326380176424,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.131994549465125,
+      "lon": 38.72080192794335,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 18.825454652381218,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.128822755732285,
+      "lon": 38.72325664686129,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 20.389871138223246,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.123878498163862,
+      "lon": 38.71023784479761,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 21.180455039629805,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.126267897920314,
+      "lon": 38.72242527992877,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 24.060808636537484,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.127841948578883,
+      "lon": 38.707514129709075,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 17.215778847575205,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1302801760754,
+      "lon": 38.725095687266695,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 25.711442370474224,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1261430648066,
+      "lon": 38.705749992175335,
+      "storeys": 3,
+      "height_metres": 18.96,
+      "width_metres": 16.815802641662074,
+      "depth_metres": 14.0,
+      "kind": "imagined home",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1318995,
+      "lon": 38.7185611,
+      "storeys": 5,
+      "height_metres": 27.6,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1319215,
+      "lon": 38.7189997,
+      "storeys": 6,
+      "height_metres": 31.92,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1320659,
+      "lon": 38.7194031,
+      "storeys": 7,
+      "height_metres": 36.24,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1321137,
+      "lon": 38.7188923,
+      "storeys": 5,
+      "height_metres": 27.6,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1321342,
+      "lon": 38.7195457,
+      "storeys": 6,
+      "height_metres": 31.92,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.132209,
+      "lon": 38.7191842,
+      "storeys": 7,
+      "height_metres": 36.24,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1322427,
+      "lon": 38.7196228,
+      "storeys": 5,
+      "height_metres": 27.6,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1322457,
+      "lon": 38.7194398,
+      "storeys": 6,
+      "height_metres": 31.92,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1323087,
+      "lon": 38.7193672,
+      "storeys": 7,
+      "height_metres": 36.24,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.1324055,
+      "lon": 38.7195245,
+      "storeys": 5,
+      "height_metres": 27.6,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.132755,
+      "lon": 38.720176,
+      "storeys": 6,
+      "height_metres": 31.92,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.133845,
+      "lon": 38.720449,
+      "storeys": 7,
+      "height_metres": 36.24,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.133695,
+      "lon": 38.720337,
+      "storeys": 5,
+      "height_metres": 27.6,
+      "width_metres": 9.0,
+      "depth_metres": 8.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.131805,
+      "lon": 38.718934,
+      "storeys": 13,
+      "height_metres": 62.160000000000004,
+      "width_metres": 22.0,
+      "depth_metres": 16.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.131946,
+      "lon": 38.71919,
+      "storeys": 10,
+      "height_metres": 49.2,
+      "width_metres": 18.0,
+      "depth_metres": 14.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.132128,
+      "lon": 38.719278,
+      "storeys": 9,
+      "height_metres": 44.88,
+      "width_metres": 18.0,
+      "depth_metres": 14.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.126831,
+      "lon": 38.706498,
+      "storeys": 19,
+      "height_metres": 88.08000000000001,
+      "width_metres": 55.0,
+      "depth_metres": 52.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125261,
+      "lon": 38.723948,
+      "storeys": 8,
+      "height_metres": 40.56,
+      "width_metres": 46.0,
+      "depth_metres": 40.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.129502,
+      "lon": 38.719241,
+      "storeys": 12,
+      "height_metres": 57.84,
+      "width_metres": 34.0,
+      "depth_metres": 30.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.125147,
+      "lon": 38.726037,
+      "storeys": 6,
+      "height_metres": 31.92,
+      "width_metres": 20.0,
+      "depth_metres": 18.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.137847,
+      "lon": 38.722876,
+      "storeys": 7,
+      "height_metres": 36.24,
+      "width_metres": 18.0,
+      "depth_metres": 16.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.142291,
+      "lon": 38.728989625315045,
+      "storeys": 11,
+      "height_metres": 53.52,
+      "width_metres": 20.0,
+      "depth_metres": 18.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    },
+    {
+      "lat": 14.142291,
+      "lon": 38.72950837468496,
+      "storeys": 11,
+      "height_metres": 53.52,
+      "width_metres": 20.0,
+      "depth_metres": 18.0,
+      "kind": "imagined landmark tower",
+      "basis": "illustrative scenario, not surveyed/reconstructed building geometry"
+    }
+  ]
+}

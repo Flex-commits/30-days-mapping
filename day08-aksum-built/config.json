@@ -1,0 +1,21 @@
+{
+  "title": "Aksum, Built",
+  "day": 8,
+  "theme": "Utopia",
+  "year": 2026,
+  "storey_metres": 4.32,
+  "podium_metres": 6.0,
+  "maximum_chosen_storeys": 19,
+  "vertical_exaggeration": 3.0,
+  "north_foreshortening": 0.36,
+  "house_seed": 4,
+  "map_crs": "EPSG:32637",
+  "terrain_window": {
+    "row": 3079,
+    "column": 2529,
+    "height": 80,
+    "width": 109
+  },
+  "terrain_url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N14_00_E038_00_DEM/Copernicus_DSM_COG_10_N14_00_E038_00_DEM.tif",
+  "scenario_note": "All towers, housing locations and footprints are illustrative design choices. Yeha wall research does not establish Aksum site capacity or historical building heights."
+}

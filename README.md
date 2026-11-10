@@ -10,7 +10,7 @@
 | 05 | Senses: Sight | [Seeing the Hudson](https://flex-commits.github.io/30-days-mapping/seeing-the-hudson/) | [Code, sources and methods](day05-seeing-hudson/) |
 | 06 | Vintage | [The River Remembers](https://flex-commits.github.io/30-days-mapping/the-river-remembers/) | [Code, sources and methods](day06-river-remembers/) |
 | 07 | 10 minute map | [Ten Minutes of Sunlight](https://flex-commits.github.io/30-days-mapping/ten-minutes-of-sunlight/) | [Code and method](day07-ten-minutes-of-sunlight/) |
-| 08 | Utopia | [A City of Towers](https://flex-commits.github.io/30-days-mapping/city-of-towers/) | [Code and method](day08-city-of-towers/) |
+| 08 | Utopia | [Aksum, Built](https://flex-commits.github.io/30-days-mapping/aksum-built/) | [Code, sources and method](day08-aksum-built/) |
 | 12 | Power | [Two States. One Agency.](https://flex-commits.github.io/30-days-mapping/two-states-one-agency/) | [Code, sources and methods](day12-two-states-one-agency/) |
 
 Day 2 is stored in `day02-nile/`, with its public page under `docs/nile/`. [Finding Support](https://flex-commits.github.io/30-days-mapping/finding-support/) remains a separate project under `day02-finding-support/`. The shared MUSA repository receives only the thumbnail, metadata and description.

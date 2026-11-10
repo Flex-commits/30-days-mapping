@@ -1,0 +1,124 @@
+{
+  "sources": [
+    {
+      "id": "terrain",
+      "publisher": "DLR / Airbus, provided under Copernicus by EU and ESA",
+      "title": "Copernicus WorldDEM-30 / GLO-30 tile N14 E038",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N14_00_E038_00_DEM/Copernicus_DSM_COG_10_N14_00_E038_00_DEM.tif",
+      "download_date": "2026-11-09",
+      "version": "Frozen source file hash and GeoTIFF metadata in terrain-provenance.json",
+      "resolution": "One arc-second / nominal 30 m; modern DSM, not bare-earth archaeological terrain",
+      "license": "Copernicus DEM GLO-30 free-use license, attribution required; no liability by responsible organisations",
+      "license_url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "limitation": "Exact local acquisition date not established; surface objects may contribute. Vertical exaggeration is an artistic display transformation."
+    },
+    {
+      "id": "osm",
+      "publisher": "OpenStreetMap contributors",
+      "title": "Aksum and Yeha landmark nodes and area geometries",
+      "url": "https://www.openstreetmap.org/",
+      "api": "https://api.openstreetmap.org/api/0.6/",
+      "download_date": "2026-11-09",
+      "version": "Object IDs, versions and timestamps preserved in raw source XML",
+      "license": "ODbL 1.0; geographic database retains ODbL",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "limitation": "Approximate user-contributed geography, not a surveyed excavation plan; way anchors use mean vertices. Labels do not substantiate traditional attributions. Original Overpass endpoint returned 406; official API records used for verification."
+    },
+    {
+      "id": "locator",
+      "publisher": "Natural Earth contributors",
+      "title": "Admin 0 countries, 1:110m",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+      "download_date": "2026-11-09",
+      "version": "Saved master snapshot identified by checksum",
+      "resolution": "1:110 million",
+      "license": "Public domain",
+      "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "limitation": "Locator only; not used for site coordinates, heights or legal-boundary analysis."
+    }
+  ],
+  "references": [
+    {
+      "publisher": "Drieschner, Wilhelm, Petryna, Schnelle, Gerlach",
+      "year": 2023,
+      "url": "https://www.omicsonline.org/open-access/preliminary-structural-analysis-for-the-archaeological-reconstruction-of-the-ancient-palace-grat-beal-gibri-in-yeha-ethiopia-124381.html",
+      "use": "Model dimensions: 6 m podium; 3.36 m clear storey + 0.96 m ceiling; eight-storey model 40.56 m."
+    },
+    {
+      "publisher": "BTU Cottbus-Senftenberg",
+      "date": "2026-09-25",
+      "url": "https://www.b-tu.de/news/artikel/32371-btu-statiker-liefert-neue-erkenntnisse-zu-antikem-palast-in-aethiopien",
+      "use": "Institutional account of 2026 wall-section study. Does not establish Aksum site capacity."
+    },
+    {
+      "publisher": "Ethiopia Ministry of Culture and Tourism / UNESCO",
+      "year": 2020,
+      "url": "https://whc.unesco.org/en/tentativelists/6477",
+      "use": "Yeha context and temple surviving height. Inconsistent coordinate/direction text is not used for mapping."
+    },
+    {
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/15/",
+      "use": "Aksum heritage context and roughly 33 m fallen Great Stele."
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "file": "data/terrain.npz",
+      "sha256": "a8d24bf7d6a7366502b87876336716be29cadbb7652819bfbb73bca454f177fe",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/data/terrain.npz"
+    },
+    {
+      "file": "data/sites.json",
+      "sha256": "00fbcd3256c432eee7af1df0c72d879898e1af1c1c12411d11c6ddbc0f8e7f3b",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/data/sites.json"
+    },
+    {
+      "file": "data/osm-nodes.xml",
+      "sha256": "c141e3ab42ac45a9bbb93a0f33716acbcce420a092a58b4572a74b999300c98b",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/data/osm-nodes.xml"
+    },
+    {
+      "file": "data/osm-way-188465648.xml",
+      "sha256": "fefdae0708cf6d8e397daa845303efd75d16c419b3bb7bf20a06b78b5d280507",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/data/osm-way-188465648.xml"
+    },
+    {
+      "file": "data/osm-way-1282010602.xml",
+      "sha256": "61a8c9f5d584d3f8f3f2b0d1b3f7d96d88ffb4de4b815bfd9bdc9cff9eb13f7a",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/data/osm-way-1282010602.xml"
+    },
+    {
+      "file": "data/locator-countries.geojson",
+      "sha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/data/locator-countries.geojson"
+    },
+    {
+      "file": "fonts/serif.ttf",
+      "sha256": "fe9705bbde51af802719246d4608d08d37bde956ab99d9a590da996a5221a24c",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/fonts/serif.ttf"
+    },
+    {
+      "file": "fonts/serif-italic.ttf",
+      "sha256": "47cd75dce54b1f2e0831359d22d5e688f519d68ae45706b664fd310fd0e3ccf7",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/fonts/serif-italic.ttf"
+    },
+    {
+      "file": "fonts/sans.ttf",
+      "sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/fonts/sans.ttf"
+    },
+    {
+      "file": "fonts/OFL-IMFell.txt",
+      "sha256": "2a3ca501fc4d5efcad9798531e3e06962b1e20c60e464f6cbd6c17630112c773",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/fonts/OFL-IMFell.txt"
+    },
+    {
+      "file": "fonts/LICENSE_DEJAVU.txt",
+      "sha256": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e",
+      "snapshot_url": "https://raw.githubusercontent.com/Flex-commits/30-days-mapping/main/day08-aksum-built/fonts/LICENSE_DEJAVU.txt"
+    }
+  ],
+  "fonts": "IM FELL English by Igino Marini (SIL OFL 1.1); DejaVu Sans, bundled license.",
+  "scenario": "All tower heights and footprints are design choices, not engineering capacities or archaeological reconstructions."
+}

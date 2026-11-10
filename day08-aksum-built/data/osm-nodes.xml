@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.1 (286859 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="580387951" visible="true" version="5" changeset="20710446" timestamp="2014-02-22T10:10:07Z" user="ulrichm" uid="192829" lat="14.1342055" lon="38.7215064">
+  <tag k="alt_name" v="Mai Shum"/>
+  <tag k="historic" v="ruins"/>
+  <tag k="name" v="Baths of Queen Sheba"/>
+  <tag k="tourism" v="attraction"/>
+ </node>
+ <node id="580387968" visible="true" version="4" changeset="20710446" timestamp="2014-02-22T10:10:07Z" user="ulrichm" uid="192829" lat="14.1320067" lon="38.7192973">
+  <tag k="historic" v="archaeological_site"/>
+  <tag k="name" v="Northern Stelae Field"/>
+  <tag k="tourism" v="attraction"/>
+ </node>
+ <node id="580388078" visible="true" version="4" changeset="191626892" timestamp="2026-11-08T00:21:23Z" user="Tommizanot" uid="23396370" lat="14.1422913" lon="38.7292489">
+  <tag k="historic" v="ruins"/>
+  <tag k="name" v="Tombs of Kings Kaleb and Gebremeskel"/>
+  <tag k="name:it" v="Tombe dei re Kaleb e Gebremeskel"/>
+  <tag k="tourism" v="attraction"/>
+ </node>
+ <node id="580388373" visible="true" version="3" changeset="20812950" timestamp="2014-02-27T17:30:50Z" user="ulrichm" uid="192829" lat="14.2857106" lon="39.0191065">
+  <tag k="historic" v="ruins"/>
+  <tag k="name" v="Yeha Temple"/>
+ </node>
+ <node id="1289171471" visible="true" version="5" changeset="191626892" timestamp="2026-11-08T00:21:23Z" user="Tommizanot" uid="23396370" lat="14.1257245" lon="38.7064902">
+  <tag k="alt_name" v="Gwudit Stelae Field"/>
+  <tag k="historic" v="monument"/>
+  <tag k="name" v="Gudit Stelae Field"/>
+  <tag k="name:it" v="Campo delle stele di Gudit"/>
+  <tag k="tourism" v="attraction"/>
+ </node>
+ <node id="1289171512" visible="true" version="5" changeset="191626892" timestamp="2026-11-08T00:21:23Z" user="Tommizanot" uid="23396370" lat="14.1268308" lon="38.7064977">
+  <tag k="historic" v="ruins"/>
+  <tag k="name" v="Dungur / Palace of Queen of Sheba"/>
+  <tag k="name:it" v="Dungur / Palazzo della Regina di Saba"/>
+  <tag k="tourism" v="attraction"/>
+ </node>
+ <node id="1990934339" visible="true" version="1" changeset="13699483" timestamp="2012-10-31T13:27:03Z" user="RasRoach" uid="388425" lat="14.1318995" lon="38.7185611">
+  <tag k="historic" v="monument"/>
+ </node>
+ <node id="1990934340" visible="true" version="1" changeset="13699483" timestamp="2012-10-31T13:27:03Z" user="RasRoach" uid="388425" lat="14.1319215" lon="38.7189997">
+  <tag k="historic" v="monument"/>
+ </node>
+ <node id="1990934342" visible="true" version="3" changeset="88729812" timestamp="2020-07-30T11:20:50Z" user="LordNelson" uid="610362" lat="14.1319458" lon="38.7191902">
+  <tag k="historic" v="monument"/>
+  <tag k="name" v="Stele 2"/>
+ </node>
+ <node id="1990934348" visible="true" version="2" changeset="20705407" timestamp="2014-02-22T00:31:14Z" user="ulrichm" uid="192829" lat="14.1320659" lon="38.7194031">
+  <tag k="historic" v="monument"/>
+ </node>
+ <node id="1990934350" visible="true" version="1" changeset="13699483" timestamp="2012-10-31T13:27:03Z" user="RasRoach" uid="388425" lat="14.1321137" lon="38.7188923">
+  <tag k="historic" v="monument"/>
+ </node>
+ <node id="1990934356" visible="true" version="2" changeset="71734635" timestamp="2019-06-29T12:27:28Z" user="Santiago Trujillo Pereira" uid="4905628" lat="14.1321283" lon="38.7192780">
+  <tag k="historic" v="monument"/>
+  <tag k="name:en" v="Main obelisk"/>
+ </node>
+ <node id="1990934361" visible="true" version="1" changeset="13699483" timestamp="2012-10-31T13:27:03Z" user="RasRoach" uid="388425" lat="14.1321342" lon="38.7195457">
+  <tag k="historic" v="monument"/>
+ </node>
+ <node id="1990934372" visible="true" version="1" changeset="13699483" timestamp="2012-10-31T13:27:04Z" user="RasRoach" uid="388425" lat="14.1322090" lon="38.7191842">
+  <tag k="historic" v="monument"/>
+ </node>
+ <node id="1990934375" visible="true" version="1" changeset="13699483" timestamp="2012-10-31T13:27:04Z" user="RasRoach" uid="388425" lat="14.1322427" lon="38.7196228">
+  <tag k="historic" v="monument"/>
+ </node>
+ <node id="1990934378" visible="true" version="1" changeset="13699483" timestamp="2012-10-31T13:27:04Z" user="RasRoach" uid="388425" lat="14.1322457" lon="38.7194398">
+  <tag k="historic" v="monument"/>
+ </node>
+ <node id="1990934381" visible="true" version="1" changeset="13699483" timestamp="2012-10-31T13:27:04Z" user="RasRoach" uid="388425" lat="14.1323087" lon="38.7193672">
+  <tag k="historic" v="monument"/>
+ </node>
+ <node id="1990934409" visible="true" version="1" changeset="13699483" timestamp="2012-10-31T13:27:05Z" user="RasRoach" uid="388425" lat="14.1324055" lon="38.7195245">
+  <tag k="historic" v="monument"/>
+ </node>
+ <node id="2684459368" visible="true" version="3" changeset="191626892" timestamp="2026-11-08T00:21:23Z" user="Tommizanot" uid="23396370" lat="14.1378468" lon="38.7228765">
+  <tag k="name" v="Ezana Inscription"/>
+  <tag k="name:it" v="Stele di Ezana"/>
+  <tag k="tourism" v="attraction"/>
+ </node>
+ <node id="3163057992" visible="true" version="1" changeset="26506845" timestamp="2014-11-02T16:21:51Z" user="dlr" uid="1209558" lat="14.1252613" lon="38.7239480">
+  <tag k="historic" v="archaeological_site"/>
+  <tag k="name" v="Enda Nebura'ed Palace Ruins"/>
+ </node>
+ <node id="3163057995" visible="true" version="2" changeset="74918226" timestamp="2019-09-25T16:00:19Z" user="Dffghh" uid="10176842" lat="14.1251469" lon="38.7260374">
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="King Bazen's Tomb"/>
+  <tag k="name:en" v="tomb of king bazen"/>
+  <tag k="name:nl" v="tombe van koning bazen"/>
+ </node>
+ <node id="7769782885" visible="true" version="1" changeset="88729812" timestamp="2020-07-30T11:20:50Z" user="LordNelson" uid="610362" lat="14.1318049" lon="38.7189343">
+  <tag k="historic" v="monument"/>
+  <tag k="name" v="Stele 1"/>
+ </node>
+ <node id="7769782886" visible="true" version="1" changeset="88729812" timestamp="2020-07-30T11:20:50Z" user="LordNelson" uid="610362" lat="14.1327550" lon="38.7201761">
+  <tag k="historic" v="monument"/>
+  <tag k="name" v="Stele 4"/>
+ </node>
+ <node id="7769782887" visible="true" version="1" changeset="88729812" timestamp="2020-07-30T11:20:50Z" user="LordNelson" uid="610362" lat="14.1336953" lon="38.7203374">
+  <tag k="historic" v="monument"/>
+  <tag k="name" v="Stele 7"/>
+ </node>
+ <node id="7769782888" visible="true" version="1" changeset="88729812" timestamp="2020-07-30T11:20:50Z" user="LordNelson" uid="610362" lat="14.1338447" lon="38.7204485">
+  <tag k="historic" v="monument"/>
+  <tag k="name" v="Stele 6"/>
+ </node>
+</osm>
