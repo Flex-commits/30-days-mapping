@@ -14,9 +14,9 @@
   "landmark_towers": 23,
   "imagined_houses": 78,
   "image_sha256": {
-    "aksum-built.png": "caf50df7ac01d70a927bd71181d5a308c2e9796ff85b40b107bd083edca79f1d",
-    "08-thomas-hagos.png": "47c51639e72afaae0d100e06fd76f821ca27e1e542fdbfdfa20485e7571baff5",
-    "aksum-skyline-detail.png": "c52767bd957b409310aed5bdd8458ae4e33e960012e41bae77aa93376eb97cc3"
+    "aksum-built.png": "47bbdb25c4c58d3de8ef540bf5a1fd1b0ff818785431f290896615fb19b7a91a",
+    "08-thomas-hagos.png": "69afc9fc09abd81aa910917a43c6d198cb95b0a144bd96069f66124c269384bc",
+    "aksum-skyline-detail.png": "84b471eec586ee692c09a73937d0f72290e20be5c42d4788600960593f2f0016"
   },
   "visual_QA": "Poster and thumbnail inspected; skyline detail provided for larger view.",
   "scope": "Speculative illustration, not archaeological reconstruction or site-capacity assessment."

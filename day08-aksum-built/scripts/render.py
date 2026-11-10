@@ -96,14 +96,14 @@ for k,s in enumerate(S['other_stelae']+[SITE[n] for n in ('Stele 4','Stele 6','S
 def at(n):return SITE[n]['lat'],SITE[n]['lon']
 tower(*at('Stele 1'),13,22,16)
 tower(*at('Stele 2'),10,18,14,zbump=.45)
-tower(*at('Main obelisk'),9,18,14,('Northern Stelae Field',f'three imagined towers at the stelae:\n13, 10 and 9 storeys  ·  {height(13):.0f}, {height(10):.0f} and {height(9):.0f} m',.50,.93,'center'),zbump=.4)
-tower(*at('Dungur / Palace of Queen of Sheba'),19,55,52,('Dungur palace',f'19 storeys  ·  {height(19):.0f} m',.13,.80,'center'))
-tower(*at("Enda Nebura'ed Palace Ruins"),8,46,40,('Enda Nebura’ed',f'8 storeys  ·  {height(8):.0f} m',.97,.50,'right'))
-tower(*at('Church of Our Lady Mary of Zion'),12,34,30,('Church of Mary of Zion',f'12 storeys  ·  {height(12):.0f} m',.30,.62,'center'))
-tower(*at('tomb of king bazen'),6,20,18,('Tomb of King Bazen',f'6 storeys  ·  {height(6):.0f} m',.90,.33,'center'))
-tower(*at('Ezana Inscription'),7,18,16,('Ezana’s inscription',f'gate, 7 storeys  ·  {height(7):.0f} m',.62,.80,'center'))
+tower(*at('Main obelisk'),9,18,14,('Northern Stelae Field',f'three imagined towers at the stelae:\n13, 10 and 9 storeys  ·  {height(13):.0f}, {height(10):.0f} and {height(9):.0f} m',.52,880,'center'),zbump=.4)
+tower(*at('Dungur / Palace of Queen of Sheba'),19,55,52,('Dungur palace',f'19 storeys  ·  {height(19):.0f} m',.133,760,'center'))
+tower(*at("Enda Nebura'ed Palace Ruins"),8,46,40,('Enda Nebura’ed',f'8 storeys  ·  {height(8):.0f} m',.77,760,'center'))
+tower(*at('Church of Our Lady Mary of Zion'),12,34,30,('Church of Mary of Zion',f'12 storeys  ·  {height(12):.0f} m',.42,700,'right'))
+tower(*at('tomb of king bazen'),6,20,18,('Tomb of King Bazen',f'6 storeys  ·  {height(6):.0f} m',.80,300,'left'))
+tower(*at('Ezana Inscription'),7,18,16,('Ezana’s inscription',f'gate, 7 storeys  ·  {height(7):.0f} m',.69,1100,'center'))
 kl,ko=at('Tombs of Kings Kaleb and Gebremeskel')
-tower(kl,ko-28/KX,11,20,18,('Tombs of Kaleb and Gebre Meskel',f'twin towers, 11 storeys  ·  {height(11):.0f} m',.86,.93,'center'))
+tower(kl,ko-28/KX,11,20,18,('Tombs of Kaleb and Gebre Meskel',f'twin towers, 11 storeys  ·  {height(11):.0f} m',.86,1290,'right'))
 box(kl,ko+28/KX,11,20,18)
 # Inhabitants: imagined locations, full-size 1.7 m figures, same vertical transform.
 PEOPLE=[]
@@ -117,21 +117,26 @@ for k,(la,lo) in enumerate(houses[::2]):
   ax.plot([x+.25,x+.25],[y,y+.5],color=INK,lw=.15,zorder=zo)
   PEOPLE.append({'lat':plat,'lon':plon,'height_metres':1.7,'basis':'imagined architectural entourage; garment schematic, not a verified costume'})
 halo=[pe.withStroke(linewidth=3.6,foreground=PAPER)]
-ax.set_xlim(X[0],X[-1]);YL=(-110,1660);ax.set_ylim(*YL);ax.set_aspect('equal')
-for xt,yt,name,line,fx,fy,ha in labels:
- xl=X[0]+fx*(X[-1]-X[0]);yl=YL[0]+fy*(YL[1]-YL[0])
- ax.plot([xt,xl],[yt+6,yl-40],color=VERM,lw=.45,zorder=300)
- ax.text(xl,yl,line,fontproperties=F['sans'],fontsize=4.8,color=VERM,ha=ha,va='bottom',linespacing=1.35,zorder=301,path_effects=halo)
- ax.text(xl,yl+(100 if '\n' in line else 46),name,fontproperties=F['serif'],fontsize=8.4,color=INK,ha=ha,va='bottom',zorder=301,path_effects=halo)
-xm,ym=scr(ms['lat']-40/KY,ms['lon']+70/KX);ax.text(xm+40,ym-10,'Mai Shum · schematic',fontproperties=F['italic'],fontsize=6,color=SEPIA,ha='left',va='top',zorder=301,path_effects=halo)
+# Frame trimmed to the city: 5% off each side, sky above the far ridge trimmed to match.
+W=X[-1]-X[0];XL=(X[0]+.05*W,X[-1]-.05*W);YL=(-110,1450);ax.set_xlim(*XL);ax.set_ylim(*YL);ax.set_aspect('equal')
+card=dict(boxstyle='square,pad=.18',facecolor=PAPER,edgecolor='none')   # solid paper behind labels: no terrain lines between letters
+for xt,yt,name,line,fx,yl,ha in labels:
+ xl=X[0]+fx*W
+ ex,ey={'center':(xl,yl-12),'right':(xl+22,yl+22),'left':(xl-22,yl+22)}[ha]   # leader meets the label, never crosses it
+ ax.plot([xt,ex],[yt+6,ey],color=VERM,lw=.45,zorder=300)
+ ax.plot(xt,yt+6,'o',color=VERM,ms=1.2,zorder=300)
+ ax.text(xl,yl,line,fontproperties=F['sans'],fontsize=4.8,color=VERM,ha=ha,va='bottom',linespacing=1.35,zorder=301,bbox=card)
+ ax.text(xl,yl+(100 if '\n' in line else 50),name,fontproperties=F['serif'],fontsize=8.4,color=INK,ha=ha,va='bottom',zorder=301,bbox=card)
+xm,ym=scr(ms['lat']+40/KY,ms['lon'])
+ax.text(xm,ym+30,'Mai Shum',fontproperties=F['italic'],fontsize=5.4,color=SEPIA,ha='center',va='bottom',zorder=301,bbox=card)
 # frame: scale bar and view note
-sx=X[0]+120;sy=-75
+sx=XL[0]+80;sy=-75
 for i in range(2):ax.add_patch(Rectangle((sx+i*250,sy),250,14,facecolor=INK if i==0 else PAPER,edgecolor=INK,lw=.4,zorder=400))
 ax.text(sx,sy+30,'0',fontproperties=F['sans'],fontsize=4.6,color=SEPIA,ha='center',zorder=400);ax.text(sx+500,sy+30,'500 m',fontproperties=F['sans'],fontsize=4.6,color=SEPIA,ha='center',zorder=400)
-ax.text(X[-1]-100,sy+6,f'LOOKING NORTH  ·  VERTICAL EXAGGERATION {VE:g}×  ·  IMAGINED BUILDINGS',fontproperties=F['sans'],fontsize=4.6,color=SEPIA,ha='right',va='center',zorder=400)
+ax.text(XL[1]-80,sy+6,f'LOOKING NORTH  ·  VERTICAL EXAGGERATION {VE:g}×  ·  IMAGINED BUILDINGS',fontproperties=F['sans'],fontsize=4.6,color=SEPIA,ha='right',va='center',zorder=400)
 # ------------------------------------------------------------------ Yeha panel (true scale)
 fig.text(.06,.392,'THE INSPIRATION  ·  YEHA, ABOUT 800 BC',fontproperties=F['sans'],fontsize=5.6,color=SEPIA)
-ya=fig.add_axes([.06,.16,.40,.22]);ya.set_xlim(-6,132);ya.set_ylim(-9,98);ya.set_aspect('equal');ya.axis('off')
+ya=fig.add_axes([.06,.135,.40,.245]);ya.set_xlim(-6,132);ya.set_ylim(-9,98);ya.set_aspect('equal');ya.axis('off')
 ya.plot([-6,132],[0,0],color=INK,lw=.8)
 for m in (20,40,60,80):ya.plot([-6,132],[m,m],color=FAINT,lw=.35,ls=(0,(1,3)),zorder=0);ya.text(-6.5,m,f'{m} m',fontproperties=F['sans'],fontsize=4.2,color=SEPIA,ha='right',va='center')
 # Great Temple: stands today to 14 m
@@ -150,10 +155,10 @@ ya.text(px+pw+3,3,'podium survives',fontproperties=F['sans'],fontsize=4.2,color=
 ya.text(px+pw+2,6+4*STOREY,'8 storeys:\nthe excavators’\nreconstruction',fontproperties=F['sans'],fontsize=4.2,color=VERM,va='center',linespacing=1.2)
 ya.text(px+pw+2,height(LIMIT)-2,f'19-storey illustration:\n{height(LIMIT):.0f} m with this module',fontproperties=F['sans'],fontsize=4.2,color=VERM,va='top',linespacing=1.2)
 ya.add_patch(Rectangle((124,0),3.8,33,facecolor='#d9cdb3',edgecolor=INK,lw=.6));ya.text(126,-4.2,'Aksum stele',fontproperties=F['italic'],fontsize=5,color=SEPIA,ha='center');ya.text(126,35,'33 m',fontproperties=F['sans'],fontsize=4.2,color=INK,ha='center')
-fig.text(.06,.152,'Heights to scale. Yeha research is not an Aksum capacity assessment.',fontproperties=F['italic'],fontsize=5.6,color=SEPIA)
+fig.text(.06,.122,'Heights to scale. Yeha research is not an Aksum capacity assessment.',fontproperties=F['italic'],fontsize=5.6,color=SEPIA)
 # Enlarged street-level vignette belongs inside the main map composition.
 fig.text(.53,.392,'LIFE BETWEEN THE TOWERS',fontproperties=F['sans'],fontsize=6,color=VERM)
-st=fig.add_axes([.53,.215,.41,.165]);st.set_xlim(0,100);st.set_ylim(0,63);st.axis('off')
+st=fig.add_axes([.53,.195,.41,.185]);st.set_xlim(0,100);st.set_ylim(0,63);st.axis('off')
 # Imagined terraces, timber-and-stone facade rhythm, stepped podia and a public court.
 for x,y,w,h in [(3,15,24,43),(33,20,23,36),(64,15,27,42)]:
  st.add_patch(Polygon([(x+w,y),(x+w+7,y+4),(x+w+7,y+h+4),(x+w,y+h)],facecolor=SIDE,edgecolor=INK,lw=.5))
@@ -171,12 +176,8 @@ for k,(x,y,h) in enumerate([(9,6,10),(19,7,9),(39,8,11),(49,6,10),(72,7,9),(83,6
  st.add_patch(Polygon([(x-.7,y+h*.77),(x+.7,y+h*.77),(x+1.8,y+1),(x-1.7,y+1)],facecolor=VERM if k%3==0 else '#e8dcc4',edgecolor=INK,lw=.4))
  st.plot([x-.65,x-.8],[y,y+1.2],color=INK,lw=.5);st.plot([x+.65,x+.8],[y,y+1.2],color=INK,lw=.5)
  st.plot([x-.6,x+1],[y+h*.72,y+2],color=SEPIA,lw=.4)
-fig.text(.53,.204,'An imagined public court. Enlarged detail; not a measured reconstruction.',fontproperties=F['italic'],fontsize=5.2,color=SEPIA)
-fig.text(.53,.184,'Facade motifs draw on Aksum’s carved doors, windows and beam ends.\nPeople and draped garments are interpretive, not verified ancient costumes.\nLandmark anchors stay fixed; towers, homes and residents are imagined.',fontproperties=F['sans'],fontsize=5.1,color=INK,va='top',linespacing=1.5)
-# Short production sequence; the view is a contemporary design scenario.
-fig.text(.06,.137,'DOCUMENTED GEOGRAPHY → AN IMAGINED SKYLINE',fontproperties=F['sans'],fontsize=6,color=SEPIA)
-for x,head,body in [(.06,'01 / Terrain','30 m surface grid'),(.29,'02 / Landmarks','Documented site anchors'),(.53,'03 / Massing','Chosen storeys and footprints'),(.77,'04 / A new view','Oblique, looking north')]:
- fig.text(x,.113,head,fontproperties=F['serif'],fontsize=8,color=INK);fig.text(x,.096,body,fontproperties=F['sans'],fontsize=5.1,color=SEPIA)
+fig.text(.53,.182,'An imagined public court. Enlarged detail; not a measured reconstruction.',fontproperties=F['italic'],fontsize=5.2,color=SEPIA)
+fig.text(.53,.164,'Facade motifs draw on Aksum’s carved doors, windows and beam ends.\nPeople and draped garments are interpretive, not verified ancient costumes.\nLandmark anchors stay fixed; towers, homes and residents are imagined.',fontproperties=F['sans'],fontsize=5.1,color=INK,va='top',linespacing=1.5)
 # Titles and small Africa locator give geography before the imagined skyline.
 fig.text(.06,.962,'THOMAS HAGOS  /  30-DAY MAP CHALLENGE 2026',fontproperties=F['sans'],fontsize=5.6,color=SEPIA)
 fig.text(.94,.962,'DAY 08  ·  UTOPIA',fontproperties=F['sans'],fontsize=5.6,color=SEPIA,ha='right')
@@ -189,9 +190,9 @@ for f in json.loads((R/'data/locator-countries.geojson').read_text())['features'
  geom=f['geometry'];polys=[geom['coordinates']] if geom['type']=='Polygon' else geom['coordinates']
  for v in polys:loc.add_patch(Polygon(v[0],closed=True,fc=VERM if f['properties'].get('ADMIN')=='Ethiopia' else '#ded3bb',ec=PAPER,lw=.2))
 loc.plot(38.7193,14.132,'o',color=INK,ms=1.5);loc.set_xlim(-19,53);loc.set_ylim(-36,39);fig.text(.047,.851,'AKSUM / ETHIOPIA',fontproperties=F['sans'],fontsize=4.2,color=SEPIA)
-fig.text(.5,.074,'A study-inspired scenario, not an archaeological reconstruction or structural safety assessment.',fontproperties=F['italic'],fontsize=6.2,color=VERM,ha='center')
-fig.text(.5,.052,'Inspiration: Drieschner et al. (2023), 8-storey Yeha reconstruction; Drieschner & Schnelle (2026), Yeha wall analysis, as reported by BTU.\nSites: © OpenStreetMap contributors, ODbL. Locator: Natural Earth, public domain. Font: IM FELL English, SIL OFL 1.1. Sources and licenses in the project.',fontproperties=F['sans'],fontsize=4.3,color=SEPIA,ha='center',va='top',linespacing=1.5)
-fig.text(.5,.023,'Produced using Copernicus WorldDEM-30 © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018\nprovided under COPERNICUS by the European Union and ESA; all rights reserved.',fontproperties=F['sans'],fontsize=3.8,color=SEPIA,ha='center',va='top',linespacing=1.3)
+fig.text(.5,.086,'A study-inspired scenario, not an archaeological reconstruction or structural safety assessment.',fontproperties=F['italic'],fontsize=6.2,color=VERM,ha='center')
+fig.text(.5,.064,'Inspiration: Drieschner et al. (2023), 8-storey Yeha reconstruction; Drieschner & Schnelle (2026), Yeha wall analysis, as reported by BTU.\nSites: © OpenStreetMap contributors, ODbL. Locator: Natural Earth, public domain. Font: IM FELL English, SIL OFL 1.1. Sources and licenses in the project.',fontproperties=F['sans'],fontsize=4.3,color=SEPIA,ha='center',va='top',linespacing=1.5)
+fig.text(.5,.030,'Produced using Copernicus WorldDEM-30 © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018\nprovided under COPERNICUS by the European Union and ESA; all rights reserved.',fontproperties=F['sans'],fontsize=3.8,color=SEPIA,ha='center',va='top',linespacing=1.3)
 (R/'outputs').mkdir(exist_ok=True);fig.savefig(R/'outputs/aksum-built.png',dpi=300,facecolor=PAPER);plt.close(fig)
 from PIL import Image
 im=Image.open(R/'outputs/aksum-built.png');w,h=im.size
