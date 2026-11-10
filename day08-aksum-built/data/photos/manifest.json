@@ -1,0 +1,22 @@
+[
+  {
+    "file": "dungur-2018.jpg",
+    "author": "A.Savin, Wikipedia",
+    "license": "Free Art License",
+    "source": "https://commons.wikimedia.org/wiki/File:ET_Axum_asv2018-01_img48_Dungur.jpg",
+    "download_date": "2026-11-09",
+    "changes": "Wikimedia-generated 1280px thumbnail, no further edits",
+    "sha256": "d86bf17c9d4b19b4dcf30c372424586e9e1f15a500c5df38a889a0c11598bde0",
+    "placement": "Pinned to landmark anchor, not camera position"
+  },
+  {
+    "file": "obelisk-2008.jpg",
+    "author": "\u00a9 UNESCO / Michel Ravassard",
+    "license": "CC BY-SA 3.0 IGO",
+    "source": "https://commons.wikimedia.org/wiki/File:Aksum-107549.jpg",
+    "download_date": "2026-11-09",
+    "changes": "Wikimedia-generated 1280px thumbnail, no further edits",
+    "sha256": "fb63795bca269341e84192f29a11a9e3269faae74f36172ad4027bdacf98394d",
+    "placement": "Pinned to landmark anchor, not camera position"
+  }
+]

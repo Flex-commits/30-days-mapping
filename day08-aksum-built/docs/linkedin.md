@@ -1,15 +1,15 @@
 #30DayMapChallenge — Day 8: Utopia
 
-Aksum, Built…
+Aksum is a city in northern Ethiopia. It was also the capital of a kingdom whose trade connected Africa, Arabia and the Mediterranean world.
 
-What if the architecture carved into Aksum’s stelae became a skyline?
+Its architecture still tells that story… stepped stone bases, projecting beams, doors and windows carved into towering stelae.
 
-For this map, I imagined towers and homes on the terrain of Ethiopia’s ancient capital, using real landmarks as anchors. Research on timber-laced masonry at Yeha inspired the height module.
+For “Aksum, Built,” I started with those traces and asked:
 
-[Documented places. An imagined city.]
+[What if this architectural language became a living city?]
 
-The buildings are a design scenario—not a reconstruction of ancient Aksum or a claim about what its sites could safely support.
+An imagined skyline, with people walking between its towers. Real landmark locations and archaeological photographs anchor the scene. The new buildings, clothing and movement are interpretations—not a reconstruction of ancient Aksum.
 
-https://flex-commits.github.io/30-days-mapping/aksum-built/
+Explore: https://flex-commits.github.io/30-days-mapping/aksum-built/
 
-#teamMUSA #MUSA #Aksum #Ethiopia #Cartography #Architecture #GIS
+#teamMUSA #Aksum #Ethiopia #Architecture #Cartography #UrbanDesign

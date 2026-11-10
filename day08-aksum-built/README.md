@@ -75,3 +75,9 @@ Original scenario illustration, composition and text: Thomas Hagos, CC BY 4.0. S
 Produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.
 
 The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.
+
+
+## Animated city and archaeological evidence
+The main page now presents an animated SVG city with 90 pedestrians and six riders. Run `python scripts/build_page.py` after the static workflow to build the animated page; the earlier static page is retained as `static.html`. All movement, garments and speculative buildings are illustrative. The shaded surface derives from the tracked modern elevation grid; colors are artistic. This is projected 2.5D, not a surveyed or freely orbitable reconstruction.
+
+Select pins 1 and 2 for photographs of Dungur and the obelisk conservation. Separate photo licenses, attribution, source links and hashes are in `data/photos/manifest.json` and `data/photos/README.md`. The Dungur foundation profile is schematic, has no asserted dimensions and does not certify the imagined tower. The shared MUSA submission remains thumbnail plus metadata only; no new PR is opened by this update.

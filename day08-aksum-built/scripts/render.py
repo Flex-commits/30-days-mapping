@@ -9,7 +9,7 @@ R=Path(__file__).resolve().parents[1];os.environ.setdefault('MPLCONFIGDIR',str(R
 import matplotlib;matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
-from matplotlib.patches import Polygon,Rectangle
+from matplotlib.patches import Polygon,Rectangle,Circle
 import matplotlib.patheffects as pe
 import numpy as np
 PAPER,INK,SEPIA,VERM,GREEN,FIELD,FAINT='#f4eddd','#2b2520','#7d6d5a','#b23a24','#7f8c5e','#ebe4c9','#cfc3a6'
@@ -59,7 +59,12 @@ def box(lat,lon,n,w,d,col=VERM,front=FRONT,side=SIDE,top=TOP,lw=.45,setback=True
    m=int(round(h/STOREY))
    for j in range(1,m):ax.plot([x0,x1],[y+j*STOREY*VE]*2,color=col,lw=.22,zorder=zo+.03)
    if ww>12:
-    for j in range(m):ax.plot([X0-ww*.18,X0+ww*.18],[y+(j+.55)*STOREY*VE]*2,color=col,lw=.5,alpha=.55,zorder=zo+.03)  # window band
+    for j in range(m):
+     yy=y+(j+.28)*STOREY*VE
+     for wx in (-.25,0,.25):
+      ax.add_patch(Rectangle((X0+wx*ww-ww*.055,yy),ww*.11,STOREY*VE*.36,facecolor=col,edgecolor=col,lw=.12,alpha=.65,zorder=zo+.04))
+     ax.plot([x0-1,x1+1],[y+j*STOREY*VE+1]*2,color=col,lw=.35,zorder=zo+.04)
+    if k==1:ax.add_patch(Rectangle((X0-ww*.1,y),ww*.2,STOREY*VE*.68,facecolor=side,edgecolor=col,lw=.35,zorder=zo+.05))
   y+=H
  return X0,y+d*C   # top-of-building point (screen)
 labels=[]
@@ -100,6 +105,17 @@ tower(*at('Ezana Inscription'),7,18,16,('Ezana’s inscription',f'gate, 7 storey
 kl,ko=at('Tombs of Kings Kaleb and Gebremeskel')
 tower(kl,ko-28/KX,11,20,18,('Tombs of Kaleb and Gebre Meskel',f'twin towers, 11 storeys  ·  {height(11):.0f} m',.86,.93,'center'))
 box(kl,ko+28/KX,11,20,18)
+# Inhabitants: imagined locations, full-size 1.7 m figures, same vertical transform.
+PEOPLE=[]
+for k,(la,lo) in enumerate(houses[::2]):
+ for j in range(3):
+  plat=la-(14+j*3)/KY;plon=lo+(j*6-6)/KX
+  x,y=scr(plat,plon);h=1.7*VE;zo=10+row_of(plat)+.8
+  ax.add_patch(Circle((x,y+h*.9),h*.095,facecolor=INK,zorder=zo))
+  ax.add_patch(Polygon([(x-.35,y+h*.78),(x+.35,y+h*.78),(x+.65,y+.45),(x-.65,y+.45)],facecolor=VERM if k%4==0 else SEPIA,edgecolor=INK,lw=.15,zorder=zo))
+  ax.plot([x-.25,x-.25],[y,y+.5],color=INK,lw=.15,zorder=zo)
+  ax.plot([x+.25,x+.25],[y,y+.5],color=INK,lw=.15,zorder=zo)
+  PEOPLE.append({'lat':plat,'lon':plon,'height_metres':1.7,'basis':'imagined architectural entourage; garment schematic, not a verified costume'})
 halo=[pe.withStroke(linewidth=3.6,foreground=PAPER)]
 ax.set_xlim(X[0],X[-1]);YL=(-110,1660);ax.set_ylim(*YL);ax.set_aspect('equal')
 for xt,yt,name,line,fx,fy,ha in labels:
@@ -135,18 +151,28 @@ ya.text(px+pw+2,6+4*STOREY,'8 storeys:\nthe excavators’\nreconstruction',fontp
 ya.text(px+pw+2,height(LIMIT)-2,f'19-storey illustration:\n{height(LIMIT):.0f} m with this module',fontproperties=F['sans'],fontsize=4.2,color=VERM,va='top',linespacing=1.2)
 ya.add_patch(Rectangle((124,0),3.8,33,facecolor='#d9cdb3',edgecolor=INK,lw=.6));ya.text(126,-4.2,'Aksum stele',fontproperties=F['italic'],fontsize=5,color=SEPIA,ha='center');ya.text(126,35,'33 m',fontproperties=F['sans'],fontsize=4.2,color=INK,ha='center')
 fig.text(.06,.152,'Heights to scale. Yeha research is not an Aksum capacity assessment.',fontproperties=F['italic'],fontsize=5.6,color=SEPIA)
-# ------------------------------------------------------------------ reading the scenario
-lx=.53
-fig.text(lx,.392,'READ THE CITY',fontproperties=F['sans'],fontsize=6,color=SEPIA)
-items=[('Ground','Modern Copernicus surface elevations,\nnot a reconstruction of the ancient landscape.'),
- ('Places','Landmark anchors from OpenStreetMap.\nThey are approximate, not excavation plans.'),
- ('Towers','All imagined. Storey counts and footprints\nare design choices, not historical evidence.'),
- ('Homes','Illustrative three-storey houses.\nTheir locations are generated with a fixed seed.'),
- ('Heights','6 m podium + 4.32 m per storey.\n19 chosen storeys gives 88.08 m.'),
- ('Scope','The Yeha study concerns wall sections.\nIt does not certify these Aksum towers.')]
-y=.367
-for h,t in items:
- fig.text(lx,y,h,fontproperties=F['serif'],fontsize=8,color=INK,va='top');fig.text(lx+.085,y-.001,t,fontproperties=F['sans'],fontsize=5.4,color=INK,va='top',linespacing=1.4);y-=.033
+# Enlarged street-level vignette belongs inside the main map composition.
+fig.text(.53,.392,'LIFE BETWEEN THE TOWERS',fontproperties=F['sans'],fontsize=6,color=VERM)
+st=fig.add_axes([.53,.215,.41,.165]);st.set_xlim(0,100);st.set_ylim(0,63);st.axis('off')
+# Imagined terraces, timber-and-stone facade rhythm, stepped podia and a public court.
+for x,y,w,h in [(3,15,24,43),(33,20,23,36),(64,15,27,42)]:
+ st.add_patch(Polygon([(x+w,y),(x+w+7,y+4),(x+w+7,y+h+4),(x+w,y+h)],facecolor=SIDE,edgecolor=INK,lw=.5))
+ st.add_patch(Rectangle((x,y),w,h,facecolor=FRONT,edgecolor=INK,lw=.5))
+ st.add_patch(Polygon([(x,y+h),(x+w,y+h),(x+w+7,y+h+4),(x+7,y+h+4)],facecolor=TOP,edgecolor=INK,lw=.5))
+ for yy in range(int(y+6),int(y+h-2),7):
+  st.plot([x-1,x+w+1],[yy,yy],color=VERM,lw=.6)
+  for xx in (x+5,x+w/2,x+w-5):st.add_patch(Rectangle((xx-1.1,yy+1.5),2.2,3,facecolor=SIDE,edgecolor=INK,lw=.3))
+ st.add_patch(Rectangle((x+w*.4,y),w*.2,7,facecolor=SIDE,edgecolor=INK,lw=.4))
+ for j in range(3):st.add_patch(Rectangle((x-2-j,y-1-j),w+4+2*j,1,facecolor='#d8c7aa',edgecolor=SEPIA,lw=.3))
+st.plot([0,100],[6,6],color=SEPIA,lw=.5)
+# Draped human figures are anonymous interpretive entourage, never portraits.
+for k,(x,y,h) in enumerate([(9,6,10),(19,7,9),(39,8,11),(49,6,10),(72,7,9),(83,6,11)]):
+ st.add_patch(Circle((x,y+h*.9),h*.085,facecolor=INK))
+ st.add_patch(Polygon([(x-.7,y+h*.77),(x+.7,y+h*.77),(x+1.8,y+1),(x-1.7,y+1)],facecolor=VERM if k%3==0 else '#e8dcc4',edgecolor=INK,lw=.4))
+ st.plot([x-.65,x-.8],[y,y+1.2],color=INK,lw=.5);st.plot([x+.65,x+.8],[y,y+1.2],color=INK,lw=.5)
+ st.plot([x-.6,x+1],[y+h*.72,y+2],color=SEPIA,lw=.4)
+fig.text(.53,.204,'An imagined public court. Enlarged detail; not a measured reconstruction.',fontproperties=F['italic'],fontsize=5.2,color=SEPIA)
+fig.text(.53,.184,'Facade motifs draw on Aksum’s carved doors, windows and beam ends.\nPeople and draped garments are interpretive, not verified ancient costumes.\nLandmark anchors stay fixed; towers, homes and residents are imagined.',fontproperties=F['sans'],fontsize=5.1,color=INK,va='top',linespacing=1.5)
 # Short production sequence; the view is a contemporary design scenario.
 fig.text(.06,.137,'DOCUMENTED GEOGRAPHY → AN IMAGINED SKYLINE',fontproperties=F['sans'],fontsize=6,color=SEPIA)
 for x,head,body in [(.06,'01 / Terrain','30 m surface grid'),(.29,'02 / Landmarks','Documented site anchors'),(.53,'03 / Massing','Chosen storeys and footprints'),(.77,'04 / A new view','Oblique, looking north')]:
@@ -156,7 +182,7 @@ fig.text(.06,.962,'THOMAS HAGOS  /  30-DAY MAP CHALLENGE 2026',fontproperties=F[
 fig.text(.94,.962,'DAY 08  ·  UTOPIA',fontproperties=F['sans'],fontsize=5.6,color=SEPIA,ha='right')
 fig.text(.5,.912,'Aksum, Built',fontproperties=F['serif'],fontsize=34,color=INK,ha='center')
 fig.text(.5,.888,'An imagined skyline for Ethiopia’s ancient capital.',fontproperties=F['italic'],fontsize=10,color=SEPIA,ha='center',va='top')
-fig.text(.5,.866,'Documented landmarks. Imagined towers and homes.',fontproperties=F['italic'],fontsize=9,color=VERM,ha='center',va='top')
+fig.text(.5,.866,'Documented landmarks. An imagined city, lived in.',fontproperties=F['italic'],fontsize=9,color=VERM,ha='center',va='top')
 loc=fig.add_axes([.045,.858,.105,.085]);loc.axis('off');loc.set_aspect('equal')
 for f in json.loads((R/'data/locator-countries.geojson').read_text())['features']:
  if f['properties'].get('CONTINENT')!='Africa':continue
@@ -175,3 +201,5 @@ top=im.crop((0,int(h*.035),w,int(h*.59))).convert('RGB');sq=Image.new('RGB',(w,w
 im.crop((0,int(h*.15),w,int(h*.60))).save(R/'outputs/aksum-skyline-detail.png')
 (R/'data/scenario-buildings.json').write_text(json.dumps({'note':CFIG['scenario_note'],'buildings':BUILDINGS},indent=2))
 print('Rendered',im.size,'scenario buildings',len(BUILDINGS))
+
+(R/'data/scenario-people.json').write_text(json.dumps({'note':'Anonymous imagined entourage, no historical identities or costume reconstruction asserted','people':PEOPLE},indent=2))

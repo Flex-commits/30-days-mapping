@@ -1,0 +1,779 @@
+{
+  "note": "Anonymous imagined entourage, no historical identities or costume reconstruction asserted",
+  "people": [
+    {
+      "lat": 14.12940036560973,
+      "lon": 38.725534927801604,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12937324083577,
+      "lon": 38.72559050809124,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.129346116061809,
+      "lon": 38.72564608838087,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.130343564104514,
+      "lon": 38.717265775061136,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.130316439330555,
+      "lon": 38.71732135535077,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.130289314556594,
+      "lon": 38.7173769356404,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127676428597725,
+      "lon": 38.72604176192215,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127649303823766,
+      "lon": 38.72609734221178,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127622179049805,
+      "lon": 38.72615292250141,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12437327283057,
+      "lon": 38.723046864685,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124346148056611,
+      "lon": 38.723102444974636,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12431902328265,
+      "lon": 38.72315802526427,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.128558120085545,
+      "lon": 38.71742505955819,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.128530995311586,
+      "lon": 38.71748063984782,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.128503870537624,
+      "lon": 38.717536220137454,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124260732411008,
+      "lon": 38.70974838453868,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124233607637048,
+      "lon": 38.70980396482831,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124206482863087,
+      "lon": 38.70985954511794,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124682173609829,
+      "lon": 38.70754555807154,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12465504883587,
+      "lon": 38.70760113836117,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124627924061908,
+      "lon": 38.7076567186508,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.123488411206228,
+      "lon": 38.71145614521888,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.123461286432269,
+      "lon": 38.711511725508515,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.123434161658308,
+      "lon": 38.71156730579815,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.133846465427421,
+      "lon": 38.72010518171146,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.133819340653462,
+      "lon": 38.72016076200109,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.1337922158795,
+      "lon": 38.720216342290726,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124558274490191,
+      "lon": 38.720960984511294,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124531149716232,
+      "lon": 38.72101656480093,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12450402494227,
+      "lon": 38.72107214509056,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.123897471515226,
+      "lon": 38.72450583741266,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.123870346741267,
+      "lon": 38.72456141770229,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.123843221967306,
+      "lon": 38.72461699799192,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126881960255599,
+      "lon": 38.710612224108296,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12685483548164,
+      "lon": 38.71066780439793,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126827710707678,
+      "lon": 38.71072338468756,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126095766864522,
+      "lon": 38.72319184710572,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126068642090562,
+      "lon": 38.72324742739535,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126041517316601,
+      "lon": 38.72330300768498,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125757492319396,
+      "lon": 38.710465771077416,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125730367545437,
+      "lon": 38.71052135136705,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125703242771475,
+      "lon": 38.71057693165668,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124743601283274,
+      "lon": 38.710129234684814,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124716476509315,
+      "lon": 38.71018481497445,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124689351735354,
+      "lon": 38.71024039526408,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127935136431349,
+      "lon": 38.70891310479306,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12790801165739,
+      "lon": 38.708968685082695,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127880886883428,
+      "lon": 38.70902426537233,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124689168081053,
+      "lon": 38.72243077996486,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124662043307094,
+      "lon": 38.72248636025449,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124634918533133,
+      "lon": 38.722541940544126,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.13046117619723,
+      "lon": 38.7179261099905,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.13043405142327,
+      "lon": 38.71798169028013,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.130406926649309,
+      "lon": 38.718037270569766,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.129460042487237,
+      "lon": 38.717526423583635,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.129432917713277,
+      "lon": 38.71758200387327,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.129405792939316,
+      "lon": 38.7176375841629,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.131182641431757,
+      "lon": 38.719372802762436,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.131155516657797,
+      "lon": 38.71942838305207,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.131128391883836,
+      "lon": 38.7194839633417,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126640214314014,
+      "lon": 38.71995433353917,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126613089540054,
+      "lon": 38.720009913828804,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126585964766093,
+      "lon": 38.72006549411844,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.133151505248359,
+      "lon": 38.719900131937585,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.1331243804744,
+      "lon": 38.71995571222722,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.133097255700438,
+      "lon": 38.72001129251685,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126091331965995,
+      "lon": 38.71232832741808,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126064207192035,
+      "lon": 38.71238390770771,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126037082418074,
+      "lon": 38.712439487997344,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124196210976189,
+      "lon": 38.70873665916142,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12416908620223,
+      "lon": 38.70879223945105,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124141961428268,
+      "lon": 38.70884781974068,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.13201077378522,
+      "lon": 38.716038673037616,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.13198364901126,
+      "lon": 38.71609425332725,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.1319565242373,
+      "lon": 38.71614983361688,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125076412869545,
+      "lon": 38.70952090647239,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125049288095585,
+      "lon": 38.709576486762025,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125022163321624,
+      "lon": 38.70963206705166,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127598296073934,
+      "lon": 38.72132057478097,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127571171299975,
+      "lon": 38.7213761550706,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127544046526014,
+      "lon": 38.721431735360234,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12993632255517,
+      "lon": 38.716429958809094,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.129909197781211,
+      "lon": 38.71648553909873,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12988207300725,
+      "lon": 38.71654111938836,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.129273856414835,
+      "lon": 38.724612588787345,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.129246731640876,
+      "lon": 38.72466816907698,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.129219606866915,
+      "lon": 38.72472374936661,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.128419863064352,
+      "lon": 38.70812421292661,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.128392738290392,
+      "lon": 38.708179793216246,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.128365613516431,
+      "lon": 38.70823537350588,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125534435304711,
+      "lon": 38.72330717328931,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125507310530752,
+      "lon": 38.72336275357894,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12548018575679,
+      "lon": 38.72341833386857,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125763694668802,
+      "lon": 38.708912074725305,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125736569894842,
+      "lon": 38.70896765501494,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125709445120881,
+      "lon": 38.70902323530457,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.128936073082713,
+      "lon": 38.7267357049484,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.128908948308753,
+      "lon": 38.726791285238036,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.128881823534792,
+      "lon": 38.72684686552767,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127141615077546,
+      "lon": 38.70660862443547,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127114490303587,
+      "lon": 38.7066642047251,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127087365529626,
+      "lon": 38.706719785014734,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126349022096466,
+      "lon": 38.70931493145953,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126321897322507,
+      "lon": 38.709370511749164,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126294772548546,
+      "lon": 38.7094260920388,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12422379028881,
+      "lon": 38.71083058802872,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12419666551485,
+      "lon": 38.71088616831835,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.124169540740889,
+      "lon": 38.710941748607986,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125101666220916,
+      "lon": 38.70786374492038,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125074541446956,
+      "lon": 38.707919325210014,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125047416672995,
+      "lon": 38.70797490549965,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12820035962717,
+      "lon": 38.72044575070245,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.128173234853211,
+      "lon": 38.720501330992086,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12814611007925,
+      "lon": 38.72055691128172,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.132129517037496,
+      "lon": 38.71995609978441,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.132102392263537,
+      "lon": 38.720011680074045,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.132075267489576,
+      "lon": 38.72006726036368,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.131867967186643,
+      "lon": 38.720746347653716,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.131840842412684,
+      "lon": 38.72080192794335,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.131813717638723,
+      "lon": 38.72085750823298,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12375191588538,
+      "lon": 38.71018226450798,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.123724791111421,
+      "lon": 38.71023784479761,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12369766633746,
+      "lon": 38.710293425087244,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127715366300402,
+      "lon": 38.70745854941944,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127688241526442,
+      "lon": 38.707514129709075,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.127661116752481,
+      "lon": 38.70756970999871,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.126016482528119,
+      "lon": 38.7056944118857,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.12598935775416,
+      "lon": 38.705749992175335,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    },
+    {
+      "lat": 14.125962232980198,
+      "lon": 38.70580557246497,
+      "height_metres": 1.7,
+      "basis": "imagined architectural entourage; garment schematic, not a verified costume"
+    }
+  ]
+}
