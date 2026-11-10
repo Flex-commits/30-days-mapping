@@ -32,3 +32,11 @@ The returned Stele 2 is approximately 24m (UNESCO). Stele 3 is 20.57m above eart
 Zamani Project / University of Cape Town laser scans were found for Stele 1, Stele 3 and the stelae field. Public Sketchfab API records on November 10, 2026 all list isDownloadable=false and no redistribution license. No meshes were extracted. The official viewers are linked from the stelae evidence panel: https://zamaniproject.org/site-ethiopia-aksum-stelae-field.html . Integration of those scan files would require a lawful download or permission.
 
 Reference photographs: old church by A.Savin, Wikipedia (Free Art License); new church by Sailko (CC BY 3.0), both 2018. Resized but not cropped or otherwise edited. See parent data/photos/manifest.json. These images are shown as references, not projected as textures.
+
+
+## Movement, landscape and export update
+Walking speed 1.3 m/s; horse walking speed 2.2 m/s. Arms, feet and quadruped legs use procedural gait cycles; heading changes ease with quaternion interpolation. Residents sometimes pause at intersections. These are illustrative behaviors, not measured Aksum movement data. Proposed shade trees and planters are not historical vegetation observations.
+
+The Zamani scans button loads the official Sketchfab iframe only on demand, with attribution. It does not copy research meshes into this scene. Three public model records were rechecked November 10, 2026: isDownloadable=false, no redistribution license listed.
+
+Save image exports the current WebGL camera at 3840×2160. Record tour captures a clean 1920×1080, 20-second WebM through whole-city, church, stelae and market views; labels remain outside the captured canvas. Published downloadable MP4s can be transcoded from that capture. Source credits accompany exports separately.
